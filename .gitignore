@@ -6,6 +6,7 @@
 _logs
 logs
 www
+develop
 npm-debug.log*
 /protected/runtime/*
 /protected/upload/*
