@@ -1,0 +1,51 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+namespace PresetManager;
+
+interface IPresetsKeys {
+    /** ---CONST BEGINS--- */
+const DADATA_KEY = "DADATA_KEY";
+const FACEBOOK_ID = "FACEBOOK_ID";
+const FACEBOOK_SECRET = "FACEBOOK_SECRET";
+const GOOGLE_AUTH_ID = "GOOGLE_AUTH_ID";
+const GOOGLE_AUTH_SECRET = "GOOGLE_AUTH_SECRET";
+const HLS_TEMPLATE_O = "HLS_TEMPLATE_O";
+const HLS_TEMPLATE_P = "HLS_TEMPLATE_P";
+const MAILER_DEFAULT_TO = "MAILER_DEFAULT_TO";
+const MAILER_FROM = "MAILER_FROM";
+const MAILER_FROM_NAME = "MAILER_FROM_NAME";
+const MAILER_SMTP_HOST = "MAILER_SMTP_HOST";
+const MAILER_SMTP_PASSWORD = "MAILER_SMTP_PASSWORD";
+const MAILER_SMTP_PORT = "MAILER_SMTP_PORT";
+const MAILER_SMTP_USER = "MAILER_SMTP_USER";
+const MAIL_ABOUT_REQUEST = "MAIL_ABOUT_REQUEST";
+const MAP_BOX_KEY = "MAP_BOX_KEY";
+const META_OG_LOCALE = "meta_og_locale";
+const NOTIFICATION_EMAIL = "NOTIFICATION_EMAIL";
+const OK_AUTH_ID = "OK_AUTH_ID";
+const OK_AUTH_KEY = "OK_AUTH_KEY";
+const OK_AUTH_SECRET = "OK_AUTH_SECRET";
+const PAGE_DEFAULT_DESCRIPTION = "page_default_description";
+const PAGE_DEFAULT_KEYWORDS = "page_default_keywords";
+const PAGE_DEFAULT_TITLE = "page_default_title";
+const PAGE_TITLE_SEPARATOR = "page_title_separator";
+const PAYPORT_OUTLET = "PAYPORT_OUTLET";
+const PAYPORT_TOKEN = "PAYPORT_TOKEN";
+const PAYPORT_URL = "PAYPORT_URL";
+const RECAPTCHA_SECRET_KEY = "RECAPTCHA_SECRET_KEY";
+const RECAPTCHA_SITE_KEY = "RECAPTCHA_SITE_KEY";
+const REFERAL_BONUS_NEW_USER = "REFERAL_BONUS_NEW_USER";
+const REFERAL_BONUS_OLD_USER = "REFERAL_BONUS_OLD_USER";
+const START_MONEY_VALUE = "START_MONEY_VALUE";
+const TWITTER_KEY = "TWITTER_KEY";
+const TWITTER_SECRET = "TWITTER_SECRET";
+const VK_AUTH_ID = "VK_AUTH_ID";
+const VK_AUTH_SECRET = "VK_AUTH_SECRET";
+const YMAP_API_KEY = "YMAP_API_KEY";
+}
