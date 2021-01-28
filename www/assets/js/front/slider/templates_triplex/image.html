@@ -1,0 +1,6 @@
+<div class="EveCoreSliderImage Marker_{{image}}" data-image="{{image}}" data-index="{{index}}">
+    {{#has_link}}<a href="{{link}}">{{/has_link}}
+        <img src="{{image_url}}" title="{{title}}" />
+        {{#triplex_has_text}}{{#triplex_is_logo_text}}{{>logo_text}}{{/triplex_is_logo_text}}{{^triplex_is_logo_text}}{{>simple_text}}{{/triplex_is_logo_text}}{{/triplex_has_text}}
+    {{#has_link}}</a>{{/has_link}}
+</div>

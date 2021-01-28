@@ -1,0 +1,25 @@
+.EveCoreSlider.EveCoreSlider-basic {
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+.EveCoreSlider.EveCoreSlider-basic .EveCoreSliderInner {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+
+.EveCoreSlider.EveCoreSlider-basic .EveCoreSliderImage {
+    position: absolute;
+    top:0;
+    z-index: 1;        
+    will-change:scroll-position,opacity,transform;
+}
+
+
+.EveCoreSlider.EveCoreSlider-basic .EveCoreSliderImage img {
+    width:100%;
+    max-width:100%;
+    min-width:100%;
+}

@@ -1,0 +1,61 @@
+@media only screen and (max-width: 993px) {
+
+
+    html,
+    body {
+        min-width: 100%;
+        min-height: 100%
+    }
+
+    div#statistics {
+        line-height: 60px;
+        height: 60px;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 0 20px;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+
+
+    div#calendar {
+        line-height: 60px;
+        height: 60px;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding: 0 20px;
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+div#main {
+    height: auto;
+    padding-top: 60px;
+}
+
+body {
+    position: relative;
+}
+
+div#left_menu_menu {
+    position: relative;
+    margin-top: 0;
+    top: 0;
+    width: auto;
+}
+
+div#statistics {
+    font-size: 16px;
+    width: 50%;
+}
+
+div#calendar {
+    font-size: 16px;
+    width: 50%;
+}
+
+div#left_menu {
+    height: auto;
+}
+}

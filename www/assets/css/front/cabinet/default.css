@@ -1,0 +1,1857 @@
+.FrontendCabinetcontrollerRestoreSuccess {
+    box-sizing: border-box;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.FrontendCabinetcontrollerRestoreSuccessInner {
+    color: dimgray;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    padding: 2em;
+    border: 1px solid dimgray;
+    box-shadow: 3px 3px 10px silver;
+}
+
+.FrontendCabinetcontrollerCabinetWrapper {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 1em auto;
+}
+
+.FrontendCabinetcontrollerCabinetWrapperInner {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontrollerCabinetMenuOuter {
+    box-sizing: border-box;
+    margin-bottom: 1em;
+}
+
+.FrontendCabinetcontrollerMenuContentWrapper {
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.FrontendCabinetcontrollerMenuContentWrapper a {
+    color: inherit;
+    margin-right: 1.5em;
+}
+
+.FrontendCabinetcontrollerCabinetContent {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontrollerContentContent {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontrollerHeader {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.FrontendCabinetcontrollerProfile {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.FrontendCabinetcontrollerRow input[type=text],.FrontendCabinetcontrollerRow input[type=password] {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2em;
+    padding: 0 .5em;
+    border: 1px solid silver;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    transition:all .3s;
+}
+
+.FrontendCabinetcontrollerRow input[type=text]:focus,.FrontendCabinetcontrollerRow input[type=password]:focus{
+    border:1px solid dimgray;
+}
+
+.FrontendCabinetcontrollerRow {
+    margin-bottom: 1em;
+}
+
+.FrontendCabinetcontrollerRow label {
+    display: block;
+    margin-bottom: .1em;
+    font-size: .9em;
+}
+
+.FrontendCabinetcontrollerRow input[type=checkbox] {
+    display: none;
+}
+.FrontendCabinetcontrollerRow input[type=checkbox]+label{
+    padding:.1em;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+} 
+
+.FrontendCabinetcontrollerRow input[type=checkbox]+label:before{
+    width:1em;
+    min-width:1em;
+    max-width:1em;
+    height:1em;
+    content:'';
+    display:block;
+    outline:1px solid dimgray;
+    outline-offset:0;
+    box-sizing:border-box;
+    margin-right:.75em;
+    transition:all .3s;
+}
+
+.FrontendCabinetcontrollerRow input[type=checkbox]:checked+label:before{
+    border:1px solid white;
+    background:dimgray;
+}
+
+.FrontendCabinetcontrollerhint {
+    color: gray;
+    font-size: .9em;
+    margin-bottom: .3em;
+}
+
+.FrontendCabinetcontrollerRow.FrontendCabinetcontrollerRowTop {
+    border-top: 1px solid silver;
+    padding-top: 1em;
+    margin-top: 1.75em;
+}
+
+.FrontendCabinetcontrollerSection {
+    margin-bottom: 1.25em;
+}
+
+.FrontendCabinetcontrollerButtonRow {
+    margin-top: 1em;
+    line-height: 2em;
+}
+
+.FrontendCabinetcontrollersubmit {
+    background: #f15a24;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.FrontendCabinetcontrollerProfile {
+    max-width: 100%;
+    width: 25em;
+    margin:0;
+}
+
+.FrontendCabinetcontrollerRow input[type=text]::placeholder, .FrontendCabinetcontrollerRow input[type=password]::placeholder {
+    color:#d6d6d6;
+}
+
+
+.FrontendCabinetcontrollerInvalidProp {
+    color: crimson;
+    font-size: .85em;
+    white-space: nowrap;
+    height: .25em;
+    overflow: visible;
+    line-height: .8em;
+}
+.FrontendCabinetcontrollerHistory table {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: .9em;
+}
+
+.FrontendCabinetcontrollerHistory thead th {
+    text-align: left;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    padding: .3em 0;
+}
+
+.FrontendCabinetcontrollerHistory thead tr {
+    border-bottom: 1px solid dimgray;
+}
+
+
+.FrontendCabinetcontrollerHistory table tbody tr:nth-child(even) {
+    background: whitesmoke;
+}
+
+.FrontendCabinetcontrollerHistory table tbody td {
+    padding: .25em 0;
+}
+
+
+
+.CabinetPaginator {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CabinetPaginator ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CabinetPaginator li {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: 1px solid silver;
+    width: 2em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-left: none;
+}
+
+.CabinetPaginator li a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li.PaginatorElementCurrent {
+    background: #f15a24;
+}
+
+.CabinetPaginator li:nth-child(1) {
+    border-left: 1px solid silver;
+}
+
+td.FrontendCabinetcontrollerHistoryCellId {
+    width: 4em;
+    max-width: 4em;
+}
+
+td.FrontendCabinetcontrollerHistoryCellCreatd {
+    width: 7em;
+    max-width: 7em;
+    min-width: 7em;
+}
+
+td.FrontendCabinetcontrollerHistoryCellAmount {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    text-align: right;
+}
+
+td.FrontendCabinetcontrollerHistoryCellPos {
+    text-align: center;
+}
+
+td.FrontendCabinetcontrollerHistoryCellAmount {
+    width: 9em;
+    max-width: 9em;
+    min-width: 9em;
+}
+
+td.FrontendCabinetcontrollerHistoryCellPos {
+    width: 3em;
+    max-width: 3em;
+    min-width: 3em;
+}
+
+td.FrontendCabinetcontrollerHistoryCellSatus {
+    width: 7.5em;
+    max-width: 7.5em;
+    min-width: 7.5em;
+}
+
+.FrontendCabinetcontrollerHistory tbody tr {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.FrontendCabinetcontrollerHistory tbody tr:hover {
+    background: rgba(241, 90, 36, 0.24)!important;
+}
+
+.FrontendCabinetcontrollerOrderNotFound {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.FrontendCabinetcontrollerOrderNotFoundInner {
+    box-sizing: border-box;
+    padding: 2em;
+    border: 1px solid dimgray;
+    color: crimson;
+    box-shadow: 3px 3px 10px silver;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.FrontendCabinetcontrollerHistoryOrder table {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0 2em 0;
+    font-size: .9em;
+}
+
+.FrontendCabinetcontrollerHistoryOrder table thead tr {
+    border-bottom: 1px solid dimgray;
+}
+
+.FrontendCabinetcontrollerHistoryOrder table thead tr th {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    padding: 0 0 .25em 0;
+    text-align: left;
+}
+
+td.FrontendCabinetcontrollerHistoryOrderOrderItemCellAmount {
+    text-align: right;
+    width: 7em;
+    max-width: 7em;
+    min-width: 7em;
+}
+
+td.FrontendCabinetcontrollerHistoryOrderOrderItemCellQty {
+    width: 3.5em;
+    text-align: center;
+}
+
+td.FrontendCabinetcontrollerHistoryOrderOrderItemCellPrice {
+    text-align: right;
+    padding-right: .5em;
+    box-sizing: border-box;
+    width: 7.5em;
+    max-width: 7.5em;
+    min-width: 7.5em;
+}
+
+td.FrontendCabinetcontrollerHistoryOrderOrderItemCellPP {
+    width: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+}
+
+td.FrontendCabinetcontrollerHistoryOrderOrderItemCellArticle {
+    width: 5.5em;
+    max-width: 5.5em;
+    min-width: 5.5em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.FrontendCabinetcontrollerHistoryOrder tfoot tr {
+    border-top: 1px solid dimgray;
+}
+
+.FrontendCabinetcontrollerHistoryOrder tfoot tr td {
+    padding-top: .3em;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.FrontendCabinetcontrollerHistoryOrder tbody td {
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.FrontendCabinetcontrollerHistoryOrder tbody tr:nth-child(even) {
+    background: whitesmoke;
+}
+
+.FrontendCabinetcontrollerOrderInfoSummary {
+    box-sizing: border-box;
+    font-size: .95em;
+}
+
+.FrontendCabinetcontrollerOrderInfoSummaryBlock {
+    margin-bottom: .75em;
+}
+
+.FrontendCabinetcontrollerOrderInfoSummaryBlockHeader {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+
+.FrontendCabinetcontrollerOrderInfoSummaryBlockContent {
+    padding-left: .5em;
+}
+
+span.FrontendCabinetcontrollerOrderInfoSummaryBlockContentCustomerRowLabel {
+    font-weight: 400;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+}
+
+.FrontendCabinetcontrollerOrderInfoSummaryBlockContent {
+    font-size: .9em;
+}
+
+td.FrontendCabinetcontrollerOrderInfoAmountCell {
+    text-align: right;
+}
+
+.FrontendCabinetcontrollerHistoryOrder table thead tr th.FrontendCabinetcontrollerOrderHeaderAlignRight {
+    text-align: right;
+}
+
+.FrontendCabinetcontrollerHistoryOrder table thead tr th.FrontendCabinetcontrollerOrderHeaderAlignCenter {
+    text-align: center;
+}
+
+.FrontendCabinetcontrollerAddresses {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontrollerAddresses table {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: .9em;
+    margin: 1em 0 2em 0;
+    border-collapse: collapse;
+}
+
+.FrontendCabinetcontrollerAddresses table thead tr {
+    border-bottom: 1px solid dimgray;
+}
+
+.FrontendCabinetcontrollerAddresses th {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    text-align: left;
+    font-weight: 400;
+}
+
+tr.FrontendCabinetcontrolleraddress_list_empty td {
+    color: crimson;
+    text-align: center;
+    /* width: 100%; */
+    padding: .5em 0 .5em 0;
+}
+
+.FrontendCabinetcontroller_add_new_address_wrap a {
+    background: #f15a24;
+    color: white!important;
+    display: inline-block;
+    line-height: 2.5em;
+    padding: 0 2em;
+    text-decoration: none;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+th.FrontendCabinetcontrolleraddresslistcellpp {
+    width: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+}
+
+th.FrontendCabinetcontrolleraddresslistcelllabel {
+    width: 8em;
+    max-width: 8em;
+    min-width: 8em;
+}
+
+th.FrontendCabinetcontrolleraddresslistcellcontrol {
+    width: 3em;
+    max-width: 3em;
+    min-width: 3em;
+}
+
+.FrontendCabinetcontrollerAddressEdit {
+    width: 100%;
+    max-width: 25em;
+}
+
+.FrontendCabinetcontrollerAddressEdit textarea {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-radius: 0;
+    width: 100%;
+    min-height: 5em;
+    padding: .25em;
+    transition: all .3s;
+    outline: none;
+    min-width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.FrontendCabinetcontrollerAddressEdit textarea:focus {
+    border: 1px solid dimgray;
+}
+
+.FrontendCabinetcontrollerAddressEdit textarea::placeholder {
+    color:#d6d6d6;;
+}
+
+.FrontendCabinetcontrollerButtonRow.FrontendCabinetcontrollerButtonRowFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.FrontendCabinetcontrollerButtonRow.FrontendCabinetcontrollerButtonRowFlex .FrontendCabinetcontrollersubmit {
+    padding: 0 1em;
+    box-sizing: border-box;
+    max-width: 32.5%;
+    text-align: center;
+}
+
+
+.FrontendCabinetcontrolleraddresslistremovebth {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    cursor: pointer;
+    margin: .1em 0 .1em auto;
+    padding: .4em;
+}
+
+.FrontendCabinetcontrolleraddresslistremovebth svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.FrontendCabinetcontrollerAddresses table tbody tr{
+    transition:all .3s;
+    cursor:pointer;
+}
+.FrontendCabinetcontrollerAddresses table tbody tr:hover {
+    background: rgba(241, 90, 36, 0.19)!important;
+}
+
+.FrontendCabinetcontrollerAddresses table tbody tr:nth-child(even) {
+    background: whitesmoke;
+}
+
+.FrontendCabinetcontrollerFavoritesInner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.FrontendCabinetcontrollerFavoritesInner .ProductSmallTileItemOuter.ProductTileItem {
+    width: 24%;
+    margin-right: 1.3333%;
+    margin-bottom: 1.75em;
+}
+
+.FrontendCabinetcontrollerFavoritesInner .ProductSmallTileItemOuter.ProductTileItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+.FrontendCabinetcontrollerFavoriteItem {
+    box-sizing: border-box;
+    position: relative;
+    width: 24%;
+    margin-right: 1.3333%;
+    margin-bottom: 1.75em;
+}
+
+.FrontendCabinetcontrollerFavoriteItem:nth-child(4n) {
+    margin-right: 0;
+}
+
+.FrontendCabinetcontrollerFavoriteItem .ProductSmallTileItemOuter.ProductTileItem {
+    width: 100%;
+    margin: 0!important;
+}
+
+.FrontendCabinetcontrollerRemoveFavorite {
+    box-sizing: border-box;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    background: rgba(255,255,255,.3);
+    z-index: 2;
+    padding: .5em;
+    border-radius: 0 0 0 50%;
+    transition: all .3s;
+}
+
+.FrontendCabinetcontrollerRemoveFavorite svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.FrontendCabinetcontrollerRemoveFavorite:hover {
+    background: white;
+}
+
+
+.DeviceModeDevice .FrontendCabinetcontrollerCabinetMenuOuter {
+    font-size: .9em;
+    padding: 0 .5em;
+}
+
+.DeviceModeDevice .FrontendCabinetcontrollerHeader {
+    font-size: 1em;
+    padding-left: .6em;
+}
+
+@media only screen and (orientation:portrait) and (max-width:599px){
+    .DeviceModeDevice .FrontendCabinetcontrollerFavoriteItem {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        margin-bottom: 3em;
+    }
+}
+@media only screen and (orientation:portrait) and (min-width:600px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem {
+        width: 49.5%;
+        max-width: 49.5%;
+        min-width: 49.5%;
+        margin-right:1%;
+        margin-bottom: 3em;
+    }
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(2n){
+        margin-right:0;
+    }
+}
+@media only screen and (orientation:portrait) and (min-width:768px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem,
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(2n){
+        width: 32.5%;
+        max-width: 32.5%;
+        min-width: 32.5%;
+        margin-right:1.25%;
+        margin-bottom: 3em;
+    }
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(3n){
+        margin-right:0;
+    }
+}
+
+
+@media only screen and (orientation:landscape) and (max-width:768px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem {
+        width: 49.5%;
+        max-width: 49.5%;
+        min-width: 49.5%;
+        margin-right:1%;
+        margin-bottom: 3em;
+    }
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(2n){
+        margin-right:0;
+    }
+}
+
+@media only screen and (orientation:landscape) and (min-width:768px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem,
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(2n){
+        width: 32.5%;
+        max-width: 32.5%;
+        min-width: 32.5%;
+        margin-right:1.25%;
+        margin-bottom: 3em;
+    }
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(3n){
+        margin-right:0;
+    }
+}
+
+@media only screen and (orientation:landscape) and (min-width:1024px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem,
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(2n),
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(3n){
+        width: 24.5%;
+        max-width: 24.5%;
+        min-width: 24.5%;
+        margin-right:0.666%;
+        margin-bottom: 3em;
+    }
+    .DeviceModeDevice  .FrontendCabinetcontrollerFavoriteItem:nth-child(4n){
+        margin-right:0;
+    }
+}
+
+
+
+@media only screen  and (max-width:599px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerProfile {
+        padding: 0 .5em;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen  and (min-width:600px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerProfile {
+        padding: 0 .5em;
+        width: 100%;
+        max-width: 25em;
+        margin:0 auto;
+    }
+}
+
+
+
+.DeviceModeDevice  .FrontendCabinetcontrollerAddressEdit {
+    padding: 0 .5em;
+    width: 100%;
+    max-width: 25em;
+    margin:0 auto;
+}
+
+@media only screen and (max-width:599px){
+    .DeviceModeDevice  .FrontendCabinetcontrollerAddressEdit {
+        padding: 0 .5em;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerButtonRow.FrontendCabinetcontrollerButtonRowFlex {
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerButtonRow.FrontendCabinetcontrollerButtonRowFlex .FrontendCabinetcontrollersubmit {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .DeviceModeDevice   .FrontendCabinetcontrollersubmit:nth-child(1) {
+        order: 3;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollersubmit:nth-child(2) {
+        order: 1;
+    }
+
+    .DeviceModeDevice   .FrontendCabinetcontrollersubmit:nth-child(3) {
+        order: 2;
+    }   
+}
+
+
+.DeviceModeDevice .FrontendCabinetcontrollerAddresses {
+    padding: 0 .5em;
+}
+@media only screen and (max-width:767px){
+    .DeviceModeDevice .FrontendCabinetcontrollerAddresses {
+        padding: 0 .5em;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerAddresses table {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerAddresses table thead {
+        display: none;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerAddresses table tbody {
+        display: block;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerAddresses table tbody tr {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border: 1px solid whitesmoke;
+        padding-bottom: .75em;
+        margin-bottom: .75em;
+        padding-top: .75em;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerAddresses table tbody tr td {
+        display: block;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerAddresses table tbody tr td.FrontendCabinetcontrolleraddresslistcellpp {
+        order: 0;
+        width: 2.5em;
+        min-width: 2.5em;
+        text-align: left;
+        padding-left: .5em;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerAddresses table tbody tr td.FrontendCabinetcontrolleraddresslistcelllabel {
+        order: 1;
+        max-width: calc(100% - 5em);
+        width:  calc(100% - 5em);
+        min-width: calc(100% - 5em);
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerAddresses table tbody tr td.FrontendCabinetcontrolleraddresslistcellcontrol {
+        order: 2;
+        align-self: flex-start;
+        width: 1.75em;
+        height: 1.75em;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerAddresses table tbody tr td.FrontendCabinetcontrolleraddresslistcelladdress {
+        order: 3;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 .5em;
+        font-size: .9em;
+        margin-top: .25em;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerAddresses table tbody tr td.FrontendCabinetcontrolleraddresslistcellcontrol .FrontendCabinetcontrolleraddresslistremovebth {
+        width: 100%;
+        height: 100%;
+        padding: .3em;
+    }
+
+
+}
+
+.DeviceModeDevice .FrontendCabinetcontrollerHistory {
+    padding: 0 .5em;
+}
+
+@media only screen and (max-width:799px){
+    .DeviceModeDevice .FrontendCabinetcontrollerHistory {
+        padding: 0 .5em;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        min-width: 100%;
+    }
+
+
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistory table thead {
+        display: none;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistory table tbody tr {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: .5em;
+        border: 1px solid whitesmoke;
+        margin-bottom: 1em;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td {
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellId {
+        order: 0;
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellId:before {content: '№';margin-right: .15em;}
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellCreatd {
+        order: 1;
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+        text-align: right;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellInfo {
+        order: 2;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellSatus {
+        order: 3;
+        width: 50%;
+        max-width: 50%;
+        min-width: 50%;
+        padding-top: .5em;
+    }
+
+    .DeviceModeDevice   .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellPos {
+        order: 4;
+        display: none;
+    }
+
+    .DeviceModeDevice  .FrontendCabinetcontrollerHistory table tbody tr td.FrontendCabinetcontrollerHistoryCellAmount {
+        order: 5;
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+        padding-top: .5em;
+    }
+}
+
+
+.DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder {
+    padding: 0 .5em;
+}
+
+@media only screen and (max-width:799px){
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder {
+        padding: 0 .5em;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table thead {
+        display: none;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tbody {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tbody tr {
+        box-sizing: border-box;
+        display: flex;
+        border-bottom: 1px solid dimgray;
+        width: 100%;
+        padding: .5em 0;
+        flex-wrap: wrap;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tbody tr td {
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellPP {
+        order: 0;
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellPP:before{
+        content:'№';
+        font-size:.9em
+
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellArticle {
+        order: 1;
+        text-align: right;
+        width: 50%;
+        max-width: 50%;
+        min-width: 50%;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellName {
+        order: 2;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellPrice {
+        order: 3;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellQty {
+        order: 4;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellAmount {
+        order: 5;
+        width: 45%;
+        min-width: 45%;
+        max-width: 45%;
+        text-align: right;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellArticle:before {content: "Арт:";font-size: .9em;}
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tbody tr td.FrontendCabinetcontrollerHistoryOrderOrderItemCellName {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellPrice {
+        width: 40%;
+        min-width: 40%;
+        max-width: 40%;
+        text-align: left;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellQty {
+        width: 15%;
+        max-width: 15%;
+        min-width: 15%;
+    }
+
+    .DeviceModeDevice td.FrontendCabinetcontrollerHistoryOrderOrderItemCellQty:before {content: 'x';font-size: .9em;}
+
+
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tfoot {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tfoot tr {
+        display: flex;
+        padding-top: .3em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .DeviceModeDevice .FrontendCabinetcontrollerHistoryOrder table tfoot tr td {
+        display: block;
+        box-sizing: border-box;
+    }
+}
+
+
+
+.FrontendCabinetcontrollerAvatarContainer {
+    box-sizing: border-box;
+    margin: .25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendCabinetcontrollerAvatarinner {
+    box-sizing: border-box;
+    position: relative;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid silver;
+    /* padding: .25em; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.FrontendCabinetcontrollerAvatarinner input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    opacity: 0;
+}
+
+.FrontendCabinetcontrollerAvatarinner img {
+    max-width: 100%;
+}
+
+.FrontendCabinetcontroller_calendar_inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.FrontendCabinetcontrollerDayOfWeek {
+    box-sizing: border-box;
+    width: 20em;
+    max-width: 20em;
+    min-width: 20em;
+    margin: .25em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeader {
+    white-space: nowrap;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    line-height: 3.5em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background: red;
+    padding: 0 .5em;
+    width: 100%;
+    justify-self: flex-start;
+    min-height: 3.5em;
+    max-height: 3.5em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderText {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButton {
+    box-sizing: border-box;
+    width: 3.5em;
+    height: 3.5em;
+    cursor: pointer;
+    line-height: 0;
+    padding: .25em;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    max-width: 3.5em;
+    min-width: 3.5em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButton svg {
+    width: 100%;
+    height: 100%;
+    fill: dimgray;
+}
+
+.FrontendCabinetcontroller-add-inside {
+    box-sizing: border-box;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border-top: 1px solid dimgray;
+    background: silver;
+    width: 100%;
+    height: 2.5em;
+    min-height: 2.5em;
+    max-height: 2.5em;
+}
+
+.FrontendCabinetcontroller-add-inner {
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontendCabinetcontroller-add-inner-icon {
+    width: 2.5em;
+    height: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    line-height: 0;
+    padding: .5em;
+}
+
+.FrontendCabinetcontroller-add-inner-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: dimgray;
+}
+
+.FrontendCabinetcontroller-add-inner-icon-w {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+
+.FrontendCabinetcontroller-add-inner a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekBody {
+    justify-self: stretch;
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollerDayOfWeekBodyInner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.FrontendCabinetcontroller-no-items {
+    padding: .25em;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.FrontendCabinetcontroller-no-items {
+    height: 100%;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButton {
+    background: transparent;
+    line-height: 0;
+    padding: .5em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButtonCommand {
+    box-sizing: border-box;
+    padding: .25em;
+    background: rgba(255,255,255,.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButtonCommand svg {
+    fill: white;
+}
+
+.FrontendCabinetcontroller-add-inner-icon {
+    padding: .25em;
+}
+
+.FrontendCabinetcontroller-add-inner-icon-w {
+    padding: .25em;
+    background: rgba(255,255,255,.3);
+    border-radius: 50%;
+}
+
+.FrontendCabinetcontroller-add-inner-icon-w svg {
+    fill: white;
+}
+
+.FrontendCabinetcontroller-add-inside {
+    background: #848181;
+}
+
+.FrontendCabinetcontroller-one-datum-item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .25em 0;
+}
+
+.FrontendCabinetcontroller-one-datum-inside {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontendCabinetcontrollertime_start {
+    width: 100%;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollertime_end {
+    width: 100%;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollerremove {
+    width: 2.5em;
+    min-width: 2.5em;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollertime_start {}
+
+.FrontendCabinetcontroller-one-datum-inside input[type=text] {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 .25em;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid silver;
+    background: transparent;
+    box-shadow:none!important;
+    outline:none!important;
+    border-raduis:0;
+}
+
+.FrontendCabinetcontrollertime_end input[type=text] {
+    border-left: none;
+    border: 1px solid silver;
+    box-shadow: none;
+    outline: none;
+    border-left: none;
+}
+
+.FrontendCabinetcontrollerremove {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-left: none;
+    line-height: 0;
+}
+
+.FrontendCabinetcontrollerRemoveButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.FrontendCabinetcontrollerRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.FrontendCabinetcontroller-one-datum-item:nth-child(even) {
+    background: white;
+}
+
+.FrontendCabinetcontroller-one-datum-inside input[type=text] {
+    text-align: center;
+}
+
+.FrontendCabinetcontroller_loader_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+}
+
+.FrontendCabinetcontroller_calendar_inner {
+    /* position: relative; */
+}
+
+.FrontendCabinetcontroller_block_container {
+    position: relative;
+    min-height: 10em;
+}
+
+.FrontendCabinetcontroller_oader_inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendCabinetcontroller_oader_inner_inner {
+    box-sizing: border-box;
+    width: 6em;
+    height: 6em;
+}
+
+.FrontendCabinetcontroller_oader_inner_inner svg {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.FrontendCabinetcontrollertoolbar_rasp {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendCabinetcontroller_button_rasp {
+    background: red;
+    color: white;
+    line-height: 3em;
+    cursor: pointer;
+    padding: 0 4em;
+}
+
+.FrontendCabinetcontrollertoolbar_rasp {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.FrontendCabinetcontrollerRow textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    min-height: 5em;
+    max-height: 15em;
+    border: 1px solid silver;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    outline: none!important;
+}
+
+
+.FrontendCabinetcontroller_trainer_hole_empty {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.FrontendCabinetcontroller_trainer_hole_add_panel {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.FrontendCabinetcontroller_trainer_add_button {
+    color: white;
+    background: red;
+    line-height: 2.5em;
+    padding: 0 2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.FrontendCabinetcontroller_map_pop_wrap {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontroller_map_pop_inner {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontroller_map_pop_flex {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.FrontendCabinetcontroller_map_popup_image {
+    box-sizing: border-box;
+    width: 7em;
+    height: 7em;
+    max-width: 7em;
+    min-width: 7em;
+    margin-right: .25em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.FrontendCabinetcontroller_map_popup_image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.FrontendCabinetcontroller_map_popup_text {
+    width: 100%;
+    margin-left: .75em;
+}
+
+.FrontendCabinetcontroller_map_popup_text_name {
+    font-weight: bold;
+}
+
+.FrontendCabinetcontroller_map_popup_text_address {
+    color: #4e4e4e;
+    font-size: .9em;
+}
+
+.FrontendCabinetcontroller_map_pop_panel {
+    margin-top: 1em;
+    width: 100%;
+    line-height: 3em;
+    padding-top: .25em;
+}
+
+.FrontendCabinetcontroller_popup_button {
+    cursor: pointer;
+    font-weight: bold;
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+
+.FrontendCabinetcontroller_popup_button.FrontendCabinetcontroller_popup_button_selected {
+    background: dimgray;
+}
+
+.FrontendCabinetcontroller_trainer_hole_wrapper {
+    box-sizing: border-box;
+    width: 15em;
+    max-width: 15em;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    position: relative;
+}
+
+.FrontendCabinetcontroller_trainer_hole_inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.FrontendCabinetcontroller_trainer_hole_image {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .1em;
+    border: 1px solid silver;
+    line-height: 0;
+}
+
+.FrontendCabinetcontroller_trainer_hole_image img {
+    width: 100%;
+}
+
+.FrontendCabinetcontroller_trainer_hole_remover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.5em;
+    height: 1.5em;
+    background: rgba(255,255,255,.5);
+    padding: .25em;
+    cursor: pointer;
+}
+
+.FrontendCabinetcontroller_trainer_hole_remover svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.FrontendCabinetcontroller_trainer_hole_texts {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: .1em;
+    justify-self: stretch;
+    background: whitesmoke;
+}
+
+.FrontendCabinetcontroller_trainer_hole_name {
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.FrontendCabinetcontroller_package_info {
+    box-sizing: border-box;
+}
+
+.FrontendCabinetcontroller_package_info_inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontendCabinetcontroller_package_info_image {
+    width: 3em;
+    max-width: 3em;
+    min-width: 3em;
+    box-sizing: border-box;
+    padding: .1em;
+    border: 1px solid silver;
+    line-height: 0;
+    /* margin-right: 1em; */
+}
+
+.FrontendCabinetcontroller_package_info_image img {
+    width: 100%;
+}
+
+.FrontendCabinetcontroller_package_info_name {
+    box-sizing: border-box;
+    display: flex;
+    /* align-self: stretch; */
+    justify-content: center;
+    align-items: center;
+    /* width: 40%; */
+    border: 1px solid silver;
+    border-left: none;
+    height: 3em;
+    font-weight: bold;
+    padding: 0 1.5em;
+}
+
+.FrontendCabinetcontroller_package_info_rem {
+    box-sizing: border-box;
+    height: 3em;
+    border: 1px solid silver;
+    border-left: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendCabinetcontroller_pricelist_items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.FrontendCabinetcontroller_price_item {
+    box-sizing: border-box;
+    margin: .5em;
+    border: 1px solid silver;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 15em;
+    max-width: 15em;
+    min-width: 15em;
+}
+
+.FrontendCabinetcontroller_price_item_inner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.FrontendCabinetcontroller_price_item_image {
+    line-height: 0;
+    border-bottom: 1px solid silver;
+    padding: .1em;
+    width: 100%;
+}
+
+.FrontendCabinetcontroller_price_item_image img {
+    width: 100%;
+}
+
+.FrontendCabinetcontroller_price_item_bp {
+    justify-self: flex-end;
+    display: flex;
+}
+
+.FrontendCabinetcontroller_price_item_texts {
+    height: 100%;
+    width: 100%;
+}
+
+.FrontendCabinetcontroller_price_item_text_name {
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    padding: .5em 0;
+    border-bottom: 1px solid silver;
+}
+
+.FrontendCabinetcontroller_price_item_text_name {}
+
+.FrontendCabinetcontroller_price_item_priceblock {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .9em;
+    border-bottom: 1px solid silver;
+}
+
+.FrontendCabinetcontroller_price_item_cost {
+    border-right: 1px solid silver;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .75em;
+    font-weight: bold;
+    font-size: .8em;
+    width: 100%;
+}
+
+.FrontendCabinetcontroller_price_item_cost_rigth {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+}
+
+.FrontendCabinetcontroller_price_item_cost_rigth_row {
+    line-height: 1.75em;
+    white-space: nowrap;
+    border-bottom: 1px solid silver;
+    padding: 0 .5em;
+}
+
+.FrontendCabinetcontroller_price_item_cost_rigth_row:nth-child(2) {
+    border-bottom: none;
+}
+
+.FrontendCabinetcontroller_price_item_bp {
+    margin: .75em 0;
+    line-height: 2.5em;
+    width: 100%;
+    padding: 0 .5em;
+}
+
+a.FrontendCabinetcontroller_price_button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    background: red;
+    padding: 0 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.FrontendCabinetcontroller_pricelist_warning {
+    padding: .5em;
+    color: crimson;
+}
+
+a.FrontendCabinetcontroller_price_button.FrontendCabinetcontroller_price_button_disabled {
+    background: lightgray;
+}
+
+
+
+
+

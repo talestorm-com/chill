@@ -1,0 +1,531 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 авг. 2020 г., 21:39:52
+    Author     : eve
+*/
+
+.EFOAlertLayoutContext {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow: visible;
+    left: 50%;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 50;
+    align-items: center;    
+}
+
+.EFOAlertMessage {    
+    box-sizing: border-box;        
+    border: 1px solid black;    
+    margin-bottom: 1em;
+    background: white;
+    transition:all .3s;
+    transform: scaleX(0) scaleY(0);    
+}
+.EFOAlertMessageDisplay{
+    animation: EFOALERTMESSAGEKF .3s linear;
+    transform: scaleX(1) scaleY(1);
+}
+@keyframes EFOALERTMESSAGEKF {
+    from {transform: scaleX(0) scaleY(0);}
+    80% {transform: scaleX(1.2) scaleY(1.2);}
+    to {transform: scaleX(1) scaleY(1);}
+}
+
+.EFOAlertMessageInner {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 2em;
+    padding: 2em 0 .5em 0;
+    min-width: 20em;    
+}
+
+.EFOAlertMessageHeader {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    line-height: 2em;
+    height: 2em;
+    overflow: hidden;
+    padding: 0 .5em;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.EFOAlertMessageHeaderText {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.EFOAlertMessageBodyBlock {
+    box-sizing: border-box;
+}
+
+.EFOAlertMessageBodyInner {
+    box-sizing: border-box;
+    min-height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.EFOAlertMessageBodyText {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .25em .75em;
+}
+
+.EFOAlertMessageHeader.EFOAlertMessageHeaderCrossed {
+    padding-right: 2.5em;
+}
+
+.EFOAlertMessageHeaderClose {
+    box-sizing: border-box;
+    height: 100%;
+    width: 2em;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 0;
+    padding: .25em;
+}
+
+.EFOAlertMessageHeaderCloseCommand {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .3s;
+    position:relative;
+    overflow:hidden;
+}
+.EFOAlertMessageHeaderCloseCommand:hover{
+    border-radius:5%;
+}
+
+.EFOAlertMessageHeaderCloseCommand:before,.EFOAlertMessageHeaderCloseCommand:after{
+    border-left:1px solid white;
+    border-right:1px solid white;
+    position:absolute;
+    left:50%;
+    margin-left:-1px;
+    height:150%;
+    top:-25%;
+    content:' ';
+}
+.EFOAlertMessageHeaderCloseCommand:before{
+    transform:rotate(-45deg);
+}
+.EFOAlertMessageHeaderCloseCommand:after{
+    transform:rotate(45deg);
+}
+
+.EFOAlertMessageHeader.EFOAlertMessageHeaderIconed {
+    padding-left: 2.5em;
+}
+
+.EFOAlertMessageHeaderIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 0;
+    padding: .3em;
+}
+
+.EFOAlertMessageHeaderIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.EFOAlertMessageBodyImage {
+    box-sizing: border-box;
+    line-height: 0;
+    width: 5em;
+    height: 5em;
+    overflow: hidden;
+}
+
+.EFOAlertMessageBodyImage svg {
+    width: 100%;
+    height: 100%;
+    fill: black;
+}
+
+.EFOAlertMessageBodyInner {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+
+/*colored*/
+/*red*/
+.EFOAlertMessage.EFOAlertMessageViewred {
+    border: 1px solid crimson;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewred .EFOAlertMessageHeader {
+    background: crimson;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewred .EFOAlertMessageBodyInner svg {
+    fill: crimson;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewred .EFOAlertMessageBodyInner {
+    color: crimson;
+}
+/* blue */
+
+.EFOAlertMessage.EFOAlertMessageViewblue {
+    border:1px solid dodgerblue;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewblue  .EFOAlertMessageHeader {
+    background: dodgerblue;
+}
+.EFOAlertMessage.EFOAlertMessageViewblue .EFOAlertMessageBodyInner svg {
+    fill: dodgerblue;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewblue .EFOAlertMessageBodyInner {
+    color: dodgerblue;
+
+}
+
+/* green */
+
+
+.EFOAlertMessage.EFOAlertMessageViewgreen {
+    border:1px solid mediumseagreen;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewgreen  .EFOAlertMessageHeader {
+    background: mediumseagreen;
+}
+.EFOAlertMessage.EFOAlertMessageViewgreen .EFOAlertMessageBodyInner svg {
+    fill: mediumseagreen;
+}
+
+.EFOAlertMessage.EFOAlertMessageViewgreen .EFOAlertMessageBodyInner {
+    color: mediumseagreen;
+
+}
+
+
+
+
+/* simple_confirm*/
+.EFOConfirmMessageBackdrop {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 15;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.EFOConfirmMessage {
+    box-sizing: border-box;
+    min-width: 30em;
+    max-width: 75%;
+    border: 1px solid black;
+    background: white;
+}
+
+.EFOConfirmMessageInner {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 3.5em;
+}
+
+.EFOConfirmMessageHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+    overflow: hidden;
+    background: black;
+    color: white;
+    padding: 0 .5em;
+    box-sizing: border-box;
+}
+
+.EFOConfirmMessageFooter {
+    box-sizing: border-box;
+    position: absolute;
+    height: 3.5em;
+    line-height: 3.5em;
+    border-top: 1px solid black;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.EFOConfirmMessageBodyBlock {
+    padding: .5em;
+}
+
+.EFOConfirmMessageBodyInner {
+    box-sizing: border-box;
+    min-height: 5.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.EFOConfirmMessageHeader.EFOConfirmMessageHeaderIconed {
+    padding-left: 2.5em;
+}
+
+.EFOConfirmMessageHeaderIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: .2em;
+}
+
+.EFOConfirmMessageHeaderIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.EFOConfirmMessageHeaderText {
+    box-sizing: border-box;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.EFOConfirmMessageHeader.EFOConfirmMessageHeaderCrossed {
+    padding-right: 2.5em;
+}
+
+.EFOConfirmMessageHeaderClose {
+    position: absolute;
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    padding: .2em;
+    top: 0;
+    right: 0;
+}
+
+.EFOConfirmMessageHeaderCloseCommand {
+    border-radius: 50%;
+    transition: all .3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.EFOConfirmMessageHeaderCloseCommand:hover{
+    border-radius:5%;
+}
+
+.EFOConfirmMessageHeaderCloseCommand:before,.EFOConfirmMessageHeaderCloseCommand:after {
+    content:' ';
+    position:absolute;
+    box-sizing:border-box;
+    border-left:2px solid white;
+    height:150%;
+    left:50%;
+    margin-left:-1px;
+    top:-25%;
+
+}
+.EFOConfirmMessageHeaderCloseCommand:before{
+    transform:rotate(-45deg);
+}
+.EFOConfirmMessageHeaderCloseCommand:after{
+    transform:rotate(45deg);
+}
+
+.EFOConfirmMessageFooterInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 .25em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.EFOConfirmMessageButton {
+    line-height: 2em;
+    padding: 0 1.75em;
+    border: 1px solid black;
+    margin-left: .25em;
+    margin-right: .25em;
+    cursor: pointer;
+    color: black;
+    transition: all .3s;
+}
+
+.EFOConfirmMessageButton:hover {
+    color: white;
+    background: black;
+}
+
+.EFOConfirmMessageBodyImage {
+    box-sizing: border-box;
+    width: 5em;
+    height: 5em;
+    overflow: hidden;
+    line-height: 0;
+    padding: .1em;
+    min-width: 5em;
+    max-width: 5em;
+}
+
+.EFOConfirmMessageBodyImage svg {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.EFOConfirmMessageBodyText {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .25em .5em;
+}
+
+
+.EFOConfirmMessageBackdrop {
+    transform: scale(0);
+}
+
+.EFOConfirmMessageDisplay{
+    animation: EFOALERTMESSAGEKF .3s linear;
+    transform: scaleX(1) scaleY(1);
+}
+
+/*red*/
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessage {
+    border: 1px solid crimson;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessageHeader {
+    background:crimson;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessageBodyImage svg {
+    fill:crimson;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessageBodyText {
+    color:crimson;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessageFooter {
+    border-top: 1px solid crimson;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessageButton {
+    color: crimson;
+    border: 1px solid crimson;
+}
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewred .EFOConfirmMessageButton:hover {
+    background:crimson;color:white;
+}
+
+/*blie*/
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessage {
+    border: 1px solid dodgerblue;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessageHeader {
+    background:dodgerblue;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessageBodyImage svg {
+    fill:dodgerblue;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessageBodyText {
+    color:dodgerblue;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessageFooter {
+    border-top: 1px solid dodgerblue;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessageButton {
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewblue .EFOConfirmMessageButton:hover {
+    background:dodgerblue;color:white;
+}
+
+/*green*/
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessage {
+    border: 1px solid mediumseagreen;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessageHeader {
+    background:mediumseagreen;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessageBodyImage svg {
+    fill:mediumseagreen;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessageBodyText {
+    color:mediumseagreen;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessageFooter {
+    border-top: 1px solid mediumseagreen;
+}
+
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessageButton {
+    color: mediumseagreen;
+    border: 1px solid mediumseagreen;
+}
+.EFOConfirmMessageBackdrop.EFOConfirmMessageBackdropViewgreen .EFOConfirmMessageButton:hover {
+    background:mediumseagreen;color:white;
+}

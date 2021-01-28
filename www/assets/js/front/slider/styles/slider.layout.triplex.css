@@ -1,0 +1,154 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.07.2019, 11:11:14
+    Author     : studio2
+*/
+
+.EveCoreSlider.EveCoreSlider-triplex {
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+.EveCoreSlider.EveCoreSlider-triplex .EveCoreSliderInner {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+
+.EveCoreSlider.EveCoreSlider-triplex .EveCoreSliderImage {
+    position: absolute;
+    top:100%;
+    right:0;
+    z-index: 1;        
+    will-change:scroll-position,opacity,transform;
+    width:33.333%;
+}
+
+
+.EveCoreSlider.EveCoreSlider-triplex .EveCoreSliderImage img {
+    width:100%;
+    max-width:100%;
+    min-width:100%;
+}
+
+.EveCoreSliderImageTextOuter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: normal;    
+    display: flex;
+    padding: 1em;
+    font-size: 1.5em;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EveCoreSliderImageLogoOuter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EveCoreSliderImageLogoInner {
+    width: 50%;
+}
+
+.EveCoreSliderImageLogoInner svg {
+    width: 100%;
+}
+
+
+
+.EveCoreSliderImageLogoOuter {
+    padding: 1em;
+}
+
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-topleft {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-topcenter {
+    justify-content: center;
+    align-items: flex-start;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-topright {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-midright {
+    justify-content: flex-end;
+    align-items: center;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-midleft {
+    justify-content: flex-start;
+    align-items: center;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-botleft {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-botcenter {
+    justify-content: center;
+    align-items: flex-end;
+}
+.EveCoreSliderImageLogoOuter.EveCoreSliderImageLogoTextStyle-botright {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-topleft {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-topcenter {
+    align-items: flex-start;
+    justify-content: center;
+}
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-topright {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-midleft {
+    align-items: center;
+    justify-content: flex-start;
+}
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-midright {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-botleft {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-botcenter {
+    align-items: flex-end;
+    justify-content: center;
+}
+.EveCoreSliderImageTextOuter.EveCoreSliderImageLogoTextStyle-botright {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.EveCoreSliderImageTextInner {
+    letter-spacing: .05em;
+}

@@ -1,0 +1,465 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 июл. 2020 г., 21:31:08
+    Author     : eve
+*/
+
+.FrontendComchillcontrollerWrapper {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.FrontendComchillcontrollerInner {
+    box-sizing: border-box;
+}
+
+.FrontendComchillcontrollerCommentList {
+    margin-top: 2em;
+    box-sizing: border-box;
+    color: white;
+}
+
+.FrontendComchillcontroller_comment_with_sticker {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+
+
+.sticker-panel {
+    width: 10em;
+    height: 10em;
+    line-height: 0;
+    margin-right: 1em;
+}
+
+.comment-panel {
+    align-self: stretch;
+}
+
+.votepanel {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+.comment-header {
+    font-weight: bold;
+}
+
+.FrontendComchillcontroller_comment_without_sticker {
+    box-sizing: border-box;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: 1px solid silver;
+}
+
+div#sticker_list_wrapper {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+}
+
+
+
+div#close_sticker_list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+div#sticker_list_wrapper-inside {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+div#sticker_list_window {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 90%;
+    width: 640px;
+    padding: 2em;
+    background: white;
+    position: relative;
+    height: 640px;
+}
+
+div#close_sticker_list {
+    top: .5em;
+    right: .5em;
+    color: red;
+    cursor: pointer;
+}
+
+.sticker_list_inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.one-sticker-from-list {
+    width: 7em;
+    height: 7em;
+    line-height: 0;
+    cursor: pointer;
+    margin: 1em;
+    min-width: 7em;
+    max-width: 7em;
+}
+
+.one-sticker-from-list-inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-sticker-from-list-inner img {
+    max-width: 100%;
+    max-height: 100%;
+}
+div#sticker_list_wrapper {
+    display: none;
+}
+
+.FrontendComchillcontrollerform {
+    box-sizing: border-box;
+    color: white;
+}
+
+.FrontendComchillcontrollerforminner {
+    box-sizing: border-box;
+}
+
+.FrontendComchillcontrollerformrow {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.FrontendComchillcontrollerformcell.FrontendComchillcontrollerformcellsticker {
+    box-sizing: border-box;
+    width: 7.5em;
+    max-width: 7.5em;
+    min-width: 7.5em;
+    /* border: 1px solid silver; */
+}
+
+div#FrontendComchillcontrollersticker_place {
+    box-sizing: border-box;
+    width: 7.5em;
+    height: 7.5em;
+    border: 1px solid silver;
+    cursor: pointer;
+}
+
+.FrontendComchillcontrollerformcell.FrontendComchillcontrollerformcelltext {
+    width: 100%;
+}
+
+.FrontendComchillcontrollerformcell.FrontendComchillcontrollerformcelltext .FrontendComchillcontrollerformcellbody {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-left: none;
+    height: 7.5em;
+    max-height: 7.5em;
+}
+
+.FrontendComchillcontrollerformcellbody textarea {
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    min-height: 100%;
+    max-height: 100%;
+    padding: .5em;
+    font-family: inherit;
+    box-shadow: none;
+    background: transparent;
+}
+
+div#FrontendComchillcontrollersticker_place img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div#FrontendComchillcontrollersticker_place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendComchillcontrollerformfooter {
+    line-height: 3em;
+    margin-top: 2em;
+}
+
+div#FrontendComchillcontrollersend {
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+div#FrontendComchillcontrollersticker_place img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    min-width: 0;
+}
+
+div#FrontendComchillcontrollersticker_place {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendComchillcontrollerformfooter {
+    line-height: 3em;
+    margin-top: 2em;
+}
+
+div#FrontendComchillcontrollersend {
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.FrontendComchillcontrollerInner h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.FrontendComchillcontrollerInner h1 span {
+    background-color: #19FFF1;
+}
+
+p.podtext {
+    font-weight: 300;
+    font-size: 14px;
+    
+/* identical to box height, or 17px */
+    color: #919191;
+    margin: 30px 0;
+}
+
+div#FrontendComchillcontrollersend {
+    background: #19FFF1;
+    border-radius: 2px;
+    height: 42px;
+    line-height: 42px;
+    width: 100%;
+}
+
+.FrontendComchillcontrollerWrapper {
+    width: 100%;
+}
+
+textarea#FrontendComchillcontrollertext {
+    border: 1px solid #919191;
+    padding: 10px;
+    line-height: 20px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+div#FrontendComchillcontrollersticker_place {
+    height: 42px;
+    width: 42px;
+    display: inline-block;
+    line-height: 42px;
+    text-align: center;
+    background-color: #19fef1;
+    color: #000;
+    font-size: 20px;
+    border: 0;
+    border-radius: 2px;
+}
+.FrontendComchillcontrollerCommentList {
+    /* background: #202020; */
+    /* border-radius: 4px; */
+    border: 0;
+}
+
+.FrontendComchillcontroller_comment_with_sticker {
+    border: 0;
+    background: #202020;
+    border-radius: 4px;
+}
+
+.comment-body {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0;
+}
+
+a.comment-vote-minus {
+    color: #696969;
+}
+
+.votepanel {
+    color: #1afef1;
+    font-weight: bold;
+}
+
+a.comment-vote-plus {
+    color: #696969;
+}
+.FrontendComchillcontroller_comment_with_sticker_inner {
+    width: 100%;
+}
+
+.comment-header p {
+    margin: 0;
+}
+
+p.com-date {
+    text-align: right;
+}
+
+.comment-header p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #696969;
+    font-weight: normal;
+}
+
+.sticker-panel {
+    margin: 30px 0;
+}
+
+a.comment-vote-minus {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+}
+
+.votepanel span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+a.comment-vote-plus {
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+}
+.comment-header p {margin: 0;}
+
+.FrontendComchillcontroller_comment_with_sticker_inner {
+    width: 100%;
+}
+
+p.com-date {
+    text-align: right;
+}
+
+.votepanel a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.votepanel span {
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.sticker-panel {
+    margin: 20px 0;
+}
+
+.comment-header p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #696969;
+    font-weight: normal;
+}
+
+.comment-body {
+    margin-top: 30px;
+}
+div#sticker_list_window {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #212121;
+}
+
+div#close_sticker_list {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.sticker_list_inner {
+}

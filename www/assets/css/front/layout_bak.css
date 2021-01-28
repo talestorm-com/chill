@@ -1,0 +1,1417 @@
+body,html {
+    font-size: 13.54pt;
+    font-family: Helvetica Neue,larro-def-webfont-Thin,serif;
+    font-weight: 100;
+    margin: 0;
+    letter-spacing: .09em;
+    padding: 0;
+}
+
+body,body *,html {
+    box-sizing: border-box
+}
+
+.FrontLayoutMainMenuItemsWrapper {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    z-index: 2;
+    line-height: 2em;
+    display: none
+}
+
+.FrontLayoutMainMenuItems {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.FrontLayoutMainMenuItem {
+    box-sizing: border-box;
+    padding: 1em;
+    overflow: hidden
+}
+
+.FrontLayoutPageHeader {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3.8em;
+    top: 0;
+    left: 0;
+    transition: all .3s
+}
+
+.FrontLayoutPageOuter {
+    overflow: hidden
+}
+
+.FrontLayoutHeaderContent {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0 .5em;
+    overflow: hidden
+}
+
+.FrontLayoutHeaderRow {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.FrontLayoutHeaderRow .FrontLayoutHeaderRowCell {
+    width: 30%;
+    max-width: 30%;
+    min-width: 30%;
+    height: 100%;
+    overflow: hidden
+}
+
+.FrontLayoutHeaderRowCell.FrontLayoutHeaderRowCellMenus {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap
+}
+
+.FrontLayoutHeaderMenuButton {
+    box-sizing: border-box;
+    width: 2.8em;
+    height: 3.5em;
+    line-height: 0
+}
+
+.FrontLayoutMainMenu {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+}
+
+.FrontLayoutMainMenuButton {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .3s;
+    height: 100%;
+    width: 100%;
+    line-height: 0;
+    padding: .5em
+}
+
+.FrontLayoutHeaderLogo svg,.FrontLayoutMainMenuButton svg {
+    width: 100%;
+    height: 100%
+}
+
+.FrontLayoutPageOuter {
+    padding-top: 3.8em
+}
+
+.FrontLayoutHeaderMenuButton {
+    min-width: 2.8em;
+    padding-left: .3em
+}
+
+.FrontLayoutHeaderMenuLineMenu {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.FreeSpaceMenuWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%
+}
+
+.FreeSpaceMenuBody,.FreeSpaceMenuItem {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.FreeSpaceMenuBody {
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap
+}
+
+.FreeSpaceMenuItem {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin: 0 .5em
+}
+
+.FrontLayoutHeaderLogo {
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 0;
+    width: 100%;
+    padding: 1em
+}
+
+.FrontLayoutHeaderRow,.FrontLayoutHeaderRow a,.FrontLayoutHeaderRow svg {
+    color: #fff;
+    fill: #fff
+}
+
+.FrontLayoutHeaderRow a {
+    text-decoration: none
+}
+
+.FreeSpaceMenuItem {
+    font-size: .8em;
+    margin-left: 1em
+}
+
+.FreeSpaceMenuBody {
+    padding-left: .155em
+}
+
+
+.FrontLayoutHeaderRowCell.FrontLayoutHeaderRowCellAccount svg {
+    fill: #fff
+}
+
+.fronLayoutAccountIconsWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em
+}
+
+.FrontLayoutAccountIconButtonButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #000
+}
+
+.FrontLayoutAccountIconButtonButton {
+    width: 2em;
+    height: 2em;
+    margin: 0 .7em;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: .2em
+}
+
+.FrontLayoutPageHeader {
+    background: #000000;
+    z-index: 1;
+}
+
+.FrontLayoutAccountIconButtonButton {
+    overflow: visible;
+    position: relative
+}
+
+.FrontLayoutFilledCartMarker {
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 0;
+    border-radius: 50%;
+    display: flex;
+    background: #dc143c;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin-top: -.4em;
+    margin-right: -.4em
+}
+
+.FrontLayoutFilledCartMarkerInner {
+    font-size: .75em
+}
+
+
+.ScrolledTopLayout .FrontLayoutPageHeader {
+    font-size: .85em;
+}
+
+.FrontLayoutPageFooter {
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+    margin-top: 2.5em;
+    background: #e6e6e6;
+    color: #333333;
+}
+
+.FrontLayoutPageFooterInner {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    font-size: .95em;
+}
+
+.FooterMenuWrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.FooterMenuBody {
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.FooterMenuColumn {
+    box-sizing: border-box;
+    padding:  0 .5em;
+}
+
+.FooterMenuCoumnHeader {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.FooterMenuColumnBody {
+    font-size: .95em;
+    line-height: 2.2em;
+}
+
+.FooterMenuColumnBody a {
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+.FooterMenuColumn:nth-last-child(1) {
+    text-align: right;
+}
+
+.FooterSocialBlock {
+    box-sizing: border-box;
+}
+
+.FooterSocialInner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.FooterSocialItem {
+    box-sizing: border-box;
+    width: 30%;
+    max-width: 30%;
+    min-width: 30%;
+    margin-bottom: .75em;
+}
+
+.FooterSocialItemCircle {
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: gray;
+    width: 100%;
+    padding-top: 100%;
+    line-height: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.FooterSocialItemCircle a {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    line-height: 0;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.FooterSubscribeColumn {
+    box-sizing: border-box;
+}
+
+.FooterSubscribeInner {
+    box-sizing: border-box;
+}
+
+.FooterSubscribeRow {
+    box-sizing: border-box;
+}
+
+.FooterSubscribeRow input[type=text] {
+    box-sizing: border-box;
+    height: 2.2em;
+    border: 1px solid #333333;
+    width: 100%;
+    padding: 0 .5em;
+    background: transparent;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.FooterSubscribeButton {
+    color: white;
+    padding: 0 .75em;
+    line-height: 2.2em;
+    background: #808080;
+    margin-top: .5em;
+    cursor: pointer;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.FooterSocialItemCircle {
+    background: #808080;
+}
+
+div#header_main_menu_body_view {
+    padding-top: 2.5em;
+    box-sizing: border-box;
+}
+
+div#header_main_menu_body_view {
+    font-size: 13.54pt;
+    box-sizing: border-box;
+    padding-top: 3.75em;
+    overflow: hidden;
+    background: rgba(0,0,0,.8);
+}
+
+.FrontLayoutMainMenuOpenHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.75em;
+    background: black;
+    overflow: hidden;
+    line-height: 2.75em;
+    padding: .5em;
+}
+
+.FrontLayoutMainMenuOpenHeaderContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.FrontLayoutMainMenuOpenHeaderContentItem {
+    height: 100%;
+}
+
+.FrontLayoutMainMenuOpenHeaderContentItem.MainMenuCloseButton {
+    width: 2.5em;
+    line-height: 0;
+    cursor: pointer;
+    padding: .2em;
+    margin-left: .5em;
+}
+
+.FrontLayoutMainMenuOpenHeaderContentItem.MainMenuCloseButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.FrontLayoutMainMenuOpenHeaderContentItem.MainMenuHeaderLogo svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.FrontLayoutMainMenuOpenHeaderContentItem.MainMenuHeaderLogo {
+    line-height: 0;
+    padding: .33em .5em;
+}
+
+.FrontLayoutMainMenuOpenHeaderContentItem.fronLayoutAccountIconsWrapper svg {
+    fill: white;
+}
+
+.FrontLayoutMainMenuItems {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+body.MainMenuOpenMode {
+    height: 100%;
+    overflow: hidden;
+}
+
+.MainMenuItemL2BodyItems {
+    box-sizing: border-box;
+    padding-left: 1em;
+}
+
+.FrontLayoutMainMenuItemL3 {
+    font-size: .9em;
+}
+
+.MainMenuItemL2HeaderOpenIndicator svg {
+    width: 100%;
+    height: 100%;
+    fill: white!important;
+    stroke: white!important;
+    transform: rotate(-90deg);
+}
+
+.MainMenuItemL2HeaderOpenIndicator {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin-left: .5em;
+}
+
+.MainMenuItemL2BodyItems {
+    padding: 0;
+    padding-left: 1em;
+    font-size: .9em;
+    line-height: 1.75em;
+    overflow:hidden;
+    max-height:0;
+    transition:all .3s;
+}
+
+.MainMenuItemL2Header {
+    cursor: pointer;
+}
+
+.FrontLayoutMainMenuItemL2.MainMenuItemL2Childable.MainMenuItemL2opened .MainMenuItemL2BodyItems {
+    max-height: 100em;
+}
+
+.FrontLayoutMainMenuItemL2.MainMenuItemL2Childable.MainMenuItemL2opened  .MainMenuItemL2HeaderOpenIndicator svg {    
+    transform: rotate(90deg);
+}
+
+div#header_main_menu_body_view,div#header_main_menu_body_view * {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.FrontLayoutMainMenuItems {
+    justify-content: space-around;
+}
+
+
+.ProductSmallTileImage {
+    box-sizing: border-box;
+    width: 100%;
+}
+.ProductSmallTileImage img {
+    width: 100%;
+}
+
+.ProductSmallTileColors {
+    height: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductSmallTileColor {
+    box-sizing: border-box;
+    width: 24%;
+    margin: 0 .5%;
+    height: .33em;    
+    overflow: hidden;
+}
+
+.ProductSmallTileColordisplay {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ProductSmallTileProductName {
+    color: #333333;
+    font-size: 1.175em;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: 1em;
+}
+
+.ProductSmallTileItemInner a {
+    text-decoration: none;
+}
+
+.ProductSmallTilePriceBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductSmallTilePriceRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.ProductSmallTilePriceValue {
+    margin-right: .5em;
+}
+
+.ProductSmallTilePriceRow {
+    margin-right: 2em;
+    color: #333333;
+}
+
+.ProductSmallTileButton {
+    background: #f15a24;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 15%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.ProductSmallTilePriceValue {
+    font-weight: bold;
+}
+
+.ProductSmallTileButton {
+    padding: .35em;
+    box-sizing: border-box;
+}
+
+.ProductSmallTileButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.ProductSmallTileItemOuter {
+    box-sizing: border-box;
+}
+
+
+.ProductSmallTileItemOuter {
+    position: relative;
+}
+
+.ProductSmallTileRedLabelContainer {
+    box-sizing: border-box;
+    font-size: 2em;
+    line-height: 2em;
+    background: #f15a24;
+    width: 2em;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    top: -1em;
+    right: .1em;
+}
+
+.ProductSmallTileRedLabel {
+    font-size: .75em;
+    font-weight: 200;
+}
+
+.ProductSmallTileItemInner.ProductSmallTileItemInnerRedPrice .ProductSmallTilePriceRow {
+    color: #f15a24;
+}
+
+.ProductSmallTileItemInner.ProductSmallTileItemInnerRedPrice .ProductSmallTilePriceRow.ProductSmallTilePriceOld {
+    color: #999999;
+}
+
+.ProductSmallTileItemInner.ProductSmallTileItemInnerRedPrice .ProductSmallTilePriceRow.ProductSmallTilePriceOld .ProductSmallTilePriceValue {
+    font-size: .85em;
+    text-decoration: line-through;
+    text-decoration-color: #f15a24;
+    font-weight: 400;
+}
+.ProductSmallTileImage img {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+    -o-user-drag: none;
+    -ms-user-drag: none;
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+}
+
+
+.CatalogPageProductList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CatalogPageProductList .ProductSmallTileItemOuter {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 24.3%;
+}
+
+
+.CatalogPageOuter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CatalogPageSideblock {
+    box-sizing: border-box;
+}
+
+.CatalogPageSideblock.CatalogPageLeft {
+    min-width: 20%;
+    width: 20%;
+    max-width: 20%;
+    will-change: top;
+    transform: translateZ(1px);
+}
+
+.CatalogPageSideblock.CatalogPageRight {
+    width: 100%;
+}
+
+.FrontLayoutLeftSideMenu {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.1em;
+    padding-top: 1.75em;
+}
+
+.FrontLayoutLeftSideMenu a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.FrontLayoutLeftSideMenuItemHeader {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+.LeftSideMenuItemL2HeaderOpenIndicator {
+    width: .9em;
+    height: .9em;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: .5em;
+}
+
+.LeftSideMenuItemL2HeaderOpenIndicator svg {
+    width: 100%;
+    height: 100%;
+    stroke: #333333;
+    transform: rotate(90deg);
+    transition: all .2s;
+}
+
+.LeftSideMenuItemL2BodyItems {
+    box-sizing: border-box;
+    padding-left: 1em;
+    font-size: .95em;
+}
+
+
+
+.CatalogPageLoadMarker {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+.CatalogPageLoadMarkerInner {
+    margin: 0 auto;
+    width: 3em;
+    display:none;
+}
+
+.CatalogPageLoadMarkerInner .CommonTemplatePreloader {
+    width:100%;
+}
+
+.CatalogPageLoadMarkerInner .CommonTemplatePreloader svg {
+    width: 100%;
+    height: 100%;
+}
+
+.CatalogPageViewSwitchButton {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: .25em;
+    cursor: pointer;
+}
+.CatalogPageViewSwitchButton  svg{
+    width:100%;
+    height:100%;
+    fill:#b3b3b3    
+}
+
+
+.CatalogPageViewSwitchButton {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: .25em;
+    cursor: pointer;
+}
+.CatalogPageViewSwitchButton  svg{
+    width:100%;
+    height:100%;
+    fill:#b3b3b3
+
+}
+
+.CatalogPageViewSwitch {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CatalogPageTopBlock {
+    box-sizing: border-box;
+    padding: .25em .5em .25em 0;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.CatalogPageTopBlock {}
+
+.CatalogPageBreadcrumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .9em;
+}
+
+.frontLayoutBreadcrumbBlock {
+    color: #333333;
+}
+
+.frontLayoutBreadcrumbBlock a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.frontLayoutBreadcrumbBlock:after {
+    content: ' - ';
+    margin: 0 .5em;
+}
+
+.frontLayoutBreadcrumbBlock:nth-last-child(1):after {
+    display: none;
+}
+
+.CatalogPageViewSwitchButton {
+    margin-right: .5em;
+}
+
+.CatalogPageViewSwitchButton.catalogPageViewSwitchActive svg {
+    fill: black;
+}
+
+.CatalogPageViewSwitchButton.CatalogPageViewSwitchButtonSmall svg {
+    fill: black;
+}
+
+.CatalogViewLarge .CatalogPageViewSwitchButton.CatalogPageViewSwitchButtonSmall svg {
+    fill:#b3b3b3;
+}
+
+.CatalogPageViewSwitchButton.CatalogPageViewSwitchButtonLarge svg {
+    fill:#b3b3b3;
+}
+
+.CatalogViewLarge .CatalogPageViewSwitchButton.CatalogPageViewSwitchButtonLarge svg {
+    fill: black;
+}
+
+
+.CatalogViewLarge .ProductSmallTileItemOuter.ProductTileItem {
+    width: 49.2%;
+}
+
+
+.ProductPageOuter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.ProductPageSideblock.ProductPageLeft {
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.ProdycrPageSideblock.ProductPageRight {
+    width: 100%;
+}
+
+.ProductPageTopBlock {
+    box-sizing: border-box;
+    padding-top: 1.75em;
+}
+
+.ProductPageBreadcrumbs {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: .95em;
+}
+
+.ProductPageProduct {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.ProductDefaultContent {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.ProductDefaultContentSlider {
+    width: 100%;
+    min-height: 1em;
+}
+
+.ProductDefaultContentInformationOuter {
+    width: 25%;
+    min-width: 25%;
+    max-width: 25%;
+}
+
+.ProductDefaultContentInformation {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+}
+
+.ProductDefaultContentName {
+    font-weight: bold;
+    font-size: .95em;
+    margin-bottom: .25em;
+}
+
+.ProductDefaultContentArtFav {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: .75em;
+    border-bottom: 1px solid #bebebe;
+    margin-bottom: .75em;
+}
+
+.ProductDefaultContentArt {
+    width: 100%;
+}
+
+.ProductDefaultContentFav {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    padding: .25em;
+    cursor: pointer;
+}
+
+.ProductDefaultContentFav svg {
+    width: 100%;
+    height: 100%;
+    fill: #bebebe;
+}
+
+.ProductDefaultContentColorListHeader {
+    margin-bottom: .25em;
+}
+
+.ProductDefaultContentColorItem {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ProductDefaultContentColorDisplay {
+    box-sizing: border-box;
+    width: 3.5em;
+    height: 3.5em;
+    overflow: hidden;
+    margin-right: .75em;
+}
+
+.ProductDefaultContentColorComposite {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ProductDefaultContentColorDisplayImage {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ProductDefaultContentColorDisplayImage img {
+    width: 100%;
+}
+
+
+.ProductDefaultContentColorDisplaySimple {
+    width: 100%;
+    height: 100%;
+}
+.ProductDefaultContentColorComposite .ProductDefaultContentColorDisplaySimple {
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+.ProductDefaultContentColorItem {
+    margin-top: .25em;
+    margin-bottom: .5em;
+    cursor: pointer;
+}
+
+.ProductDefaultContentBasketButtonBlock {
+    margin-top: .5em;
+    box-sizing: border-box;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.ProductDefaultContentBasketButtonBlockInner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductDefaultContentBasketButtonBlockButton {
+    padding: .25em .5em;
+    cursor: pointer;
+    background: #f15a24;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ProductDefaultContentBacketButtonBlockButtonImage {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    min-width: 2em;
+    max-width: 2em;
+    line-height: 0;
+    pointer-events: none;
+    padding: .25em;
+    margin-right: .5em;
+}
+
+.ProductDefaultContentBacketButtonBlockButtonImage svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ProductDefaultContentBacketButtonBlockButtonText {
+    width: 100%;
+}
+
+.ProductDefaultContentBasketButtonBlockButton {
+    align-items: center;
+    padding-top: .125em;
+    padding-bottom: .125em;
+    margin-left: 1.75em;
+}
+
+.ProductDefaultContentBasketButtonBlockPriceOldValue {}
+
+.ProductDefaultContentBasketButtonBlockPrice {
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.ProductDefaultContentBasketButtonBlockPriceOldValue {
+    color: gray;
+    /* font-size: .95em; */
+}
+
+.ProductDefaultContentBasketButtonBlockPriceOldValue span.ProductDefaultContentBasketPriceRurSign {
+    visibility: hidden;
+}
+
+.ProductDefaultContentBasketButtonBlockPriceOldValue span.ProductDefaultContentBasketPriceValue {
+    text-decoration: line-through;
+}
+
+.ProductDefaultContentBasketButtonBlockPriceOldValue span.ProductDefaultContentBasketPriceValue {
+    font-size: .9em;
+}
+
+
+.ProductDefaultContentBasketButtonBlockPriceValue.ProductDefaultContentPriceHilight span.ProductDefaultContentBasketPriceValue {
+    color: #f15a24;
+}
+
+
+.ProductDefaultContentBasketButtonBlockPriceValue {
+    font-size: 1.5em;
+}
+
+
+.ProductDefaultContentDescriptionHeader {
+    font-weight: bold;
+    font-size: .9em;
+    margin-top: .5em;
+}
+
+.ProductDefaultContentDescriptionBody p {
+    margin: 0;
+}
+
+.ProductDefaultContentDescription {
+    margin-bottom: .75em;
+    padding-bottom: .75em;
+    border-bottom: 1px solid #bebebe;
+}
+
+.ProductDefaultContentShare {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ProductDefaultContentShareInner {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ProductDefaultContentShareVariants {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ProductDefaultContentShareVariant {
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    line-height: 0;
+    cursor: pointer;
+    margin: 0 .125em;
+}
+
+.ProductDefaultContentShareVariant a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    line-height: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ProductDefaultContentShareVariant svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ProductDefaultContentInformationOuter {
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+}
+
+span.ProductDefaultContentPreorderChevron {
+    display: inline-block;
+    width: .9em;
+    height: .9em;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* padding-top: .25em; */
+    /* padding-bottom: .25em; */
+    margin-left: -0.25em;
+}
+
+span.ProductDefaultContentPreorderChevron svg {
+    width: 100%;
+    height: 100%;
+    stroke: #333333;
+    transform: rotate(180deg) scaleY(.7);
+}
+
+.ProductDefaultContentPreorderBlockInner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ProductDefaultContentPreorderBlockButton {
+    background: #8ccf3f;
+    color: white;
+    line-height: 2.2em;
+    padding: 0 1.5em;
+    cursor: pointer;
+}
+
+.ProductDefaultContentPreorderBlock {
+    padding-bottom: .75em;
+    margin-bottom: .75em;
+    border-bottom: 1px solid #bebebe;
+}
+
+.ProductDefaultContentBasketButtonBlock {
+    margin-top: .75em;
+    padding-top: .75em;
+    border-top: 1px solid #bebebe;
+    margin-bottom: .75em;
+    padding-bottom: .75em;
+    border-bottom: 1px solid #bebebe;
+}
+
+.ProductDefaultContentAvailablity {
+    margin-bottom: .75em;
+    padding-bottom: .75em;
+    border-bottom: 1px solid #bebebe;
+}
+
+.ProductDefaultContentAvailablityHeaderChevron {
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -.25em;
+}
+
+.ProductDefaultContentAvailablityHeaderChevron svg {
+    width: 100%;
+    height: 100%;
+    stroke: #333333;
+    transform: rotate(-180deg) scaleY(.6);
+}
+
+.ProductDefaultContentSizesBlock {
+    margin-top: .75em;
+    padding-top: .75em;
+    border-top: 1px solid #bebebe;
+    margin-bottom: .75em;
+}
+
+
+.ProductDefaultContentSizesBlockInner {
+    font-size: .95em;
+}
+
+.ProductDefaultContentSizeHeader {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ProductDefaultContentSizeHeaderItem {
+    padding-bottom: .25em;
+    margin-bottom: .25em;
+    border-bottom: 1px solid #bebebe;
+    display: inline;
+}
+
+.ProductDefaultContentSizeHeaderItem:nth-last-child(1) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.ProductDefaultContentSizeList {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.ProductDefaultContentCompositeSizeRow {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+.ProductDefaultContentSizeColumn {cursor: pointer;}
+
+.ProductDefaultContentSizeCell {
+    /* min-width: 2em; */
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+
+.ProductDefaultContentSizeColumn {
+    width: 100%;
+    min-width: 2em;
+    max-width: 2.5em;
+}
+
+span.ProductDefaultContentSizeValue {
+    display: inline-block;
+    height: 100%;
+    border-bottom: 1px solid black;
+    min-width: 70%;
+}
+
+.ProductDefaultContentSimpleSizeRow {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.ProductDefaultContentSizeColumn .ProductDefaultContentSizeCell:nth-last-child(1) span.ProductDefaultContentSizeValue {
+    border-bottom: none;
+}
+
+.ProductDefaultContentSizeColumn .ProductDefaultContentSizeCell:nth-child(1) span.ProductDefaultContentSizeValue{
+    border-bottom: 1px solid black!important
+}
+
+.FreeSpaceMenuBody {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.FrontLayoutPageHeader {
+    background: white;
+}
+
+.FrontLayoutHeaderRow, .FrontLayoutHeaderRow a, .FrontLayoutHeaderRow svg {
+    color: black;
+    fill: black;
+}
+
+.FrontLayoutHeaderRowCell.FrontLayoutHeaderRowCellAccount svg {
+    fill: black;
+}
+
+.FrontLayoutHeaderContent {
+    font-size: 13.54pt;
+}
+

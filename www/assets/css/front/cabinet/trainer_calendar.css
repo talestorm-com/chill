@@ -1,0 +1,350 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 дек. 2019 г., 19:56:59
+    Author     : eve
+*/
+
+
+.FrontendCabinetcontrollerAvatarContainer {
+    box-sizing: border-box;
+    margin: .25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontendCabinetcontrollerAvatarinner {
+    box-sizing: border-box;
+    position: relative;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid silver;
+    /* padding: .25em; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.FrontendCabinetcontrollerAvatarinner input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    opacity: 0;
+}
+
+.FrontendCabinetcontrollerAvatarinner img {
+    max-width: 100%;
+}
+
+.FrontendCabinetcontroller_calendar_inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.FrontendCabinetcontrollerDayOfWeek {
+    box-sizing: border-box;
+    width: 20em;
+    max-width: 20em;
+    min-width: 20em;
+    margin: .25em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeader {
+    white-space: nowrap;
+    position: relative;
+    align-self: flex-start;
+    justify-self: flex-start;
+    line-height: 3.5em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background: red;
+    padding: 0 .5em;
+    width: 100%;
+    justify-self: flex-start;
+    min-height: 3.5em;
+    max-height: 3.5em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderText {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButton {
+    box-sizing: border-box;
+    width: 3.5em;
+    height: 3.5em;
+    cursor: pointer;
+    line-height: 0;
+    padding: .25em;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    max-width: 3.5em;
+    min-width: 3.5em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButton svg {
+    width: 100%;
+    height: 100%;
+    fill: dimgray;
+}
+
+.FrontendCabinetcontroller-add-inside {
+    box-sizing: border-box;
+    align-self: flex-end;
+    justify-self: flex-end;
+    border-top: 1px solid dimgray;
+    background: silver;
+    width: 100%;
+    height: 2.5em;
+    min-height: 2.5em;
+    max-height: 2.5em;
+}
+
+.FrontendCabinetcontroller-add-inner {
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontendCabinetcontroller-add-inner-icon {
+    width: 2.5em;
+    height: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    line-height: 0;
+    padding: .5em;
+}
+
+.FrontendCabinetcontroller-add-inner-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: dimgray;
+}
+
+.FrontendCabinetcontroller-add-inner-icon-w {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+
+.FrontendCabinetcontroller-add-inner a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekBody {
+    justify-self: stretch;
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollerDayOfWeekBodyInner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.FrontendCabinetcontroller-no-items {
+    padding: .25em;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.FrontendCabinetcontroller-no-items {
+    height: 100%;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButton {
+    background: transparent;
+    line-height: 0;
+    padding: .5em;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButtonCommand {
+    box-sizing: border-box;
+    padding: .25em;
+    background: rgba(255,255,255,.3);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.FrontendCabinetcontrollerDayOfWeekHeaderButtonCommand svg {
+    fill: white;
+}
+
+.FrontendCabinetcontroller-add-inner-icon {
+    padding: .25em;
+}
+
+.FrontendCabinetcontroller-add-inner-icon-w {
+    padding: .25em;
+    background: rgba(255,255,255,.3);
+    border-radius: 50%;
+}
+
+.FrontendCabinetcontroller-add-inner-icon-w svg {
+    fill: white;
+}
+
+.FrontendCabinetcontroller-add-inside {
+    background: #848181;
+}
+
+.FrontendCabinetcontroller-one-datum-item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .25em 0;
+}
+
+.FrontendCabinetcontroller-one-datum-inside {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontendCabinetcontrollertime_start {
+    width: 100%;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollertime_end {
+    width: 100%;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollerremove {
+    width: 2.5em;
+    min-width: 2.5em;
+    height: 100%;
+}
+
+.FrontendCabinetcontrollertime_start {}
+
+.FrontendCabinetcontroller-one-datum-inside input[type=text] {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 .25em;
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid silver;
+    background: transparent;
+    box-shadow:none!important;
+    outline:none!important;
+    border-raduis:0;
+}
+
+.FrontendCabinetcontrollertime_end input[type=text] {
+    border-left: none;
+    border: 1px solid silver;
+    box-shadow: none;
+    outline: none;
+    border-left: none;
+}
+
+.FrontendCabinetcontrollerremove {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-left: none;
+    line-height: 0;
+}
+
+.FrontendCabinetcontrollerRemoveButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.FrontendCabinetcontrollerRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.FrontendCabinetcontroller-one-datum-item:nth-child(even) {
+    background: white;
+}
+
+.FrontendCabinetcontroller-one-datum-inside input[type=text] {
+    text-align: center;
+}
+
+.FrontendCabinetcontroller_loader_block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+}
+.FrontendCabinetcontrollerraspison_outer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;     
+}
+.FrontendCabinetcontrollerDayOfWeek {
+    margin-bottom: 2em;
+}

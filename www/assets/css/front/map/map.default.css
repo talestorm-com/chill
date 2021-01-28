@@ -1,0 +1,343 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12.08.2019, 10:19:49
+    Author     : studio2
+*/
+
+.FrontendMapcontrollerContainer {
+    box-sizing: border-box;
+}
+
+.FrontendMapcontrollerContainerInner {
+    box-sizing: border-box;
+}
+
+.FrontendMapcontrollerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: .5em;
+}
+
+.FrontendMapcontrollerHeaderItem {
+    box-sizing: border-box;
+    text-align: right;
+    width: 50%;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.FrontendMapcontrollerHeaderItem:nth-child(2) {
+    text-align: left;
+    padding-right: 0;
+}
+
+.FrontendMapcontrollerHeaderItem.FrontendMapcontrollerHeaderItemactive a {
+    display: none;
+}
+
+.FrontendMapcontrollerHeaderItem.FrontendMapcontrollerHeaderItemactive .FrontendMapcontrollerHeaderItemInnerLink {
+    display: block;
+}
+
+.FrontendMapcontrollerHeaderItemInnerLink {
+    display: none;
+    cursor:pointer;
+}
+
+.FrontendMapcontrollerHeaderItem {
+    line-height: 2em;
+}
+
+.FrontendMapcontrollerHeaderItem a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color:inherit;
+}
+
+.FrontendMapcontrollerHeaderItem:nth-child(1) a,
+.FrontendMapcontrollerHeaderItem:nth-child(1) .FrontendMapcontrollerHeaderItemInnerLink {
+    padding-right: 2.5em;
+}
+
+.FrontendMapcontrollerHeaderItem:nth-child(2) a,
+.FrontendMapcontrollerHeaderItem:nth-child(2) .FrontendMapcontrollerHeaderItemInnerLink {
+    padding-left: 2.5em;
+}
+
+.FrontendMapcontrollerMap {
+    height: 30em;
+}
+
+
+.one_object_card.one_object_card_on_map {
+    box-sizing: border-box;
+}
+
+.one_object_card.one_object_card_on_map h4 {
+    margin-bottom: 0;
+}
+
+.one_object_card.one_object_card_on_map p {
+    margin: 0;
+}
+
+.FrontendMapcontrollerShopList {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.FrontendMapcontrollerShopList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.FrontendMapcontrolleroffline_shop_item {
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+    padding: .5em;
+    margin-right: .75em;
+    margin-bottom: .75em;
+}
+
+.FrontendMapcontrolleroffline_shop_item_content {
+    box-sizing: border-box;
+}
+
+.FrontendMapcontrolleroffline_shop_itemName {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.FrontendMapcontrolleroffline_shop_itemAddress {
+    font-size: .9em;
+    margin-bottom: .5em;
+}
+
+.FrontendMapcontrolleroffline_shop_itemPhone,.FrontendMapcontrolleroffline_shop_itemWorks {
+    font-size: .85em;
+    color: black;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    letter-spacing: .07em;
+}
+
+.FrontendMapcontrolleroffline_shop_itemPhone a {
+    color: inherit;
+    font-size: .95em;
+}
+
+
+p.one_object_card_phone a {
+    color: black;
+}
+
+
+
+.FrontendMapcontrollerFilter {
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 1.25em;
+}
+
+.FrontendMapcontrollerFilterInner {box-sizing: border-box;display: flex;flex-direction: row;justify-content: center;}
+
+.FrontendMapcontrollerFilterInner select {
+    box-sizing: border-box;
+    height: 2em;
+    line-height: 2em;
+    min-width: 15em;
+    border: none;
+    outline: 1px solid silver;
+    outline-offset: 0;
+    box-shadow: none;
+    background: transparent;
+    background: rgba(255,255,255,0);
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 0 .5em;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.FrontendMapcontrollerSelectWrapper {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.FrontendMapcontrollerSelectWrapper svg {
+    width: 100%;
+    height: 100%;
+    fill: dimgray;
+}
+
+.FrontendMapcontrollerSelectPimp {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    box-sizing: border-box;
+    padding: .5em;
+    line-height: 0;
+}
+
+.FrontendMapcontrollerSelectPimp svg {
+    transform: rotate(90deg);
+}
+
+.FrontendMapcontrollerFilterInner label {
+    line-height: 2em;
+    margin-right: 1.25em;
+}
+
+.FrontendMapcontrolleroffline_shop_itemTown {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: .25em;
+}
+
+.FrontendMapcontrolleroffline_shop_itemOnMap a {
+    font-size: .9em;
+    color: #f15a24;
+}
+
+
+
+.FrontendMapcontrolleroffline_shop_item {
+    max-width: 32%;
+    margin-right: .6%;
+    margin-left: .6%;
+}
+
+.FrontendMapcontrolleroffline_shop_item {
+    width: 32%;
+    min-width: 32%;
+}
+
+
+@media only screen and (max-width:735px){
+    .DeviceModeDevice .FrontendMapcontrollerHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .DeviceModeDevice  .FrontendMapcontrollerHeaderItem {
+        order: 1;
+        width: 100%;
+        padding: 0!important;
+        text-align: center;
+        line-height: normal;
+        min-height: 2.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .DeviceModeDevice .FrontendMapcontrollerHeaderItem.FrontendMapcontrollerHeaderItemactive {
+        order: 0;
+    }
+
+    .DeviceModeDevice  .FrontendMapcontrollerHeaderItem:nth-child(1) a, 
+    .DeviceModeDevice  .FrontendMapcontrollerHeaderItem:nth-child(1) .FrontendMapcontrollerHeaderItemInnerLink,
+    .DeviceModeDevice  .FrontendMapcontrollerHeaderItem:nth-child(2) a, 
+    .DeviceModeDevice   .FrontendMapcontrollerHeaderItem:nth-child(2) .FrontendMapcontrollerHeaderItemInnerLink {
+        padding: 0!important;
+        text-align:center;    
+    }
+
+    .DeviceModeDevice  .FrontendMapcontrollerShopList {
+        margin: 0;
+        padding:.5em;
+        padding-top: 1em;
+    }
+
+    .DeviceModeDevice  .FrontendMapcontrolleroffline_shop_item {
+        margin: 0;
+        margin-bottom: 1em;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .DeviceModeDevice  .FrontendMapcontrollerMap {
+        max-height: 70%;
+    }
+
+
+    .FrontendMapcontrollerFilterInner {
+        flex-direction: column;
+        padding: 0 .5em;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .FrontendMapcontrollerSelectWrapper {
+        width: 100%;
+    }
+
+    .FrontendMapcontrollerFilterInner select {
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (min-width:736px){
+    .DeviceModeDevice  .FrontendMapcontrolleroffline_shop_item {
+        margin: 0;
+        margin-bottom: 1em;
+        width: 49.5%;
+        min-width: 49.5%;
+        max-width: 49.5%;
+        margin-right:1%;
+    }
+    .DeviceModeDevice .FrontendMapcontrolleroffline_shop_item:nth-child(2n){
+        margin-right:0;
+    }
+    .DeviceModeDevice .FrontendMapcontrollerShopList {
+        padding: 0 .5em;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .DeviceModeDevice  .FrontendMapcontrolleroffline_shop_item,
+    .DeviceModeDevice .FrontendMapcontrolleroffline_shop_item:nth-child(2n){
+        margin: 0;
+        margin-bottom: 1em;
+        width: 32.5%;
+        min-width: 32.5%;
+        max-width: 32.5%;
+        margin-right:1.25%;
+    }
+    .DeviceModeDevice .FrontendMapcontrolleroffline_shop_item:nth-child(3n){
+        margin-right:0;
+    }
+    .DeviceModeDevice .FrontendMapcontrollerShopList {
+        padding: 0 .75em;
+    }
+}
+
+
+
+
+

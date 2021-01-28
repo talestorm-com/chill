@@ -1,0 +1,202 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31.07.2019, 12:06:05
+    Author     : studio2
+*/
+
+
+.GalleryRenderer.GalleryRenderer-default {
+    box-sizing: border-box;
+    margin: 1em auto;    
+}
+
+.GalleryRendererInner {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.GalleryRendererHeader {
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+.GalleryRendererContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.GalleryRendererItem {
+    width: 49.2%;
+    max-width: 49.2%;
+    min-width: 49.2%;
+    box-sizing: border-box;
+    margin: 0 .4%;
+    margin-bottom: 1em;
+}
+
+.GalleryRendererItemInner {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+.GalleryRendererItemHeader {
+    font-size: 1.1em;
+    margin-bottom: .5em;
+}
+
+.GalleryRendererItemHeader a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.GalleryRendererItemImage {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.GalleryRendererItemImage img {
+    width: 100%;
+}
+
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererItemHeader {
+    font-size: 1.9em;
+    margin-bottom: .25em;
+    letter-spacing: .1em;
+}
+.GalleryRenderer.GalleryRenderer-default {
+    margin-top: 1.75em;
+}
+
+
+
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererContent {
+    flex-wrap: nowrap;
+    overflow: visible;
+    justify-content: flex-start;
+}
+
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererItem {             
+    width: 18.64vw;
+    min-width: 18.64vw;
+    max-width: 18.64vw;
+    margin: 0 1.7vw 0 0;        
+}
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererItem:nth-last-child(1) {
+    margin-right: 0;
+}
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererContent {
+    justify-content: center;
+}
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererContent {
+    min-width: 100%;
+}
+
+.GalleryRendererContentFrame {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: visible;
+}
+
+.GalleryRendererHeader {
+    position: relative;
+}
+
+.GalleryRendererHeaderControls {
+    position: absolute;
+    top: 0;
+    right: 5em;
+    height: 150%;
+    width: 10em;
+}
+
+.GalleryRendererHeaderButton svg{
+    width:100%;
+    height:100%;
+    stroke:#333333; 
+}
+.GalleryRendererHeaderButton {
+    box-sizing: border-box;
+    height:100%;
+    width: 2.5em;
+    cursor: pointer;
+}
+
+.GalleryRendererHeaderControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.GalleryRendererHeaderButton.GalleryRendererHeaderButtonRight svg {
+    transform: rotateY(180deg);
+}
+
+
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererHeader {
+    font-size: 1.9em;
+    margin-bottom: .45em;
+    letter-spacing: .125em;
+}
+
+.GalleryRenderer.GalleryRenderer-default  .GalleryRendererHeaderControls {
+    font-size:.3em;height:75%;
+    right:2em;
+}
+
+.GalleryRenderer.GalleryRenderer-default  .GalleryRendererHeaderButton.GalleryRendererHeaderButtonLeft {
+    margin-right:1.5em;
+}
+
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererHeader {
+    margin-bottom: .9em;
+    margin-top: 1em;
+}
+
+
+
+.GalleryRenderer.GalleryRenderer-default .GalleryRendererHeader {
+    min-height: 1.5em;
+    margin: 0;
+}
+
+
+.GalleryRendererWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+.GalleryRendererWrapper,.GalleryRendererWrapper *{
+    user-drag:none;
+    -o-user-drag:none;
+    -ms-user-drag:none;
+    -moz-user-drag:none;
+    -khtml-user-drag:none;
+    -webkit-user-drag:none;
+    user-select:none;
+    -o-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;    
+}
+
+.GalleryRendererItem {
+    cursor: pointer;
+}
+
+.GalleryRendererItemTitle {
+    margin-top: .75em;
+}
+
+

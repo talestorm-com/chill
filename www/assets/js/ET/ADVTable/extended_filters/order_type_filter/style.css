@@ -1,0 +1,36 @@
+.ADVTableSOBooleanon {
+    border: 1px solid white;
+    background: #00acc8;
+    outline: 1px solid #00acc8!important;
+}
+
+.ADVTableFilterBoolLayoutInputWrapper {
+    font-size: .95em;
+}
+
+.ADVTableFilterBoolLayoutInputWrapper>div {
+    box-sizing: border-box;
+}
+
+.ADVTableSOBooleanoff {
+    outline: 1px solid crimson!important;
+}
+
+.ADVTableFilterContainer.ADVTableFilterContainerTextInput.ADVTableFilterContainerSelectInput {
+    box-sizing: border-box;
+    padding: 0;
+    border-top: 1px solid silver;
+}
+
+.ADVTableFilterContainer.ADVTableFilterContainerTextInput.ADVTableFilterContainerSelectInput select {
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    color: #00acc8;
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding-left: .3em;
+    outline: none;
+    box-shadow: none;
+    width:100%;
+}
