@@ -1,0 +1,19 @@
+<div class="{{getCssClass}}OneImageOuter EFODraggable {{getCssClass}}ImageMarker{{uid}} {{#removed}}{{getCssClass}}ImageRemoved{{/removed}}" data-efodragtype="draggable_image_{{instance_id}}" data-image="{{uid}}" data-id="{{uid}}">
+    <div class="{{getCssClass}}OneImageInner">
+        <div class="{{getCssClass}}OneImageImage">
+            {{#temp}}
+            <img src="{{src}}" />
+            {{/temp}}
+            {{^temp}}
+            <img src="{{create_image_url}}" />
+            {{/temp}}
+            <div class="{{getCssClass}}ImageRemovedNote">
+                <div class="{{getCssClass}}ImageRemovedNoteInner">
+                    Изображение отмечено для удаления
+                </div>
+            </div>
+        </div>        
+        {{>image_control_panel}}
+    </div>
+    {{>droptarget}}
+</div>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />            
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="alias" filters="Strip,Trim,NEString,DefaultNull" />            
+            <property in="cost" filters="Float,Default0" />            
+            <property in="active" filters="Boolean,DefaultTrue" />            
+            <property in="html_mode" filters="Boolean,DefaultTrue" />            
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="default_image" filters="Trim,NEString,DefaultNull" />                   
+            <property in="properties" filters="NEArray,DefaultNull" />                
+                       
+        </export>
+    </node> 
+    <item>
+        <import> 
+            <property in="dummy" filters="IntMore0,DefaultNull" />
+        </import>
+        <export>            
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="uid" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />          
+            <property in="video" filters="Strip,Trim,NEString,DefaultNull" />            
+            <property in="sort" filters="Int,Default0" />
+            <property in="html_mode" filters="Boolean,DefaultTrue" />
+            <property in="info" filters="Trim,NEString,DefaultNull" />                    
+            <property in="image_removed" filters="Boolean,DefaultFalse" />
+            <property in="convert" filters="Boolean,DefaultTrue" />
+            <property in="image_field" filters="JQHTMLNode,DefaultNull" />
+            <property in="video_field" filters="JQHTMLNode,DefaultNull" />
+        </export>
+    </item>    
+    <publisher>
+        <import> 
+            <property in="dummy" filters="IntMore0,DefaultNull" />
+        </import>
+        <export>            
+            <property in="create_message" filters="Boolean,DefaultFalse" />
+            <property in="create_message_draft" filters="Boolean,DefaultFalse" />
+            <property in="create_message_keep" filters="Boolean,DefaultFalse" />                      
+        </export>
+    </publisher> 
+</root>

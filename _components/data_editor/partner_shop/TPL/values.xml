@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />                  
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="address" filters="Strip,Trim,NEString,DefaultNull" />            
+            <property in="lat" filters="Float,DefaultNull" />                        
+            <property in="lon" filters="Float,DefaultNull" />                        
+            <property in="enabled" filters="Boolean,DefaultTrue" />                  
+            <property in="email" filters="Strip,Trim,NEString,EmailMatch,DefaultNull" />
+            <property in="phone" filters="Strip,Trim,NEString,PhoneMatch,DefaultNull" />                                   
+            <property in="phone_alter" filters="Strip,Trim,NEString,PhoneMatch,DefaultNull" />                                   
+            <property in="works" filters="Strip,Trim,NEString,DefaultNull" />                                   
+            <property in="town" filters="Strip,Trim,NEString" />
+        </export>
+    </node>    
+</root>

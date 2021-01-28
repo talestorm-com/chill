@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="alias" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="title" filters="Strip,Trim,NEString" />
+            <property in="info" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="loader" filters="Strip,Trim,NEString" />            
+            <property in="template" filters="Strip,Trim,NEString" />     
+            <property in="visible" filters="Boolean,DefaultTrue" />     
+            <property in="crop" filters="Boolean,DefaultTrue" />                    
+            <property in="crop_fill" filters="Boolean,DefaultFalse" />            
+            <property in="crop" filters="Boolean,DefaultTrue" />        
+            <property in="show_header" filters="Boolean,DefaultTrue" />   
+            <property in="ignore_product_visibility" filters="Boolean,DefaultFalse" />   
+            <property in="ignore_catalog_visibility" filters="Boolean,DefaultFalse" />                    
+            <property in="background" filters="Strip,Trim,NEString,DefaultNull" />      
+            <property in="css_class" filters="Strip,Trim,NEString,DefaultEmptyString" />      
+            <property in="properties" filters="NEArray,DefaultNull" />              
+        </export>
+    </node>    
+    <catalog>
+        <import></import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="sort" filters="Int,Default0" />
+            <property in="override" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="image_id" filters="Strip,Trim,NEString,DefaultNull" />
+        </export>
+    </catalog>
+</root>

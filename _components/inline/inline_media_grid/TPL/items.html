@@ -1,0 +1,17 @@
+{{#items}}
+<div class="{{getCssClass}}-grid-node EFODropTarget" data-position="{{index}}" data-efodroptypes="ctSEASON">
+    <div class="{{getCssClass}}-grid-node-content" >
+        <div class="{{getCssClass}}-grid-index-display" data-command="clean_cell" data-position="{{index}}">{{display_grid_index}}</div>
+        {{#empty}}
+        {{/empty}}
+        {{^empty}}
+        {{#video_data}}
+        <div class="{{getCssClass}}-video-content-item">
+            <img src="{{get_item_image_url}}" />
+            <div class="{{getCssClass}}-item-name"><div class="{{getCssClass}}-item-name-content">{{name}}</div></div>
+        </div>
+        {{/video_data}}
+        {{/empty}}
+    </div>    
+</div>
+{{/items}}

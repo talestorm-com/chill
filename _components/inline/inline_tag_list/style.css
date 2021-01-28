@@ -1,0 +1,172 @@
+.InlineInline_tag_listForm {
+    box-sizing: border-box;
+    background: whitesmoke;
+    border: 1px solid dimgray;
+}
+
+.InlineInline_tag_listFormInner {
+    box-sizing: border-box;
+}
+
+.InlineInline_tag_listFromHeader {
+    box-sizing: border-box;
+    height: 2.5em;
+    line-height: 2.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 .5em;
+    background: dimgray;
+}
+
+.InlineInline_tag_listFromHeaderText {
+    color: white;
+    font-size: 1.2em;
+}
+
+.InlineInline_tag_listFormHeaderButton {
+    box-sizing: border-box;
+    width: 2.25em;
+    height: 2.25em;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.InlineInline_tag_listFormHeaderButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.InlineInline_tag_listFormList {
+    min-height: 2em;
+    padding: .25em;
+    box-sizing: border-box;
+}
+
+.InlineInline_tag_listFormListInner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.InlineInline_tag_listTaglistTagWrapper {
+    box-sizing: border-box;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: .25em;
+    border: 1px solid dimgray;
+    padding: 0;
+    background: white;
+}
+
+.InlineInline_tag_listTagListTagInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.InlineInline_tag_listTagListTagText {
+    height: 100%;
+    padding: 0 .5em;
+    font-size: 1.125em;
+}
+
+.InlineInline_tag_listTagListTagRemove {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    padding: .5em;
+}
+
+.InlineInline_tag_listTagListTagRemove svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.InlineInline_tag_listTaglistTagWrapper {
+    box-sizing: border-box;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin: .25em;
+    border: 1px solid dimgray;
+    padding: 0;
+    background: white;
+}
+
+.InlineInline_tag_listTagListTagInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.InlineInline_tag_listTagListTagText {
+    height: 100%;
+    padding: 0 .5em;
+    font-size: 1.125em;
+}
+
+.InlineInline_tag_listTagListTagRemove {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    padding: .5em;
+}
+
+.InlineInline_tag_listTagListTagRemove svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.InlineInline_tag_listTaglistTagWrapper.EFODraggable {
+    position: relative;
+    overflow: visible;
+}
+
+.InlineInline_tag_listTaglistDropTarget.EFODropTarget {
+    position: absolute;
+    width: .5em;
+    right: -.6em;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+    top: 0;    
+}
+
+.InlineInline_tag_listTaglistDropTarget.EFODropTarget.EFODragOver:before {content: ' ';position: absolute;width: 2px;background: black;height: 100%;left: 50%;margin-left: -1px;}
+
+.InlineInline_tag_listTaglistDropTarget.EFODropTarget {
+    display: none;
+}
+
+.InlineInline_tag_listDraggableDragging .InlineInline_tag_listTaglistDropTarget.EFODropTarget {
+    display: block;
+}
+
+.InlineInline_tag_listTaglistDropTarget.EFODropTarget.EFODragOver {
+    transform: none;
+}
+

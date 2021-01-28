@@ -1,0 +1,55 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />                
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name" data-monitor="name,c" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30">
+                <label for="a{{MD}}town" >Город</label>
+                <input type="text" autocomplete="off" id="a{{MD}}town" data-field="town" data-monitor="name,c" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30">
+                <label for="a{{MD}}address" >Адрес</label>
+                <input type="text" autocomplete="off" id="a{{MD}}address" data-field="address" data-monitor="name,c" />               
+            </div>                
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}lat" class="" data-command="select_map">Lat</label>
+                <input type="text" autocomplete="off" id="a{{MD}}lat" data-field="lat" data-monitor="float" data-command="select_map" readonly="readonly" />                
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}lon" class="" data-command="select_map">Lon</label>
+                <input type="text" autocomplete="off" id="a{{MD}}lon" data-field="lon" data-monitor="float" data-command="select_map" readonly="readonly"/>                
+            </div>             
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck">               
+                <input type="checkbox" id="a{{MD}}visible" data-field="enabled" data-monitor="visible,c" />             
+                <label for="a{{MD}}visible" >Видимый</label>
+            </div> 
+        </div>  
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}email" class="">email</label>
+                <input type="text" autocomplete="off" id="a{{MD}}email" data-field="email" data-monitor="email" />                
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}phone" class="">Телефон</label>
+                <input type="text" autocomplete="off" id="a{{MD}}phone" data-field="phone" data-monitor="phone" />                
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}phone_alter" class="">Запасной телефон</label>
+                <input type="text" autocomplete="off" id="a{{MD}}phone_alter" data-field="phone_alter" data-monitor="phone" />                
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                <label for="a{{MD}}works" class="">Часы работы</label>
+                <input type="text" autocomplete="off" id="a{{MD}}works" data-field="works" data-monitor="eorks" />                
+            </div> 
+        </div>
+    </div>   
+</div>

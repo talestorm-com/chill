@@ -1,0 +1,456 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.12.2017, 12:42:16
+    Author     : alexander
+*/
+
+.EFOBackdrop.FrontLogin_formBackdrop {
+    z-index: 22;
+    background: rgba(255,255,255,.7);
+}
+
+.EFOWindow.FrontLogin_formWindow {
+    width: 100%;
+    max-width: 640px;
+    height: 60%;
+    max-height: 250px;    
+}
+
+.FrontLogin_formLInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 .5em;
+}
+
+.FrontLogin_formLInner form {
+    margin: 0;
+    padding: 0 .5em;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+}
+
+.FrontLogin_formRow {
+    width: 100%;
+    overflow: hidden;
+    padding: .1em .3em;
+    box-sizing: border-box;
+    margin-top: .3em;
+    margin-bottom: .5em;
+}
+
+.FrontLogin_formLInner input[type=text],
+.FrontLogin_formLInner input[type=password] {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    background: white!important;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2.3em;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding:0 .5em;
+}
+.FrontLogin_formLInner input[type=text]:focus,
+.FrontLogin_formLInner input[type=password]:focus,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=text]:focus,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=password]:focus {
+    border:1px solid dimgray;
+}
+.FrontLogin_formLInner input[type=text]:focus+.FrontLogin_formRowIcon,
+.FrontLogin_formLInner input[type=password]:focus+.FrontLogin_formRowIcon,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=text]:focus+.FrontLogin_formRowIcon,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=password]:focus+.FrontLogin_formRowIcon {
+    border:1px solid dimgray;
+}
+.FrontLogin_formLInner input[type=text]:focus+.FrontLogin_formRowIcon svg,
+.FrontLogin_formLInner input[type=password]:focus+.FrontLogin_formRowIcon svg,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=text]:focus+.FrontLogin_formRowIcon svg,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=password]:focus+.FrontLogin_formRowIcon svg {
+    fill: dimgray;
+}
+
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=text]+.FrontLogin_formRowIcon svg,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=password]+.FrontLogin_formRowIcon svg {
+    fill:crimson;
+}
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=text],
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=password],
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=text]+.FrontLogin_formRowIcon,
+.FrontLogin_formLInner .FrontLogin_formErrorField input[type=password]+.FrontLogin_formRowIcon {
+    border:1px solid crimson;
+}
+
+
+.FrontLogin_formLInner label {cursor: pointer;margin: 0;margin-bottom: .3em;font-size: .9em;}
+
+.FrontLogin_formRowSplit {
+    padding: 0.1em .2em;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.FrontLogin_formRowSplit100 {
+    width: 100%;
+}
+
+.FrontLogin_formInputWrapper {
+    box-sizing: border-box;
+    padding-right: 2.3em;
+    position: relative;
+}
+
+.FrontLogin_formRowIcon {
+    border: 1px solid silver;
+    width: 2.3em;
+    height: 2.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-left: none!important;
+    padding: .2em;
+}
+
+.FrontLogin_formRowIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.EFOWindowResizer.FrontLogin_formWindowResizer {
+    display: none;
+}
+
+.FrontLogin_formLInner a, 
+.FrontLogin_formLInner a:hover, 
+.FrontLogin_formLInner a:visited, 
+.FrontLogin_formLInner a:active, 
+.FrontLogin_formLInner a:link {
+    color: #848282;
+}
+
+.FrontLogin_formRowSplit50 {
+    width: 50%;
+}
+.FrontLogin_formalignRight {
+    text-align: right;
+}
+
+body.FrontLogin_formBodyScrollLock {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.FrontLogin_formBackdrop {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.EFOBackdrop.FrontLogin_formBackdrop {
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.EFOWindow.FrontLogin_formWindow {
+    position: static;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background: transparent;
+    background: rgba(255,255,255,0);
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EFOTitle.FrontLogin_formTitle {
+    display: none;
+}
+
+.EFOFooter.FrontLogin_formFooter {
+    display: none;
+}
+
+.EFOWindowContent.FrontLogin_formWindowContent {
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    background: white;
+    box-shadow: 3px 3px 10px #525151;
+}
+
+.EFOWindowContent.FrontLogin_formWindowContent {
+    padding-top: 0;
+}
+
+.FrontLogin_formLogoHeader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+}
+
+.FrontLogin_formLogoHeaderInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    padding: .75em;
+    border-bottom: 1px solid black;
+}
+
+.FrontLogin_formLogoHeaderInner svg {
+    width: 100%;
+    height: 100%;
+    fill: black;
+}
+
+.FrontLogin_formLogoHeader {
+    margin-bottom: 0.75em;
+}
+
+.FrontLogin_formLInner form {
+    padding: 0;
+}
+
+.FrontLogin_formLInner {
+    padding: 0;
+}
+
+.FrontLogin_formRow {
+    padding: 0;
+    margin-top: .5em;
+    margin-bottom: 1.25em;
+}
+
+.FrontLogin_formRow.FrontLogin_formLinkRow {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.FrontLogin_formRow.FrontLogin_formLinkRow .FrontLogin_formRowSplit.FrontLogin_formRowSplit50 {
+    width: auto;
+    float: none;
+}
+
+.FrontLogin_formRow.FrontLogin_formLinkRow a {
+}
+
+.FrontLogin_formRowSplit.FrontLogin_formRowSplit50.FrontLogin_formalignRight {
+    margin-left: 1.25em;
+}
+
+.FrontLogin_formButtonPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+.FrontLogin_formButtonPanel {}
+
+.FrontLogin_formButtonPanelButton:nth-child(1) {
+    order: 2;
+}
+
+.FrontLogin_formButtonPanelButton {
+    cursor: pointer;
+    padding: 0 1.5em;
+    text-align: center;
+    line-height: 2em;
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid dimgray;
+    transition: all .3s;
+    color: dimgray;
+}
+
+.FrontLogin_formButtonPanelButton:nth-child(1) {
+    background: #f15a24;
+    color: white;
+    border: 1px solid #f15a24;
+}
+
+.FrontLogin_formButtonPanelButton:nth-child(1):hover {
+    background: white;
+    color: #f15a24;
+}
+
+.FrontLogin_formButtonPanelButton:nth-child(2):hover {
+    border: 1px solid black;
+    background: whitesmoke;
+    color: black;
+}
+
+.FrontLogin_formNewLoader {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.3);
+    display: none;
+}
+
+.FrontLogin_formNewLoaderFlex {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontLogin_formNewLoaderCell {
+    box-sizing: border-box;
+    width: 4em;
+    height: 4em;
+    line-height: 0;
+}
+
+.FrontLogin_formNewLoaderCell svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.FrontLogin_formLInnerOuter {
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    max-height: 100%;
+    padding-bottom: .5em;
+    overflow: hidden;
+}
+
+.FrontLogin_formLInner.FrontLogin_formorg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.FrontLogin_formLInner {
+    height: auto;
+}
+
+.FrontLogin_formLInnerOuter form {
+    height: auto;
+}
+
+.FrontLogin_formLInner.FrontLogin_formfakeform {
+    visibility: hidden;
+}
+
+
+.FrontLogin_formLInner.FrontLogin_formorg .FrontLogin_formLogoHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.FrontLogin_formLInner.FrontLogin_formorg form {
+    box-sizing: border-box;
+    height: auto;
+    display: block;
+}
+
+.FrontLogin_formLInner.FrontLogin_formorg .FrontLogin_formFromContent {
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    pointer-events: all;
+}
+
+
+
+@media only screen and (orientation:portrait) and (max-width:600px){
+    .DeviceModeDevice .FrontLogin_formRow {
+        margin-bottom: .5em;
+    }
+
+    .DeviceModeDevice .FrontLogin_formRow.FrontLogin_formLinkRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .DeviceModeDevice .FrontLogin_formRow.FrontLogin_formLinkRow .FrontLogin_formRowSplit.FrontLogin_formRowSplit50 {
+        margin: 0;
+        margin-bottom: .5em;
+    }
+
+    .DeviceModeDevice  .FrontLogin_formButtonPanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .DeviceModeDevice .FrontLogin_formButtonPanelButton:nth-child(1) {
+        order: 0;
+    }
+
+    .DeviceModeDevice .FrontLogin_formButtonPanelButton:nth-child(2) {
+        order: 1;
+    }
+
+    .DeviceModeDevice  .FrontLogin_formButtonPanelButton {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+
+.FrontLogin_formLInner.FrontLogin_formfakeform .FrontLogin_formLogoHeaderInner {
+  display: none;
+}

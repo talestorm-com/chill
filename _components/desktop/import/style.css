@@ -1,0 +1,239 @@
+.DesktopImportCommonDesktopComponentItemSelect {
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.DesktopImportCommonDesktopComponentItemSelect select {
+    min-width: 20em;
+    width: 20em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 .5em;
+    border: none;
+    background: transparent;
+    outline-offset: 0;
+    outline: 1px solid silver;
+    height: 2.2em;
+    cursor: pointer;
+}
+
+.EFOBackdrop.DesktopImportBackdrop {
+    position: static;
+    margin: 0;
+    padding: 0;
+}
+
+.EFOWindow.DesktopImportWindow {
+    box-sizing: border-box;
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.EFOTitle.DesktopImportTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopImportFooter {
+    display: none;
+}
+
+.DesktopImportBodyAreaBody {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+.DesktopImportHiddenArea {
+    margin-top: 5em;
+}
+
+.DesktopImportBodyAreaBody form {
+    box-sizing: border-box;
+    padding: 2em;
+}
+
+.DesktopImportIntro {
+    margin-bottom: 1em;
+}
+
+.DesktopImportUploadWrapper {
+    box-sizing: border-box;
+    max-width: 30em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+.DesktopImportUploadbutton {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: #00acc8;
+    color: white;
+    border: 1px solid #00acc8;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopImportUploadbutton input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rebeccapurple;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.DesktopImportUploadbutton:hover {
+    background: white;
+    color: #00acc8;
+}
+
+.DesktopImportCheckboxRow {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.DesktopImportCheckboxRow input[type=checkbox] {
+    display: none;
+}
+
+.DesktopImportCheckboxRow input[type=checkbox]+label{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    padding:.1em;
+    box-sizing:border-box;
+    margin:0;
+    
+    cursor:pointer;
+}
+.DesktopImportCheckboxRow input[type=checkbox]+label:before{
+    content:' ';
+    width:1.2em;
+    height:1.2em;
+    box-sizing:border-box;
+    outline:1px solid #00acc8;
+    display:block;
+    margin-right:.5em;
+    transition:all .3s;
+    outline-offset:0;
+}
+
+.DesktopImportCheckboxRow input[type=checkbox]:checked+label:before{
+    border:1px solid white;
+    background:#00acc8;
+}
+
+.DesktopImportsubmitRow {
+    margin-top: 2em;
+    max-width: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.DesktopImportButton {
+    line-height: 2.5em;
+    height: 2.5em;
+    background: #00acc8;
+    color: white;
+    border: 1px solid #00acc8;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopImportButton:hover {
+    color: #00acc8;
+    background: white;
+}
+
+.DesktopImportSelectorRow {
+    margin: .5em 0;
+    max-width: 30em;
+    width: 30em;
+}
+
+.DesktopImportSelectorWrapper.DesktopImportCategorySelector {
+    height: 2.5em;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 2.5em;
+}
+
+.DesktopImportSelectorWrapper.DesktopImportCategorySelector input[type=text] {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 .5em;
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid silver;
+    cursor: pointer;
+}
+
+.DesktopImportSelectorButton {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid silver;
+    border-left: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    line-height: 0;
+    padding: .5em;
+}
+
+.DesktopImportSelectorButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopImportDataLogWrapper {
+    margin-top: 3em;
+    max-width: 30em;
+}
+
+.DesktopImportDataLogWrapper textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 20em;
+    background: whitesmoke;
+    border: 1px solid silver;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+

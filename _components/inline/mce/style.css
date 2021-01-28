@@ -1,0 +1,17 @@
+.CommonAdminLayoutForm.InlineMceForm {
+    padding: 0;
+}
+
+.CommonAdminLayoutForm.InlineMceForm .InlineMceEditorrea {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.CommonAdminLayoutForm.InlineMceForm .InlineMceEditorrea .tox.tox-tinymce {
+    height: 100%!important;
+    box-sizing: border-box;
+}
+.CommonAdminLayoutForm.InlineMceForm .InlineMceEditorrea span.tox-statusbar__branding {
+    display: none;
+}

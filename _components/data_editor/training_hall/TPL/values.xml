@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <user>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />            
+            <property in="phone" filters="Strip,Trim,NEString,PhoneMatch,DefaultNull" />            
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="address" filters="Strip,Trim,NEString" />
+            <property in="lat" filters="Float" />
+            <property in="lon" filters="Float" />
+            <property in="default_image" filters="Trim,NEString,DefaultNull" />       
+            <property in="properties" filters="NEArray,DefaultNull" />   
+            <property in="features" filters="NEArray,DefaultNull" />                          
+        </export>
+    </user> 
+    <feature>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="image" filters="Strip,NEString" />
+            <property in="name" filters="Strip,NEString" />
+            <property in="value" filters="Strip,NEString,DefaultNull" />            
+        </export>
+    </feature>   
+</root>

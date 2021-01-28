@@ -1,0 +1,32 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" readonly="readonly" data-field="id" id="a{{MD}}id" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">name</label>
+                <input type="text"  data-field="name" id="a{{MD}}name" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">cdn_id</label>
+                <div class="{{getCssClass}}ButtonedInput">
+                    <input type="text" readonly="readonly" data-field="cdn_id" id="a{{MD}}cdn_id" />
+                    <div class="{{getCssClass}}ButtonedInputButton" data-command="run_file_selector">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_seek" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <label for="a{{MD}}cnd_url" class="CommonAdminLayoutLabelIsRequired">cdn_url</label>
+            <input type="text" readonly="readonly" id="a{{MD}}cdn_url" data-field="cdn_url" />
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="{{getCssClass}}preview">
+                <img data-role="preview" src="" data-field="preview"/>
+            </div>
+        </div>
+    </div>
+</div>

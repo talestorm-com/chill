@@ -1,0 +1,23 @@
+<div class="BasketRequestFrameColorList {{RCSS}}ColorsWrapper">
+    <div class="BasketRequestFrameColorListHeader">Укажите цвет:</div>
+    <div class="BasketRequestFrameColorListList">
+        {{#product_info.colors.items}}
+        <div class="ProductDefaultContentColorItem {{#is_current_color}}selected_color{{/is_current_color}}" data-color-id="{{guid}}" data-command="select_color">
+            <div class="ProductDefaultContentColorDisplay">
+                {{#image_exists}}
+                <div class="ProductDefaultContentColorComposite">
+                    <div class="ProductDefaultContentColorDisplaySimple" style="background:{{html_color}}"></div>
+                    <div class="ProductDefaultContentColorDisplayImage"><img src="/media/_color/{{guid}}.SW_100H_100CF_1.jpg" alt=""></div>
+                </div>
+                {{/image_exists}}
+                {{^image_exists}}
+                <div class="ProductDefaultContentColorSimpleColor">
+                    <div class="ProductDefaultContentColorDisplaySimple" style="background:{{html_color}}"></div>
+                </div>
+                {{/image_exists}}
+            </div>
+            <div class="ProductDefaultContentColorName">{{name}}</div>
+        </div>
+        {{/product_info.colors.items}}
+    </div>
+</div>

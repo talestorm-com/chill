@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import> 
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="title" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="target" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="image" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="image_context" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="image_owner_id" filters="IntMore0,DefaultNull" />            
+            <property in="html_mode" filters="Boolean,DefaultTrue" />
+            <property in="html_mode_c" filters="Boolean,DefaultTrue" />
+            <property in="info" filters="Trim,NEString,DefaultNull" />            
+            <property in="intro" filters="Trim,NEString,DefaultNull" />                        
+            <property in="image_removed" filters="Boolean,DefaultFalse" />            
+            <property in="image_field" filters="JQHTMLNode,DefaultNull" />   
+            <property in="published" filters="DateTime,DefaultNull" />
+            <property in="link_type" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="link_uid" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="link_id" filters="IntMore0,DefaultNull" />              
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="title" filters="Strip,Trim,NEString" />
+            <property in="published" filters="DateTime,DefaultNull" />
+            <property in="active" filters="Boolean,DefaultFalse" />            
+            <property in="html_mode" filters="Boolean,DefaultTrue" />
+            <property in="html_mode_c" filters="Boolean,DefaultTrue" />
+            <property in="info" filters="Trim,NEString,DefaultNull" />                        
+            <property in="intro" filters="Trim,NEString,DefaultNull" />                                    
+            <property in="image_removed" filters="Boolean,DefaultFalse" />                        
+            <property in="image_field" filters="JQHTMLNode,DefaultNull" />                        
+        </export>
+    </node>     
+</root>

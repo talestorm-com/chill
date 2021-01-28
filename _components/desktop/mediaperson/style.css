@@ -1,0 +1,79 @@
+.EFOBackdrop,DesktopMediapersonBackdrop {
+    box-sizing: border-box;
+    position: static;
+    padding: 0;
+}
+
+.EFOWindow.DesktopMediapersonWindow {
+    position: relative;
+    top: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+    padding: 0!important;
+}
+
+.EFOTitle.DesktopMediapersonTitle {
+    display: none!important;
+}
+
+.EFOFooter.DesktopMediapersonFooter {
+    display: none!important;
+}
+
+.ADVTableHeaderRowReplacer.DesktopMediapersonHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.DesktopMediapersonControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .25em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopMediapersonControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopMediapersonControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopMediapersonRemoveButton {
+    box-sizing: border-box;
+    width: 1.75em;
+    height: 1.75em;
+    overflow: hidden;
+    padding: .25em;
+    margin: .1em auto;
+    cursor: pointer;
+}
+
+.DesktopMediapersonRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopMediapersonControlCellContent {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 .25em;
+    overflow: hidden;
+}
+
+.DesktopMediapersonCommonDisplay {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+

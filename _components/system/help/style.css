@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08.02.2018, 11:43:29
+    Author     : alexander
+*/
+
+.SystemHelpContentError {
+    background: crimson;
+    color: white;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+.SystemHelpHelpMain {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.SystemHelpHelpContent {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.SystemHelpHelpContent iframe {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: none;
+    max-height: 100%;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.SystemHelpHelpContent {
+    overflow: hidden;
+}
+
+.EFOBackdrop.SystemHelpBackdrop {
+    z-index: 30;
+}
+

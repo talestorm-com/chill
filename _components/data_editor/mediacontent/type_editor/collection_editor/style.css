@@ -1,0 +1,387 @@
+.dummy{
+    background: yellow;
+}
+
+.Data_editorMediacontentType_editorCollection_editorEmojiDisplayFieldWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorCollection_editoremoji_display_clear_button {
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid silver;
+    border-left: none;
+    height: 2.5em;
+    width: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    padding: .5em;
+}
+
+.Data_editorMediacontentType_editorCollection_editoremoji_display_clear_button svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+.Data_editorMediacontentType_editorCollection_editorEmojiDisplayFieldWrapper input[type=text] {
+    cursor: pointer;
+}
+
+
+.Data_editorMediacontentType_editorCollection_editorTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonWrapper.Data_editorMediacontentType_editorCollection_editorCommonWrapperQuill {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorEditorOutWrap {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorEditorInnerRoot {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorGalleryWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorPropertiesWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorMediacontentType_editorCollection_editorPersonalListWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editor_align_right {
+    text-align: right;
+}
+
+
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInputPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInputButton {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid silver;
+    border-left: none;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInputButton svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonWrapper {
+    box-sizing: border-box;
+    /* height: 100%;
+    padding: 4.5em 0 0 0; */
+    position: relative;
+}
+
+.CommonAdminLayoutFormRow.Data_editorMediacontentType_editorCollection_editorTopPanel {
+    box-sizing: border-box;
+    height: 18.5em;
+    margin: 0;
+    border-bottom: 2px solid dimgray;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.Data_editorMediacontentType_editorCollection_editorTable {
+    box-sizing: border-box;
+    /* height: 100%; */
+    position: relative;
+}
+
+
+.Data_editorMediacontentType_editorCollection_editorCommonWrapper.Data_editorMediacontentType_editorCollection_editorCommonWrapperQuill {
+    padding: 0;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonDisplayWrap {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonDisplay {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Data_editorMediacontentType_editorCollection_editorContentTypeCellContent.Data_editorMediacontentType_editorCollection_editorCommonDisplayWrap {}
+
+.Data_editorMediacontentType_editorCollection_editorContentTypeCellContent.Data_editorMediacontentType_editorCollection_editorCommonDisplayWrap .Data_editorMediacontentType_editorCollection_editorCommonDisplay {
+    color: #00acc8;
+    font-weight: bold;
+}
+
+.Data_editorMediacontentType_editorCollection_editorPropNameCellContent.Data_editorMediacontentType_editorCollection_editorCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonDisplay.Data_editorMediacontentType_editorCollection_editorCommonDisplayTX input[type=text] {
+    border: 1px solid transparent;
+    height: 2em;
+    cursor: pointer;
+    background: transparent;
+    text-align: right;
+    padding: 0 1em;
+    transition: all .3s;
+}
+
+.Data_editorMediacontentType_editorCollection_editorSortCellContent.Data_editorMediacontentType_editorCollection_editorCommonDisplayWrap {
+    padding: 0;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonDisplay.Data_editorMediacontentType_editorCollection_editorCommonDisplayTX input[type=text]:focus {
+    background: white;
+    border: 1px solid #00acc8;
+}
+
+.Data_editorMediacontentType_editorCollection_editorControlButton.Data_editorMediacontentType_editorCollection_editorRemoveButton {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    padding: .3em;
+    cursor: pointer;
+    margin: .1em auto;
+}
+
+.Data_editorMediacontentType_editorCollection_editorControlButton.Data_editorMediacontentType_editorCollection_editorRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.ADVTableHeaderRowReplacer.Data_editorMediacontentType_editorCollection_editorHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorControlButton {
+    box-sizing: border-box;
+    height: 100%;
+    padding: .1em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Data_editorMediacontentType_editorCollection_editorControlButton:hover {
+    background: whitesmoke;
+}
+
+.Data_editorMediacontentType_editorCollection_editorControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.Data_editorMediacontentType_editorCollection_editorBooleanDisplay {
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    outline: 1px solid #00acc8;
+    margin: .1em auto;
+}
+
+.Data_editorMediacontentType_editorCollection_editorBooleanDisplay.Data_editorMediacontentType_editorCollection_editorBooleanDisplayValuetrue,.Data_editorMediacontentType_editorCollection_editorBooleanDisplay.Data_editorMediacontentType_editorCollection_editorBooleanDisplayValue1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+
+
+/*********/
+
+
+.Data_editorMediacontentType_editorCollection_editorCommonWrapper select {
+    font-size: inherit;
+    font-family: inherit;
+    height: 2.5em;
+    height: calc(2.5em - 2px);
+    background: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline-offset: 0;
+    outline: 1px solid silver;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 1em;
+}
+
+.Data_editorMediacontentType_editorCollection_editorposterpreviewuploader {
+    box-sizing: border-box;
+    width: 15em;
+    height: 15em;
+    border: 1px solid silver;
+    padding: .25em;
+    line-height: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.Data_editorMediacontentType_editorCollection_editorposterpreviewuploaderinner {
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorMediacontentType_editorCollection_editorposterpreviewuploaderinner img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorposterpreviewuploaderinner input[type=file] {
+    position: absolute;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Data_editorMediacontentType_editorCollection_editorgif_previewuploder {
+    box-sizing: border-box;
+    width: 15em;
+    height: 15em;
+    border: 1px solid silver;
+    padding: .25em;
+    cursor: pointer;
+    position: relative;
+}
+
+.Data_editorMediacontentType_editorCollection_editorgif_preview_uploader_inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorMediacontentType_editorCollection_editorgif_preview_uploader_inner img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Data_editorMediacontentType_editorCollection_editorgif_preview_uploader_inner input[type=file] {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    background: red;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Data_editorMediacontentType_editorCollection_editorCommonWrapper.Data_editorMediacontentType_editorCollection_editorCommonWrapperLent {
+    padding-top: 0;
+}
+/*****/
+
+.Data_editorMediacontentType_editorCollection_editor_align_right {
+    text-align: right;
+}
+
+
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInputPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInputButton {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid silver;
+    border-left: none;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.Data_editorMediacontentType_editorCollection_editorButtonedInputButton svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+
+.CommonAdminLayoutMetaRowsBlock {
+    margin-top: 4em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+.CommonAdminLayoutMetaRow {
+    padding-top: 0.5em;
+}

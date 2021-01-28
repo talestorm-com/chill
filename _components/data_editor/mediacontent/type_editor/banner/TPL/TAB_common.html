@@ -1,0 +1,24 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow {{getCssClass}}TOPPANEL">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                <input type="hidden" data-field="content_type" value="ctBANNER" data-fielddefault="ctBANNER" />
+            </div>                          
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}name" >Наименование</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>                
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}background" >Подложка</label>
+                <input type="color" autocomplete="off" id="a{{MD}}name" data-field="background" data-fielddefault="#f5b500"  />
+            </div>                
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}text_color" >Текст</label>
+                <input type="color" autocomplete="off" id="a{{MD}}name" data-field="text_color" data-fielddefault="#000000" />
+            </div>                
+        </div>
+        <div class="{{getCssClass}}LangTable" data-role="table" data-field="strings"></div>        
+    </div>
+</div>

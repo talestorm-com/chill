@@ -1,0 +1,110 @@
+.EFOBackdrop.DesktopInfopageBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopInfopageWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopInfopageTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopInfopageFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopInfopageWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopInfopageHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopInfopageHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopInfopageControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopInfopageControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopInfopageRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopInfopageRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopInfopageRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopInfopageCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopInfopageCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopInfopageTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em;
+}
+
+.DesktopInfopagePublishedCellContent.DesktopInfopageCommonDisplayWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesktopInfopageTableBoolDisplay.DesktopInfopageTableBoolDisplayState1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+

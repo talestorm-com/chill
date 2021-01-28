@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />        
+            <property in="sort" filters="Int,Default0" />                        
+            <property in="name" filters="NEArray,DefaultEmptyArray" />                
+                       
+        </export>
+    </node> 
+    <item>
+        <import> 
+            <property in="dummy" filters="IntMore0,DefaultNull" />
+        </import>
+        <export>            
+            <property in="language_id" filters="Strip,Trim,NEString" />            
+            <property in="name" filters="Strip,Trim,NEString" />                      
+        </export>
+    </item>        
+</root>

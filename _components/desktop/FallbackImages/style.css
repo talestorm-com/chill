@@ -1,0 +1,162 @@
+.EFOBackdrop.DesktopFallbackimagesBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopFallbackimagesWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopFallbackimagesTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopFallbackimagesFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopFallbackimagesWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopFallbackimagesHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopFallbackimagesHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopFallbackimagesControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopFallbackimagesControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopFallbackimagesRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopFallbackimagesRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopFallbackimagesRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopFallbackimagesCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopFallbackimagesCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopFallbackimagesControlButton {
+    padding: .1em;
+}
+.DesktopFallbackimagesButton {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    cursor: pointer;
+    padding: .25em;
+    line-height: 0;
+    margin: .25em;
+}
+
+.DesktopFallbackimagesButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopFallbackimagesButton.DesktopFallbackimagesButtonCrimson svg {
+    fill: crimson;
+}
+
+.DesktopFallbackimagesControlPanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.DesktopFallbackimagesContextCellContent.DesktopFallbackimagesCommonDisplayWrap {
+    color: #00acc8;
+    font-weight: bold;
+}
+
+.DesktopFallbackimagesImageHolder {
+    position: relative;
+    width: 10em;
+    height: 10em;
+    margin: .1em auto;
+    border: 1px solid silver;
+    cursor: pointer;
+    padding: .2em;
+    line-height: 0;
+}
+
+.DesktopFallbackimagesImageHolderInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.DesktopFallbackimagesImageHolder input[type=file] {
+    width: 100%;
+    height: 100%;
+    background: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.DesktopFallbackimagesImageHolderInner img {
+    width: 100%;
+}

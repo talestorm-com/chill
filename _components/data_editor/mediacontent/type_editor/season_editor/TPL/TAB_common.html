@@ -1,0 +1,164 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                <input type="hidden" data-field="content_type" value="ctSEASON" data-fielddefault="ctSEASON" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-80">
+                <label for="a{{MD}}name" data-old-text="Оригинальное название" >Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>     
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10" >
+                <label for="a{{MD}}mcsort" >Сортировка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}mcsort" data-field="mcsort" data-monitor="mcsort"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45" style="display:none">
+                <label for="a{{MD}}common_name" >Название на русском</label>
+                <input type="text" autocomplete="off" id="a{{MD}}common_name" data-field="common_name"  />
+            </div>    
+
+        </div>
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45" style="display: none">
+                <label for="a{{MD}}eng_name" >Название на английском</label>
+                <input type="text" autocomplete="off" id="a{{MD}}eng_name" data-field="eng_name"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                <label for="a{{MD}}enabled">Включено</label>
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}free" data-fielddefault="0" data-field="free" />
+                <label for="a{{MD}}free">Бесплатно</label>
+            </div>            
+        </div>  
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}origin_language" >Подзаголовок (Если введен, страна, жанр, серии, не отображаются)</label>
+                <input type="text" autocomplete="off" id="a{{MD}}origin_language" data-field="origin_language"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}released" >Год выхода</label>
+                <input type="text" autocomplete="off" id="a{{MD}}released" data-field="released" data-readonly="readonly" data-monitor="released"  />
+            </div>           
+        </div>  
+        <div class="CommonAdminLayoutFormRow"> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}series" >Серий</label>
+                <input type="text" autocomplete="off" id="a{{MD}}series" data-field="series_count" data-monitor="positive_int"  data-fielddefault="0"/>
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}seasons" >Сезонов</label>
+                <input type="text" autocomplete="off" id="a{{MD}}seasons" data-field="seasons_count" data-monitor="positive_int"  data-fielddefault="0"/>
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}tracklang" data-command="select_tracklang">Аудиодорожка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}tracklang" data-field="track_language_name" data-command="select_tracklang" readonly="readonly"  />
+                <input type="hidden" data-field="track_language" />
+            </div>                    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}preplay" data-command="select_preplay">Преплей</label>
+                <input type="text" autocomplete="off" id="a{{MD}}preplay" data-field="preplay_name" data-command="select_preplay" readonly="readonly"  />
+                <input type="hidden" data-field="preplay" />
+            </div>                                
+        </div>
+        <div class="CommonAdminLayoutFormRow"> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="genres" data-field="genres"></div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="countries" data-field="countries"></div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">     
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="studios" data-field="studios"></div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50" style="display: none">
+                <div data-role="tags" data-field="tags"></div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">     
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div class="{{getCssClass}}EmojiDisplay">
+                    <label for="a{{MD}}emoji" data-command="select_emoji">Emoji</label>
+                    <div class="{{getCssClass}}EmojiDisplayFieldWrapper">
+                        <input type="text" readonly="readonly" id="a{{MD}}emoji" data-command="select_emoji" data-field="emoji_name" placeholder="Не выбрано"/>
+                        <div class="{{getCssClass}}emoji_display_clear_button" data-command="clear_emoji" >
+                            <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                        </div>
+                    </div>
+                    <input type="hidden" data-field="emoji"/>
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div class="{{getCssClass}}EmojiDisplay">
+                    <label for="a{{MD}}age_restriction" data-command="select_age_restriction">Возрастное ограничение</label>
+                    <div class="{{getCssClass}}EmojiDisplayFieldWrapper">
+                        <input type="text" readonly="readonly" id="a{{MD}}age_restriction" data-command="select_age_restriction" data-field="age_restriction_name" placeholder="Не выбрано"/>
+                        <div class="{{getCssClass}}emoji_display_clear_button" data-command="clear_age_restriction" >
+                            <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                        </div>
+                    </div>
+                    <input type="hidden" data-field="age_restriction"/>
+                </div>
+            </div>
+        </div> 
+        <div class="CommonAdminLayoutFormRow">     
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}_lent_mode">Отображение в ленте</label>
+                <select id="a{{MD}}_lent_mode" data-field="lent_mode" data-monitor="lent_mode" data-fielddefault="poster">
+                    <option value="poster">Картинка</option>
+                    <option value="video">Видео</option>
+                    <option value="gif">Гифка</option>
+                </select>                
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" data-hint="Общий для всех - загрузка картинки">
+                <label for="a{{MD}}soapposter">Вид в ленте</label>
+                <div class="{{getCssClass}}posterpreviewuploader">
+                    <div class="{{getCssClass}}posterpreviewuploaderinner">
+                        <img data-role="poster_image" src="" />
+                        <input type="file" id="a{{MD}}soapposter" data-field="poster_image" data-monitor="poster_image" />
+                    </div>
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-80" data-role="lent_param_video" style="display:none">
+                <div class="{{getCssClass}}VideoParamsRow">
+                    <label for="a{{MD}}video_cdn_id">cdn_id</label>
+                    <div class="{{getCssClass}}ButtonedInput">
+                        <input type="text" data-field="video_cdn_id" id="a{{MD}}video_cdn_id" readonly="readonly"/>
+                        <div class="{{getCssClass}}ButtonedInputButton" data-command="select_lent_video"><svg><use xlink:href="#{{getCssClass}}_icon_seek"/></svg></div>
+                    </div>
+                </div>
+                <div class="{{getCssClass}}VideoParamsRow">
+                    <label for="a{{MD}}video_cdn_url">cdn_url</label>
+                    <div class="{{getCssClass}}ButtonedInput">
+                        <input type="text" data-field="video_cdn_url" id="a{{MD}}video_cdn_url" readonly="readonly" />
+                        <div class="{{getCssClass}}ButtonedInputButton" data-command="select_lent_video"><svg><use xlink:href="#{{getCssClass}}_icon_seek"/></svg></div>
+                    </div>
+                </div>
+                <div class="{{getCssClass}}VideoParamsRow">
+                    <label for="a{{MD}}lent_message">Текст</label>
+                    <input type="text" id="a{{MD}}lent_message" data-field="lent_message"  />
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-80" data-role="lent_param_gif" style="display:none">
+                <div class="{{getCssClass}}gif_selector">
+                    <input type="hidden" data-field="gif_cdn_id"  />
+                    <input type="hidden" data-field="gif_cdn_url"  />
+                    <label for="a{{MD}}gif_image">Гиф:</label>
+                    <div class="{{getCssClass}}gif_previewuploder">
+                        <div class="{{getCssClass}}gif_preview_uploader_inner">
+                            <img src="" data-role="gif_upload" />
+                            <input type="file" data-field="gif_image" data-monitor="gif_image" id="a{{MD}}gif_image" accept=".gif" />
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="alias" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="title" filters="Strip,Trim,NEString" />
+            <property in="layout" filters="Strip,Trim,NEString,DefaultNull" />            
+            <property in="timeout" filters="IntMore0,DefaultNull" />            
+            <property in="crop_fill" filters="Boolean,DefaultFalse" />            
+            <property in="crop" filters="Boolean,DefaultTrue" />        
+            <property in="background" filters="Strip,Trim,NEString,DefaultNull" />      
+            <property in="properties" filters="NEArray,DefaultNull" />          
+        </export>
+    </node>    
+</root>

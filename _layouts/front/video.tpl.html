@@ -1,0 +1,59 @@
+  <div id="video_first">
+  <video id="video_video_first_h" autoplay muted>
+    <source src="/assets/chill/images/g_01_h.mp4" type="video/mp4">
+  </video>
+  <video id="video_video_first_v" autoplay muted>
+    <source src="/assets/chill/images/g_01_v.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  $(document).ready(function(){
+    var ww = $(window).width();
+    var wh = $(window).height();
+    var alfa = window.localStorage.getItem('video');
+
+    if (alfa === 'close'){
+      $("#video_first").fadeOut(0);
+    }else{
+      $("body").css("overflow","hidden");
+    if (ww > wh){
+      $("#video_video_first_h").fadeIn(0);
+      $("#video_video_first_v").fadeOut(0);
+    }else{
+      $("#video_video_first_v").fadeIn(0);
+      $("#video_video_first_h").fadeOut(0);
+    }
+    $("#video_video_first_v").on('ended',function(){
+      $("#video_first").fadeOut(500);
+      $("body").css("overflow","scroll");
+      window.localStorage.setItem('video', 'close');
+    });
+    $("#video_video_first_h").on('ended',function(){
+      $("#video_first").fadeOut(500);
+      $("body").css("overflow","scroll");
+      window.localStorage.setItem('video', 'close');
+    });
+
+    }
+  });
+</script>
+<style>
+  div#video_first {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #video_first video {
+    width: 100%;
+    height: 100%;
+  }
+</style>

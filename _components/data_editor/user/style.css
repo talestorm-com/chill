@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.12.2017, 12:42:16
+    Author     : alexander
+*/
+.dummy{
+    background:yellow;
+}
+
+.Data_editorUserRowSplitHalf {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.Data_editorUser_money_delta_widget {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.Data_editorUser_money_delta_widget_button {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    width: 2.5em;
+    height: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.Data_editorUser_money_delta_widget input[type=text] {
+    text-align: center;
+    width: 100%;
+    border: 1px solid silver;
+    border-left: none;
+    border-right: none;
+}
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-50.Data_editorUserHalfSplit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Data_editorUserRowSplitHalf {
+    padding: 0 .25em;
+}
+
+.Data_editorUser_money_delta_widget_button svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.Data_editorUser_money_delta_widget input[type=text]:focus {
+    border-left: none;
+    border-right: none;
+}

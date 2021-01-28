@@ -1,0 +1,36 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="CommonAdminLayoutEditorPasswordStub">        
+        <div class="CommonAdminLayoutEditorPasswordStubinner">        
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfakelogin0">login</label>
+            <label for="{{MD}}commonfakelogin0">логин</label>
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfalepassword">password</label>
+            <label for="{{MD}}commonfalepassword">Пароль</label>        
+            <input type="text" autocomplete="off" name="login" data-fake="login" id="{{MD}}commonfakelogin0" />
+            <input type="password" autocomplete="off" name="password" id="{{MD}}commonfalepassword" />
+            <input type="text" name="login"  autocomplete="off" id="{{MD}}commonfakelogin" />
+            <input type="text" autocomplete="off" id="a{{MD}}00login" data-field="xxlogin" data-monitor="xxlogin" />
+        </div>
+    </div>
+    <div class="CommonAdminLayoutFormInner {{getCssClass}}FormWrapper" >
+        <div class="{{getCssClass}}ToolPanel">{{>MediaImage_cropperToolpanel}}</div>
+        <div class="{{getCssClass}}WorkArea" data-role="anc">
+            <div class="{{getCssClass}}ImageArea" data-role="imageArea">
+                <div class="{{getCssClass}}ImageContainer" data-role="image"></div>
+                <div class="{{getCssClass}}CropperFrame" data-role="cropper-frame">
+                    <div class="{{getCssClass}}CropperNode {{getCssClass}}CropperNodeLeft {{getCssClass}}CropperNodeTop" data-x="left" data-y="top" data-role="node_top_left"></div>
+                    <div class="{{getCssClass}}CropperNode {{getCssClass}}CropperNodeLeft {{getCssClass}}CropperNodeBottom" data-x="left" data-y="bottom" data-role="node_bottom_left"></div>
+                    <div class="{{getCssClass}}CropperNode {{getCssClass}}CropperNodeRight {{getCssClass}}CropperNodeTop" data-x="right" data-y="top" data-role="node_top_right"></div>
+                    <div class="{{getCssClass}}CropperNode {{getCssClass}}CropperNodeRight {{getCssClass}}CropperNodeBottom" data-x="right" data-y="bottom" data-role="node_bottom_right"></div>
+                    <div class="{{getCssClass}}CropperTarget">
+                        <div class="{{getCssClass}}CropperTargetElement"></div>
+                    </div>
+                </div>
+            </div>     
+            <div class="{{getCssClass}}PreviewArea" data-role="preview" style="display:none">
+                <div class="{{getCssClass}}PreviewAreaInner"></div>
+            </div>
+        </div>
+    </div>   
+</div>

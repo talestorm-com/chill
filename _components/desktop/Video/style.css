@@ -1,0 +1,224 @@
+.EFOBackdrop.DesktopVideoBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopVideoWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopVideoTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopVideoFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopVideoWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopVideoHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopVideoHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopVideoControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopVideoControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopVideoRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopVideoRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopVideoRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopVideoCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopVideoCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopVideoTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em;
+}
+
+.DesktopVideoPublishedCellContent.DesktopVideoCommonDisplayWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesktopVideoTableBoolDisplay.DesktopVideoTableBoolDisplayState1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+
+.DesktopVideoCommonDisplay.DesktopVideoOrderModeDisplay1 {
+    color: blueviolet;
+}
+
+.DesktopVideoCommonDisplay.DesktopVideoOrderModeDisplay2 {
+    color: dodgerblue;
+}
+
+.DesktopVideoUserPhoneCellContent.DesktopVideoCommonDisplayWrap a,
+.DesktopVideoUserEmailCellContent.DesktopVideoCommonDisplayWrap  a {
+    color: #00acc8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+
+.DesktopVideoTableBoolDisplay {
+    margin: .1em auto;
+}
+
+.DesktopVideoPositionCellContent.DesktopVideoCommonDisplayWrap {
+    text-align: center;
+}
+
+.DesktopVideoStatusCellContent.DesktopVideoCommonDisplayWrap {
+    padding: 0;
+}
+
+.DesktopVideoStatusCellContent.DesktopVideoCommonDisplayWrap select {
+    box-sizing: border-box;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    background: rgba(255,255,255,0);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.DesktopVideoStatusCellContent.DesktopVideoCommonDisplayWrap select {
+    font-family: inherit;
+    font-size: inherit;
+    padding-left:.5em;
+}
+
+.DesktopVideoCommonDisplay.DesktopVideoStatusDisplay0 select {
+    color: dodgerblue;
+}
+
+.DesktopVideoCommonDisplay.DesktopVideoStatusDisplay1 select {
+    color: navy;
+}
+
+.DesktopVideoCommonDisplay.DesktopVideoStatusDisplay2 select {
+    color: green;
+}
+
+.DesktopVideoCommonDisplay.DesktopVideoStatusDisplay3 select {
+    color: #00acc8;
+}
+
+.DesktopVideoCommonDisplay.DesktopVideoStatusDisplay4 select {
+    color: dimgray;
+    text-decoration: line-through;
+}
+
+.DesktopVideoMaountCellContent.DesktopVideoCommonDisplayWrap .DesktopVideoCommonDisplay {
+    text-align: right;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+
+.DesktopVideoMaountCellContent.DesktopVideoCommonDisplayWrap {
+    padding-right: 1em;
+}
+
+
+.DesktopVideoCostCellContent.DesktopVideoCommonDisplayWrap {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.DesktopVideoQtyCellContent.DesktopVideoCommonDisplayWrap {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.DesktopVideoPublishedCellContent.DesktopVideoCommonDisplayWrap {
+    text-align: right;
+    display: block;
+    padding-right: 1em;
+}
+
+.DesktopVideoCreatedCellContent.DesktopVideoCommonDisplayWrap {
+    padding-right: 1em;
+    text-align: right;
+}
+
+.DesktopVideoCommonDisplay {}
+
+.DesktopVideoUpdatedCellContent.DesktopVideoCommonDisplayWrap {
+    padding-right: 1em;
+    text-align: right;
+}
+
+
+
+

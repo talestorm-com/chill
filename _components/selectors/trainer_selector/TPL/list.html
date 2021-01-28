@@ -1,0 +1,18 @@
+<div class="{{getCssClass}}-list-trainers">
+    {{#trainers}}
+    <div class="{{getCssClass}}-trainer-card" data-id="{{id}}" data-command="select">
+        <div class="{{getCssClass}}-trainer-card-inner">
+            <div class="{{getCssClass}}-trainer-card-photo">
+                <div class="{{getCssClass}}-trainer-card-photo-item">
+                    <img src="/media/avatar/{{id}}/aaca0f5eb4d2d98a6ce6dffa99f8254b.SW_150H_150CF_1.jpg?t={{get_random}}" />
+                </div>
+            </div>
+            <div class="{{getCssClass}}-trainer-name">{{family}} {{name}} {{eldername}}</div>
+            <div class="{{getCssClass}}-trainer-pro">{{sport}}</div>
+        </div>
+    </div>
+    {{/trainers}}
+    {{^trainers}}
+    <div class="{{getCssClass}}-no-trainers-for-this-place">Не найдено</div>
+    {{/trainers}}
+</div>

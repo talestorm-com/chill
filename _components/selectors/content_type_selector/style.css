@@ -1,0 +1,47 @@
+.SelectorsContent_type_selector-item-row {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid silver;
+    margin: .5em 0;
+    padding: .75em;
+    transition: all .3s;
+}
+
+.SelectorsContent_type_selector-item-row-inner {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SelectorsContent_type_selector-item-selection-mark {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+    outline: 1px solid silver;
+    outline-offset: 0;
+    transition: all .3s;
+}
+
+.SelectorsContent_type_selector-item-text {
+    font-size: 1.1em;
+    transition: all .3s;
+}
+
+.SelectorsContent_type_selector-item-row.SelectorsContent_type_selectorselected {
+    border: 1px solid #00acc8;
+}
+
+.SelectorsContent_type_selector-item-row.SelectorsContent_type_selectorselected .SelectorsContent_type_selector-item-selection-mark {
+    outline: 1px solid #00acc8;
+    border: 2px solid white;
+    background: #00acc8;
+}
+
+.SelectorsContent_type_selector-item-row.SelectorsContent_type_selectorselected .SelectorsContent_type_selector-item-text {
+    color: #00acc8;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="url" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="sort_order" filters="Int,Default0" />
+            <property in="visible" filters="Boolean,DefaultTrue" />            
+            <property in="css_class" filters="Strip,Trim,NEString,DefaultNull" />
+        </export>
+    </node>    
+</root>

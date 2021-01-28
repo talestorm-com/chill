@@ -1,0 +1,67 @@
+.MediaIn_place_linked_selectorImageList {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.MediaIn_place_linked_selectorImageListInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+.MediaIn_place_linked_selectorImages {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.MediaIn_place_linked_selectorOneImage {
+    /* width: 20%; */
+    /* min-width: 7.5em; */
+    /* max-width: 15em; */
+    box-sizing: border-box;
+    margin: .25em;
+    padding: .33em;
+    background: white;
+    width: 10em;
+    height: 10em;
+    cursor: pointer;
+    transition: all .3s;
+    line-height: 0;
+}
+
+.MediaIn_place_linked_selectorOneImageInner {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    width: 100%;
+    height: 100%;
+    padding: .25em;
+    background: white;
+}
+
+.MediaIn_place_linked_selectorOneImageInnerSVG {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1.75em;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.MediaIn_place_linked_selectorOneImageInnerSVG svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.MediaIn_place_linked_selectorOneImageInner img {
+    width: 100%;
+}
+
+.MediaIn_place_linked_selectorOneImage.MediaIn_place_linked_selectorSelectedItem {
+    background: #00acc8;
+}

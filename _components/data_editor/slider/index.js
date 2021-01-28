@@ -1,0 +1,350 @@
+(function () {
+    var H = null, MC = '<?=$this->MC?>', MD = '<?=$this->MD?>', FQCN = '<?=$this->fqcn?>';
+    //<editor-fold defaultstate="collapsed" desc="Импорт">
+    var Y = window.Eve.EFO.Com();
+    var imports = [// стиль встроен в компонент                      
+        Y.load('media.image_uploader').promise,
+        Y.load('inline.property_editor').promise
+
+    ];
+    //</editor-fold>
+    function initPlugin() {
+        //<editor-fold defaultstate="collapsed" desc="Инициализация">
+        var EFO = window.Eve.EFO, U = EFO.U, PAR = EFO.windowController, PARP = PAR.prototype, APS = Array.prototype.slice;
+        var TPLS = null;
+        /*<?=$this->build_templates('TPLS')?>*/
+        EFO.TemplateManager().addObject(TPLS, MC); // префикс класса
+        var STYLE = null;
+        /*<?=$this->create_style("{$this->MC}",'STYLE')?>*/
+        EFO.SStyleDriver().registerStyleOInstall(STYLE);
+        var SVG = null;
+        /*<?=$this->create_svg('SVG')?>*/
+        EFO.SVGDriver().register_svg(FQCN, MC, U.NEString(U.safeObject(SVG).svg, null));
+        function F() {
+            return F.is(H) ? H : (F.is(this) ? this.init() : F.F());
+        }
+        F.xInheritE(PAR);
+        F.mixines = ['Roleable', 'Loaderable', 'Commandable', 'Fieldable', 'Monitorable', 'Callbackable', 'Sizeable', 'Tabbable'];
+        U.initMixines(F);
+        F.prototype.MD = MD;
+        //</editor-fold>        
+        //<editor-fold defaultstate="collapsed" desc="Обвес">
+        //<editor-fold defaultstate="collapsed" desc="sizeable">
+        F.prototype.sizeable_getParams = function () {
+            var w = this.sizeable_defaultWidth();
+            var h = this.sizeable_defaultHeight();
+            try {
+                var u = JSON.parse(localStorage.getItem(MC + 'rsz'));
+                if (U.isObject(u) && ('w' in u) && ('h' in u) && typeof (u.h) === 'number' && !isNaN(u.h) && typeof (u.w) === 'number' && !isNaN(u.w)) {
+                    w = u.w;
+                    h = u.h;
+                }
+            } catch (e) {
+                w = this.sizeable_defaultWidth();
+                h = this.sizeable_defaultHeight();
+            }
+            return {w: w, h: h};
+        };
+        F.prototype.sizeable_setParams = function (x) {
+            if (U.isObject(x)) {
+                if (('w' in x) && ('h' in x) && typeof (x.w) === 'number' && typeof (x.h) === 'number' && !isNaN(x.w) && !isNaN(x.h)) {
+                    try {
+                        localStorage.setItem(MC + 'rsz', JSON.stringify(x));
+                    } catch (e) {
+
+                    }
+                }
+            }
+            return this;
+        };
+        F.prototype.sizeable_scaleFactor = function () {
+            return 2;
+        };
+        //</editor-fold>
+        F.prototype.onInit = function () {
+            H = this;
+            PARP.onInit.apply(this, APS.call(arguments));
+            this.LEM.On('NEED_POSITE', this, this.placeAtCenter);
+            this.init_image_list();
+            this.init_property_editor();
+            return this;
+        };
+        F.prototype.enumSubTemplates = function () {
+            var a = PARP.enumSubTemplates.call(this);
+            a = U.isArray(a) ? a : [];
+            return a.concat([
+                MC + ".TAB_common"
+                        , MC + ".TAB_gallery"
+                        , MC + ".TAB_properties"
+                        , MC + ".TAB_admin"
+
+            ]);
+        };
+
+        F.prototype.onAfterShow = function () {
+            PARP.onAfterShow.apply(this, APS.call(arguments));
+            this.placeAtCenter();
+            return this;
+        };
+        F.prototype.getContentTemplate = function () {
+            return EFO.TemplateManager().get([MC, 'Main'].join('.'));
+        };
+        F.prototype.getControllerAlias = function () {
+            return MC;
+        };
+        F.prototype.getCssClass = function () {
+            return MC;
+        };
+        F.prototype.getFooterButtons = function () {
+            return [
+                {'command': "cancel", 'text': "Отмена"},
+                {'command': "apply", 'text': "Применить"},
+                {'command': "save", 'text': "Сохранить и закрыть"}
+            ];
+        };
+        F.prototype.getDefaultTitle = function () {
+            return "Редактирование слайдера";
+        };
+        //</editor-fold>                          
+        //<editor-fold defaultstate="collapsed" desc="Лоадер">
+        /**
+         *          
+         * @returns {F}
+         */
+        F.prototype.load = function (id) {
+            this.clear();
+            if (U.IntMoreOr(id, 0, null)) {
+                this.showLoader();
+                jQuery.getJSON('/admin/Slider/API', {action: "get", id: id})
+                        .done(this.on_load_responce.bindToObject(this))
+                        .fail(this.on_network_fail_fatal.bindToObject(this))
+                        .always(this.hideLoader.bindToObject(this));
+            } else {
+                this.showLoader();
+                jQuery.getJSON('/admin/Slider/API', {action: "get_layouts", id: id})
+                        .done(this.on_meta_responce.bindToObject(this))
+                        .fail(this.on_network_fail_fatal.bindToObject(this))
+                        .always(this.hideLoader.bindToObject(this));
+            }
+            return this;
+        };
+
+        F.prototype.on_meta_responce = function (d) {
+            if (U.isObject(d)) {
+                if (d.status === "ok") {
+                    return this.on_meta_success(d.layouts);
+                }
+                if (d.status === 'error') {
+                    return this.on_network_fail_fatal(d.error_info.message);
+                }
+            }
+            return this.on_network_fail_fatal("invalid server responce");
+        };
+
+        F.prototype.on_meta_success = function (d) {
+            if (U.isArray(d)) {
+                var rlay = [];
+                for (var i = 0; i < d.length; i++) {
+                    var ln = U.NEString(U.safeObject(d[i]).name, null);
+                    var lt = U.NEString(U.safeObject(d[i]).title, null);
+                    if (ln && lt) {
+                        rlay.push({layout: ln, name: lt});
+                    }
+                }
+                this._layouts = rlay;
+                this.getField('layout').html(Mustache.render(EFO.TemplateManager().get('option', MC), this));
+                this._layouts = null;
+            }
+            return this;
+        };
+
+        F.prototype.on_load_responce = function (d) {
+            if (U.isObject(d)) {
+                if (d.status === "ok") {
+                    this.on_meta_success(d.layouts);
+                    return this.on_data_success(d.slider);
+                }
+                if (d.status === 'error') {
+                    return this.on_network_fail_fatal(d.error_info.message);
+                }
+            }
+            return this.on_network_fail_fatal("invalid server responce");
+        };
+
+        F.prototype.on_data_success = function (d) {
+            this.setFields(d);
+            this.setup_control_enable();
+            this.image_list.set_owner_id(U.NEString(U.IntMoreOr(this.getField('id').val(), 0, null), null));
+            return this;
+        };
+
+        //</editor-fold>                
+        //<editor-fold defaultstate="collapsed" desc="editor">        
+        F.prototype.init_image_list = function () {
+            var cf = Y.get_loaded_component('media.image_uploader');
+            this.image_list = cf();
+            this.image_list.setContainer(this.getRole('gallery'));
+            this.image_list.set_params('common_slider', null);
+            this.image_list.set_meta_editor('media.title_href_text');
+            return this;
+        };
+
+        F.prototype.init_property_editor = function () {
+            var cf = Y.get_loaded_component('inline.property_editor');
+            this.property_editor = cf(MC);
+            this.property_editor.setContainer(this.getRole('properties'));
+            return this;
+        };
+
+
+
+
+        //</editor-fold>
+
+        //<editor-fold defaultstate="collapsed" desc="клинер">
+        F.prototype.clear = function () {
+            this.LEM.Run('RESET_CONTENT');
+            this.clearCallbacks();
+            this.image_list.set_owner_id(null);
+            this.setup_control_enable();
+            return this;
+        };
+        F.prototype.hideclear = function () {
+            return this.hide().clear();
+        };
+        //</editor-fold>   
+        F.prototype._set_field_properties = function (x) {
+            this.property_editor.set_data(U.safeArray(x.properties));
+            return this;
+        };
+
+        F.prototype._get_field_properties = function () {
+            return this.property_editor.get_data();
+        };
+
+        //<editor-fold defaultstate="collapsed" desc="monitors">
+
+        F.prototype.onMonitorTimeout = function (t) {
+            var x = U.IntMoreOr(t.val(), 0, 5000);
+            t.val(x);
+            return this;
+        };
+
+        F.prototype.setup_control_enable = function () {
+
+//            if (U.anyBool(this.getField('crop').prop('checked'), true)) {
+//                this.getField('crop_fill').removeAttr('readonly');
+//                this.getField('crop_fill').removeAttr('disabled');
+//            } else {
+//                this.getField('crop_fill').attr('readonly', 'readonly');
+//                this.getField('crop_fill').attr('disabled', 'disabled');
+//            }
+            return this;
+        };
+
+        F.prototype.onMonitorCrop = function (t) {
+            return this.setup_control_enable();
+
+        };
+        F.prototype.onMonitorCrop_fill = F.prototype.onMonitorCrop;
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="Комманды">
+        //<editor-fold defaultstate="collapsed" desc="footer commands">
+
+        F.prototype.onCommandCancel = function () {
+            return this.hide().clear();
+        };
+        F.prototype.onCommandApply = function () {
+            this.save(true);
+            return this;
+        };
+        F.prototype.onCommandSave = function () {
+            this.save(false);
+            return this;
+        };
+        //</editor-fold>
+        //</editor-fold>
+
+
+
+
+        //<editor-fold defaultstate="collapsed" desc="save">  
+        F.prototype.getFilters = function () {
+            if (!this.FD) {
+                this.FD = EFO.Filter.FilterDescriptor('values', MC);
+            }
+            return this.FD;
+        };
+        F.prototype.save = function (keep_open) {
+            this._keep_open = U.anyBool(keep_open);
+            var raw_data = this.getFields();
+            var data = EFO.Filter.Filter().applyFiltersToHash(raw_data, this.getFilters().getSectionExport('node'));
+            if (data.timeout === null) {
+                data.timeout = 5000;
+            }
+            if (data.layout === null) {
+                data.layout = 'default';
+            }
+
+            EFO.Filter.Filter().throwValuesErrorFirst(data, true);
+            var post_data = {
+                action: "post",
+                data: JSON.stringify(data)
+            };
+            this.showLoader();
+            jQuery.post('/admin/Slider/API', post_data, null, 'json')
+                    .done(this.on_post_responce.bindToObject(this))
+                    .fail(this.on_network_fail.bindToObject(this))
+                    .always(this.hideLoader.bindToObject(this));
+            return this;
+        };
+        F.prototype.on_post_responce = function (d) {
+            if (U.isObject(d)) {
+                if (d.status === "ok") {
+                    this.on_data_success(U.safeObject(d.slider));
+                    this.runCallback();
+                    if (!this._keep_open) {
+                        this.hide().clear();
+                    }
+                    return this;
+                }
+                if (d.status === "error") {
+                    return this.on_network_fail(d.error_info.message);
+                }
+            }
+            return this.on_network_fail("invalid server responce");
+        };
+
+        F.prototype.on_network_fail = function (x) {
+            U.TError(U.NEString(x, "network error"));
+            return this;
+        };
+
+        F.prototype.on_network_fail_fatal = function (x) {
+            this.on_network_fail.apply(this, APS.call(arguments));
+            this.hide().clear();
+            return this;
+        };
+        //</editor-fold>        
+        //</editor-fold>
+
+        //
+        //<editor-fold defaultstate="collapsed" desc="misc &&callback">
+        F.prototype.onRequiredComponentFail = function () {
+            throw new Error("component load error");
+        };
+        Y.reportSuccess(FQCN, F());
+        //</editor-fold>
+    }
+    //<editor-fold defaultstate="collapsed" desc="dependecy resolver">
+    if (imports.length) {
+        window.Eve.EFO.EFOPromise.waitForArray(imports)
+                .done(initPlugin)
+                .fail(function () {
+                    Y.report_fail(FQCN, "Ошибке при загрузке зависимости");
+                });
+    } else {
+        initPlugin();
+    }
+    //</editor-fold>
+})();

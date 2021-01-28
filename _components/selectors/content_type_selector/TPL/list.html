@@ -1,0 +1,10 @@
+<div class="{{getCssClass}}-list-types">
+    {{#items}}
+    <div class="{{getCssClass}}-item-row" {{^visible}}style=display:none{{/visible}} data-id="{{ctype}}" data-command="select">
+        <div class="{{getCssClass}}-item-row-inner">
+            <div class="{{getCssClass}}-item-selection-mark"></div>
+            <div class="{{getCssClass}}-item-text">{{name}}</div>
+        </div>
+    </div>
+    {{/items}}    
+</div>

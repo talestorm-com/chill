@@ -1,0 +1,52 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" readonly="readonly" data-field="id" id="a{{MD}}id" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}author" class="CommonAdminLayoutLabelIsRequired">author</label>
+                <input type="text"  data-field="author" id="a{{MD}}author" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}datum" class="">datum</label>
+                <input type="text"  data-field="datum" id="a{{MD}}datum" readonly="readonly"/>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                <label for="a{{MD}}rate" class="">Rate (basic!)</label>
+                <input type="text"  data-field="rating" id="a{{MD}}rate" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <input type="text"  style="visibility: hidden"/>
+                <input type="checkbox" id="a{{MD}}enabled" data-field="enabled" data-fielddefault="1" />
+                <label for="a{{MD}}enabled" class="">Включено</label>                
+            </div>
+            
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}content">Comment</label>
+                <textarea id="a{{MD}}content" data-field="content"></textarea>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}r">Response</label>
+                <textarea id="a{{MD}}r" data-field="r"></textarea>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}sticker_name" data-command="select_sticker">sticker</label>
+                <input type="text" id="a{{MD}}sticker_name" readonly="readonly" data-command="select_sticker" data-field="sticker_name" />
+                <input type="hidden"  data-field="sticker" />
+            </div>
+        </div>        
+        <div class="CommonAdminLayoutFormRow">
+            <div class="{{getCssClass}}preview">
+                <img data-role="preview" src="" data-field="sticker_url"/>
+            </div>
+        </div>
+    </div>
+</div>

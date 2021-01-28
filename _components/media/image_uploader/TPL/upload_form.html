@@ -1,0 +1,9 @@
+<div class="{{getCssClass}}UploaderWrapper">
+    <form action="/MediaAPI/ImageFly/Upload" enctype="multipart/form-data" target="{{_target_id}}" method="POST">
+        <input type="hidden" name="_target_id" value="{{_target_id}}" />
+        <input type="hidden" name="callback" value="{{_callback_name}}" />
+        <input type="hidden" name="context" value="{{context}}" />
+        <input type="hidden" name="owner_id" value="{{owner_id}}" />
+    </form>
+    <iframe id="{{_target_id}}" name="{{_target_id}}" src="#"></iframe>
+</div>

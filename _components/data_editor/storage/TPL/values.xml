@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />      
+            <property in="guid" filters="Strip,Trim,NEString,DefaultNull" />            
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="display_name" filters="Strip,Trim,NEString" />                        
+            <property in="visible" filters="Boolean,DefaultTrue" />                        
+        </export>
+    </node>    
+</root>

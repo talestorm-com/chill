@@ -1,0 +1,8 @@
+<div class="{{getCssClass}}OneImageOuter {{getMyClass}}OneImageOuter EFODraggable" data-efodragtype="{{context}}_image_{{instance_id}}" data-context="{{context}}" data-id="{{owner_id}}" data-image="{{image}}">
+    <div class="{{getCssClass}}OneImageInner">
+        <div class="{{getCssClass}}OneImageImage"><img src="{{create_image_url}}" alt="{{title}}" title="{{title}}"/></div>
+        {{>image_control_panel}}
+        {{>image_color_selector}}
+    </div>
+    {{>droptarget}}
+</div>

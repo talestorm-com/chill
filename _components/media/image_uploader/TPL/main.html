@@ -1,0 +1,20 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">    
+    <div class="CommonAdminLayoutFormInner" data-role="form_content">
+        <div class="{{getCssClass}}Content">
+            <div class="{{getCssClass}}ImageList" data-role="images"></div>
+            <div class="{{getCssClass}}UploadFooter" data-role="cp">
+                <div class="{{getCssClass}}UploadButton" data-role="upload_holder">
+                    <div class="{{getCssClass}}UploadButtonText">Загрузить</div>
+                    <input type="file" data-role="file" multiple="multiple" name="{{getCssClass}}FileField[]" />
+                </div>
+                <div class="{{getCssClass}}ZoomButton" data-command="image_uploader_zoom_in">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_zoom_in" /></svg>
+                </div>
+                <div class="{{getCssClass}}ZoomButton" data-command="image_uploader_zoom_out">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_zoom_out" /></svg>
+                </div>
+            </div>
+            <div class="{{getCssClass}}Hiddenzone" data-role="ops"></div>
+        </div>
+    </div>       
+</div>

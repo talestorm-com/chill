@@ -1,0 +1,60 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper {{getCssClass}}CommonWrapperPanelized">  
+        <div class="{{getCssClass}}CWrapPanel">            
+            <div class="CommonAdminLayoutFormRow"> 
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                    <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                    <input type="hidden" data-field="content_type" value="ctGIF" data-fielddefault="ctGIF" />
+                </div>            
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                    <label for="a{{MD}}common_name" >Наименование (внутр)</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}common_name" data-field="common_name"  />
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                    <label for="a{{MD}}target" >Ссылка</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}target" data-field="target"  />
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                    <label for="a{{MD}}enabled">Включено</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                    <label for="a{{MD}}series" >Серий</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}series" data-field="series_count" data-monitor="positive_int"  data-fielddefault="0"/>
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                    <label for="a{{MD}}seasons" >Сезонов</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}seasons" data-field="seasons_count" data-monitor="positive_int"  data-fielddefault="0"/>
+                </div>                    
+            </div>
+            <div class="CommonAdminLayoutFormRow"> 
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                    <label for="a{{MD}}tracklang" data-command="select_tracklang">Аудиодорожка</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}tracklang" data-field="track_language_name" data-command="select_tracklang" readonly="readonly"  />
+                    <input type="hidden" data-field="track_language" />
+                </div>  
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" >
+                    <label for="a{{MD}}cdn_id">cdn id (auto)</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}cdn_id" data-field="cdn_id"  />
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" >
+                    <label for="a{{MD}}cdn_url">cdn url</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}cdn_url" data-field="cdn_url" readonly="readonly"  />
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" >
+                    <label for="a{{MD}}file">Файл</label>
+                    <div class="a{{getCssClass}}uploader-wrapper">
+                        <input type="file" accept=".gif"  id="a{{MD}}file" data-field="file" data-monitor="file"  />
+                        <div class="a{{getCssClass}}uploader-wrapper-inner" data-role="file_display">Нажать или перетащить</div>
+                    </div>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox" id="a{{MD}}free" data-fielddefault="0" data-field="free" />
+                    <label for="a{{MD}}free">Бесплатно</label>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}CWRapTable" data-role="table" data-field="strings"></div>
+    </div>
+</div>

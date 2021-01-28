@@ -1,0 +1,33 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id">id</label>
+                <input type="text" readonly="readonly" data-field="id" id="a{{MD}}id" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-90">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Наименование</label>
+                <input type="text"  data-field="name" id="a{{MD}}name" />
+            </div>                        
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}price" class="CommonAdminLayoutLabelIsRequired">Ценник</label>
+                <input type="text" autocomplete="off" id="a{{MD}}price" data-field="price" data-monitor="money" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}days" class="CommonAdminLayoutLabelIsRequired" >Срок годности</label>
+                <input type="text" autocomplete="off" id="a{{MD}}days" data-field="days" data-monitor="intval" />               
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}usages" class="CommonAdminLayoutLabelIsRequired" >К-во посещений</label>
+                <input type="text" autocomplete="off" id="a{{MD}}usages" data-field="usages" data-monitor="intval" />               
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40 CommonAdminLayoutSplitCheck">
+                <input type="checkbox"  id="a{{MD}}active" data-field="active" />               
+                <label for="a{{MD}}active" >Доступен для покупки</label>                
+            </div>          
+        </div>       
+    </div>
+</div>

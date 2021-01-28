@@ -1,0 +1,321 @@
+.CommonAdminLayoutForm.MediaImage_cropperForm {
+    padding: 0;
+}
+
+.CommonAdminLayoutFormInner.MediaImage_cropperFormWrapper {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 2.5em;
+    height: 100%;
+    overflow: hidden;
+}
+
+.MediaImage_cropperToolPanel {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 2.5em;
+    background: whitesmoke;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-bottom: 1px solid dimgray;
+}
+
+.MediaImage_cropperWorkArea {
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.MediaImage_cropperCropperFrame {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    min-width: 10px;    
+    min-height: 10px;    
+    border: 1px dashed red;
+    box-shadow: 0 0 0 10000em rgba(0,0,0,.55);
+    top: 10%;
+    left: 10%;
+}
+
+.MediaImage_cropperCropperNode {
+    width: .9em;
+    height: .9em;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+.MediaImage_cropperCropperNodeLeft {
+    left: 0;
+    margin-left: -.45em;
+}
+
+.MediaImage_cropperCropperNodeTop {
+    top: 0;
+    margin-top: -.45em;
+}
+
+.MediaImage_cropperCropperNodeBottom {
+    bottom: 0;
+    margin-bottom: -.45em;
+}
+
+.MediaImage_cropperCropperNodeRight {
+    right: 0;
+    margin-right: -.45em;
+}
+
+.MediaImage_cropperCropperNode.MediaImage_cropperCropperNodeRight.MediaImage_cropperCropperNodeBottom {
+    cursor: se-resize;
+    cursor: nwse-resize;
+}
+
+.MediaImage_cropperCropperNode.MediaImage_cropperCropperNodeLeft.MediaImage_cropperCropperNodeTop {
+    cursor: nwse-resize;
+}
+
+.MediaImage_cropperCropperNode.MediaImage_cropperCropperNodeRight.MediaImage_cropperCropperNodeTop {
+    cursor: nesw-resize;
+}
+
+.MediaImage_cropperCropperNode.MediaImage_cropperCropperNodeLeft.MediaImage_cropperCropperNodeBottom {
+    cursor: nesw-resize;
+}
+
+.MediaImage_cropperCropperFrame {
+    cursor: move;
+}
+
+.MediaImage_cropperCropperFrame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.MediaImage_cropperCropperTarget {
+    box-sizing: border-box;
+    width: 5em;
+    height: 5em;
+    border: 1px dotted rgba(255,0,0,.3);
+    position: relative;
+    pointer-events: none;
+}
+
+.MediaImage_cropperImageArea {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.MediaImage_cropperToolPanel {
+    padding: 0 .5em;
+}
+
+.MediaImage_cropperToolPanelInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.MediaImage_cropperToolPanelItem {
+    box-sizing: border-box;
+    margin-right: 1em;
+    width: 100%;
+    max-width: 25em;
+    height: 2.2em;
+}
+
+.MediaImage_cropperSelectWrap {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding: 4px;
+    padding-left: 2.25em;
+    position: relative;
+}
+
+.MediaImage_cropperSelectIcon {
+    box-sizing: border-box;
+    width: 2.2em;
+    height: 2.2em;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 0;
+    padding: .4em;
+}
+
+.MediaImage_cropperSelectIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.MediaImage_cropperSelectWrap select {
+    box-sizing: border-box;
+    width: 100%;
+    outline: 1px solid silver;
+    border: none;
+    height: 100%;
+    /* height: calc(100% - 2px); */
+}
+
+.MediaImage_cropperSpinnerWrap {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 2.5em;
+}
+
+.MediaImage_cropperSpinnerButton {
+    box-sizing: border-box;
+    line-height: 0;
+    width: 2.2em;
+    height: 2.2em;
+    background: #00acc8;
+    border: 1px solid #00acc8;
+    cursor: pointer;
+    padding: .45em;
+    top: 0;
+    position: absolute;
+}
+
+.MediaImage_cropperSpinnerButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.MediaImage_cropperSpinnerButton.MediaImage_cropperSpinnerbuttonLeft {
+    left: 0;
+}
+
+.MediaImage_cropperSpinnerButton.MediaImage_cropperSpinnerbuttonRight {
+    right: 0;
+}
+
+.MediaImage_cropperSpinnerWrap input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.MediaImage_cropperImageArea {
+    position: relative;
+}
+
+.MediaImage_cropperImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.MediaImage_cropperImageContainer {
+    min-width: 100%;
+}
+.EFOWindowContent.MediaImage_cropperWindowContent {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-drag:none;
+    -webkit-user-drag: none;
+}
+
+.MediaImage_cropperImageContainer img {
+    pointer-events: none;
+}
+
+.MediaImage_cropperSpinnerIcon {
+    box-sizing: border-box;
+    width: 2.2em;
+    height: 2.2em;
+    line-height: 0;
+    padding: .45em;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.MediaImage_cropperSpinnerWrap {
+    padding-left: 5em;
+}
+
+.MediaImage_cropperSpinnerButton.MediaImage_cropperSpinnerbuttonLeft {
+    left: 2.5em;
+}
+
+.MediaImage_cropperSpinnerIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.MediaImage_cropperCheckWrap {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.MediaImage_cropperCheckWrap input[type=checkbox] {
+    display: none;
+}
+.MediaImage_cropperCheckWrap input[type=checkbox]+label{
+   margin:0;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:nowrap;
+   justify-content:flex-start;
+   aligin-items:center;     
+   padding:.1em;
+}
+
+.MediaImage_cropperCheckWrap input[type=checkbox]+label:before{
+    box-sizing:border-box;
+    content:' ';
+    width:1.2em;
+    height:1.2em;
+    outline:1px solid #00acc8;
+    margin-right:.5em;
+    outline-offset:0;
+    transition:all .3s;
+}
+.MediaImage_cropperCheckWrap input[type=checkbox]:checked+label:before{
+    background:#00acc8;
+    border:1px solid white;
+}
+
+
+
+

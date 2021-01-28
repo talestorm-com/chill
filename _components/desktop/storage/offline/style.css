@@ -1,0 +1,151 @@
+
+.DesktopStorageOfflineBackdrop {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index:1;
+}
+
+.EFOWindow.DesktopStorageOfflineWindow {
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.EFOTitle.DesktopStorageOfflineTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopStorageOfflineFooter {
+    display: none;
+}
+
+
+.ADVTableHeaderRowReplacer.DesktopStorageOfflineHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesktopStorageOfflineControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.DesktopStorageOfflineControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopStorageOfflineControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+
+
+.ADVTableHeaderRowReplacer.DesktopStorageOfflineHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesktopStorageOfflineControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.DesktopStorageOfflineControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopStorageOfflineControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopStorageOfflineRemoveButton {
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 0;
+    padding: .2em;
+}
+
+.DesktopStorageOfflineRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopStorageOfflineLoginCellContent.DesktopStorageOfflineCommonDisplayWrap {
+    color: #00acc8;
+}
+
+.DesktopStorageOfflineCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.DesktopStorageOfflineCommonDisplay {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopStorageOfflineBooleanDisplay {
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    outline: 1px solid dimgray;
+    margin: 0 auto;
+}
+
+.DesktopStorageOfflineCreatedCellContent.DesktopStorageOfflineCommonDisplayWrap  {
+    text-align: center;    
+}
+.DesktopStorageOfflineCommonDisplayWrap.DesktopStorageOfflineCommonBooleanDisplayWrap .DesktopStorageOfflineCommonDisplay {
+    padding:.1em;
+}
+
+.DesktopStorageOfflineBooleanDisplay.DesktopStorageOfflineBooleanDisplayState1 {
+    outline: 1px solid #00acc8;
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+
+.DesktopStorageOfflinePhoneCellContent.DesktopStorageOfflineCommonDisplayWrap {
+    color: #00acc8;
+}

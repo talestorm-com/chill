@@ -1,0 +1,30 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="{{getCssClass}}UploadArea">
+        <div class="{{getCssClass}}UploadAreaInner">
+            <div class="{{getCssClass}}Uploader-wrapper">
+                <div class="{{getCssClass}}Uploader-wrapper-inner" data-role="cover">
+                    <div class="{{getCssClass}}Uploader-cover {{getCssClass}}Uploader-cover-top"></div>
+                    <input type="file" name="file" data-role="file" data-monitor="file" accept="video/*" />
+                    <div class="{{getCssClass}}Uploader-text"> перетащите файл на эту площадку или нажмите чтобы выбрать</div>
+                    <div class="{{getCssClass}}Uploader-cover {{getCssClass}}Uploader-cover-bottom"></div>
+                </div>
+            </div>
+            <div class="{{getCssClass}}checkbox-area">
+                <div class="{{getCssClass}}checkbox-row">
+                    <input type="checkbox" id="a{{MD}}autoclose" data-role="autoclose" data-monitor="autoclose" />
+                    <label for="a{{MD}}autoclose">Автоматически закрыть по завершении</label>
+                </div>
+            </div>
+            <div class="{{getCssClass}}progress-area">
+                <div class="{{getCssClass}}progressinner">
+                    <div class="{{getCssClass}}progress" data-role="progress"></div>
+                </div>
+            </div>
+            <div class="{{getCssClass}}-error-area" style="display:none" data-role="error_wrap">
+                <div class="{{getCssClass}}errorMessage">
+                    <div class="{{getCssClass}}error-text" data-role="error"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

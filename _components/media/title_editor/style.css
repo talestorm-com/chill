@@ -1,0 +1,27 @@
+.Data_editorCatalog_groupEditorInputWrapper {
+    height: 20em;
+    box-sizing: border-box;
+    padding-top: 3.5em;
+    position: relative;
+    padding: 0;
+    padding-top: 3.5em;
+}
+
+.Data_editorCatalog_groupEditorInputWrapper .ql-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5em;
+    box-sizing: border-box;
+    background: white;
+}
+
+.Data_editorCatalog_groupEditorInput.ql-container.ql-snow {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorCatalog_groupImagelistInputWrapper {
+    height: 30em;
+}

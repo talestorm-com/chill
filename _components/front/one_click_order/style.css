@@ -1,0 +1,491 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.12.2017, 12:42:16
+    Author     : alexander
+*/
+
+.EFOBackdrop.FrontOne_click_orderBackdrop {
+    z-index: 22;
+    background: rgba(255,255,255,.7);
+}
+
+.EFOWindow.FrontOne_click_orderWindow {
+    width: 100%;
+    max-width: 640px;
+    height: 60%;
+    max-height: 250px;    
+}
+
+.FrontOne_click_orderLInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 .5em;
+}
+
+.FrontOne_click_orderLInner form {
+    margin: 0;
+    padding: 0 .5em;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+}
+
+.FrontOne_click_orderRow {
+    width: 100%;
+    overflow: hidden;
+    padding: .1em .3em;
+    box-sizing: border-box;
+    margin-top: .3em;
+    margin-bottom: .5em;
+}
+
+.FrontOne_click_orderLInner input[type=text],
+.FrontOne_click_orderLInner input[type=password] {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    background: white!important;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2.3em;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding:0 .5em;
+}
+.FrontOne_click_orderLInner input[type=text]:focus,
+.FrontOne_click_orderLInner input[type=password]:focus,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=text]:focus,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=password]:focus {
+    border:1px solid #00acc8;
+}
+.FrontOne_click_orderLInner input[type=text]:focus+.FrontOne_click_orderRowIcon,
+.FrontOne_click_orderLInner input[type=password]:focus+.FrontOne_click_orderRowIcon,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=text]:focus+.FrontOne_click_orderRowIcon,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=password]:focus+.FrontOne_click_orderRowIcon {
+    border:1px solid #00acc8;
+}
+.FrontOne_click_orderLInner input[type=text]:focus+.FrontOne_click_orderRowIcon svg,
+.FrontOne_click_orderLInner input[type=password]:focus+.FrontOne_click_orderRowIcon svg,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=text]:focus+.FrontOne_click_orderRowIcon svg,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=password]:focus+.FrontOne_click_orderRowIcon svg {
+    fill: #00acc8;
+}
+
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=text]+.FrontOne_click_orderRowIcon svg,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=password]+.FrontOne_click_orderRowIcon svg {
+    fill:crimson;
+}
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=text],
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=password],
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=text]+.FrontOne_click_orderRowIcon,
+.FrontOne_click_orderLInner .FrontOne_click_orderErrorField input[type=password]+.FrontOne_click_orderRowIcon {
+    border:1px solid crimson;
+}
+
+
+.FrontOne_click_orderLInner label {cursor: pointer;margin: 0;margin-bottom: .3em;font-size: .9em;}
+
+.FrontOne_click_orderRowSplit {
+    padding: 0.1em .2em;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.FrontOne_click_orderRowSplit100 {
+    width: 100%;
+}
+
+.FrontOne_click_orderInputWrapper {
+    box-sizing: border-box;
+    padding-right: 2.3em;
+    position: relative;
+}
+
+.FrontOne_click_orderRowIcon {
+    border: 1px solid silver;
+    width: 2.3em;
+    height: 2.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-left: none!important;
+    padding: .2em;
+}
+
+.FrontOne_click_orderRowIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.EFOWindowResizer.FrontOne_click_orderWindowResizer {
+    display: none;
+}
+
+.FrontOne_click_orderLInner a, 
+.FrontOne_click_orderLInner a:hover, 
+.FrontOne_click_orderLInner a:visited, 
+.FrontOne_click_orderLInner a:active, 
+.FrontOne_click_orderLInner a:link {
+    color: #848282;
+}
+
+.FrontOne_click_orderRowSplit50 {
+    width: 50%;
+}
+.FrontOne_click_orderalignRight {
+    text-align: right;
+}
+
+body.FrontOne_click_orderBodyScrollLock {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.FrontOne_click_orderBackdrop {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.EFOBackdrop.FrontOne_click_orderBackdrop {
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.EFOWindow.FrontOne_click_orderWindow {
+    position: static;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background: transparent;
+    background: rgba(255,255,255,0);
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EFOTitle.FrontOne_click_orderTitle {
+    display: none;
+}
+
+.EFOFooter.FrontOne_click_orderFooter {
+    display: none;
+}
+
+.EFOWindowContent.FrontOne_click_orderWindowContent {
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    background: white;
+    box-shadow: 3px 3px 10px #525151;
+}
+
+.EFOWindowContent.FrontOne_click_orderWindowContent {
+    padding-top: 0;
+}
+
+.FrontOne_click_orderLogoHeader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+}
+
+.FrontOne_click_orderLogoHeaderInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    padding: .75em;
+    border-bottom: 1px solid black;
+}
+
+.FrontOne_click_orderLogoHeaderInner svg {
+    width: 100%;
+    height: 100%;
+    fill: black;
+}
+
+.FrontOne_click_orderLogoHeader {
+    margin-bottom: 0.75em;
+}
+
+.FrontOne_click_orderLInner form {
+    padding: 0;
+}
+
+.FrontOne_click_orderLInner {
+    padding: 0;
+}
+
+.FrontOne_click_orderRow {
+    padding: 0;
+    margin-top: .5em;
+    margin-bottom: 1.25em;
+}
+
+.FrontOne_click_orderRow.FrontOne_click_orderLinkRow {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.FrontOne_click_orderRow.FrontOne_click_orderLinkRow .FrontOne_click_orderRowSplit.FrontOne_click_orderRowSplit50 {
+    width: auto;
+    float: none;
+}
+
+.FrontOne_click_orderRow.FrontOne_click_orderLinkRow a {
+}
+
+.FrontOne_click_orderRowSplit.FrontOne_click_orderRowSplit50.FrontOne_click_orderalignRight {
+    margin-left: 1.25em;
+}
+
+.FrontOne_click_orderButtonPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+.FrontOne_click_orderButtonPanel {}
+
+.FrontOne_click_orderButtonPanelButton:nth-child(1) {
+    order: 2;
+}
+
+.FrontOne_click_orderButtonPanelButton {
+    cursor: pointer;
+    padding: 0 1.5em;
+    text-align: center;
+    line-height: 2em;
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid dimgray;
+    transition: all .3s;
+    color: dimgray;
+}
+
+.FrontOne_click_orderButtonPanelButton:nth-child(1) {
+    background: #f15a24;
+    color: white;
+    border: 1px solid #f15a24;
+}
+
+.FrontOne_click_orderButtonPanelButton:nth-child(1):hover {
+    background: white;
+    color: #f15a24;
+}
+
+.FrontOne_click_orderButtonPanelButton:nth-child(2):hover {
+    border: 1px solid black;
+    background: whitesmoke;
+    color: black;
+}
+
+.FrontOne_click_orderNewLoader {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.3);
+    display: none;
+}
+
+.FrontOne_click_orderNewLoaderFlex {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontOne_click_orderNewLoaderCell {
+    box-sizing: border-box;
+    width: 4em;
+    height: 4em;
+    line-height: 0;
+}
+
+.FrontOne_click_orderNewLoaderCell svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.FrontOne_click_orderNWFuter {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+.FrontOne_click_orderFormButton {
+    box-sizing: border-box;
+    padding: 0 1.5em;
+    cursor: pointer;
+    transition: all .3s;
+    line-height: 2em;
+}
+
+.FrontOne_click_orderFormButton.FrontOne_click_orderFormButtonCancel {
+    border: 1px solid darkgray;
+    color:  darkgray;
+}
+
+.FrontOne_click_orderFormButton.FrontOne_click_orderFormButtonCancel:hover {
+    background: whitesmoke;
+}
+
+.FrontOne_click_orderFormButton.FrontOne_click_orderFormButtonDO {
+    color: white;
+    background: #f15a24;
+    border: 1px solid #f15a24;
+}
+
+.FrontOne_click_orderFormButton.FrontOne_click_orderFormButtonDO:hover {
+    background: white;
+    color: #f15a24;
+}
+
+.FrontOne_click_orderFormIntro {
+    font-size: .9em;
+    color: green;
+    margin-bottom: .75em;
+}
+
+.FrontOne_click_orderRowmRow {
+    margin-bottom: .75em;
+}
+
+.FrontOne_click_orderRowmRow label {
+    /* margin-bottom: .2em; */
+    display: block;
+}
+
+.FrontOne_click_orderFormRows {
+    margin-bottom: 1.5em;
+}
+
+.FrontOne_click_orderFormRows input[type=text]::placeholder {
+    color: #dadada;
+}
+
+.EFOWindowContent.FrontOne_click_orderWindowContent {
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    font-size: .9em;
+    letter-spacing: .05em;
+}
+
+label.FrontOne_click_orderObligate:after {
+    content: '*';
+}
+
+
+.FrontOne_click_orderLInner.FrontOne_click_orderorg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 1em;
+    display: block;
+    padding-top: 60px;
+}
+
+.FrontOne_click_orderLInner.FrontOne_click_orderfake {
+    height: auto;
+    visibility: hidden;
+}
+
+.FrontOne_click_orderLInner.FrontOne_click_orderorg .FrontOne_click_orderLogoHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: calc(100% - 2em);
+    left: 1em;
+}
+
+.FrontOne_click_orderLInner.FrontOne_click_orderorg .FrontOne_click_orderFormContent {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    pointer-events: all;
+}
+
+.FrontOne_click_orderLInner.FrontOne_click_orderorg .FrontOne_click_orderFormContentInner {
+    margin-bottom: 1em;
+}
+
+
+.FrontOne_click_orderFormContentInner {
+    padding-top: .5em;
+}
+
+
+@media only screen and (max-width:599px){
+    .DeviceModeDevice .FrontOne_click_orderNWFuter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+   .DeviceModeDevice  .FrontOne_click_orderFormButton.FrontOne_click_orderFormButtonCancel {
+        order: 2;
+    }
+
+    .DeviceModeDevice .FrontOne_click_orderFormButton.FrontOne_click_orderFormButtonDO {
+        order: 1;
+        margin-bottom: 1em;
+    }
+
+   .DeviceModeDevice  .FrontOne_click_orderFormButton {
+        text-align: center;
+    }
+}
+

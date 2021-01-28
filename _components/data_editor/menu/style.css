@@ -1,0 +1,47 @@
+.Data_editorMenuForm {
+    padding-top: 5em;
+}
+
+.Data_editorMenuFixedPanel {
+    height: 5em;
+}
+
+.Data_editorMenuFixedPanel {
+    border-bottom: 1px solid silver;
+}
+
+.CommonAdminLayoutFixedForm.Data_editorMenuForm {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+
+.Data_editorMenuTreeZone .widgetTreeViewCommandButton {
+    width: 2em;
+    height: 2em;
+    border: 1px solid silver;
+    line-height: 0;
+    transition: all .3s;
+    cursor: pointer;
+    padding: .25em;
+    box-sizing: border-box;
+}
+.Data_editorMenuTreeZone .widgetTreeViewCommandButton:hover{
+    border:1px solid dimgray;
+    padding:.15em;
+}
+.Data_editorMenuTreeZone .widgetTreeViewCommandButton svg{
+    width:100%;height:100%;fill:silver;transition:all .3s;
+}
+.Data_editorMenuTreeZone .widgetTreeViewCommandButton:hover svg{
+    fill:dimgray;
+}
+
+.Data_editorMenuTreeZone .widgetTreeViewToolbar {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+
+}

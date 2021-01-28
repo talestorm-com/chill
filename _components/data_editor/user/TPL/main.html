@@ -1,0 +1,15 @@
+<div class="EFOTabbableContainer {{getCssClass}}MainWrap">
+    <div class="EFOTabheaderContainer">
+        <div class="EFOTabheader" data-tabheader="common" data-defaulttabheader="1" >Основное</div>
+        <div class="EFOTabheader" data-tabheader="content" style="display: none">Просмотренный контент</div>        
+        <div class="EFOTabheader" data-tabheader="reviews" style="display: none">Отзывы</div>    
+        <div class="EFOTabheader" data-tabheader="payments" style="display: none">Платежи</div>                    
+    </div>
+    <div class="EFOTabsContainer">
+        <div class="EFOTabBody" data-tab="common">{{>Data_editorUserTAB_common}}</div>
+        <div class="EFOTabBody" data-tab="content">{{>Data_editorUserTAB_content}}</div>
+        <div class="EFOTabBody" data-tab="reviews">{{>Data_editorUserTAB_reviews}}</div>        
+        <div class="EFOTabBody" data-tab="payments">{{>Data_editorUserTAB_payments}}</div>        
+        
+    </div>
+</div>

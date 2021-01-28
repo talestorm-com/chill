@@ -1,0 +1,37 @@
+<form method="POST" enctype="multipart/form-data" action="/admin/Import/API" target="{{get_target_frame_name}}">
+    <input type="hidden" name="callback" value="{{getCommonCallbackName}}"/>
+    <div class="{{getCssClass}}Intro"><div class="{{getCssClass}}IntroInner">Выберите файл или перетащите его на кнопку.<br>            
+        </div></div>
+    <div class="{{getCssClass}}UploadWrapper">
+        <div class="{{getCssClass}}Uploadbutton">
+            <div class="{{getCssClass}}UploadText">Выберите файл</div>
+            <input type="file" name="{{getCssClass}}" />
+        </div>
+    </div>
+    <div class="{{getCssClass}}CheckboxRow">
+        <input type="hidden" name="action" value="nomenclature" />
+        <input type="hidden" name="disable_new_categories" value="0" />
+        <input type="checkbox" name="disable_new_categories" value="1" id="a{{MD}}disable_new_categories" />
+        <label for="a{{MD}}disable_new_categories">Сделать все новые категории невидимыми</label>    
+        <input type="hidden" name="disable_new_products" value="0" />
+        <input type="checkbox" name="disable_new_products" value="1" id="a{{MD}}disable_new_products" />
+        <label for="a{{MD}}disable_new_products">Сделать все новые товары невидимыми</label>    
+    </div>
+    <div class="{{getCssClass}}SelectorRow {{getCssClass}}CategorySelectorRow">
+        <label for="a{{MD}}root_selector">Примонтировать дерево к:</label>
+        <div class="{{getCssClass}}SelectorWrapper {{getCssClass}}CategorySelector">
+            <input type="text" name="parent_path" readonly="readonly" data-command="select_parent_category" placeholder="В корень"/>
+            <input type="hidden" name="default_parent" />
+            <div class="{{getCssClass}}SelectorButton" data-command="clear_parent_category">
+                <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+            </div>
+        </div>
+    </div>
+    <div class="{{getCssClass}}submitRow">
+        <div class="{{getCssClass}}Button" data-command="submit">Отправить</div>
+    </div>
+    <div class="{{getCssClass}}DataLogWrapper">
+        <textarea data-role="data-log" readonly="readonly" disabled="disabled"></textarea>
+    </div>
+
+</form>

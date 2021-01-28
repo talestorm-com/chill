@@ -1,0 +1,171 @@
+.EFOBackdrop.DesktopTranslation_toksBackdrop {
+    position: static;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.EFOWindow.DesktopTranslation_toksWindow {
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.EFOTitle.DesktopTranslation_toksTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopTranslation_toksFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopTranslation_toksWindowContent {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.ADVTableHeaderRowReplacer.DesktopTranslation_toksHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.DesktopTranslation_toksControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .5em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopTranslation_toksControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopTranslation_toksControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopTranslation_toksRemoveButton {
+    box-sizing: border-box;
+    width: 1.3em;
+    height: 1.3em;
+    cursor: pointer;
+    line-height: 0;
+    padding: .2em;
+    transition: all .3s;
+    margin: 0 auto;
+}
+
+.DesktopTranslation_toksRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.CommonDesktopComponentBody.DesktopTranslation_toksBodyArea .ADVTableRow.DesktopTranslation_toksADVTRow {
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.CommonDesktopComponentBody.DesktopTranslation_toksBodyArea .ADVTableRow.DesktopTranslation_toksADVTRow:hover {
+    background: rgba(0, 255, 0, 0.28);
+}
+
+.DesktopTranslation_toksCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopTranslation_toksCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: .1em .3em;
+    overflow: hidden;
+}
+
+.DesktopTranslation_toksBooleanDisplay {
+    width: 1.2em;
+    height: 1.2em;
+    box-sizing: border-box;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em auto;
+}
+
+.DesktopTranslation_toksBooleanDisplay.DesktopTranslation_toksBooleanDisplayState1 {
+    background: #00acc8;
+    border: 1px solid white;
+}
+
+
+.DesktopTranslation_toksFIOCellContent.DesktopTranslation_toksCommonDisplayWrap .DesktopTranslation_toksCommonDisplay {
+    font-weight: normal;
+    color: #00acc8;
+    text-transform: UPPERCASE;
+}
+
+.DesktopTranslation_toksValueCellContent.DesktopTranslation_toksCommonDisplayWrap {
+    padding: 0;
+}
+
+.DesktopTranslation_toksInputWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+.DesktopTranslation_toksInputWrapper input[type=text] {
+    box-sizing: border-box;
+    padding: 0 .5em;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    transition: all .3s;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+a
+.DesktopTranslation_toksInputWrapper input[type=text]:focus {
+    border: 1px solid #00acc8;
+    background: white;
+}
+
+
+
+.DesktopTranslation_toksSectionCellContent.DesktopTranslation_toksCommonDisplayWrap .DesktopTranslation_toksCommonDisplay {
+    font-weight: bold;
+    color: #00acc8;
+}
+
+.DesktopTranslation_toksTokenCellContent.DesktopTranslation_toksCommonDisplayWrap .DesktopTranslation_toksCommonDisplay {
+    color: black;
+    font-family: monospace;
+}
+
+.DesktopTranslation_toksInputWrapper input[type=text]:focus {
+    background: white;
+    border: 1px solid #00acc8;
+}
+
+

@@ -1,0 +1,26 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="{{getCssClass}}MainDataPanel">
+        <div class="{{getCssClass}}MainDataPanelInner">
+            <div class="CommonAdminLayoutFormRow">
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                    <label for="a{{MD}}id">id</label>
+                    <input type="text" readonly="readonly" data-field="id" id="a{{MD}}id"/>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-60">
+                    <label for="a{{MD}}tag">Tag</label>
+                    <input type="text"  data-field="tag" id="a{{MD}}tag"/>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                    <div class="{{getCssClass}}ImagePreview" data-role="preview_outer">
+                        <div class="{{getCssClass}}ImagePreviewElement" data-role="preview_wrap">
+                            <div class="{{getCssClass}}ImagePreviewElementGraph" data-role="preview"></div>
+                            <input type="file" accept=".svg" data-role="file" />
+                        </div>
+                    </div>
+                    <textarea style="display:none" data-field="image"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="{{getCssClass}}_table_area" data-role="table" data-field="name"></div>
+</div>

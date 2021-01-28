@@ -1,0 +1,24 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">
+             <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}timeout" class="">Таймаут</label>
+                <input type="text" autocomplete="off" id="a{{MD}}timeout" data-field="timeout" data-monitor="timeout"/>               
+            </div>   
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox"  id="a{{MD}}crop" data-field="crop" data-fielddefault="1" data-monitor="crop"/>               
+                    <label for="a{{MD}}crop">Кроп</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox"  id="a{{MD}}crop_fill" data-field="crop_fill" data-fielddefault="1"/>               
+                    <label for="a{{MD}}crop_fill">Кроп с заполнением</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30">
+                    <label for="a{{MD}}background">Заполнение под кропом</label>
+                    <input type="color" id="a{{MD}}background" data-field="background" class="{{getCssClass}}ColorInput"/>
+                </div>                
+            </div>    
+        </div>
+    </div>
+</div>

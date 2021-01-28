@@ -1,0 +1,94 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                <input type="hidden" data-field="content_type" value="ctVIDEO" data-fielddefault="ctVIDEO" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}common_name" >Наименование (На родном языке)</label>
+                <input type="text" autocomplete="off" id="a{{MD}}common_name" data-field="common_name"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}name" >Наименование (На текущем языке)</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>                
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}year">Год выхода</label>
+                <input type="text" autocomplete="off" id="a{{MD}}year" data-field="year" data-monitor="year" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 ">
+                <label for="a{{MD}}price">Ценник</label>
+                <input type="text" autocomplete="off" id="a{{MD}}price" data-field="price" data-monitor="price" class="{{getCssClass}}_align_right" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}vertical" data-fielddefault="0" data-field="vertical" />
+                <label for="a{{MD}}vertical">Вертикальный</label>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                <label for="a{{MD}}enabled">Включено</label>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30" style="display:none">
+                <label for="a{{MD}}cdn_id">cdn_id</label>
+                <div class="{{getCssClass}}ButtonedInputPanel">
+                    <input type="text" autocomplete="off" id="a{{MD}}cdn_id" data-field="cdn_id" />
+                    <div class="{{getCssClass}}ButtonedInputButton" data-command="info">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_info"/></svg>
+                    </div>
+                    <div class="{{getCssClass}}ButtonedInputButton" data-command="seek">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_seek"/></svg>
+                    </div>
+                    <div class="{{getCssClass}}ButtonedInputButton" data-command="upload">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_upload"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="CommonAdminLayoutFormRow"> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="genres" data-field="genres"></div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="countries" data-field="countries"></div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">     
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="studios" data-field="studios"></div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div data-role="tags" data-field="tags"></div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div class="{{getCssClass}}EmojiDisplay">
+                    <label for="a{{MD}}emoji" data-command="select_emoji">Emoji</label>
+                    <div class="{{getCssClass}}EmojiDisplayFieldWrapper">
+                        <input type="text" readonly="readonly" id="a{{MD}}emoji" data-command="select_emoji" data-field="emoji_name" placeholder="Не выбрано"/>
+                        <div class="{{getCssClass}}emoji_display_clear_button" data-command="clear_emoji" >
+                            <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                        </div>
+                    </div>
+                    <input type="hidden" data-field="emoji"/>
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <div class="{{getCssClass}}EmojiDisplay">
+                    <label for="a{{MD}}age_restriction" data-command="select_age_restriction">Возрастное ограничение</label>
+                    <div class="{{getCssClass}}EmojiDisplayFieldWrapper">
+                        <input type="text" readonly="readonly" id="a{{MD}}age_restriction" data-command="select_age_restriction" data-field="age_restriction_name" placeholder="Не выбрано"/>
+                        <div class="{{getCssClass}}emoji_display_clear_button" data-command="clear_age_restriction" >
+                            <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                        </div>
+                    </div>
+                    <input type="hidden" data-field="age_restriction"/>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>

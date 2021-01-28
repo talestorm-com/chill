@@ -1,0 +1,58 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper {{getCssClass}}CommonWrapperLent">  
+        <div class="CommonAdminLayoutFormRow">     
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}_lent_mode2">Отображение </label>
+                <select id="a{{MD}}_lent_mode2" data-field="lent_mode2" data-monitor="lent_mode2" data-fielddefault="poster">
+                    <option value="poster">Картинка</option>
+                    <option value="video">Видео</option>
+                    <option value="gif">Гифка</option>
+                </select>                
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" data-hint="Общий для всех - загрузка картинки">
+                <label for="a{{MD}}soapposter2">Вид </label>
+                <div class="{{getCssClass}}posterpreviewuploader">
+                    <div class="{{getCssClass}}posterpreviewuploaderinner">
+                        <img data-role="poster_image2" src="" />
+                        <input type="file" id="a{{MD}}soapposter2" data-field="poster_image2" data-monitor="poster_image2" />
+                    </div>
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-80" data-role="lent_param_video2" style="display:none">
+                <div class="{{getCssClass}}VideoParamsRow">
+                    <label for="a{{MD}}video_cdn_id2">cdn_id</label>
+                    <div class="{{getCssClass}}ButtonedInput">
+                        <input type="text" data-field="video_cdn_id2" id="a{{MD}}video_cdn_id2" readonly="readonly"/>
+                        <div class="{{getCssClass}}ButtonedInputButton" data-command="select_lent_video2"><svg><use xlink:href="#{{getCssClass}}_icon_seek"/></svg></div>
+                    </div>
+                </div>
+                <div class="{{getCssClass}}VideoParamsRow">
+                    <label for="a{{MD}}video_cdn_url2">cdn_url</label>
+                    <div class="{{getCssClass}}ButtonedInput">
+                        <input type="text" data-field="video_cdn_url2" id="a{{MD}}video_cdn_url2" readonly="readonly" />
+                        <div class="{{getCssClass}}ButtonedInputButton" data-command="select_lent_video2"><svg><use xlink:href="#{{getCssClass}}_icon_seek"/></svg></div>
+                    </div>
+                </div>
+                <div class="{{getCssClass}}VideoParamsRow">
+                    <label for="a{{MD}}lent_message2">Текст</label>
+                    <input type="text" id="a{{MD}}lent_message2" data-field="lent_message2"  />
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-80" data-role="lent_param_gif2" style="display:none">
+                <div class="{{getCssClass}}gif_selector">
+                    <input type="hidden" data-field="gif_cdn_id2"  />
+                    <input type="hidden" data-field="gif_cdn_url2"  />
+                    <label for="a{{MD}}gif_image2">Гиф:</label>
+                    <div class="{{getCssClass}}gif_previewuploder">
+                        <div class="{{getCssClass}}gif_preview_uploader_inner">
+                            <img src="" data-role="gif_upload2" />
+                            <input type="file" data-field="gif_image2" data-monitor="gif_image2" id="a{{MD}}gif_image2" accept=".gif" />
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,82 @@
+.dummy{
+    backgroung:yellow;
+}
+
+.CommonAdminLayoutForm.Data_editorGenreForm {
+    padding: 0;
+    /* padding-top: 14.5em; */
+    position: relative;
+    overflow-y: auto;
+}
+
+.Data_editorGenreMainDataPanel {
+    box-sizing: border-box;
+    height: 18em;
+    padding: .1em .5em;
+    width: 100%;
+    /* overflow: hidden; */
+    top: 0;
+    position: relative;
+    border-bottom: 1px solid dimgray;
+}
+
+.Data_editorGenre_table_area {
+    box-sizing: border-box;
+    /* height: 100%; */
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.Data_editorGenreMainDataPanelInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.Data_editorGenreMainDataPanelInner .CommonAdminLayoutFormRow {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.Data_editorGenreuIdCellContent.Data_editorGenreCommonDisplayWrap {
+    padding: 0 .5em;
+    color: #00acc8;
+}
+
+.Data_editorGenreuIdCellContent.Data_editorGenreCommonDisplayWrap .Data_editorGenreCommonDisplay {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.Data_editorGenreInputWrapper {
+    box-sizing: border-box;
+    padding: 0;
+    height: 2em;
+}
+
+.Data_editorGenreInputWrapper input[type=text] {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 .5em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: all .3s;
+}
+
+.Data_editorGenreInputWrapper input[type=text]:focus {
+    border: 1px solid #00acc8;
+    background: white;
+}
+
+.CommonAdminLayoutMetaRowsBlock {
+    margin-top: 4em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+.CommonAdminLayoutMetaRow {
+    padding-top: 0.5em;
+}

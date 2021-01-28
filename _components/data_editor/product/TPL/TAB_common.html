@@ -1,0 +1,48 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="CommonAdminLayoutEditorPasswordStub">        
+        <div class="CommonAdminLayoutEditorPasswordStubinner">        
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfakelogin0">login</label>
+            <label for="{{MD}}commonfakelogin0">логин</label>
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfalepassword">password</label>
+            <label for="{{MD}}commonfalepassword">Пароль</label>        
+            <input type="text" autocomplete="off" name="login" data-fake="login" id="{{MD}}commonfakelogin0" />
+            <input type="password" autocomplete="off" name="password" id="{{MD}}commonfalepassword" />
+            <input type="text" name="login"  autocomplete="off" id="{{MD}}commonfakelogin" />
+            <input type="text" autocomplete="off" id="a{{MD}}00login" data-field="xxlogin" data-monitor="xxlogin" />
+        </div>
+    </div>
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />                
+            </div>
+             <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-70">
+                <label for="a{{MD}}article" class="CommonAdminLayoutLabelIsRequired">Артикул</label>
+                <input type="text" autocomplete="off" id="a{{MD}}article" data-field="article" data-monitor="article" />               
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">           
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Наименование</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />                
+            </div>                      
+        </div>
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}sort">Сортировка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}sort" data-field="sort" data-monitor="sort" data-fielddefault="0" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}visible" data-field="enabled" data-monitor="visible" data-fielddefault="1" />             
+                <label for="a{{MD}}visible" >Включен</label>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}orderable" data-field="orderable" data-monitor="orderable" data-fielddefault="1" />             
+                <label for="a{{MD}}orderable" >Возможен заказ</label>
+            </div>
+        </div>        
+    </div>   
+</div>

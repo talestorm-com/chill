@@ -1,0 +1,110 @@
+.EFOBackdrop.DesktopCountry_listBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopCountry_listWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopCountry_listTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopCountry_listFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopCountry_listWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopCountry_listHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopCountry_listHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopCountry_listControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopCountry_listControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopCountry_listRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopCountry_listRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopCountry_listRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopCountry_listCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopCountry_listCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopCountry_listTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em;
+}
+
+.DesktopCountry_listPublishedCellContent.DesktopCountry_listCommonDisplayWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesktopCountry_listTableBoolDisplay.DesktopCountry_listTableBoolDisplayState1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+

@@ -1,0 +1,50 @@
+<div class="{{getCssClass}}OneColorItem EFODraggable {{#removed}}{{getCssClass}}RemovedColor{{/removed}}"  data-uid="{{guid}}" data-efodragtype="color_{{instance_id}}">
+    <div class="{{getCssClass}}OneColorItemInner">
+        <div class="{{getCssClass}}OneColorImagePart">
+            <div class="{{getCssClass}}OneColorImageInner">
+                <div class="{{getCssClass}}OneColorImageContent">
+                    <div class="{{getCssClass}}OneColorColorDisplay" style="background:{{html_color}}">
+                        <input type="color" data-monitor="color_selector" data-color="{{guid}}" value="{{html_color}}">
+                    </div>
+                    <div class="{{getCssClass}}OneColorImageDisplay">
+                        <div class="{{getCssClass}}OneCOlorImageDisplayImageContent">
+                            <img src="{{get_color_url}}" alt="" />
+                            <div class="{{getCssClass}}ImageFallback">
+                                <svg><use xlink:href="#{{getCssClass}}_icon_image" /></svg>
+                            </div>
+                            <input type="file" data-monitor="file"  data-color="{{guid}}" />
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+            <div class="{{getCssClass}}OneColorImageControlPanel">{{>color_tool_panel}}</div>
+        </div>
+        <div class="{{getCssClass}}OneColorDataPart">
+            <div class="{{getCssClass}}OneColorDataPartInner">
+                <div class="{{getCssClass}}OneColorRow">
+                    <div class="{{getCssClass}}OneColorRowSplit {{getCssClass}}OneColorRowSplit-45">
+                        <label for="a{{MD}}color_name{{row_index}}">Наименование</label>
+                        <input type="text" data-monitor="color_name" value="{{name}}" data-color="{{guid}}" id="a{{MD}}color_name{{row_index}}"/>
+                    </div>
+                    <div class="{{getCssClass}}OneColorRowSplit {{getCssClass}}OneColorRowSplit-45">
+                        <label for="a{{MD}}color_exchange{{row_index}}">Идентификатор 1С</label>
+                        <input type="text" data-monitor="color_exchange" value="{{exchange_uid}}" data-color="{{guid}}" id="a{{MD}}color_exchange{{row_index}}"/>
+                    </div>
+                    <div class="{{getCssClass}}OneColorRowSplit {{getCssClass}}OneColorRowSplit-10">
+                        <label for="a{{MD}}color_sort{{row_index}}">Сортировка</label>
+                        <input type="text" data-monitor="color_sort" value="{{sort}}" data-color="{{guid}}" id="a{{MD}}color_sort{{row_index}}"/>
+                    </div>
+                </div>               
+            </div>
+        </div>
+        <div class="{{getCssClass}}OneColorRemovePart">
+            <div class="{{getCssClass}}ColorRemoveButton" data-command="remove_color" data-color="{{guid}}">
+                <svg><use xlink:href="#{{getCssClass}}_icon_remove" /></svg>
+            </div>
+            <div class="{{getCssClass}}ColorRemoveButton {{getCssClass}}ColorRestoreButton" data-command="restore_color" data-color="{{guid}}">
+                <svg><use xlink:href="#{{getCssClass}}_icon_restore" /></svg>
+            </div>
+        </div>
+    </div>
+    <div class="{{getCssClass}}DragTarget EFODropTarget" data-efodroptypes="color_{{instance_id}}"></div>
+</div>

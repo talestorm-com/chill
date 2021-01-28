@@ -1,0 +1,11 @@
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="960px" height="560px" viewBox="0 0 960 560" >
+<symbol  id="global_menu_arrow" viewBox="-5.5 -5.578 11 11.155">
+	<g>
+		<g>
+			<path d="M-3.773-4.696l6.992,4.578l-6.992,4.62v0.882l7.479-4.956v-1.092l-7.479-4.914V-4.696z"/>
+		</g>
+	</g>
+	<!-- polygon fill="none" display="none" points="5.5,-5.422 -5.5,-5.422 -5.5,5.578 5.5,5.578 	"/ -->
+</symbol>
+</svg>

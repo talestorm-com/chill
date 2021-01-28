@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <auth>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="login" filters="Strip,Trim,NEString,EmailMatch,DefaultNull" />
+            <property in="password" filters="Strip,Trim,NEString,DefaultNull" />
+        </export>
+    </auth>    
+</root>

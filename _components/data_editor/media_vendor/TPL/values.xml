@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>       
+    <common>  
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />            
+            <property in="common_name" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="intro" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="html_mode" filters="Int, Default0" />            
+            <property in="default_image" out="image"  filters="Strip,Trim,NEString,DefaultNull" />             
+            <property in="properties" filters="NEArray,DefaultNull" />               
+        </export>
+    </common>    
+</root>

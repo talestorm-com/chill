@@ -1,0 +1,64 @@
+.CommonAdminLayoutForm.Data_editorGalleryForm {
+    padding: 0;
+}
+
+.Data_editorGalleryTabInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorGalleryCommonWrapper.Data_editorGalleryCommonWrapperPageCommon {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 4.5em;
+}
+
+.Data_editorGalleryTopPanel {
+    box-sizing: border-box;
+    height: 4.5em;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Data_editorGalleryUploaderContainer {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorGalleryCommonWrapper.Data_editorGalleryCommonWrapperQuill {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorGalleryEditorOutWrap {
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    padding-top: 3.5em;
+}
+
+.Data_editorGalleryEditorOutWrap .ql-toolbar.ql-snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 3.5em;
+    width: 100%;
+}
+
+.Data_editorGalleryEditorOutWrap {
+    padding: 0;
+}
+
+.Data_editorGalleryEditorInnerRoot {
+    box-sizing: border-box;
+    height: 100%;
+}

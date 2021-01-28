@@ -1,0 +1,433 @@
+.CommonAdminLayoutForm.MediaColor_editorForm {
+    padding: 0;
+}
+
+.MediaColor_editorContent {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 3em;
+}
+
+.MediaColor_editorColorListColorList {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+.MediaColor_editorHiddenzone {
+    margin-top: 20em;
+}
+
+.MediaColor_editorColorListToolBar {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3em;
+    max-height: 3em;
+    overflow: hidden;
+    background: #ececec;
+    border-bottom: 1px solid dimgray;
+    width: 100%;
+    padding: 0 .5em;
+}
+
+.MediaColor_editorColorListToolBarInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+
+.MediaColor_editorToolbarButton {
+    box-sizing: border-box;
+    line-height: 0;
+    width: 2.5em;
+    height: 2.5em;
+    overflow: hidden;
+    padding: .5em;
+    background: #00acc8;
+    margin: 0 .25em;
+    cursor: pointer;
+    transition: all .3s;
+    border: 1px solid #00acc8;
+}
+
+.MediaColor_editorToolbarButton:hover {
+    background: transparent;
+}
+
+.MediaColor_editorToolbarButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+    transition: all .3s;
+}
+
+.MediaColor_editorToolbarButton:hover svg {
+    fill: #00acc8;
+}
+.MediaColor_editorColorListEmpty {
+    background: crimson;
+    padding: 1.5em 2em;
+    text-align: center;
+    color: white;
+    line-height: 1.5em;
+}
+
+.MediaColor_editorColorListEmptyInnerLink {
+    margin-top: 1em;
+}
+
+.MediaColor_editorColorListEmptyInnerLink a {
+    color: white!important;
+}
+
+.MediaColor_editorOneColorItem {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5em .25em;
+}
+
+.MediaColor_editorOneColorItem:nth-child(even) {
+    background: whitesmoke;
+}
+
+.MediaColor_editorOneColorItemInner {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.MediaColor_editorOneColorImagePart {
+    box-sizing: border-box;
+    width: 7.5em;
+    height: 7.5em;
+    max-width: 7.5em;
+    min-width: 7.5em;
+}
+
+.MediaColor_editorOneColorDataPart {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .25em 1em;
+}
+
+.MediaColor_editorOneColorRemovePart {
+    box-sizing: border-box;
+    width: 3em;
+    max-width: 3em;
+    min-width: 3em;
+}
+
+.MediaColor_editorOneColorImageInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    /* padding: .25em; */
+    border: 1px solid silver;
+    overflow: hidden;
+}
+
+.MediaColor_editorOneColorImageContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 50%;
+    position: relative;
+}
+
+.MediaColor_editorOneColorColorDisplay {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background: lightcyan;
+    border-top: 1px solid silver;
+}
+
+.MediaColor_editorOneColorImageDisplay {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.MediaColor_editorOneCOlorImageDisplayImageContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.MediaColor_editorOneCOlorImageDisplayImageContent input[type=file] {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: rebeccapurple;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+
+.MediaColor_editorOneCOlorImageDisplayImageContent img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.MediaColor_editorOneColorRow {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: .1em .25em;
+}
+
+.MediaColor_editorOneColorRowSplit {
+    box-sizing: border-box;
+    padding: .1em .25em;
+    float: left;
+    overflow: hidden;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-100 {
+    width: 100%;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-50 {
+    width: 50%;
+}
+
+.MediaColor_editorOneColorRow {
+    font-size: .9em;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-30 {
+    width: 33.333%;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-20 {
+    width: 20%;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-45 {
+    width: 45%;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-10 {
+    width: 10%;
+}
+
+.MediaColor_editorColorRemoveButton {
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.MediaColor_editorColorRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.MediaColor_editorColorRemoveButton:hover {
+    padding: .25em;
+}
+
+.MediaColor_editorOneColorColorDisplay input[type=color] {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.MediaColor_editorOneColorColorDisplay {
+    position: relative;
+}
+
+.MediaColor_editorOneColorImagePart {
+    width: 10em;
+    max-width: 10em;
+    min-width: 10em;
+    padding-right: 2.5em;
+    position: relative;
+}
+
+.MediaColor_editorOneColorImageControlPanel {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5em;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.5);
+}
+
+.MediaColor_editorImageControlPanel {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.MediaColor_editorImageContrlPanelInner {
+    box-sizing: border-box;
+    padding: .5em 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MediaColor_editorImageControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.MediaColor_editorImageControlButton {
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    cursor: pointer;
+    padding: .25em;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.MediaColor_editorImageControlButton:hover {
+    padding: .12em;
+}
+
+.MediaColor_editorImageControlButton:nth-child(3) svg {
+    fill: crimson;
+}
+
+.MediaColor_editorOneColorImageControlPanel {
+    transition: all .3s;
+    transform: scaleX(0);
+    transform-origin: top left;
+}
+
+.MediaColor_editorOneColorDataPart {
+    padding-left: 0;
+}
+
+.MediaColor_editorOneColorRow {
+    padding-left: 0;
+}
+
+.MediaColor_editorOneColorRowSplit.MediaColor_editorOneColorRowSplit-45:nth-child(1) {
+    padding-left: 0;
+}
+
+.MediaColor_editorOneColorImagePart:hover {}
+
+.MediaColor_editorOneColorImagePart:hover .MediaColor_editorOneColorImageControlPanel {
+    transform: none;
+}
+
+.MediaColor_editorImageFallback {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,.3);
+    line-height: 0;
+    padding: .5em;
+    display:none;
+}
+
+.MediaColor_editorImageFallback svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+}
+
+.MediaColor_editorColorRemoveButton.MediaColor_editorColorRestoreButton {
+    display: none;
+}
+
+.MediaColor_editorOneColorItem.MediaColor_editorRemovedColor .MediaColor_editorColorRemoveButton.MediaColor_editorColorRestoreButton {
+    display: block;
+}
+
+.MediaColor_editorOneColorItem.MediaColor_editorRemovedColor .MediaColor_editorColorRemoveButton {
+    display: none;
+}
+
+.MediaColor_editorColorRemoveButton.MediaColor_editorColorRestoreButton svg {
+    fill: green;
+}
+.MediaColor_editorOneColorItem.EFODraggable.MediaColor_editorRemovedColor .MediaColor_editorOneColorImagePart,
+.MediaColor_editorOneColorItem.EFODraggable.MediaColor_editorRemovedColor .MediaColor_editorOneColorDataPart {
+    opacity:.3;
+    pointer-events:none;
+}
+
+.MediaColor_editorOneColorItem {
+    overflow: visible;
+}
+.MediaColor_editorOneColorItem {
+    position: relative;
+}
+
+.MediaColor_editorDragTarget.EFODropTarget {
+    transform: none!important;
+    position: absolute;
+    width: 100%;
+    height: 2em;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0, 0);
+    margin-bottom: -1em;
+    z-index: 1;
+    display:none;
+}
+.MediaColor_editorDragTarget.EFODropTarget.EFODragOver{
+    transform:none;
+}
+.MediaColor_editorDragTarget.EFODropTarget.EFODragOver:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    border-top: 2px solid black;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    box-sizing: border-box;
+    transform: none;
+}
+
+.MediaColor_editorDRAGGING .MediaColor_editorDragTarget.EFODropTarget {
+    display:block;
+}

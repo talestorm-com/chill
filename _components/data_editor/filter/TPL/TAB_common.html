@@ -1,0 +1,66 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}TabWrapper {{getCssClass}}TabWrapperCommon">  
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />                
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}phone" data-field="name" data-monitor="name,c" />               
+            </div>           
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}alias" class="CommonAdminLayoutLabelIsRequired">Алиас</label>
+                <input type="text" autocomplete="off" id="a{{MD}}alias" data-field="alias" data-monitor="alias,c" />               
+            </div>           
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                <label for="a{{MD}}cost" class="CommonAdminLayoutLabelIsRequired">Ценник</label>
+                <input type="text" autocomplete="off" id="a{{MD}}cost" data-field="cost" data-fielddefault="0.00" data-monitor="cost,c" />               
+            </div>   
+        </div>        
+        <div class="CommonAdminLayoutFormRow"> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100 CommonAdminLayoutSplitCheck">               
+                <input type="checkbox" id="a{{MD}}active" data-field="active" data-monitor="active,c" data-fielddefault="0" />             
+                <label for="a{{MD}}active" >Включено</label>
+            </div>   
+        </div>
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}created">Создано</label>
+                <input type="text" autocomplete="off" id="a{{MD}}created" data-field="created" readonly="readonly" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}updated">Обновлено</label>
+                <input type="text" autocomplete="off" id="a{{MD}}updated" data-field="updated" readonly="readonly" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}published">Опубликовано</label>
+                <input type="text" autocomplete="off" id="a{{MD}}published" data-field="published" readonly="readonly" />               
+            </div>    
+
+        </div>    
+         <div class="CommonAdminLayoutFormRow">    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                 <input type="checkbox" id="a{{MD}}create_message" data-field="create_message" data-monitor="create_message,c" data-fielddefault="0" />             
+                <label for="a{{MD}}create_message" >Создать новость</label>
+                
+            </div>  
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                 <input type="checkbox" id="a{{MD}}create_message_draft" data-field="create_message_draft" data-monitor="create_message_draft,c" data-fielddefault="0" />             
+                <label for="a{{MD}}create_message_draft" >Как черновик</label>                
+            </div>  
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                 <input type="checkbox" id="a{{MD}}create_message_keep" data-field="create_message_keep" data-monitor="create_message_keep,c" data-fielddefault="0" />             
+                <label for="a{{MD}}create_message_keep" >Не удалять предыдущю</label>                
+            </div>  
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100 {{getCssClass}}-publisher-help">
+                Эти настройки позволяют создать новость о публикации в полуавтоматическом режиме<br>
+                Если при сохранении стоит птичка "создать новость", то в ленту новостей автоматически постится запись.<br>
+                Предыдущие записи об этом матриале будут удалены, если не стоит птичка "не удалять".<br>
+                Если стоит птичка "черновик" - запись в ленте будет создана, но не будет опубликована.
+                <br><b>Публикация сработает только в случае если сам материал опубликован!!</b>
+                
+            </div>
+        </div>
+    </div>
+</div>

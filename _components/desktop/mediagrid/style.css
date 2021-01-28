@@ -1,0 +1,218 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 мар. 2020 г., 10:11:50
+    Author     : eve
+*/
+
+.EFOBackdrop.DesktopMediagridBackdrop {
+    position: static;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.EFOWindow.DesktopMediagridWindow {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    padding: 0!important;
+    position: relative;
+    top: 0!important;
+    left: 0!important;
+}
+
+.EFOTitle.DesktopMediagridTitle {
+    display: none!important;
+}
+
+.EFOFooter.DesktopMediagridFooter {
+    display: none!important;
+}
+
+.DesktopMediagridDesctopTableZone {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.DesktopMediagridDesctopTreeZone {
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 2.5em;
+    position: relative;
+}
+
+.DesktopMediagridLentHeader {
+    box-sizing: border-box;
+    height: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 2.5em;
+    width: 100%;
+    background: whitesmoke;
+    border-bottom: 1px solid dimgray;
+    padding: 0 .5em;
+}
+
+.DesktopMediagridLentHeaderInner {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.DesktopMediagridLentContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.DesktopMediagridLentHeader {
+    background: #ded9d9;
+}
+
+.ADVTableHeaderRowReplacer.DesktopMediagridHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.DesktopMediagridControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.DesktopMediagridControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopMediagridControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopMediagridAliasCellContent.DesktopMediagridCommonDisplayWrap {
+    font-weight: bold;
+    color: #00acc8;
+}
+
+.DesktopMediagridCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.DesktopMediagridCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopMediagridTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.25em;
+    height: 1.25em;
+    outline: 1px solid #00acc8;
+    display: block;
+    margin: .1em auto;
+}
+
+.DesktopMediagridTableBoolDisplay.DesktopMediagridTableBoolDisplayState1 {
+    background: #00acc8;
+    border: 1px solid white;
+}
+
+.DesktopMediagridRemoveButton {
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    margin: .1em auto;
+    cursor: pointer;
+    padding: .1em;
+}
+
+.DesktopMediagridRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+
+.DesktopMediagridLentHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.DesktopMediagridLentReloadButton {
+    width: 2.5em;
+    height: 2.5em;
+    max-width: 2.5em;
+    max-height: 2.5em;
+    min-width: 2.5em;
+    min-height: 2.5em;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+.DesktopMediagridLentReloadButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopMediagridLentHeaderInner {
+    width: 100%;
+}
+
+
+.CommonDesktopComponentBody.DesktopMediagridBodyArea,.CommonDesktopComponentBody.DesktopMediagridBodyArea * {
+    user-drag: none;
+    -o-user-drag: none;
+    -ms-user-drag: none;
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+}
+
+.DesktopMediagridCommonDisplay.DesktopMediagridCommonDisplayGrid {
+    height: 1.25em;
+    text-align: center;
+}
+
+.DesktopMediagridCommonDisplay.DesktopMediagridCommonDisplayGrid.DesktopMediagridGridState-1 {
+    background: crimson;
+}
+
+.DesktopMediagridLentContent {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-drag: none;
+    -o-user-drag: none;
+    -ms-user-drag: none;
+    -moz-user-drag: none;
+    -khtml-user-drag: none;
+    -webkit-user-drag: none;
+}
+

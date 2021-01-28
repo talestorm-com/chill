@@ -1,0 +1,10 @@
+{{=<% %>=}}<div class="{{getMC}}StatusCellContent {{getMC}}CommonDisplayWrap">
+    <div class="{{getMC}}CommonDisplay {{getMC}}StatusDisplay{{status}}" data-command="none">
+        <select data-monitor="status" data-id="{{id}}" {{#is_final_status}}disabled="disabled"{{/is_final_status}}>
+            {{register_item_status}}     
+            {{#status_options}}
+                <option value="{{value}}" {{#is_selected}}selected="selected"{{/is_selected}}>{{title}}</option>
+            {{/status_options}}            
+        </select>
+    </div>    
+</div><%={{ }}=%>

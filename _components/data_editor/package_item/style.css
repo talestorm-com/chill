@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.12.2017, 12:42:16
+    Author     : alexander
+*/
+.Data_editorPackage_itemImageListContainer {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorPackage_itemTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorPackage_itemPropertiesWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorPackage_itemFeatureItem {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .25em;
+    overflow: hidden;
+    height: 4em;
+}
+
+.Data_editorPackage_itemFeatureItemInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.Data_editorPackage_itemFeatureItemIcon {
+    width: 3.5em;
+    height: 3.5em;
+    border: 1px solid silver;
+    padding: .1em;
+    box-sizing: border-box;
+}
+
+.Data_editorPackage_itemFeatureRemove {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorPackage_itemRemover {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: .25em;
+    cursor: pointer;
+}
+
+.Data_editorPackage_itemRemover svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.Data_editorPackage_itemFeatureName {
+    width: 50%;
+}
+
+.Data_editorPackage_itemFeatureValue {
+    width: 50%;
+}
+
+.Data_editorPackage_itemFeatureItemInner input[type=text] {
+    height: 3.5em;
+    padding: 0 .5em;
+    border-left: none;background:transparent
+    
+}
+
+.Data_editorPackage_itemFeatureItem:nth-child(even) {
+    background: whitesmoke;
+}
+
+.Data_editorPackage_itemFeatureItemIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorPackage_itemFeatureItemIcon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
