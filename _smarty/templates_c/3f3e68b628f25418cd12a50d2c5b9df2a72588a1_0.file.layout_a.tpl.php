@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2021-01-14 16:29:29
+/* Smarty version 3.1.33, created on 2021-01-22 19:26:48
   from '/var/VHOSTS/site/_layouts/front/layout_a.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_60004739b14a64_25527995',
+  'unifunc' => 'content_600afcc876b684_42494797',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3f3e68b628f25418cd12a50d2c5b9df2a72588a1' => 
     array (
       0 => '/var/VHOSTS/site/_layouts/front/layout_a.tpl',
-      1 => 1610630650,
+      1 => 1611332705,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./search_scr.tpl' => 1,
   ),
 ),false)) {
-function content_60004739b14a64_25527995 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600afcc876b684_42494797 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.eve_canonical.php','function'=>'smarty_function_eve_canonical',),1=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.get_user_auth_status.php','function'=>'smarty_function_get_user_auth_status',),2=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.display_user_money.php','function'=>'smarty_function_display_user_money',),3=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.display_page_content.php','function'=>'smarty_function_display_page_content',),4=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.TT.php','function'=>'smarty_function_TT',),5=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 <!DOCTYPE HTML>
@@ -233,6 +233,9 @@ $_smarty_tpl->_subTemplateRender('file:./cc.tpl', $_smarty_tpl->cache_id, $_smar
                             <li>
                                 <a href="/page/o-nas">О CHILL</a>
                             </li>
+                            <li>
+                                        <a href="/page/faq">F.A.Q.</a>
+                                    </li>
                             <!-- <li>
                                 <a href="/catalog">Каталог</a>
                             </li>
@@ -245,6 +248,7 @@ $_smarty_tpl->_subTemplateRender('file:./cc.tpl', $_smarty_tpl->cache_id, $_smar
                 <div class="col l4  s11 offset-s1">
                     <div class="one_footer_colomn">
                         <ul>
+									
                             
                             <li>
                                 <a href="/page/for_authors"><?php echo smarty_function_TT(array('t'=>'how_become_aut'),$_smarty_tpl);?>

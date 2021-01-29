@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2021-01-14 16:24:16
+/* Smarty version 3.1.33, created on 2021-01-22 19:25:46
   from '/var/VHOSTS/site/_layouts/front/layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_600046009564b3_20067446',
+  'unifunc' => 'content_600afc8a27c9e1_04715476',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c05ca632efffc30339df62d638066afe29cecae6' => 
     array (
       0 => '/var/VHOSTS/site/_layouts/front/layout.tpl',
-      1 => 1610630649,
+      1 => 1611332706,
       2 => 'file',
     ),
   ),
@@ -36,7 +36,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./prezpromo.tpl' => 1,
   ),
 ),false)) {
-function content_600046009564b3_20067446 (Smarty_Internal_Template $_smarty_tpl) {
+function content_600afc8a27c9e1_04715476 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.eve_canonical.php','function'=>'smarty_function_eve_canonical',),1=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.get_user_auth_status.php','function'=>'smarty_function_get_user_auth_status',),2=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.display_user_money.php','function'=>'smarty_function_display_user_money',),3=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.display_page_content.php','function'=>'smarty_function_display_page_content',),4=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/function.TT.php','function'=>'smarty_function_TT',),5=>array('file'=>'/var/VHOSTS/site/lib/vendor/smarty/libs/plugins/modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 ?>
 <!DOCTYPE HTML>
@@ -293,6 +293,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                     <li>
                                 <a href="/page/o-nas">О CHILL</a>
                             </li>
+                            <li>
+                                        <a href="/page/faq">F.A.Q.</a>
+                                    </li>
                                     <!-- <li>
                                 <a href="/catalog">Каталог</a>
                             </li>
@@ -305,7 +308,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         <div class="col l4  s11 offset-s1">
                             <div class="one_footer_colomn">
                                 <ul>
-
+									
                                     <li>
                                         <a href="/page/for_authors"><?php echo smarty_function_TT(array('t'=>'how_become_aut'),$_smarty_tpl);?>
 </a>
