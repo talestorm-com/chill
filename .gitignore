@@ -4,7 +4,6 @@
 .htpasswd
 *.log
 _logs
-_media
 logs
 develop
 npm-debug.log*asse
