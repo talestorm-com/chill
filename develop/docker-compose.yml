@@ -38,16 +38,6 @@ services:
         ipv4_address: 10.227.64.3
     depends_on:
       - mysql
-      - redis
-  redis:
-    container_name: chill-backend-redis
-    build:
-      context: ./configs/redis
-    volumes:
-      - "./../_logs/redis:/data:rw"
-    networks:
-      chill-backend:
-        ipv4_address: 10.227.64.5
   mysql:
     container_name: chill-backend-mysql
     image: mysql:5.7

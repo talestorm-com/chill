@@ -7,7 +7,10 @@ docker-compose -f develop/docker-compose.yml -p chill up -d
 
 sudo chmod -R 0777 .
 ```
-
+## Остановка девелоперского окружения :
+```shell script
+./develop/scripts/docker_rm_all.sh
+```
 Адрес админки http://10.227.64.2/admin :
 ```shell script
 Login: admin
