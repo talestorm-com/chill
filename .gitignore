@@ -5,7 +5,6 @@
 *.log
 _logs
 logs
-develop
 npm-debug.log*asse
 node_modules
 /mongodb/*

@@ -9,9 +9,9 @@
 return \Config\DBPool::F([
             [
                 'id' => 'default',
-                'server' => 'localhost',
+                'server' => 'mysql',
                 'db' => 'chill',
-                'user' => 'chill',
-                'password' => 'meeneF9shi9aid0pheis1Ootailongoojaequ6Eez6mei4eedo'
+                'user' => 'root',
+                'password' => '123'
             ]
         ]);
