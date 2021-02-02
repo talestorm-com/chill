@@ -11,3 +11,7 @@ node_modules
 /mongodb/*
 /redis/*
 www/media/
+www/asets/
+www/123/
+_cache/
+_smarty/templates_c/
