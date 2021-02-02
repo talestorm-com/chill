@@ -4,13 +4,14 @@
 .htpasswd
 *.log
 _logs
+_media
 logs
 npm-debug.log*asse
 node_modules
 /mongodb/*
 /redis/*
 www/media/
-www/asets/
-www/123/
+www/assets/vendor/*
+www/123
 _cache/
 _smarty/templates_c/
