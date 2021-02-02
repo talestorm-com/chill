@@ -10,7 +10,6 @@ npm-debug.log*asse
 node_modules
 /mongodb/*
 /redis/*
-www/media/
 www/asets/
 www/123/
 _cache/
