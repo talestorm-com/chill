@@ -1,6 +1,18 @@
 version: '3.0'
 
 services:
+#  apache:
+#    container_name: chill-backend-apache
+#    build:
+#      context: ./configs/apache
+#    volumes:
+#      - "./../:/data:rw"
+#      - "./configs/apache/apache.conf:/usr/local/apache2/conf/apache.conf"
+#    networks:
+#      chill-backend:
+#        ipv4_address: 10.227.64.8
+#    depends_on:
+#      - fpm
   web:
     container_name: chill-backend-web
     image: nginx:1-alpine
@@ -10,7 +22,7 @@ services:
       - "./configs/nginx/nginx.conf:/etc/nginx/nginx.conf:rw"
       - "./configs/nginx/conf.d/chill.conf:/etc/nginx/conf.d/chill.conf:rw"
     ports:
-      - "10.227.64.1:85:85"
+      - "10.227.64.1:80:80"
     networks:
       chill-backend:
         ipv4_address: 10.227.64.2
@@ -24,6 +36,8 @@ services:
     volumes:
       - "./../:/data:rw"
       - "./configs/php/php.ini:/usr/local/etc/php/php.ini:rw"
+#      - "./configs/apache/apache2.conf:/usr/local/etc/apache2/apache2.conf:rw"
+#      - "./configs/apache/000-default.conf:/usr/local/etc/apache2/sites-available/000-default.conf:rw"
     environment:
       - "DB_HOST=mysql"
       - "DB_DATABASE=chill"
