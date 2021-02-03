@@ -9,7 +9,7 @@ php_value post_max_size   54M
 
 RewriteEngine on
 RewriteCond %{THE_REQUEST} /{0,1}MediaAPI/ImageFly/language.*
-RewriteRule . https://%{HTTP_HOST}/assets/flash/pixlr/ru.rs [R=301,L]
+RewriteRule . http://%{HTTP_HOST}/assets/flash/pixlr/ru.rs [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 

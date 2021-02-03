@@ -4,7 +4,7 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # otherwise forward it to index.php
-RewriteRule ^(.*) https://%{HTTP_HOST}/Util/ComponentManager/getComponent?fqcn=$1 [R=301,L]
+RewriteRule ^(.*) http://%{HTTP_HOST}/Util/ComponentManager/getComponent?fqcn=$1 [R=301,L]
 
 
 

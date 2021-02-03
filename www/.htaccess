@@ -12,7 +12,7 @@ RewriteEngine on
 RewriteRule ^chill-sitemap\.xml chill-sitemap.php 
 
 RewriteCond %{THE_REQUEST} /{0,1}MediaAPI/ImageFly/language.*
-RewriteRule . https://%{HTTP_HOST}/assets/flash/pixlr/ru.rs [R=301,L]
+RewriteRule . http://%{HTTP_HOST}/assets/flash/pixlr/ru.rs [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]

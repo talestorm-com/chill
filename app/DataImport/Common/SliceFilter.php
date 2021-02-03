@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-namespace DataImport\Common;   
+namespace DataImport\Common;  
 
 class SliceFilter implements \PhpOffice\PhpSpreadsheet\Reader\IReadFilter {
 
