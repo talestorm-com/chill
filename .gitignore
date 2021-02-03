@@ -3,6 +3,7 @@
 .npm
 .htpasswd
 *.log
+*.logs
 _logs
 _media
 logs
