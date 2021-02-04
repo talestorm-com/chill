@@ -26,6 +26,9 @@ services:
 #      - "./configs/nginx/conf.d/chill.conf:/etc/nginx/conf.d/chill.conf:rw"
       - "./configs/nginx/nginxUs/chill.conf:/etc/nginx/conf.d/chill.conf:rw"
       - "./configs/nginx/nginxUs/default_locations:/etc/nginx/default_locations:rw"
+      - "./configs/nginx/nginxUs/key:/etc/nginx/ssl/key:rw"
+      - "./configs/nginx/nginxUs/crt:/etc/nginx/ssl/crt:rw"
+      - "./configs/nginx/nginxUs/dhparam.pem:/etc/nginx/ssl/dhparam.pem:rw"
     ports:
       - "10.227.64.1:80:80"
       - "10.227.64.1:443:443"
