@@ -11,7 +11,7 @@ npm-debug.log*asse
 node_modules
 /mongodb/*
 /redis/*
-www/media/
+www/media/**
 www/assets/vendor/*
 www/123
 _cache/
