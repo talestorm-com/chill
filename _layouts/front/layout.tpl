@@ -193,6 +193,9 @@
                                     <li>
                                 <a href="/page/o-nas">О CHILL</a>
                             </li>
+                            <li>
+                                        <a href="/page/faq">F.A.Q.</a>
+                                    </li>
                                     <!-- <li>
                                 <a href="/catalog">Каталог</a>
                             </li>
