@@ -2,21 +2,8 @@
 version: '3.0'
 
 services:
-#  apache:
-#    container_name: chill-backend-apache
-#    build:
-#      context: ./configs/apache
-#    volumes:
-#      - "./../:/data:rw"
-#      - "./configs/apache/apache.conf:/usr/local/apache2/conf/apache.conf"
-#    networks:
-#      chill-backend:
-#        ipv4_address: 10.227.64.8
-#    depends_on:
-#      - fpm
   web:
     container_name: chill-backend-web
-#    image: nginx:1-alpine
     build:
       context: ./configs/nginx/nginxUs
     volumes:
@@ -39,9 +26,7 @@ services:
       - apache
   apache:
     container_name: chill-backend-fpm
-#    image: yiisoftware/yii2-php:7.4-fpm
     build:
-#      context: ./configs/php
       context: ./configs/php/phpUs
     volumes:
       - "./../:/data:rw"
@@ -67,8 +52,6 @@ services:
   mysql:
     container_name: chill-backend-mysql
     image: mysql:5.7
-#    build:
-#      context: ./configs/mysql5.7
     volumes:
       - './../_logs/mysql:/var/lib/mysql:rw'
       - './configs/mysql5.7/my.cnf:/etc/mysql/my.cnf:rw'

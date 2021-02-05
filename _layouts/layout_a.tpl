@@ -29,7 +29,7 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-config" content="/assets/chill/favicon/browserconfig.xml">
     <meta name="theme-color" content="#000000">
-        <link rel="canonical" href="https://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI|strip_tags}" />
+    <link rel="canonical" href="https://{$smarty.server.HTTP_HOST}{$smarty.server.REQUEST_URI|strip_tags}" />
 
     <link type="text/css" rel="stylesheet" href="/assets/chill/css/materialize.min.css">
     <link href="/assets/chill/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
