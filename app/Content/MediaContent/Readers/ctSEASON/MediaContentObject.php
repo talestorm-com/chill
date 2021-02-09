@@ -54,6 +54,7 @@ namespace Content\MediaContent\Readers\ctSEASON;
  * @property string $gif_cdn_id
  * @property string $gif_cdn_url
  * @property string $lent_message
+ * @property string $copyright_holder
  */
 class MediaContentObject implements \common_accessors\IMarshall {
 
@@ -192,6 +193,9 @@ class MediaContentObject implements \common_accessors\IMarshall {
 
     /** @var string */
     protected $lent_message;
+
+    /** @var string */
+    protected $copyright_holder;
 
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="getters">
@@ -406,6 +410,10 @@ class MediaContentObject implements \common_accessors\IMarshall {
         return $this->lent_message;
     }
 
+    /** @return string */
+    protected function __get__copyright_holder() {
+        return $this->copyright_holder;
+    }
     //</editor-fold>
 
     protected function __construct(int $id) {
@@ -438,7 +446,7 @@ class MediaContentObject implements \common_accessors\IMarshall {
             COALESCE(MV1.description,MV2.description) meta_description,
             COALESCE(MV1.og_description,MV2.og_description) og_description,
             COALESCE(MV1.keywords,MV2.keywords) meta_keywords,
-            B.default_poster,B.released,B.origin_language,
+            B.default_poster,B.released,B.origin_language,B.copyright_holder,
             MPV.id preplay, MPV.name preplay_name,
             MLV.cdn_id video_cdn_id,MLV.cdn_url video_cdn_url,MLM.mode lent_mode,
             MLM.message lent_message,MLM.lent_image_name,
@@ -507,6 +515,7 @@ class MediaContentObject implements \common_accessors\IMarshall {
             'gif_cdn_id' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
             'gif_cdn_url' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
             'lent_message' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
+            'copyright_holder' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
         ];
     }
 

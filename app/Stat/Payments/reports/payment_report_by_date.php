@@ -100,7 +100,7 @@ class payment_report_by_date {
         }
         $data_to_insert = [];
         foreach ($data as $row) {
-            $data_to_insert[] = [$row['date'], $row['soap_name'], $row['season_name'], $row['serie_name'], $row['amount'],];
+            $data_to_insert[] = [$row['date'], $row['soap_name'], $row['season_name'], $row['serie_name'], $row['amount'], empty($row['copyright_holder'])?'-' : $row['copyright_holder']];
         }
         $this->sheet->fromArray($data_to_insert, '', "A3", true);
         $this->sheet->freezePane('A3');
@@ -109,7 +109,7 @@ class payment_report_by_date {
     protected function get_rows() {
         $query = "
                 SELECT A.content_id,DATE_FORMAT(A.d,'%d.%m.%Y') `date`,A.amount,SOAP.common_name soap_name,SEASON.common_name season_name,SERIE.common_name serie_name,SERIE.id serie_id,
-                SEASON.id season_id,SOAP.id soap_id
+                SEASON.id season_id,SOAP.id soap_id,SOAP.copyright_holder
                 FROM
             (    
             SELECT DATE(ts) d,CAST(param2 as UNSIGNED) content_id,SUM(amount) amount

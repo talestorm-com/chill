@@ -31,7 +31,8 @@
             <property in="personal" filters="NEArray,DefaultEmptyArray" />             
             <property in="content_type" filters="Strip,Trim,NEString" />     
             <property in="origin_language" filters="Strip,Trim,NEString,DefaultNull" />
-            <property in="released" filters="DateTime,DateTimeToString,DefaultNull" />  
+            <property in="released" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="copyright_holder" filters="Strip,Trim,NEString,DefaultNull" />
             <property in="series_count" filters="IntMore0,DefaultNull" />
             <property in="seasons_count" filters="IntMore0,DefaultNull" />      
             <property in="track_language" filters="IntMore0,DefaultNull" />
