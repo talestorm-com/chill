@@ -1,0 +1,75 @@
+.EveCoreSlider.EveCoreSlider-product_mobile {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderInner {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderImage {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderImage img {
+    width: 100%;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderImage{
+    position:absolute;
+    top:0;
+    left:101%;
+}
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderImage:nth-child(1){
+    left:0;
+} 
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderInner .EveCoreSliderImages {
+    position: relative;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderNvaligation {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;    
+    margin: 0;
+    padding: 0;    
+    padding-bottom: .5em;
+    padding-left: .25em;
+    z-index:2;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderNvaligation ul {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding: .1em;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderNvaligation ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: .75em;
+    height: .75em;
+    box-sizing: border-box;
+    border: 2px solid white;
+    margin-right: .5em;
+}
+
+.EveCoreSlider.EveCoreSlider-product_mobile .EveCoreSliderNvaligation ul li.EveCoreSliderNavigtionMonitorCurrent {
+    outline: 1px solid transparent;
+    background: #f15a24;
+    border: 2px solid white;
+}

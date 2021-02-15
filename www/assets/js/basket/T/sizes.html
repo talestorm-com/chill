@@ -1,0 +1,33 @@
+<div class="BasketRequestFrameSizeBlock">
+    <div class="BasketRequestFrameSizeHeader">
+        Выберите размер
+        <div class="BasketRequestFrameSizeHeaderSubtext">можно несколько для примерки</div>        
+    </div>
+    <div class="BasketRequestFrameSizeNames">
+        {{#has_alter_sizes}}
+        <div class="BasketRequestFrameSizeName">Размер LARRO</div>
+        {{/has_alter_sizes}}
+        {{^has_alter_sizes}}
+        <div class="BasketRequestFrameSizeName">Размер</div>
+        {{/has_alter_sizes}}
+        {{#item.sizes.defs}}
+        <div class="BasketRequestFrameSizeName">{{short_name}}</div>
+        {{/item.sizes.defs}}
+    </div>
+    <div class="BasketFrameSizeListList">    
+        <div class="ProductDefaultContentSizeList">            
+            <div class="ProductDefaultContentCompositeSizeRow">
+                {{#item.sizes.items}}
+                <div class="ProductDefaultContentSizeColumn" data-size-id="{{id}}">
+                    <div class="ProductDefaultContentSizeCell"><span class="ProductDefaultContentSizeValue">{{value}}</span></div>
+                    {{set_current_size_id}}
+                    {{#get_item_sizes_defs}}
+                    {{set_current_size_def_id}}
+                    <div class="ProductDefaultContentSizeCell"><span class="ProductDefaultContentSizeValue">{{get_current_size_def_value}}</span></div>                   
+                    {{/get_item_sizes_defs}}                
+                </div>    
+                {{/item.sizes.items}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+AddDefaultCharset utf8;
+RewriteEngine on
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule (.*)\.json https://%{HTTP_HOST}/Util/Lang/API?action=get_language&area=$1 [R=302,L]
+
+

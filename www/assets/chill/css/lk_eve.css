@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 апр. 2020 г., 23:07:33
+    Author     : eve
+*/
+
+.lk-avatar-block {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.lk-avatar-block-inner {
+    box-sizing: border-box;
+}
+
+.lk-avatar-block input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input#summ_amount {
+    border: 1px solid silver;
+    color: white;
+    text-align: right;
+    padding-right: 2em;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+form#moneyform .lk_btn_akt {
+    margin-top: 1.4em;
+}
+
+#moneyform > div > div:nth-child(1) {
+    color: white;
+}
+
+input#balans {
+    color: white;
+}
+
+.cabinet-message {
+    color: white;
+    padding: 2em;
+    text-align: center;
+}

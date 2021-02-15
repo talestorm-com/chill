@@ -1,0 +1,29 @@
+# AuthType Basic
+# AuthName "Your authorization required message."
+# AuthUserFile /var/VHOSTS/site/.htpasswd
+# require valid-user
+
+AddDefaultCharset utf8;
+php_value upload_max_filesize 50M
+php_value post_max_size   54M
+
+RewriteEngine on
+
+RewriteRule ^chill-sitemap\.xml chill-sitemap.php 
+
+RewriteCond %{THE_REQUEST} /{0,1}MediaAPI/ImageFly/language.*
+RewriteRule . https://%{HTTP_HOST}/assets/flash/pixlr/ru.rs [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule . index.php
+

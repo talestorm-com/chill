@@ -1,0 +1,17 @@
+.ADVTableSOBooleanon {
+    border: 1px solid white;
+    background: #00acc8;
+    outline: 1px solid #00acc8!important;
+}
+
+.ADVTableFilterBoolLayoutInputWrapper {
+    font-size: .95em;
+}
+
+.ADVTableFilterBoolLayoutInputWrapper>div {
+    box-sizing: border-box;
+}
+
+.ADVTableSOBooleanoff {
+    outline: 1px solid crimson!important;
+}

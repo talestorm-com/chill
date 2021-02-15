@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 дек. 2019 г., 17:40:31
+    Author     : eve
+*/
+
+.FrontendCabinetcontroller_pricelist {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.FrontendCabinetcontroller_price_item {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.FrontendCabinetcontroller_pricelist_items {
+    margin: 40px auto;
+    display: inline-block;
+}
+
+.FrontendCabinetcontroller_pricelist_inner {
+    text-align: center;
+}
+
+.FrontendCabinetcontroller_price_item_text_name {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.FrontendCabinetcontroller_price_item_priceblock {
+    text-align: left;
+}
+
+a.FrontendCabinetcontroller_price_button {
+    background: linear-gradient(90deg, #238C72 0%, rgba(87, 255, 213, 0.92) 100%);
+    border-radius: 13.0393px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 0 30px;
+}

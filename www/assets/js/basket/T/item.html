@@ -1,0 +1,23 @@
+<div class="BasketRequestFrameContentInner">
+    <div class="BasketRequestFrameProductInfo">
+        <div class="BasketRequestFrameProductHeader">            
+            <div class="BasketRequestFrameProductHeaderText">
+                <div class="BasketRequestFrameProductName">{{item.name}}</div>
+                <div class="BasketRequestFrameProductArtcile"><b>Арт:</b>{{item.article}}</div>
+            </div>
+        </div>
+        {{#has_colors}}{{>colors}}{{/has_colors}}
+        {{#has_sizes}}{{>sizes}}{{/has_sizes}}
+        <div class="BasketRequestFrameBasketButtonsBlock">
+            {{#simple_button_block}}
+            {{>simple_button_block}}
+            {{/simple_button_block}}
+            {{#preorder_button_block}}
+            {{>preorder_button_block}}
+            {{/preorder_button_block}}
+            {{#shop_button_block}}
+            {{>shop_button_block}}
+            {{/shop_button_block}}          
+        </div>
+    </div>
+</div>

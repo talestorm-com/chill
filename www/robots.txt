@@ -1,0 +1,29 @@
+User-agent: Yandex
+Disallow: /Auth/
+Disallow: /profile
+Disallow: /Profile
+Disallow: /Search
+Allow: /search/by_emoji/*
+Allow: /search/by_genre/*
+Clean-param: utm_source&utm_medium&utm_term&utm_campaign&utm_content&utm_expid&utm_referrer
+Clean-param: calltouch_tm&_openstat&yclid&gclid&from&fbclid&_ga&_gac&frommarket&cm_id
+Clean-param: rb_clickid&callback&ref&ad_tub&code&deferred_redirect_uri&state&chillvisionrefid
+Clean-param: query&token
+Host: https://chillvision.ru/
+ 
+User-agent: Googlebot
+Disallow: /Auth/
+Disallow: /profile
+Disallow: /Profile
+Disallow: /Search
+Allow: /search/by_emoji/*
+Allow: /search/by_genre/*
+Sitemap: https://chillvision.ru/chill-sitemap.xml
+ 
+User-agent: *
+Disallow: /Auth/
+Disallow: /profile
+Disallow: /Profile
+Disallow: /Search
+Allow: /search/by_emoji/*
+Allow: /search/by_genre/*

@@ -1,0 +1,280 @@
+form#login_form_form .in_form_input input {
+    border-radius: 10px;
+}
+.FrontendCabinetcontrollerHeader {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.FrontendCabinetcontrollerRow {margin-bottom: 10px;}
+
+.FrontendCabinetcontrollerRow input {
+    border: 1px solid #000;
+    padding: 0 10px;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.FrontendCabinetcontroller-no-client-package a {
+    display: block;
+    margin: 10px 0;
+    background: linear-gradient(90deg, #238C72 0%, rgba(87, 255, 213, 0.92) 100%);
+    border-radius: 13.0393px;
+    height: 60px;
+    line-height: 60px;
+    color: #000000;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+}
+
+.FrontendCabinetcontrollersubmit {
+    background: linear-gradient(90deg, #238C72 0%, rgba(87, 255, 213, 0.92) 100%);
+    border-radius: 13.0393px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding: 0 50px;
+    font-size: 25px;
+}
+
+div#statistics a {
+    display: block;
+    padding: 0;
+    color: #fff;
+}
+
+div#calendar a {
+    display: block;
+    padding: 0;
+    color: #fff;
+}
+
+div#header_menu {
+    background-color: #fff;
+}
+
+div#policy a {
+    color: #fff;
+}
+
+div#header_menu a {
+    color: #000;
+}
+div#zapis_all h5 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.register_part_row_header {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.hole_item_img {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+
+.hole_item_img img {
+    width: 100%;
+}
+
+.hole_item_texts {
+    font-size: 20px;
+    display: inline-block;
+    color: #999;
+}
+
+.register_part_placeholder {
+    height: 40px;
+    margin-top: 10px;
+}
+
+.register_part_placeholder a {
+    background-color: #2eb1a3;
+    color: #fff;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.EFOTitle.SelectorsTrainer_selectorTitle {
+    background-color: #2eb1a3;
+}
+
+.SelectorsTrainer_selector-trainer-card.SelectorsTrainer_selectorselected {
+    border: 1px solid #2eb1a3;
+    background: #2eb1a3;
+}
+
+.EFOFooterButton {
+    color: #fff;
+    border: 0;
+    background-color: #2eb1a3;
+}
+
+.free_time_item.selected {
+    background-color: #2eb1a3;
+}
+div#cal_block_block {
+    text-align: center;
+    font-size: 20px;
+}
+
+.cld-main {
+    margin-top: 40px;
+}
+
+.FrontendCabinetcontrollerCabinetWrapper {
+    padding-bottom: 40px;
+}
+div#daylist {
+    font-size: 10px;
+}
+
+div#daylist table {
+    font-size: 11px;
+    text-align: center;
+}
+
+div#daylist table tr td,div#daylist table tr th {
+    text-align: center;
+}
+
+li.cld-day.currMonth.today p {
+    background-color: #fff;
+    color: #2eb1a3;
+    font-weight: bold;
+}
+
+li.cld-day.currMonth.clickable p {
+    background-color: #2eb1a3;
+    color: #fff;
+}
+div#do_record {
+    cursor: pointer;
+}
+
+.my_tren_photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+.FrontendCabinetcontrollersubmit {
+    cursor: pointer;
+}
+.FrontendCabinetcontrollerDayOfWeekHeader {
+    background-color: #2eb1a3;
+}
+
+.FrontendCabinetcontrollerSelectHolePanel {
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.FrontendCabinetcontrollerSelectHolePanel a {
+    background-color: #2eb1a3;
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.FrontendCabinetcontroller_price_item {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.FrontendCabinetcontroller_pricelist_items {
+    margin: 40px auto;
+    display: inline-block;
+}
+
+.FrontendCabinetcontroller_pricelist_inner {
+    text-align: center;
+}
+
+.FrontendCabinetcontroller_price_item_text_name {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.FrontendCabinetcontroller_price_item_priceblock {
+    text-align: left;
+}
+
+a.FrontendCabinetcontroller_price_button {
+    background: linear-gradient(90deg, #238C72 0%, rgba(87, 255, 213, 0.92) 100%);
+    border-radius: 13.0393px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.EFOFooterButton {color: #fff!important;}
+
+.EFOTitle.SelectorsMapbox_on_selector_trainerTitle {
+    background-color: #000!important;
+}
+.FrontendCabinetcontrollerDayOfWeekHeader {
+    background-color: #2eb1a3!important;
+}
+div#first_block {
+    padding: 100px 0;
+    position:relative;
+}
+#video-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    background-size: cover;
+}
+
+#video-bg > video {
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto; 
+}
+
+ @supports (object-fit: cover) {
+     #video-bg > video {
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+     }
+ }
+ div#first_block {
+    padding: 0;
+}
+
+div#first_block_a {
+    padding: 100px 0;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(0,0,0,0.3);
+}

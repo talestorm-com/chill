@@ -1,0 +1,64 @@
+.TileBlock.TileBlock-CatalogsText {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    padding: 1em 0;
+}
+
+.TileBlock.TileBlock-CatalogsText .TileBlockInner {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.TileBlock.TileBlock-CatalogsText .TileBlockContent {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem {
+    width: 47.5%;
+    line-height: 2em;
+}
+
+.TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem:nth-child(odd) {
+    text-align: right;
+}
+
+.TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem a {
+    text-decoration: underline;
+    color: #333333;
+    font-size: 1.2em;
+}
+
+.TileBlock.TileBlock-CatalogsText .TileBlockInner {
+    font-size: 1.3em;
+}
+
+
+/** @media only screen and (orientation:portrait) {*/
+    .DeviceModeDevice  .TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem,
+    .DeviceModeDevice .TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem:nth-child(even),
+    .DeviceModeDevice .TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem:nth-child(odd) {
+        width: 100%;
+        text-align: center;
+        line-height: 2.75em;
+    }
+/** }*/
+
+@media only screen and (orientation:landscape) and (min-width:768px){
+    .DeviceModeDevice  .TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem,    
+    .DeviceModeDevice .TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem:nth-child(odd) {
+        width: 47.5%;        
+        line-height: 2.75em;
+        text-align:right;
+    }
+    .DeviceModeDevice .TileBlock.TileBlock-CatalogsText .TileBlockCatalogTextItem:nth-child(even){
+        width: 47.5%;        
+        line-height: 2.75em;
+        text-align:left;
+    }
+}

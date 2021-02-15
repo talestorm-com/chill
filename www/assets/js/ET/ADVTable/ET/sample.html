@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>aaaaaaa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body {
+                height: 100%;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            div#main {
+                height: 100%;
+            }
+
+            html {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main"></div>
+        <link type="text/css" rel="stylesheet" href="./ADVT.min.css" />
+        <script src="./jslib/mustache.min.js"></script>
+        <script src="./ADVT.min.js"></script>
+        <script>
+            var tabdef = {
+                id: "test1",
+                sorter: "Remote",
+                filters: true,
+                paginator: true,
+                perPage: [10, 20, 50, 100, 200],
+                rowKey: "val1",
+                columns: [
+                    {
+                        id: "col1", property: "val1", "text": "c1", filter: "String", sort: true, css: "some1"
+                    },
+                    {
+                        id: "col2", property: "col2", "text": "c2", columns: [
+                            {id: "col3", property: "aaa", text: "c2c1", sort: true, filter: "string"},
+                            {id: "col4", property: "ddd", text: "c2c2", filter: "string"},
+                            {id: "col5", property: "ddd", text: "c2c3", filter: false, columns: [
+                                    {id: "col6", property: "ddd", text: "c2c3c1", filter: "string"},
+                                    {id: "col7", property: "ddd", text: "c2c3c2", filter: "string"},
+                                    {id: "col8", property: "ddd", text: "c2c3c3", filter: false, columns: [
+                                            {id: "col9", property: "ddd", text: "c2c3c3c1", filter: "string"},
+                                            {id: "col10", property: "ddd", text: "c2c3c3c2", filter: "string"},
+                                            {id: "col11", property: "ddd", text: "c2c3c3c3", filter: false, columns: [
+                                                    {id: "col12", property: "ddd", text: "c2c3c3c3c1", filter: "string"},
+                                                    {id: "col13", property: "ddd", text: "c2c3c3c3c2", filter: "string"}
+                                                ]}
+                                        ]},
+                                ]}
+
+                        ]
+                    },
+                    {id: "col3", property: "mmm", text: "c3"},
+                    {id: "col4", property: "col2", text: "c4", filter: "date\\:d.m.y\\:y-m-d"}
+                ]
+            };
+
+        </script>
+
+        <script>
+            (function () {
+                window.TB = window.Eve.ADVTable.Table(tabdef);
+                var data = [
+                ];
+                var DSParams = window.Eve.ADVTable.DataSource.SimplePostParams(
+                        {'url': '/data.php', method: 'post', column_alias: {'col2_col3': "someColumn"}},
+                window.Eve.ADVTable.DataSource.Extractor.MixExtractor({})
+                        ).onRequestParams(window, function (x) {
+                    console.log(x);
+                    //debugger;
+                }).onDataReady(window, function (x) {
+                    console.log(x);
+                    //debugger;
+                }).onDataFail(window, function (x) {
+                    console.log(x);
+                    //debugger;
+                });
+                var DS = window.Eve.ADVTable.DataSource.RemoteDataSource(DSParams, TB.TableOptions);
+//                TB.addSortMethod('col2_col3', function (/*{array}*/ data, /*int 0(asc)|1(desc)*/ dir) {
+//                    data.sort(function (a, b) {
+//                        return dir === 0 ? (a.aaa < b.aaa ? -1 : a.aaa == b.aaa ? 0 : 1) : (a.aaa > b.aaa ? -1 : a.aaa == b.aaa ? 0 : 1);
+//                    });
+//                }).addSortMethod("col1", function (/*{array}*/ data, dir) {
+//                    data.sort(function (a, b) {
+//                        return dir === 0 ? a.val1 - b.val1 : b.val1 - a.val1;
+//                    });
+//                });
+                debugger;
+                TB.addPreprocessor(window.Eve.ADVTable.DataSource.Preprocessor.SimplePreprocessor(function (x) {
+                    x.val1 = [x.val1, "*"].join('');
+                }));
+                //Нужно 2 уровня препроцессора - до фильтрации (лк) [pre] и перед выводом (post)
+                debugger;
+                TB.setDataSource(DS);
+                TB.appendTo(document.getElementById('main'));
+            })();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+
+.ADVTableHeaderContent {
+    background: #ded9d9;
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 1.25em;
+}
+.ADVTableHeaderContent,.ADVTableHeaderContent div,.ADVTableHeaderContent span{
+    user-select:none;
+    -o-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
+
+.ADVTableHeader {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    border-bottom: 1px solid silver;
+}
+
+.ADVTableHeaderColumnWrapper {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.25em;
+    margin: 0;
+    white-space: normal;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .2s;
+}
+.ADVTableHeaderColumnWrapper.ADVTableHeaderColumnWrapperFilterPadding{
+    padding-bottom:1.25em;
+    /*оффсет под фильтр - прижать к нижнему краю*/
+}
+
+.ADVTableColumnSeparator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: .3em;
+    box-sizing: border-box;
+    border-right: 1px solid #9c9b9b;
+    cursor: col-resize;
+}
+
+.ADVTableHeaderRow {
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    height: 1.25em;
+    max-height: 1.25em;
+    min-height: 1.25em;
+    white-space: nowrap;
+}
+.ADVTableHeaderRow>.ADVTableHeaderRow{
+    height:100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.ADVTableChildRow {
+    display: flex;
+    border-top: 1px solid silver;
+    box-sizing:border-box;
+    /** flex-basis:100em;    */    
+}
+.ADVTableHeaderResizeHelper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    max-width: 1px;
+    border-left: 1px dotted black;
+    box-sizing: border-box;
+    min-height: 200px;
+    z-index: 25;
+    margin-top:-100px;
+}
+.ADVTableHeader{
+    border-right: 1px solid silver;
+}
+.ADVTableHeaderColumnWrapper:last-child>.ADVTableColumnSeparator {
+    display:none;
+}
+
+.ADVTableSortIndicator {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: .157em;
+    line-height: 0;
+    display:none;
+    transition:transform linear .3s;
+}
+
+.ADVTableSortIndicator svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.ADVTableSortIndicator.ADVTableSortIndicatorState1 {
+    display: block;
+}
+
+.ADVTableSortIndicator.ADVTableSortIndicatorState2 {
+    display: block;
+    transform: rotate(-180deg);
+}
+.ADVTableColumnDraggableDropTargetMarker{
+    position:absolute;height:100%;top:0;right:-1em;
+    box-sizing: border-box;width:0;margin:0;padding:0;    
+    transition: all .3s;
+    background:transparent;
+}
+
+.ADVTableDraggableContainerActive>.ADVTableHeaderColumnWrapper>.ADVTableColumnDraggableDropTargetMarker{
+    right: 0;
+    width:1em;
+    background: rgba(255,255,255,.5);
+    z-index:5;
+}
+
+.ADVTableDraggableContainerActive>.ADVTableHeaderColumnWrapper>.ADVTableColumnDraggableDropTargetMarker:hover,
+.ADVTableDraggableContainerActive>.ADVTableHeaderColumnWrapper>.ADVTableColumnDraggableDropTargetMarker.ADVTableColumnDraggableDropTargetMarkerActive{
+    width:1.5em;
+    background: rgba(124, 234, 129, 0.63);    
+}
+
+.ADVTableColumnDragHelper {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    z-index: 25;
+    margin-left: 1em;
+    border-radius: 50%;
+    border: 1px solid silver;
+    background: rgba(255,255,255,.5);
+    box-sizing: border-box;
+    padding:.3em;line-height: 0;
+}
+
+.ADVTableColumnDragHelper svg{
+    width:100%;height:100%;fill:silver;
+}
+
+body.ADVTableColumnDragInProgress,body.ADVTableColumnDragInProgress *{
+    cursor:pointer;
+}
+
+
+.ADVTableHeaderInner {
+    height: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.ADVTableHeaderContent {
+    height: 100%;
+    max-height: 100%;
+}
+
+.ADVTableHeader.ADVTableDraggableColumnContainer {
+    height: 100%;
+    max-height: 100%;
+}
+
+.ADVTableHeaderColumnWrapper {
+    height: 100%;
+    max-height: 100%;
+}

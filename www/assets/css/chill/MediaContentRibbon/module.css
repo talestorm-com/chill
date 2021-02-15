@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 апр. 2020 г., 19:02:14
+    Author     : eve
+*/
+
+.chill-lenta-content-inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.chill-lenta-item.chill-lenta-item-item_sq {
+    width: 23%;
+}
+
+.chill-lenta-item.chill-lenta-item-item_hz {
+    width: 49%;
+}
+

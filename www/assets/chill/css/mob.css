@@ -1,0 +1,301 @@
+@media only screen and (max-width: 992px) {
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -30px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -30px;
+}
+
+
+div#slideshow_main_out .owl-carousel .owl-nav button.owl-prev {
+    left: -20px;
+}
+
+div#slideshow_main_out .owl-carousel .owl-nav button.owl-next {
+    right: -20px;
+}
+
+div#podbor_header {
+    height: 160px;
+}
+div#slideshow_main_out {
+    margin-bottom: 0;
+}
+
+div#slideshow_main_out .owl-carousel.owl-drag .owl-item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+div#slideshow_main_out .owl-carousel.owl-drag .owl-item.active {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div#slideshow_main_out .owl-carousel.owl-drag .owl-item.active:hover {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.one_film_in_list_title_a {
+    font-size: 20px;
+}
+
+.one_film_prop {
+    font-size: 18px;
+}
+
+.film_right_lang {
+    font-size: 13px;
+}
+
+div#film_pay_start {
+    font-size: 14px;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+div#film_pay_start_trail {
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    margin-left: 0;
+}
+
+.one_film_in_list_title_a {max-height: auto;margin-top: 0;}
+
+.film_right {
+    height: auto;
+    overflow: hidden;
+}
+}
+@media only screen and (max-width: 600px) {
+    footer ul li{font-size: 12px; line-height: 18px;}
+.lenta_text {
+    font-size: 14px;
+    width: 90%;
+}
+div#podbor_header {
+    height: 120px;
+}
+.lenta_text {
+    bottom: 10px;
+}
+
+
+.lenta_text.lenta_text_top {
+    bottom: auto;
+}
+div#main_header h1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+div#main_header a.back_back {
+    line-height: 30px;
+    font-size: 11px;
+}
+
+.films_list_a .row .col {
+    margin-bottom: 40px;
+}
+
+div#main_header {
+    margin: 20px 0;
+}
+.one_films_group h2 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.one_films_group {
+    margin-bottom: 0px;
+}
+
+div#film_btns {
+    bottom: -40px;
+    left: 0;
+}
+
+div#film_pay_start {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+}
+
+
+
+div#film_pay_start_trail i {
+    line-height: 24px;
+    height: 24px;
+}
+
+div#film_pay_start_trail span {
+    line-height: 16px;
+}
+
+div#a_film_head {
+    margin-bottom: 50px;
+}
+
+div#select_season ul li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.one_review {
+    height: auto;
+}
+div#send_review {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div#one_soc_send {
+    text-align: center;
+}
+
+#lk h2 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.top_one_news_title {
+    position: relative;
+    margin-top: 10px;
+    bottom: auto;
+    left: 0;
+    font-size: 16px;
+    width: 100%;
+    line-height: 24px;
+}
+
+.top_one_news_stars {
+    top: 5px;
+    left: 10px;
+    bottom: auto;
+    right: auto;
+}
+
+.top_one_news_main img {
+    display: block;
+}
+
+div#top_news {
+    margin-bottom: 40px;
+}
+.top_header_a_news_stars {
+    bottom: auto;
+    right: auto;
+    left: 10px;
+    top: 5px;
+}
+
+.top_header_a_news_title {
+    position: relative;
+    position: relative;
+    margin-top: 10px;
+    bottom: auto;
+    left: 0;
+    font-size: 16px;
+    width: 100%;
+    line-height: 24px;
+    bottom: auto;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+h1#page_title {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+div#page_body h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h1#podbor_header_title {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 100%;
+}
+div#logo_mobile a {
+    height: 70px;
+    display: block;
+}
+div#slideshow_main_out .owl-carousel .owl-nav button.owl-prev {
+    left: -20px;
+}
+
+div#slideshow_main_out .owl-carousel .owl-nav button.owl-next {
+    right: -20px;
+}
+div#film_pay_start {}
+
+.a-film-cover {
+}
+
+div#film_btns {
+    bottom: 5px;
+    left: 5px;
+}
+
+div#film_pay_start {
+    font-size: 10px;
+}
+
+div#a_film_head {
+    margin-bottom: 10px;
+}
+.films_list_a .row .col .col {
+    margin-bottom: 20px;
+}
+.films_list_a .row .col {
+    margin: 0;
+}
+.one_film_in_list_title {
+    font-size: 11px;
+    max-width: 90%;
+    left: 5px;
+}
+div#login_block, #signup_block {
+    padding: 20px;
+}
+a#filter_open {
+line-height:40px;
+height:40px;
+    text-align: center;
+}
+
+.ribbon_title {
+    font-size: 20px;
+}
+
+.ribbon_subtitle {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.one_film_in_list{margin-bottom: 20px!important;}
+
+div#film_pay_start {
+    font-size: 14px;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+div#film_pay_start_trail {
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 0;
+}
+}
+
+

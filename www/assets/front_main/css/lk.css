@@ -1,0 +1,561 @@
+html,
+body {
+    min-width: 100%;
+    min-height: 100%
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('../fonts/ProximaNova-Black.eot');
+    src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+        url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Black.woff') format('woff'),
+        url('../fonts/ProximaNova-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNova-Extrabld.eot');
+    src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+        url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Extrabld.woff') format('woff'),
+        url('../fonts/ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-SemiboldIt.eot');
+    src: local('Proxima Nova Semibold Italic'), local('ProximaNova-SemiboldIt'),
+        url('../fonts/ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-SemiboldIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-SemiboldIt.woff') format('woff'),
+        url('../fonts/ProximaNova-SemiboldIt.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNovaT-Thin.eot');
+    src: local('Proxima Nova Thin'), local('ProximaNovaT-Thin'),
+        url('../fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNovaT-Thin.woff2') format('woff2'),
+        url('../fonts/ProximaNovaT-Thin.woff') format('woff'),
+        url('../fonts/ProximaNovaT-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+        url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('../fonts/ProximaNova-BlackIt.eot');
+    src: local('Proxima Nova Black Italic'), local('ProximaNova-BlackIt'),
+        url('../fonts/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-BlackIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-BlackIt.woff') format('woff'),
+        url('../fonts/ProximaNova-BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-BoldIt.eot');
+    src: local('Proxima Nova Bold Italic'), local('ProximaNova-BoldIt'),
+        url('../fonts/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-BoldIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-BoldIt.woff') format('woff'),
+        url('../fonts/ProximaNova-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNova-ThinIt.eot');
+    src: local('Proxima Nova Thin Italic'), local('ProximaNova-ThinIt'),
+        url('../fonts/ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-ThinIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-ThinIt.woff') format('woff'),
+        url('../fonts/ProximaNova-ThinIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-RegularIt.eot');
+    src: local('Proxima Nova Regular Italic'), local('ProximaNova-RegularIt'),
+        url('../fonts/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-RegularIt.woff') format('woff'),
+        url('../fonts/ProximaNova-RegularIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNova-ExtrabldIt.eot');
+    src: local('Proxima Nova Extrabold Italic'), local('ProximaNova-ExtrabldIt'),
+        url('../fonts/ProximaNova-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-ExtrabldIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-ExtrabldIt.woff') format('woff'),
+        url('../fonts/ProximaNova-ExtrabldIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-LightIt.eot');
+    src: local('Proxima Nova Light Italic'), local('ProximaNova-LightIt'),
+        url('../fonts/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-LightIt.woff2') format('woff2'),
+        url('../fonts/ProximaNova-LightIt.woff') format('woff'),
+        url('../fonts/ProximaNova-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Semibold.eot');
+    src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+        url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Proxima Nova Rg';
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+}
+
+div#settings {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+div#logout {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+body .row {
+    margin-bottom: 0;
+}
+
+#main {
+    height: 100%;
+}
+
+div#left_menu {
+    height: 100%;
+    background: #2eb1a3;
+    color: #fff;
+    position: relative;
+}
+
+div#main_block {
+    height: 100%;
+}
+
+div#main_block {
+    padding-top: 60px;
+}
+
+div#logo_block {
+    font-size: 0;
+}
+
+div#logo {
+    display: inline-block;
+    height: 60px;
+    padding: 12px 0;
+    vertical-align: top;
+}
+
+div#lk_title {
+    display: inline-block;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    line-height: 24px;
+    padding: 6px 0px;
+    vertical-align: top;
+}
+
+div#logo img {
+    width: 140px;
+}
+
+div#right_menu_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+div#policy {
+    line-height: 18px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+div#copyright {
+    margin-bottom: 10px;
+    line-height: 14px;
+}
+
+div#left_menu_menu {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+div#statistics,
+div#calendar {
+    line-height: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+div#left_menu_menu {
+    margin: 0 -0.75rem;
+    margin-top: -60px;
+    font-size: 0
+}
+
+div#statistics:hover,
+div#calendar:hover {
+    background-color: #279489
+}
+
+
+#left_menu_menu .selected {
+    background-color: #279489
+}
+
+div#logout {
+    padding: 0 20px;
+    margin-right: 20px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+div#settings {
+    padding: 0 20px;
+    margin-right: 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+div#settings:hover {
+    background-color: #279489;
+    color: #fff;
+}
+
+div#logout:hover {
+    background-color: #279489;
+    color: #fff;
+}
+
+div#user_photo {
+    display: inline-block;
+    background-color: #999;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+
+div#user_name {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+div#user_sport {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #999;
+}
+
+div#stat_block ul {}
+
+div#user_params li {
+    font-size: 20px;
+    line-height: 40px;
+    border-bottom: 1px solid #000;
+}
+
+div#stat_block li div {
+    padding: 0;
+}
+
+div#stat_trens h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+div#stat_trens li {
+    font-size: 20px;
+    line-height: 30px;
+    color: #999;
+}
+
+div#user_photo {
+    text-align: center;
+}
+
+.zapis_btn {
+    background: linear-gradient(90deg, #238C72 0%, rgba(87, 255, 213, 0.92) 100%);
+    border-radius: 8px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #000000;
+    padding: 0 30px;
+    font-size: 15px;
+}
+
+div#zapis_all {
+    margin-top: 40px;
+}
+
+.my_tren_photo img {
+    width: 100%;
+}
+
+.my_tren_name {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.my_tren_spec {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.my_tren_ready {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.one_tren {
+    margin-bottom: 40px;
+}
+
+div#tren_cal_block h2,
+#tren_stat_block h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+div#tren_cal_block,
+#tren_stat_block {
+    margin-top: 30px;
+}
+
+div#tren_sport {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #999;
+    line-height: 20px;
+}
+
+div#tren_level {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #999;
+    line-height: 20px;
+}
+
+div#tren_club {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #999;
+    line-height: 20px;
+}
+
+.one_user_for_tren {
+    margin-top: 20px;
+}
+
+div#tren_address {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #999;
+    line-height: 20px;
+}
+#stud_stat_block{margin: 40px 0;}
+
+
+div#main_block {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+.FrontendCabinetcontroller_hole_info {
+    box-sizing: border-box;
+    /* border: 1px solid silver; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.FrontendCabinetcontroller_hole_info_inner {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontendCabinetcontrollerHole_image {
+    width: 7.5em;
+    height: 7.5em;
+    margin-right: 1em;
+}
+
+.FrontendCabinetcontrollerHole_image img {
+    width: 100%;
+}
+
+.FrontendCabinetcontrollerHole_name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: .5em;
+}
+
+.FrontendCabinetcontrollerHole_address {
+    color: dimgray;
+    font-size: .9em;
+    margin-bottom: .5em;
+}
+
+.FrontendCabinetcontrollerHole_phone {
+    box-sizing: border-box;
+}
+
+div#map_selector {
+    min-height: 25em;
+}
+
+div#user_photo {
+    overflow: hidden;
+}
+
+div#user_photo img {
+    width: 100%;
+}
+
+.free_time_item {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: .5em;
+    background: silver;
+    margin: .25em;
+}
+
+.register_part_timelist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.free_time_item span {
+    margin: .25em;
+}
+
+.free_time_item.selected {
+    background: red;
+}
+
+.free_time_item.free_time_item-1 {
+    background: #eceaea;
+    color: silver;
+}

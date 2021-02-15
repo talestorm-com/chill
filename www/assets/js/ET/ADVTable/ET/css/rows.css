@@ -1,0 +1,35 @@
+.ADVTableRowError {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ADVTableErrorText {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em .5em;
+    background: crimson;
+    color: white;
+}
+
+.ADVTableRow {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.ADVTableGroupWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.ADVTableCellWrapper{
+    transition: all .2s;
+}
+
+.ADVTableCellWrapper.ADVTableGroupWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

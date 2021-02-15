@@ -1,0 +1,52 @@
+.EveCoreSlider.EveCoreSlider-simple {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+    will-change: transform;
+}
+
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderInner {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderInner .EveCoreSliderImage {
+    width: 33.3333%;
+    overflow: visible;
+    display: none;
+}
+
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderInner .EveCoreSliderImage img {
+    width: 100%;
+}
+
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderImage.EveCoreSliderLayoutSimpleBeforeView {
+    position: absolute;
+    top: 0;
+    perspective: 300vw;
+    perspective-origin: center;
+    display: block;
+}
+
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderImage.EveCoreSliderLayoutSimpleBeforeView img{
+    transform: rotateY(90deg);
+    transform-origin: center;
+}
+
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderImage.EveCoreSliderLayoutSimpleDisplayed{
+    position: static;
+    perspective: 300vw;
+    perspective-origin: center;
+    display: block;
+}
+.EveCoreSlider.EveCoreSlider-simple .EveCoreSliderImage.EveCoreSliderLayoutSimpleDisplayed img{
+    transform-origin: center;
+}
+

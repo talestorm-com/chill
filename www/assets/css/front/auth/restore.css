@@ -1,0 +1,17 @@
+.FrontendAuthcontrollerRestoreSuccess {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2.5em;
+    font-size: 1.1em;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+.FrontendAuthcontrollerRestoreSuccessInner {
+    border: 1px solid silver;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 3px 3px 10px silver;
+}

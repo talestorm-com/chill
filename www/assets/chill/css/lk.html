@@ -1,0 +1,392 @@
+<! DOCTYPE HTML>
+<html lang="ru-RU">
+
+<head>
+    <title>Chill. Сервис для просмотра web-сериалов
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Chill. Сервис для просмотра web-сериалов">
+    <meta property="og:description" content="Chill. Сервис для просмотра web-сериалов">
+    <meta property="og:image" content="/images/logo.png">
+    <meta property="og:url" content="/index.html">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/mob.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="mobile_header" class='hide-on-large-only'>
+            <div class='container'>
+                <div class="row">
+                    <div class="col s6">
+                        <div id="logo_mobile">
+                            <a href="/">
+                                <img src="images/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s6 right-align">
+                        <a id="login_btn">
+                            <img src="images/account.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="desktop_header" class="hide-on-med-and-down">
+            <div class="container">
+                <div class="row">
+                    <div class="col l1">
+                        <div id="logo">
+                            <a href="/">
+                                <img src="images/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l5">
+                        <div id="desktop_menu">
+                            <ul>
+                                <li>
+                                    <a href="/">
+                                        Лента
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/">
+                                        Новости
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l5 right-align">
+                        <div id="search_block">
+                            <i class="mdi mdi-magnify"></i>
+                            <input type="text" id="search_input" placeholder="Поиск">
+                        </div>
+                    </div>
+                    <div class="col l1 right-align">
+                        <a id="login_btn">
+                            <img src="images/account.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="lk">
+            <div id="main_header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l10 offset-l1">
+                            <div class="row">
+                                <div class="col s12 l10">
+                                    <h1>Личные данные</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="lk_form_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 l10 offset-l1">
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <div class="one_lk_form_block">
+                                        <label for="lk_name">Имя</label>
+                                        <div class="one_lk_form_input">
+                                            <input type="text" placeholder="Имя" value="Алексей" id="lk_name">
+                                        </div>
+                                    </div>
+                                    <div class="one_lk_form_block">
+                                        <label for="lk_surname">Фамилия</label>
+                                        <div class="one_lk_form_input">
+                                            <input type="text" placeholder="Фамилия" value="Иванов" id="lk_surname">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col s12 l6 center-align">
+                                    <div id="lk_photo">
+                                        <img src="images/lk.png">
+                                    </div>
+                                    <div id="lk_change_photo">
+                                        Заменить
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l10 offset-l1">
+                            <h2>Сменить пароль</h2>
+                            <div class="row">
+                                <div class="col s12 l6">
+                                    <div class="one_lk_form_block">
+                                        <label for="old_pass">Текущий пароль</label>
+                                        <div class="one_lk_form_input">
+                                            <input type="password" placeholder="Текущий пароль" value="Alextest" id="old_pass">
+                                        </div>
+                                    </div>
+                                    <div class="one_lk_form_block">
+                                        <label for="new_pass">Новый пароль</label>
+                                        <div class="one_lk_form_input">
+                                            <input type="password" placeholder="Новый пароль" value="Alextest" id="new_pass">
+                                        </div>
+                                    </div>
+                                    <div class="one_lk_form_block">
+                                        <label for="new_pass">Повторить пароль</label>
+                                        <div class="one_lk_form_input">
+                                            <input type="password" placeholder="Повторить пароль" value="Alextest" id="new_pass">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l10 offset-l1">
+                            <div class="row">
+                                <div class="col s6 l3">
+                                    <div class="lk_btn_akt">
+                                        <button id="lk_save">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="col s6 l3">
+                                    <div class="lk_btn_desakt">
+                                        <button id="lk_cancel">Отменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l10 offset-l1">
+                        <h2>Счет</h2>
+                        <div class="row">
+                            <div class="col s12 l6">
+                                <div class="one_lk_form_block">
+                                    <label for="balans">Баланс</label>
+                                    <div class="one_lk_form_input">
+                                        <input type="text" disabled="disabled" placeholder="0.0" value="100.0" id="balans">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6 l3">
+                                <div class="lk_btn_akt">
+                                    <button id="lk_save">Пополнить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col l1 s6 hide-on-med-and-down">
+                    <div class="one_footer_colomn">
+                        <a href="/">
+                                <img src="images/logo.png">
+                            </a>
+                    </div>
+                </div>
+                <div class="col l2 s6">
+                    <div class="one_footer_colomn">
+                        <ul>
+                            <li>
+                                <a>Лента</a>
+                            </li>
+                            <li>
+                                <a>Каталог</a>
+                            </li>
+                            <li>
+                                <a>Новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l3 s6">
+                    <div class="one_footer_colomn">
+                        <ul>
+                            <li>
+                                <a>О сервисе</a>
+                            </li>
+                            <li>
+                                <a>Правила оплаты и возврата</a>
+                            </li>
+                            <li>
+                                <a>Как стать автором контента</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l3 s6">
+                    <div class="one_footer_colomn">
+                        <ul>
+                            <li>
+                                <a>Помощь</a>
+                            </li>
+                            <li>
+                                <a>Правила использования</a>
+                            </li>
+                            <li>
+                                <a>Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l3 s6">
+                    <div class="one_footer_colomn">
+                        <ul>
+                            <li>
+                                <i class="mdi-email mdi"></i><a>help@chill.com</a>
+                            </li>
+                            <li>
+                                <i class="mdi mdi-phone"></i><a>+7 (999) 999-99-99</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="bg_bg"></div>
+    <div id="login_signup">
+        <div id="close_login_signup">
+            <i class="mdi mdi-close"></i>
+        </div>
+        <div id="login_block">
+            <div class="in_ls_block">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="in_ls_logo">
+                            <img src="images/logo_black.png">
+                        </div>
+                    </div>
+                    <div class="col s12 l8 offset-l2">
+                        <h3>Вход</h3>
+                        <form id="login">
+                            <div class="ls_input">
+                                <label for="login_email">Телефон или email</label>
+                                <input type="text" placeholder="example@chill.com" id="login_email" name="login_email">
+                            </div>
+                            <div class="ls_input">
+                                <label for="login_pass">Пароль</label>
+                                <input type="password" placeholder="*******" id="login_pass" name="login_pass">
+                            </div>
+                            <div class="ls_btn">
+                                <button>Войти</button>
+                            </div>
+                        </form>
+                        <div class="right-align" id="recover_password">
+                            <a href="/">Забыли пароль?</a>
+                        </div>
+                        <div id="no_acc">
+                            Нет аккаунта? <a>Зарегистрируйтесь</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="policy">
+                    <div class="row">
+                        <div class="col s12 l8 offset-l2">
+                            <a href="/policy">
+                                Пользовательское соглашение и правила использования
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="signup_block">
+            <div id="to_login_block">
+                <i class="mdi mdi-chevron-left"></i>
+            </div>
+            <div class="in_ls_block">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="in_ls_logo">
+                            <img src="images/logo_black.png">
+                        </div>
+                    </div>
+                    <div class="col s12 l8 offset-l2">
+                        <h3>Регистрация</h3>
+                        <form id="login">
+                            <div class="ls_input">
+                                <label for="su_email">Телефон или email</label>
+                                <input type="text" placeholder="example@chill.com" id="su_email" name="su_email">
+                            </div>
+                            <div class="ls_input">
+                                <label for="su_pass">Пароль</label>
+                                <input type="password" placeholder="*******" id="su_pass" name="su_pass">
+                            </div>
+                            <div class="ls_check">
+                                <p>
+                                    <input type="checkbox" id="login_check" />
+                                    <label for="login_check">Согласен на обработку персональных данных</label>
+                                </p>
+                            </div>
+                            <div class="ls_btn">
+                                <button>Регистрация</button>
+                            </div>
+                        </form>
+                        <div class="text_in_lib">
+                            либо
+                        </div>
+                        <div id="sign_in_social">
+                            <div id="vk_in" class="one_soc_in">
+                                <i class="mdi mdi-vk">
+                                </i>
+                            </div>
+                            <div id="fb_in" class="one_soc_in">
+                                <i class="mdi mdi-facebook">
+                                </i>
+                            </div>
+                            <div id="od_in" class="one_soc_in">
+                                <i class="mdi mdi-odnoklassniki">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

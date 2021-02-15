@@ -1,0 +1,18 @@
+Новый FT для ордера, с учетом правок к FT
+id
+readKey
+name
+parent (id)
+css
+sort
+filter
+visible
+no handle owner - only handle by table self
+collapsible?
+collapsed - no memory /
+inb pag?
+inb onpg?
+inp prld?
+
+
+можно использовать fragment-renderer для лэйаута

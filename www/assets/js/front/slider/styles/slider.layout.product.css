@@ -1,0 +1,230 @@
+.EveCoreSlider.EveCoreSlider-product {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderInner {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    max-width: 100%;
+    padding-top: 1em;
+}
+
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderImages {
+    width: 100%;
+    line-height: 0;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniatures {
+    width: 15%;
+    max-width: 15%;
+    min-width: 15%;
+    box-sizing: border-box;
+    padding: 0 .5em;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniature {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 0;
+    padding: .25em;
+    border: 1px solid silver;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: .5em;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniatureInner {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniatureInner img {
+    width: 100%;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderImage {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    padding: .1em;
+    box-sizing: border-box;
+    margin-bottom: .25em;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderImage img {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniature {
+    border: none;
+    padding: 0;
+    width: 115px;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniatures {
+    width: 125px;
+    max-width: 125px;
+    min-width: 125px;
+    padding: .1em 10px 0 0;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderMiniature {
+    margin-bottom: .6em;
+}
+
+
+body.slider_product_fullview_visible {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.CoreSliderProductImageViewWrapper {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.CoreSliderProductImageViewInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    /* position: relative; */
+}
+
+.CoreSliderProductImageViewImage {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.CoreSliderProductImageViewImage img {
+    width: 100%;
+}
+
+.CoreSliderProductImageViewSApinner {
+    box-sizing: border-box;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: rgba(255,255,255,0);
+}
+
+.CoreSliderProductImageViewSApinner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoreSliderProductImageViewSApinnerInner {
+    width: 5em;
+    height: 5em;
+}
+
+.CoreSliderProductImageViewSApinnerInner svg {
+    width: 100%;
+    height: 100%;
+}
+
+.CoreSliderProductImageViewSApinner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+.CoreSliderProductImageViewSApinnerInner {
+    box-sizing: border-box;
+    width: 4em;
+    height: 4em;    
+}
+
+.CoreSliderProductImageViewSApinnerInner svg {
+    width: 100%;
+    height: 100%;
+}
+
+.CoreSliderProductImageViewClose {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.CoreSliderProductImageViewCloseBt {
+    background: white;
+    padding: .25em 1em;
+    border-radius: 5%;
+    box-shadow: 0px .1em .4em 0 black;
+}
+
+
+
+.CoreSliderProductImageViewInner {
+    background: white;
+}
+
+.CoreSliderProductImageViewNavigation {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+
+.CoreSliderProductImageViewNavigationInner {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .25em .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CoreSliderProductImageViewNavigationInner a {
+    line-height: 0;
+    width: .75em;
+    height: .75em;
+    margin: 0 .75em;
+    background: white;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
+
+a.CoreSliderProductLayoutImageSelectedPin {
+    background: #f15a24;
+}
+
+.CoreSliderProductImageViewInner{
+    cursor:url('/assets/cursor/zoom-out.png'),auto;
+}
+
+.EveCoreSlider.EveCoreSlider-product .EveCoreSliderImage{
+    cursor:url('/assets/cursor/zoom-in-2.png'),auto;
+}

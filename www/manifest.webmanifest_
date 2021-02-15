@@ -1,0 +1,8 @@
+{
+  "orientation":"natural",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#000000"
+  
+}

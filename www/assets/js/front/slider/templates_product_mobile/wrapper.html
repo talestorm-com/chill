@@ -1,0 +1,16 @@
+<div class="EveCoreSlider EveCoreSlider-{{layout_name}}" id="{{uid}}">
+    <div class="EveCoreSliderInner">        
+        <div class="EveCoreSliderImages">
+            {{#images}}
+            {{>image}}
+            {{/images}}
+        </div>
+        <div class="EveCoreSliderNvaligation">
+            <ul>
+            {{#navigations}}
+            <li class="EveCoreSliderNavigtionMonitor" data-id="{{.}}"></li>
+            {{/navigations}}
+            </ul>
+        </div>
+    </div>
+</div>

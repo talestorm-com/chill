@@ -1,0 +1,123 @@
+.ADVTableCmenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;    
+    box-sizing: border-box;
+    max-height: 100%;
+    height: 100%;
+    background: white;
+    overflow: hidden;
+    padding: .5em 0;
+    padding-right: 0;
+    box-shadow: .1em .1em 10px darkgray;
+    height: 100%;
+    max-width:100%;
+    transition:all .5s;
+}
+.ADVTableCmenu.ADVTableCMenuStateClosed{
+    max-width:0;
+}
+
+.ADVtableCmenuScrollArea {
+    box-sizing: border-box;
+    max-height: 100%;
+    overflow: auto;
+    padding: 0;    
+    height: 100%;
+}
+
+.ADVtableCmenuScrollArea ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li.ADVTableCmenuElement {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.ADVTableCmenuElementHeader {
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+    height: 2em;
+    overflow: hidden;
+    position: relative;
+    padding: 0 0 0 3em;
+    line-height: 2em;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.ADVtableCmenuElementIcon {
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    position: absolute;
+    left: .5em;
+    top: 0;
+    padding: .2em;
+    box-sizing: border-box;
+}
+
+.ADVtableCmenuElementIcon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableCMenuElementText {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    white-space: nowrap;
+    padding: 0 .5em;
+}
+
+.ADVTableCmenuElementHeader:hover {
+    background: whitesmoke;
+}
+
+.ADVTableCMenuChildContainer {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 1.5em;
+}
+
+li.ADVTableCmenuElement.cmenuElementStateVisible>div>div>svg {
+    fill: #00acc8;
+}
+li.ADVTableCmenuElement.cmenuElementStateInvisible>div>div>svg {
+    fill: crimson;
+}
+
+li.ADVTableCmenuElement.cmenuElementStateVisible>div>div>svg.cmenuElementIconInvisible {
+    display: none;
+}
+li.ADVTableCmenuElement.cmenuElementStateInvisible>div>div>svg.cmenuElementIconVisible {
+    display: none;
+}
+
+
+li.ADVTableCmenuElement.ADVTableCmenuElementRestParams {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding-top: .5em;
+    border-top: 1px solid gray;
+}
+
+.ADVTableCMenuChildContainer li.ADVTableCmenuElement.ADVTableCmenuElementRestParams{
+    display:none;
+}
+
+
+li.ADVTableCmenuElement.ADVTableCmenuElementRestParams .ADVtableCmenuElementIcon {
+    line-height: 0;
+    padding: .5em;
+}
+
+li.ADVTableCmenuElement.ADVTableCmenuElementRestParams .ADVtableCmenuElementIcon svg {
+    fill: crimson;
+}

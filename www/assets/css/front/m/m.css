@@ -1,0 +1,576 @@
+@media only screen and (orientation: portrait) {
+    .DeviceModeDevice .FrontLayoutHeaderMenuLineMenu {
+        display: none;
+    }
+
+    .DeviceModeDevice .FrontLayoutHeaderRowCell.FrontLayoutHeaderRowCellMenus {
+        min-width: 3.2em;
+        max-width: 3.2em;
+        width: 3.2em;
+    }
+
+    .DeviceModeDevice .FrontLayoutHeaderRowCell.FrontLayoutHeaderRowCellAccount {
+        width: 35%;
+        min-width: 35%;
+    }
+
+    .DeviceModeDevice .fronLayoutAccountIconsWrapper {
+        padding-right: .5em;
+        padding-left: .75em;
+    }
+
+    .DeviceModeDevice .fronLayoutAccountIconsWrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .DeviceModeDevice .FrontLayoutHeaderContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .DeviceModeDevice   .FrontLayoutAccountIconButtonButton {
+        margin: 0;
+    }
+
+    .DeviceModeDevice .FrontLayoutHeaderRowCell.FrontLayoutHeaderRowCellLogo {
+        min-width: 40%;
+    }
+
+
+    .DeviceModeDevice  .FooterMenuColumn,.FooterMenuColumn:nth-last-child(1) {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 1.75em;
+    }
+
+    .DeviceModeDevice  .FooterMenuBody {
+        flex-wrap: wrap;
+    }
+
+    .DeviceModeDevice .FooterMenuCoumnHeader {
+        margin-bottom: .75em;
+    }
+
+    .DeviceModeDevice  .FooterMenuColumnBody {
+        line-height: 2.5em;
+        font-size: 1.3em;
+    }
+
+    .DeviceModeDevice   .FooterMenuColumn.FooterMenuColumnCustom-subscribe_footer_column {
+        text-align: left;
+    }
+
+
+    .DeviceModeDevice  .FooterSocialItem {
+        width: 25%;
+        max-width: 25%;
+        min-width: 25%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        box-sizing: border-box;
+        padding: .25em;
+        margin-bottom: 1em;
+    }
+
+    .DeviceModeDevice  .FrontLayoutMainMenuItems {
+        justify-content: space-between;
+    }
+
+    .DeviceModeDevice  .FrontLayoutMainMenuItemsWrapper {
+        line-height: 2.5em;
+    }
+    .DeviceModeDevice .FrontLayoutMainMenuItemHeader {
+        font-family: Helvetica Neue,larro-def-webfont,serif;
+        font-weight: 400;
+    }
+    .DeviceModeDevice .FrontLayoutMainMenuItem {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (orientation:landscape){
+    .DeviceModeDevice  .fronLayoutAccountIconsWrapper {
+        padding-right: 0;
+    }
+
+    .DeviceModeDevice   .FooterMenuBody {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .DeviceModeDevice .FooterMenuColumn {
+        width: 45%;
+        margin-bottom: 2.2em;
+    }
+
+    .DeviceModeDevice .FooterMenuColumn:nth-child(2n) {
+        text-align: left;
+    }
+
+    .DeviceModeDevice .FooterMenuColumn:nth-last-child(1) {
+        text-align: left;
+    }
+
+    .DeviceModeDevice .FooterMenuColumn:nth-last-child(1):nth-child(2n){
+        text-align:left;
+
+    }
+
+    .DeviceModeDevice .FooterMenuCoumnHeader {
+        margin-bottom: .5em;
+    }
+
+
+
+    .DeviceModeDevice .FooterSocialItem {
+        width: 20%;
+        max-width: 20%;
+        min-width: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: .1em;
+        margin-bottom: 1em;
+    }
+
+    .DeviceModeDevice .FooterSocialItem:nth-child(3n+1) {
+        margin-left: 0;
+    }
+
+    .DeviceModeDevice .FooterSocialInner {justify-content: flex-start;}
+    .DeviceModeDevice .FooterMenuColumnRow {
+        line-height: 2.5em;
+    }
+
+
+    .DeviceModeDevice  .FrontLayoutMainMenuItems {
+        justify-content: space-between;
+    }
+
+    .DeviceModeDevice  .FrontLayoutMainMenuItemsWrapper {
+        line-height: 2.5em;
+    }
+    .DeviceModeDevice .FrontLayoutMainMenuItemHeader {
+        font-family: Helvetica Neue,larro-def-webfont,serif;
+        font-weight: 400;
+    }
+    .DeviceModeDevice .FrontLayoutMainMenuItem {
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (max-width:1279px){
+    .CatalogPageSideblock.CatalogPageLeft    {
+        display: none;
+    }
+
+    .CatalogPageSideblock.CatalogPageRight {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+
+}
+
+
+@media screen and (max-width:1024px){
+    .CatalogPageProductList .ProductSmallTileItemOuter {
+        width: 32%;
+    }
+}
+
+.DeviceModeDevice .CatalogPageSideblock.CatalogPageLeft {
+    display:none;
+}
+
+.DeviceModeDevice .CatalogPageViewSwitch{
+    display:none;
+}
+
+@media screen and (orientation:portrait){
+    .DeviceModeDevice .CatalogViewLarge .ProductSmallTileItemOuter,
+    .DeviceModeDevice .CatalogPageProductList .ProductSmallTileItemOuter{
+        width:100%;
+    }
+    .DeviceModeDevice .CatalogPageSideblock.CatalogPageRight {
+        padding-left: 0;
+        padding-right:0;
+    }
+
+    .DeviceModeDevice .CatalogPageTopBlock {
+        margin-bottom: .5em;
+        padding-left: .25em;
+    }
+
+    .DeviceModeDevice .ProductSmallTileProductName {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+
+    .DeviceModeDevice .ProductSmallTilePriceBlock {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+    .DeviceModeDevice .ProductSmallTileItemOuter.ProductTileItem {
+        margin-bottom: 4em;
+    }
+
+}
+@media screen and (orientation:portrait) and (min-width:768px){
+    .DeviceModeDevice .CatalogPageProductList .ProductSmallTileItemOuter{
+        width:49.5%;
+    }    
+}
+@media screen and (orientation:portrait) and (min-width:940px){
+    .DeviceModeDevice .CatalogPageProductList .ProductSmallTileItemOuter{
+        width:32.5%;
+    }    
+}
+
+
+@media screen and (orientation:landscape){
+    .DeviceModeDevice .CatalogViewLarge .ProductSmallTileItemOuter,
+    .DeviceModeDevice .CatalogPageProductList .ProductSmallTileItemOuter{
+        width:49.5%;
+    }
+    .DeviceModeDevice .CatalogPageSideblock.CatalogPageRight {
+        padding-left: 0;
+        padding-right:0;
+    }
+
+    .DeviceModeDevice .CatalogPageTopBlock {
+        margin-bottom: .5em;
+        padding-left: .25em;
+    }
+
+    .DeviceModeDevice .ProductSmallTileProductName {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+
+    .DeviceModeDevice .ProductSmallTilePriceBlock {
+        padding-left: .25em;
+        padding-right: .25em;
+    }
+    .DeviceModeDevice .ProductSmallTileItemOuter.ProductTileItem {
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width:940px){
+    .DeviceModeDevice .CatalogPageProductList .ProductSmallTileItemOuter{
+        width:32.5%;
+    }    
+}
+@media screen and (orientation:landscape) and (min-width:1199px){
+    .DeviceModeDevice .CatalogPageProductList .ProductSmallTileItemOuter{
+        width:24.5%;
+    }    
+}
+
+
+/* product */
+
+
+@media screen and (max-width:1300px){
+    .ProductPageSideblock.ProductPageLeft {
+        display:none;
+    }
+    .ProdycrPageSideblock.ProductPageRight{
+        padding-left:3%;
+        padding-right: 3%;
+    }
+
+    .ProductDefaultContentInformationOuter{
+        padding-right:0;
+        width:445px;
+        max-width:445px;
+        min-width:445px;
+
+    }
+}
+
+@media screen and (max-width:1024px){
+    .EveCoreSliderMiniatures {
+        display: none!important;
+    }
+    .ProductPageTopBlock {
+        padding-left:.25em;
+    }
+    .ProdycrPageSideblock.ProductPageRight{
+        padding-left:0;
+        padding-right: 0;
+    }
+}
+
+
+/*product mobile*/
+.DeviceModeDevice .ProductPageSideblock.ProductPageLeft {
+    display:none;
+}
+
+.EveCoreSliderMiniatures {
+    display: none!important;
+}
+.DeviceModeDevice .ProductPageTopBlock {
+    padding-left:.6em;
+    padding-bottom: .25em;
+}
+.DeviceModeDevice .ProdycrPageSideblock.ProductPageRight{
+    padding-left:0;
+    padding-right: 0;
+}
+.DeviceModeDevice .ProductDefaultContentSlider,
+.DeviceModeDevice .ProductDefaultContentInformationOuter{
+    width:100%;
+    min-width:100%;
+    max-width:100%;
+}
+
+.DeviceModeDevice .ProductDefaultContent {
+    flex-wrap: wrap;
+    padding-top:0;
+}
+
+.DeviceModeDevice .EveCoreSliderInner{
+
+}
+
+
+.DeviceModeDevice .frontLayoutBreadcrumbBlock {
+    white-space: nowrap;
+}
+
+.DeviceModeDevice .ProductPageBreadcrumbs {
+    flex-wrap: wrap;
+}
+
+
+.DeviceModeDevice .ProductDefaultContentInformationOuter {
+    padding: 0;
+}
+
+.DeviceModeDevice .ProductDefaultContentInformation {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.DeviceModeDevice .ProductDefaultContentSizesBlock {
+    padding-left: .25em;
+}
+
+@media only screen and (orientation:portrait){    
+    .DeviceModeDevice .LastSeenProductsModule .TileBlock.TileBlock-ProductLine .TileBlockHeader,
+    .DeviceModeDevice .ProductCrossBlockWrapper .TileBlock.TileBlock-ProductLine .TileBlockHeader{
+        font-size: .9em;
+        text-align: left;
+        padding-left: .6em;
+        margin-bottom: .25em;
+    }
+}
+
+
+.DeviceModeDevice  .EFOConfirmMessageBackdrop {
+    padding: .5em;
+}
+
+.DeviceModeDevice .EFOConfirmMessage {min-width: 50%;box-sizing: border-box;max-width: 100%;}
+
+
+
+@media only screen and (min-width:800px){
+    .DeviceModeDevice .ProductDefaultContentSlider{
+        width:100%;
+        min-width:380px;
+        max-width:75%;
+    }
+
+    .DeviceModeDevice .ProductDefaultContentInformationOuter{
+        min-width: 420px;
+        width:420px;
+        max-width:420px;
+    }
+
+    .DeviceModeDevice .ProductDefaultContent{
+        flex-wrap:nowrap;
+    }
+
+    .DeviceModeDevice .ProductDefaultContentInformation{
+        padding-top:0;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .DeviceModeDevice .ProductDefaultContentBasketButtonBlockPrice {
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .DeviceModeDevice  .ProductDefaultContentBasketButtonBlockInner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .DeviceModeDevice  .ProductDefaultContentBasketButtonBlockButton {
+        margin: 0;
+        margin-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+
+    .DeviceModeDevice  .ProductAvailabilityBlockOneShopHoldButton .ProductAvailabilityButton {
+        line-height: 2.5em;
+        padding: 0 2.5em;
+    }
+
+    .DeviceModeDevice  .ProductAvailabilityBlockOneShopHoldButton {
+        text-align: center;
+    }
+}
+
+.DeviceModeDevice.bye-fab-is-floating .ProductDefaultContentBasketButtonBlockButton {
+    right: 1em;
+    bottom: 1em;
+    position: fixed;
+    z-index:3;
+}
+
+.ProductDefaultContentBasketButtonBlockButton {
+    transition: all .3s; 
+    right:0;bottom:0;
+}
+
+body.DeviceModeIOS, body.DeviceModeIOS .FrontLayoutMainMenuItems{
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight:400;
+    
+}
+body.DeviceModeIOS .FrontLayoutMainMenuItemHeader{
+    font-family: Helvetica Neue,larro-def-webfont-bold,serif;
+    font-weight:600 ;
+}
+
+.DeviceModeDevice .FooterMenuCoumnHeader {
+    font-size: 1.3em;
+    font-family: Helvetica Neue,larro-def-webfont,serif;
+    font-weight: 400;
+}
+
+.DeviceModeDevice.DeviceModeIOS .FooterMenuCoumnHeader {
+    font-size: 1.3em;
+    font-family: Helvetica Neue,larro-def-webfont-bold,serif;
+    font-weight: 600;
+}
+
+
+
+.DeviceModeDevice .FooterSocialItem {
+    padding: .5em;
+}
+
+
+
+.FooterSubscribeInner {
+    max-width: 16.5em;
+}
+
+.FooterSocialBlock {
+    max-width: 16.5em;
+}
+.FooterSocialItem {
+    padding: .25em;
+}
+
+
+@media only screen and (min-width:800px){
+    .DeviceModeDevice .FooterMenuColumn {
+        width: 30%;
+        min-width:30%;
+        max-width:30%;
+        margin-bottom: 2.2em;
+        text-align: left;
+    }
+}
+
+
+@media only screen and (min-width:700px) and (orientation:portrait){
+    .DeviceModeDevice .FooterMenuColumn {
+        width: 48%;
+        min-width:48%;
+        max-width:48%;
+        margin-bottom: 2.2em;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width:700px) and (orientation:portrait){
+    .DeviceModeDevice  .FooterSocialItem {
+        width: 25%;
+        max-width: 25%;
+        min-width: 25%;
+        margin-left: 2%;
+        margin-right: 2%;
+        box-sizing: border-box;
+        padding: .25em;
+        margin-bottom: 1em;
+    }
+
+    .DeviceModeDevice .FooterSocialInner{
+        max-width:10em;
+    }
+}
+
+
+.DeviceModeDevice .FrontLayoutHeaderLogo,
+.DeviceModeDevice.ScrolledTopLayout .FrontLayoutHeaderLogo{
+    padding:.5em;
+}
+
+.DeviceModeDevice .EFOAlertMessageInner {
+    min-width: 50vw;
+    max-width: 90vw;
+}
+
+@media only screen and (max-width:599px){
+    .DeviceModeDevice .EFOAlertMessageInner {
+        min-width: 95vw;
+    }
+    .DeviceModeDevice .EFOAlertMessageBodyImage,.DeviceModeDevice .EFOConfirmMessageBodyImage{
+        display:none;
+    }
+    .DeviceModeDevice .EFOConfirmMessage{
+        min-width:80%;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .DeviceModeDevice .EFOAlertMessageInner {
+        min-width:350px;
+    }
+}
+
+
+
+@media only screen and (min-width: 800px){
+    .DeviceModeDevice .ProductDefaultContentSlider {
+        width: 100%;
+        min-width: 380px;
+        max-width: 75%;
+        margin-right: 1em;
+    }
+}
+
+
+.DeviceModeDevice .FrontLayoutHeaderLogo {
+    max-width: 180px;
+}

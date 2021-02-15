@@ -1,0 +1,36 @@
+.FrontendSearchcontrollerWrapper {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a.b-serp-item__links-link {
+    display: none;
+}
+
+.FrontendSearchcontrollerWrapper * {
+    font-family: inherit!important;
+    font-size: inherit!important;
+}
+
+#ya-site-results {
+    font-family: inherit!important;
+}
+
+table.b-head.b-head_type_search-simple {
+    max-height: 0!important;
+    overflow: hidden!important;
+    height: 0!important;
+    min-height: 0!important;
+    margin: 0!important;
+    position: absolute;
+    right: 1000em;
+}
+
+.FrontendSearchcontrollerWarning {
+    padding: 1em;
+    color: crimson;
+    margin-top: 1em;
+    font-family: Helvetica Neue,larro-def-webfont,serif!important;
+    font-weight: 400;
+}

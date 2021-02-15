@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 апр. 2020 г., 17:34:51
+    Author     : eve
+*/
+
+.trailer_backdrop {
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.trailer-backdrop-flex {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 2em;
+}
+
+.trailer-window {
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    /* width: 100%; */
+    /* height: auto; */
+}
+
+.trailer-content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+body.TrailerPlayerVisibleNow {
+    overflow: hidden!important;
+}
+
+
+
+.trailer-window {
+    padding: 1em;
+    background: white;
+    height: 100%;
+}
+
+.trailer-video {
+    box-sizing: border-box;
+    max-height: 100%;
+}
+
+.trailer-video-content {
+    box-sizing: border-box;
+    max-height: 100%;
+    height: 100%;
+}
+
+.trailers-list {
+    display: none!important;
+}
+
+.trailer-window {
+    padding: 2em;
+    position: relative;
+}
+
+.trailer-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    padding: .25em;
+    line-height: 0;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+
+.trailer-close-btn-inner{
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+}
+
+.trailer-close-btn-inner:before,.trailer-close-btn-inner:after {content: ' ';box-sizing: border-box;width: 2px;height: 150%;background: crimson;position: absolute;top: -25%;left: 50%;margin-left: -1px;}
+.trailer-close-btn-inner:before{
+    transform:rotate(-45deg);
+}
+.trailer-close-btn-inner:after{
+    transform:rotate(45deg);
+}
