@@ -1,0 +1,110 @@
+.EFOBackdrop.DesktopAgerestriction_listBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopAgerestriction_listWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopAgerestriction_listTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopAgerestriction_listFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopAgerestriction_listWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopAgerestriction_listHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopAgerestriction_listHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopAgerestriction_listControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopAgerestriction_listControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopAgerestriction_listRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopAgerestriction_listRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopAgerestriction_listRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopAgerestriction_listCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopAgerestriction_listCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopAgerestriction_listTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em;
+}
+
+.DesktopAgerestriction_listPublishedCellContent.DesktopAgerestriction_listCommonDisplayWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesktopAgerestriction_listTableBoolDisplay.DesktopAgerestriction_listTableBoolDisplayState1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+

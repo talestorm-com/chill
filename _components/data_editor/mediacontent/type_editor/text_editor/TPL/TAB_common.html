@@ -1,0 +1,34 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                <input type="hidden" data-field="content_type" value="ctVIDEO" data-fielddefault="ctTEXT" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}common_name" >Заголовок (внутр)</label>
+                <input type="text" autocomplete="off" id="a{{MD}}common_name" data-field="common_name"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}name" >Заголовок (На текущем языке)</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>                
+        </div>
+        <div class="CommonAdminLayoutFormRow"> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}post" >Дата</label>
+                <input type="text" autocomplete="off" id="a{{MD}}post" data-field="post" readonly="readonly"  />
+            </div>                
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                <label for="a{{MD}}enabled">Включено</label>
+            </div>           
+        </div>                
+        <div class="CommonAdminLayoutFormRow">                 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <div data-role="tags" data-field="tags"></div>
+            </div>
+        </div>        
+    </div>
+</div>

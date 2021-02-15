@@ -1,0 +1,64 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">  
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}uid" class="CommonAdminLayoutLabelIsRequired">uuid</label>
+                <input type="text" autocomplete="off" id="a{{MD}}uid" data-field="uid" readonly="readonly" />  
+                <input type="hidden" data-field="id" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-70">
+                <label for="a{{MD}}name" >Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>                
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}sort" class="">Сортровка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}sort" data-field="sort" data-monitor="sort,c" />               
+            </div>    
+        </div>
+        <div class="CommonAdminLayoutFormRow CommonAdminLayoutFormRowFlex">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-17e">
+                <label for="a{{MD}}image">Изображение</label>
+                <div class="{{getCssClass}}_image_holder" data-field="image">
+                    <img src="" data-role="preview" /> 
+                    <div class="{{getCssClass}}ImageFIeldWrapperHolder">
+                        <input type="file" data-monitor="preview" accept=".jpg,.gif,.png,.psd,.tif,.tiff"/>
+                    </div>
+                    <div class="{{getCssClass}}_image_cp">
+                        <div class="{{getCssClass}}ImageControlButton" data-command="image_crop" data-id="{{uid}}">
+                            <svg><use xlink:href="#{{getCssClass}}_icon_crop"/></svg>
+                        </div>        
+                        <div class="{{getCssClass}}ImageControlButton {{getCssClass}}ImageControlButtonRed" data-command="image_remove" data-id="{{uid}}">
+                            <svg><use xlink:href="#{{getCssClass}}_icon_remove"/></svg>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-fill">                
+                <label for="a{{MD}}video_file">Видео</label>
+                <div class="{{getCssClass}}VideoHolder">
+                    <div class="{{getCssClass}}VideoHolderInner" data-role="video_container" data-field="video"></div>
+                    <div class="{{getCssClass}}UploadPanelWrapper">
+                        <div class="{{getCssClass}}UploadPenelCheck">
+                            <input type="checkbox" id="a{{MD}}convert" data-field="convert" data-monitor="convert" data-fielddefault="0" />
+                            <label for="a{{MD}}convert">Конверт видео</label>
+                        </div>
+                        <div class="{{getCssClass}}PresetUploadButton">
+                            <div class="{{getCssClass}}InputVodeoWrapperHolder">
+                                <input type="file"  data-monitor="video_file" accept=".mov, .webm, .mpg, .mp4, .avi, .mpeg, .mkv" />
+                            </div>
+                            <div class="{{getCssClass}}PresetUploadButtonText">Загрузить</div>
+                        </div>
+                        <div class="{{getCssClass}}UploadPanelDisabler" data-role="disabler"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow CommonAdminLayoutFormRowFlex">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <div class="{{getCssClass}}-note">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

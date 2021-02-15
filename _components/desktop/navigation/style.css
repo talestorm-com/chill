@@ -1,0 +1,90 @@
+.EFOBackdrop.DesktopNavigationBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopNavigationWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopNavigationTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopNavigationFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopNavigationWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopNavigationHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopNavigationHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopNavigationControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopNavigationControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopNavigationRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopNavigationRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopNavigationRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopNavigationCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopNavigationCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+

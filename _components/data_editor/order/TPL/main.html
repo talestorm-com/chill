@@ -1,0 +1,64 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="{{getCssClass}}OrderHeader">
+            <div class="{{getCssClass}}OrderHeaderInner">
+                <div class="CommonAdminLayoutFormRow">
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                        <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />                
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                        <label for="a{{MD}}reserve" class="CommonAdminLayoutLabelIsRequired">Тип</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}reserve" data-field="reserve" readonly="readonly" />                
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                        <label for="a{{MD}}shop" class="CommonAdminLayoutLabelIsRequired">Магазин</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}shop" data-field="shop" readonly="readonly" />                
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                        <label for="a{{MD}}status" class="CommonAdminLayoutLabelIsRequired">Статус</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}status" data-field="status" readonly="readonly" />                
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                        <label for="a{{MD}}amount" class="CommonAdminLayoutLabelIsRequired">Сумма</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}amount" data-field="amount" readonly="readonly" />                
+                    </div>
+                </div>
+                <div class="CommonAdminLayoutFormRow">
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                        <label for="a{{MD}}user" class="CommonAdminLayoutLabelIsRequired">Заказчик</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}user" data-field="user" readonly="readonly" />                
+                    </div>
+                     <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                        <label for="a{{MD}}created" class="CommonAdminLayoutLabelIsRequired">Дата</label>
+                        <input type="text" autocomplete="off" id="a{{MD}}created" data-field="created" readonly="readonly" />                
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                        <label for="a{{MD}}phone" class="CommonAdminLayoutLabelIsRequired">Телефон</label>
+                        <a href="" data-command="none" data-field="phone" class="{{getCssClass}}ALikeEdit"></a>
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                        <label for="a{{MD}}email" class="CommonAdminLayoutLabelIsRequired">Почта</label>
+                        <a href="" data-command="none" data-field="email" class="{{getCssClass}}ALikeEdit"></a>                        
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15">
+                        <label for="a{{MD}}email" class="CommonAdminLayoutLabelIsRequired" style="visibility:hidden">111</label>
+                        <a href="" data-command="display_user_orders" class="{{getCssClass}}ALikeBaton" data-field="user_id" data-id="">История заказов</a>                        
+                    </div>
+                </div>
+                <div class="CommonAdminLayoutFormRow">
+                     <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                        <label for="a{{MD}}delivery" class="" style="">Доставка</label>
+                        <textarea id="a{{MD}}delivery" data-field="delivery" readonly="readonly"></textarea>                        
+                    </div>
+                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                        <label for="a{{MD}}comment" class="" style="">Примечания</label>
+                        <textarea id="a{{MD}}comment" data-field="comment" readonly="readonly"></textarea>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}ItemContents" data-role="table" data-field="items"></div>
+    </div>   
+</div>

@@ -1,0 +1,36 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}TabWrapper {{getCssClass}}TabWrapperCommon">  
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}login" data-field="id" readonly="readonly" />                
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-90">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}phone" data-field="name" data-monitor="name,c" />               
+            </div>           
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}path" >Родительская группа</label>
+                <div class="CommonAdminLayoutButtonedInputWrapper CommonAdminLayoutButtonedInputWrapper1 CommonAdminLayoutCommandInput">
+                    <input type="text" autocomplete="off" id="a{{MD}}path" data-field="path" readonly="readonly" data-command="select_parent" />
+                    <div class="CommonAdminLayoutButtonedInputButton" data-command="remove_parent">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                    </div>                    
+                </div>
+                <input type="hidden" data-field="parent_id" data-fielddefault="" />
+            </div>             
+        </div>
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}sort_order">Сортировка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}sort_order" data-field="sort_order" data-monitor="sort_order,c" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck">               
+                <input type="checkbox" id="a{{MD}}visible" data-field="visible" data-monitor="visible,c" />             
+                <label for="a{{MD}}visible" >Видимый</label>
+            </div>              
+        </div>        
+    </div>
+</div>

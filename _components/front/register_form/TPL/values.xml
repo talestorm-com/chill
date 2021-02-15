@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <register>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="family" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="eldername" filters="Strip,Trim,NEString,DefaultEmptyString" />            
+            <property in="login" filters="Strip,Trim,NEString,EmailMatch" />
+            <property in="phone" filters="Strip,Trim,NEString,PhoneMatch" />
+            <property in="password" filters="Strip,Trim,NEString" />
+            <property in="repassword" filters="Strip,Trim,NEString" />
+            <property in="trainer" filters="Boolean,DefaultFalse" />            
+            <property in="apd" filters="Boolean,DefaultFalse" />
+        </export>
+    </register>    
+</root>

@@ -1,0 +1,130 @@
+.dummy{
+    color:yellow;
+}
+
+a.Data_editorOrderALikeEdit {
+    box-sizing: border-box;
+    display: block!important;
+    height: 2.5em;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    background: whitesmoke;
+    line-height: 2.5em;
+    color: black;
+    padding: 0 .25em;
+}
+
+a.Data_editorOrderALikeBaton {
+    box-sizing: border-box;
+    display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: white;
+    background: #00acc8;
+}
+
+.CommonAdminLayoutForm.Data_editorOrderForm {
+    padding: 0;
+}
+
+.Data_editorOrderWindow .CommonAdminLayoutFormInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 10em;
+}
+
+.Data_editorOrderOrderHeader {
+    /* background: rebeccapurple; */
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .1em .25em;
+}
+
+.Data_editorOrderItemContents {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorOrderCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.Data_editorOrderCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Data_editorOrderArticleCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay {
+    font-weight: bold;
+    color: #00acc8;
+    font-size: .9em;
+}
+
+.Data_editorOrderNameCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay{
+    font-weight: bold;
+    font-size: .9em;
+}
+.Data_editorOrderNameCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay.ProductRemoved {
+
+    color: dimgray;
+    text-decoration:line-through;
+}
+
+.Data_editorOrderNameCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay a{
+    text-decoration:none;
+    color:#00acc8;
+}
+
+.Data_editorOrderPriceCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay {
+    text-align: right;
+}
+
+.Data_editorOrderPriceCellContent.Data_editorOrderCommonDisplayWrap {
+    padding-right: .75em;
+}
+
+.Data_editorOrderAtyCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay {
+    text-align: center;
+}
+
+.Data_editorOrderAmountCellContent.Data_editorOrderCommonDisplayWrap .Data_editorOrderCommonDisplay {
+    font-weight: bold;
+    text-align: right;
+}
+
+.Data_editorOrderAmountCellContent.Data_editorOrderCommonDisplayWrap {
+    padding-right: .75em;
+}
+
+a.Data_editorOrderALikeBaton.Data_editorOrderdisabled {
+    background: #c3c3c3;
+    cursor: default;
+}
+
+.Data_editorOrderWindow .CommonAdminLayoutFormInner {
+    padding-top: 16em;
+}
+
+.Data_editorOrderOrderHeader textarea {
+    height: 3.2em;
+    max-height: 3.2em;
+    min-height: 3.2em;
+    padding: .25em;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+

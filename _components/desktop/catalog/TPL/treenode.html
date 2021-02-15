@@ -1,0 +1,22 @@
+{{#childs}}
+{{#is_displayable}}
+<div class="{{getCssClass}}NodeElement {{getCssClass}}NodeElementCustom{{css}} {{getCssClass}}NodeElementParent{{#hasChilds}}hasChilds{{/hasChilds}}{{^hasChilds}}NoChilds{{/hasChilds}} {{getCssClass}}NodeElementState{{#opened}}opened{{/opened}}{{^opened}}closed{{/opened}}" data-id="{{id}}" data-key="{{key}}">
+    <div class="{{getCssClass}}NodeElementName {{get_mc}}NodeHeader {{#getIsDraggableBinded}}EFODraggable EFODropTarget{{/getIsDraggableBinded}}" {{#getIsDraggableBinded}}data-efodragtype="{{getDragTypeBinded}}" data-efodroptypes="{{get_product_dragtype}}"{{/getIsDraggableBinded}} data-node-element="itemHeader">
+         <span class="{{getCssClass}}NodeElementIcon {{getCssClass}}NodeIconCollapsed" data-node-element="itemIcon"><svg><use xlink:href="#{{getCssClass}}Icon{{icon}}Collapsed"/></svg></span>
+        <span class="{{getCssClass}}NodeElementIcon {{getCssClass}}NodeIconExpanded" data-node-element="itemIcon"><svg><use xlink:href="#{{getCssClass}}Icon{{icon}}Expanded"/></svg></span>
+        <span class="{{getCssClass}}NodeElementText" title="{{name}}">{{name}}</span>
+        {{#getIsDraggableBinded}}
+        <div class="{{get_mc}}nodeDropTarget EFODropTargetOnly">
+            <div class="{{get_mc}}NodeDropTargetItem EFODropTarget" data-efodroptypes="{{get_directory_droptype}}" data-mode="after" data-target-node="{{key}}" data-open-childs="0"></div>
+            <div class="{{get_mc}}NodeDropTargetItem EFODropTarget" data-efodroptypes="{{get_directory_droptype}}" data-mode="inside"  data-target-node="{{key}}"></div>
+        </div>
+        {{/getIsDraggableBinded}}
+    </div>
+    {{#hasChilds}}
+    <div class="{{getCssClass}}NodeElementNodeBody">
+        {{>element}}
+    </div>
+    {{/hasChilds}}
+</div>
+{{/is_displayable}}
+{{/childs}}

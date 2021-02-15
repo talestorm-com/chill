@@ -1,0 +1,20 @@
+{{#features}}
+<div class="{{getCssClass}}FeatureItem">
+    <div class="{{getCssClass}}FeatureItemInner">
+        <div class="{{getCssClass}}FeatureItemIcon" data-command="select_feature_icon" data-id="{{feature_id}}">
+            <img src="{{get_feature_icon}}" />
+        </div>
+        <div class="{{getCssClass}}FeatureName">
+            <input type="text" data-monitor="feature_name_change" value="{{name}}" data-id="{{feature_id}}"  />
+        </div>
+        <div class="{{getCssClass}}FeatureValue">
+            <input type="text" data-monitor="feature_value_change" value="{{value}}"  data-id="{{feature_id}}" />
+        </div>
+        <div class="{{getCssClass}}FeatureRemove">
+            <div class="{{getCssClass}}Remover" data-id="{{feature_id}}" data-command="remove_feature">
+                <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+            </div>
+        </div>
+    </div>
+</div>
+{{/features}}

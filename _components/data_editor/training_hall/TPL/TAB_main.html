@@ -1,0 +1,37 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id">id</label>
+                <input type="text" readonly="readonly" data-field="id" id="a{{MD}}id" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-70">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Наименование</label>
+                <input type="text"  data-field="name" id="a{{MD}}name" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}phone" >Телефон</label>
+                <input type="text" autocomplete="off" id="a{{MD}}phone" data-field="phone" data-monitor="phone" />               
+            </div>           
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-80">
+                <label for="a{{MD}}address" class="CommonAdminLayoutLabelIsRequired">Адрес</label>
+                <input type="text" autocomplete="off" id="a{{MD}}address" data-field="address" />
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}lat" class="CommonAdminLayoutLabelIsRequired" data-command="coordinates">Lattitude</label>
+                <input type="text" autocomplete="off" id="a{{MD}}lat" data-field="lat" readonly="readonly" data-command="coordinates" />               
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}lon" class="CommonAdminLayoutLabelIsRequired" data-command="coordinates">Longitude</label>
+                <input type="text" autocomplete="off" id="a{{MD}}lon" data-field="lon" readonly="readonly" data-command="coordinates" />               
+            </div>          
+        </div>
+        <div class="{{getCssClass}}FeaturesBlock">
+            <div class="{{getCssClass}}FeaturesBlockHeader">Фишки <a href="#" data-command="add_feature">Добавить</a></div>
+            <div class="{{getCssClass}}FeaturesList" data-field="features"></div>
+        </div>
+    </div>
+</div>

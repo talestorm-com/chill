@@ -1,0 +1,54 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">  
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />  
+                <input type="hidden" data-field="image_context" />
+                <input type="hidden" data-field="image" />
+                <input type="hidden" data-field="image_owner" />                
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-70">
+                <label for="a{{MD}}title" >Заголовок</label>
+                <input type="text" autocomplete="off" id="a{{MD}}title" data-field="title"  />
+            </div>                            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}linked" class="CommonAdminLayoutLabelIsRequired">Связь</label>
+                <input type="text" autocomplete="off" id="a{{MD}}linked" data-field="linked" readonly="readonly" />                  
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}target" class="CommonAdminLayoutLabelIsRequired">Цель</label>
+                <input type="text" autocomplete="off" id="a{{MD}}target" data-field="target" readonly="readonly" />                  
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">  
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}published" >Дата публикации</label>
+                <input type="text" autocomplete="off" id="a{{MD}}published" data-field="published" readonly="readonly" />
+            </div>                            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-75 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}active" data-field="active" data-monitor="active" data-fielddefault="1" />             
+                <label for="a{{MD}}active" >Опубликовано</label>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow CommonAdminLayoutFormRowFlex">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-17e">
+                <label for="a{{MD}}image">Изображение</label>
+                <div class="{{getCssClass}}_image_holder" data-field="image">
+                    <img src="" data-role="preview" /> 
+                    <div class="{{getCssClass}}ImageFIeldWrapperHolder">
+                        <input type="file" id="a{{MD}}image" data-monitor="preview" accept=".jpg,.gif,.png,.psd,.tif,.tiff"/>
+                    </div>
+                    <div class="{{getCssClass}}_image_cp" data-role="image_cp">
+                        <div class="{{getCssClass}}ImageControlButton" data-command="image_crop" data-id="{{uid}}">
+                            <svg><use xlink:href="#{{getCssClass}}_icon_crop"/></svg>
+                        </div>        
+                        <div class="{{getCssClass}}ImageControlButton {{getCssClass}}ImageControlButtonRed" data-command="image_remove" data-id="{{uid}}">
+                            <svg><use xlink:href="#{{getCssClass}}_icon_remove"/></svg>
+                        </div>                        
+                    </div>
+                </div>
+            </div>        
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="{{RCSS}}SizeListWrapper">
+    <div class="{{RCSS}}SizeListHeader">
+        <div class="{{RCSS}}SizeListHeaderText">Укажите размер</div>
+        <div class="{{RCSS}}SizeListHeaderTextSub">Можно несколько для примерки</div>
+    </div>
+    <div class="{{RCSS}}SizeListBody">
+        {{#size_values}}
+        <div class="{{RCSS}}SizeColumn  {{^is_size_available}}disabled{{/is_size_available}}" data-size="{{id}}" data-command="toggle_size">
+            {{#values}}
+            <div class="{{RCSS}}SizeCell"><div class="{{RCSS}}SizeValue">{{.}}</div></div>
+            {{/values}}
+        </div>
+        {{/size_values}}
+    </div>
+    <div class="{{RCSS}}SizeListNotes"></div>
+</div>

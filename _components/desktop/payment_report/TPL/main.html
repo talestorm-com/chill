@@ -1,0 +1,54 @@
+<div class="CommonDesktopComponentWrapper {{getCssClass}}OuterWrapper">      
+    <div class="CommonDesktopComponentHeader">
+        <div class="CommonDesktopComponentHeaderInner">
+            <div class="CommonDesktopComponentTitle">Отчеты по транзакциям</div>                        
+        </div>
+    </div>
+    <div class="CommonDesktopComponentBody {{getCssClass}}BodyArea" data-role="body" >
+        <div class="{{getCssClass}}-content-backdrop">
+            <div class="{{getCssClass}}-content-backdrop-content">
+                <div class="{{getCssClass}}-content-window">
+                    <div class="{{getCssClass}}-content-window-content">
+                        <div class="CommonAdminLayoutForm">
+                            <div class="CommonAdminLayoutFormInner">
+                                <div class="CommonAdminLayoutFormRow">
+                                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                                        <label for="a{{MD}}date_start" class="CommonAdminLayoutLabelIsRequired">Дата от:</label>
+                                        <input type="text"  id="a{{MD}}date_start" data-field="date_start" readonly="readonly" />
+                                    </div>
+                                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                                        <label for="a{{MD}}date_end" class="CommonAdminLayoutLabelIsRequired">Дата до(вкл):</label>
+                                        <input type="text"  id="a{{MD}}date_end" data-field="date_end" readonly="readonly" />
+                                    </div>
+                                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                                        <label for="a{{MD}}grouping" class="">Сортировка:</label>
+                                        <select id="a{{MD}}grouping"  data-field="grouping" data-fielddefault="content">
+                                            <option selected="selected" value="content">По контенту</option>
+                                            <option  value="date">По дате</option>
+                                        </select>
+                                    </div>
+                                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                                        <label for="a{{MD}}mode" class="">Готовый отчет:</label>
+                                        <select id="a{{MD}}mode" data-monitor="mode" data-field="mode">
+                                            <option selected="selected" value="mailto">Получить на email (рекомендуется)</option>
+                                            <option  value="download">Скачать (не рекомендуется)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="CommonAdminLayoutFormRow" data-role="mailblock">
+                                    <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30">
+                                        <label for="a{{MD}}mailto" class="CommonAdminLayoutLabelIsRequired">Email:</label>
+                                        <input type="text"  id="a{{MD}}mailto" data-field="mailto"  />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{{getCssClass}}-content-window-footer">
+                        <div class="{{getCssClass}}-content-window-footer-button" data-command="generate">Сгенерировать отчет</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

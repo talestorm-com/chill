@@ -1,0 +1,206 @@
+
+.DesktopStorageWarehouseBackdrop {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index:1;
+}
+
+.EFOWindow.DesktopStorageWarehouseWindow {
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.EFOTitle.DesktopStorageWarehouseTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopStorageWarehouseFooter {
+    display: none;
+}
+
+
+.ADVTableHeaderRowReplacer.DesktopStorageWarehouseHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesktopStorageWarehouseControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.DesktopStorageWarehouseControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopStorageWarehouseControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+
+
+.ADVTableHeaderRowReplacer.DesktopStorageWarehouseHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesktopStorageWarehouseControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.DesktopStorageWarehouseControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopStorageWarehouseControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopStorageWarehouseRemoveButton {
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 0;
+    padding: .2em;
+}
+
+.DesktopStorageWarehouseRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopStorageWarehouseLoginCellContent.DesktopStorageWarehouseCommonDisplayWrap {
+    color: #00acc8;
+}
+
+.DesktopStorageWarehouseCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.DesktopStorageWarehouseCommonDisplay {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopStorageWarehouseBooleanDisplay {
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    outline: 1px solid dimgray;
+    margin: 0 auto;
+}
+
+.DesktopStorageWarehouseCreatedCellContent.DesktopStorageWarehouseCommonDisplayWrap  {
+    text-align: center;    
+}
+.DesktopStorageWarehouseCommonDisplayWrap.DesktopStorageWarehouseCommonBooleanDisplayWrap .DesktopStorageWarehouseCommonDisplay {
+    padding:.1em;
+}
+
+.DesktopStorageWarehouseBooleanDisplay.DesktopStorageWarehouseBooleanDisplayState1 {
+    outline: 1px solid #00acc8;
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+
+.DesktopStorageWarehousePhoneCellContent.DesktopStorageWarehouseCommonDisplayWrap {
+    color: #00acc8;
+}
+
+.DesktopStorageWarehouseCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.DesktopStorageWarehouseCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+.DesktopStorageWarehouseStorageHashCellContent .DesktopStorageWarehouseCommonDisplay {
+    font-family: monospace;
+    color: dimgray;
+    font-size: .8em;
+}
+
+
+.DesktopStorageWarehouseguidCellContent .DesktopStorageWarehouseCommonDisplay,
+.DesktopStorageWarehouseIdCellContent .DesktopStorageWarehouseCommonDisplay {
+    font-family: monospace;
+    font-size: .8em;
+}
+
+.DesktopStorageWarehouseStorageNameCellContent .DesktopStorageWarehouseCommonDisplay{
+    color:navy;
+    font-size:.85em;
+}
+
+.DesktopStorageWarehouseArticleCellContent .DesktopStorageWarehouseCommonDisplay{
+    color:#00acc8;
+    font-size:.9em;
+}
+
+.DesktopStorageWarehouseFIOCellContent .DesktopStorageWarehouseCommonDisplay{
+    font-size:.9em;
+    font-weight:bold;
+}
+
+.DesktopStorageWarehouseSizeNameCellContent .DesktopStorageWarehouseCommonDisplay {
+    font-size:.9em;
+    text-align:center;
+    font-weight:bold;
+}
+
+.DesktopStorageWarehouseQtyCellContent .DesktopStorageWarehouseCommonDisplay{
+    color:#00acc8;
+    text-align:right;
+    padding-right:1em;
+    font-weight:bold;
+}
+

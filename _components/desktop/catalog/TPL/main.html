@@ -1,0 +1,47 @@
+<div class="CommonDesktopComponentWrapper {{getCssClass}}OuterWrapper">
+    <div class="CommonAdminLayoutEditorPasswordStub">        
+        <div class="CommonAdminLayoutEditorPasswordStubinner">        
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfakelogin0">login</label>
+            <label for="{{MD}}commonfakelogin0">логин</label>
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfalepassword">password</label>
+            <label for="{{MD}}commonfalepassword">Пароль</label>        
+            <input type="text" autocomplete="off" name="login" data-fake="login" id="{{MD}}commonfakelogin0" />
+            <input type="password" autocomplete="off" name="password" id="{{MD}}commonfalepassword" />
+            <input type="text" name="login"  autocomplete="off" id="{{MD}}commonfakelogin" />
+            <input type="text" autocomplete="off" id="a{{MD}}00login" data-field="xxlogin" data-monitor="xxlogin" />
+        </div>
+    </div>
+    <div class="CommonDesktopComponentHeader">
+        <div class="CommonDesktopComponentHeaderInner">
+            <div class="CommonDesktopComponentTitle">Каталог</div>   
+            <div class="{{getCssClass}}Selection_monitor">
+                <div class="{{getCssClass}}SelectionText">
+                    <div class="{{getCssClass}}SelectionTextInner" >Выбрано <span data-role="selected">0</span> элементов</div>
+                </div>
+                <div class="{{getCssClass}}SelectionButton" data-command="select_all_in_group" title="Выбрать все товары в разделе">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_select_all" /></svg>
+                </div>
+                <div class="{{getCssClass}}SelectionButton {{getCssClass}}SelectionButtonCrimson" data-command="clear_selection" title="Очистить выделение">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                </div>
+            </div>
+            <div class="{{getCssClass}}Selection_monitor">
+                <div class="{{getCssClass}}SelectionText">
+                    <div class="{{getCssClass}}SelectionTextInner" >Применить сортировку <span data-role="sorted">0</span> элементов</div>
+                </div>
+                <div class="{{getCssClass}}SelectionButton" data-command="apply_sort_all" title="Применить сортировку">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_select_all" /></svg>
+                </div>
+                <div class="{{getCssClass}}SelectionButton {{getCssClass}}SelectionButtonCrimson" data-command="clear_sort" title="Очистить сортироку">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="CommonDesktopComponentBody {{getCssClass}}BodyArea" data-role="body" >
+        <div class="{{getCssClass}}DesctopTreeZone" data-role="tree"></div>
+        <div class="{{getCssClass}}DesctopTableZone" data-role="table"></div>
+    </div>
+</div>

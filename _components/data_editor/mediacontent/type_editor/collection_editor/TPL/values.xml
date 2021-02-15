@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="common_name" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="enabled" filters="Boolean,DefaultFalse" />
+            <property in="html_mode" filters="IntMore0,Default0" />         
+            <property in="intro" filters="Trim,NEString,DefaultEmptyString" />
+            <property in="default_poster" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="items" filters="NEArray,DefaultEmptyArray" />
+            <property in="content_type" filters="Strip,Trim,NEString" />  
+            <property in="mcsort" filters="Int,Default0" />  
+            <!-- параметры в ленте -->
+            <property in="preplay" filters="IntMore0,DefaultNull" />
+            <property in="video_cdn_id" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="video_cdn_url" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="gif_cdn_id" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="gif_cdn_url" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="lent_message" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="lent_mode" filters="Strip,Trim,NEString,DefaultNull" />    
+            <!--Парамтеры страницы-->
+            <property in="video_cdn_id2" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="video_cdn_url2" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="gif_cdn_id2" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="gif_cdn_url2" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="lent_message2" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="lent_mode2" filters="Strip,Trim,NEString,DefaultNull" />
+            <!--meta парамтеры и доп. контент-->
+            <property in="meta_title" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="meta_description" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="additional_content" filters="Strip,Trim,NEString,DefaultEmptyString" />    
+        </export>
+    </node>    
+</root>

@@ -1,0 +1,137 @@
+
+
+.CommonAdminLayoutForm.SelectorsShopForm {
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+}
+
+.CommonAdminLayoutFormInner.SelectorsShopFormInner {
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 3em;
+    position: relative;
+}
+
+.SelectorsShopToolPanel {
+    box-sizing: border-box;
+    height: 3em;
+    line-height: 3em;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SelectorsShopToolPanelInner {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 .5em;
+}
+
+.SelectorsShopToolPanelInner input[type=text] {
+    cursor: pointer;
+}
+
+.SelectorsShopWorkField {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.SelectorsShopWorkField input[type=checkbox] {
+    display: none;
+}
+
+.SelectorsShopWorkField input[type=checkbox]+label{
+    display:block;margin:.1em auto;padding:0;
+    outline:1px solid #00acc8;width:1.1em;height:1.1em;
+    cursor:pointer;transition:all .3s;box-sizing:border-box;
+}
+.SelectorsShopWorkField input[type=checkbox]:checked+label{
+    border:1px solid white;
+    background:#00acc8;
+}
+
+.SelectorsShopCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+.SelectorsShopCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.SelectorsShopBooleanDisplay {
+    box-sizing: border-box;
+    display: block;
+    margin: .1em auto;
+    width: 1em;
+    height: 1em;
+    outline: 1px solid #00acc8;
+}
+
+.SelectorsShopBooleanDisplay.SelectorsShopBooleanDisplayState1 {
+    background: #00acc8;
+    border: 1px solid white;
+}
+
+.ADVTableHeaderRowReplacer.SelectorsShopHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SelectorsShopSelectAll {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 1.25em;
+    height: 1.25em;
+    border: 1px solid #00acc8;
+}
+
+.SelectorsShopSelection {
+    box-sizing: border-box;
+    height: 2.5em;
+    border: 1px solid silver;
+    line-height: 2.5em;
+    padding: 0 .5em;
+    position: relative;
+    padding-right: 2.5em;
+}
+
+.SelectorsShopSelectionReset {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.5em;
+    height: 2.5em;
+    padding: .5em;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-left: 1px solid silver;
+}
+
+.SelectorsShopSelectionReset svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+

@@ -1,0 +1,14 @@
+span.EFOFooterButton.Data_editorLanguageFooterButton.Data_editorLanguagecrimson {
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+span.EFOFooterButton.Data_editorLanguageFooterButton.Data_editorLanguagecrimson:hover {
+    color: white;
+    background: crimson;
+}
+
+span.EFOFooterButton.Data_editorLanguageFooterButton.Data_editorLanguagepullleft {
+    float: left;
+    margin-top: 1em;
+}

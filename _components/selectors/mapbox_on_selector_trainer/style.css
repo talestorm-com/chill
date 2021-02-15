@@ -1,0 +1,17 @@
+.CommonAdminLayoutForm.SelectorsMapbox_on_selector_trainerForm {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.SelectorsMapbox_on_selector_trainerMap {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.SelectorsMapbox_on_selector_trainer_map_popup_image img {
+    width: 100%;
+}
+
+.SelectorsMapbox_on_selector_trainer_map_popup_text_name {
+    font-weight: bold;
+}

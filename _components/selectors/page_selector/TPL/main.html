@@ -1,0 +1,16 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner {{getCssClass}}FormInner">
+        <div class="{{getCssClass}}ToolPanel">            
+            <div class="{{getCssClass}}ToolPanelInner">
+                <div class="{{getCssClass}}Selection">
+                    <div class="{{getCssClass}}SelectionText">Выбрано <span data-role="selection_len"></span> страниц</div>
+                    <div class="{{getCssClass}}SelectionReset" data-command="reset_selection">
+                        <svg ><use xlink:href="#{{getCssClass}}_icon_cross" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}WorkField" data-role="table"></div>
+    </div>       
+</div>

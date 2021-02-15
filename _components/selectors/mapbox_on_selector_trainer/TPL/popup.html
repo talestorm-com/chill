@@ -1,0 +1,20 @@
+<div class="{{getCssClass}}_map_pop_wrap">
+    {{#crip}}
+    <div class="{{getCssClass}}_map_pop_inner">
+        <div class="{{getCssClass}}_map_pop_flex">
+            <div class="{{getCssClass}}_map_popup_image">
+                {{#has_default_image}}
+                <img src="/media/training_hall/{{id}}/{{default_image}}.SW_250H_250CF_1.jpg" />
+                {{/has_default_image}}
+                {{^has_default_image}}
+                <img src="/media/fallback/1/training_hall.SW_250H_250CF_1.jpg" />
+                {{/has_default_image}}
+            </div>
+            <div class="{{getCssClass}}_map_popup_text">
+                <div class="{{getCssClass}}_map_popup_text_name">{{name}}</div>
+                <div class="{{getCssClass}}_map_popup_text_address">{{address}}</div>
+            </div>
+        </div>        
+    </div>
+    {{/crip}}
+</div>

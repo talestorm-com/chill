@@ -1,0 +1,96 @@
+.Data_editorMediacontentType_editorSeason_season_editorEmojiDisplayFieldWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editoremoji_display_clear_button {
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid silver;
+    border-left: none;
+    height: 2.5em;
+    width: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    padding: .5em;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editoremoji_display_clear_button svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+.Data_editorMediacontentType_editorSeason_season_editorEmojiDisplayFieldWrapper input[type=text] {
+    cursor: pointer;
+}
+
+
+.Data_editorMediacontentType_editorSeason_season_editorTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorCommonWrapper.Data_editorMediacontentType_editorSeason_season_editorCommonWrapperQuill {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorEditorOutWrap {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorEditorInnerRoot {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorGalleryWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorPropertiesWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorPersonalListWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editor_align_right {
+    text-align: right;
+}
+
+
+
+.Data_editorMediacontentType_editorSeason_season_editorButtonedInputPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorButtonedInputButton {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid silver;
+    border-left: none;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.Data_editorMediacontentType_editorSeason_season_editorButtonedInputButton svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}

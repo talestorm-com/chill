@@ -1,0 +1,53 @@
+<div class="{{getCssClass}}ToolPanel">
+    <div class="{{getCssClass}}ToolPanelInner">
+        <div class="{{getCssClass}}ToolPanelItem">
+            <div class="{{getCssClass}}SelectWrap">
+                <div class="{{getCssClass}}SelectIcon">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_crop"/></svg>
+                </div>
+                <select data-field="restriction" data-monitor="restrict" data-fielddefault="none">
+                    <option value="none">Нет</option>
+                    <!-- option value="16:9">16:9</option -->
+                    <!-- option value="9:16">9:16</option -->
+                    <!--option value="3360:5040">3.360:5.04</option-->
+                    <!--option value="5040:3360">5.04:3.360</option -->
+                    <!-- option value="1000:752">10:7.25 (триплекс-слайдер)</option -->
+                </select>
+            </div>
+        </div>
+        <div class="{{getCssClass}}ToolPanelItem">
+            <div class="{{getCssClass}}SpinnerWrap">
+                <div class="{{getCssClass}}SpinnerIcon">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_zoom"/></svg>
+                </div>
+                <div class="{{getCssClass}}SpinnerButton {{getCssClass}}SpinnerbuttonLeft" data-command="zoom_out">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_zoom_out"/></svg>
+                </div>
+                <input type="range" min="0" max="{{getZoomMax}}" step="1" data-field="zoom" data-monitor="zoom">
+                <div class="{{getCssClass}}SpinnerButton {{getCssClass}}SpinnerbuttonRight" data-command="zoom_in">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_zoom_in"/></svg>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}ToolPanelItem">
+            <div class="{{getCssClass}}SpinnerWrap">
+                <div class="{{getCssClass}}SpinnerIcon">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_shadow"/></svg>
+                </div>
+                <div class="{{getCssClass}}SpinnerButton {{getCssClass}}SpinnerbuttonLeft" data-command="shadow_out">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_zoom_out"/></svg>
+                </div>
+                <input type="range" min="0" max="{{getShadowMax}}" step="1" data-field="shadow" data-monitor="shadow">
+                <div class="{{getCssClass}}SpinnerButton {{getCssClass}}SpinnerbuttonRight" data-command="shadow_in">
+                    <svg><use xlink:href="#{{getCssClass}}_icon_zoom_in"/></svg>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}ToolPanelItem" style="display:none">
+            <div class="{{getCssClass}}CheckWrap">
+                <input type="checkbox" data-field="preview" data-monitor="preview" id="a{{MD}}preview" data-fielddefault="0"/>
+                <label for="a{{MD}}preview">Предпросмотр</label>
+            </div>
+        </div>
+    </div>
+</div>

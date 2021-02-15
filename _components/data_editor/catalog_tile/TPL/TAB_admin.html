@@ -1,0 +1,34 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper {{getCssClass}}CommonWrapperCommon">    
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25" style="display:none">
+                <label for="a{{MD}}css_class" class="">css</label>
+                <input type="text" autocomplete="off" id="a{{MD}}css_class" data-field="css_class"  />               
+            </div>             
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}ignore_catalog_visibility" data-field="ignore_catalog_visibility" data-fielddefault="0"  />               
+                <label for="a{{MD}}ignore_catalog_visibility" class="">Скрытые каталоги</label>                
+            </div> 
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-30 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}ignore_product_visibility" data-field="ignore_product_visibility" data-fielddefault="0"  />               
+                <label for="a{{MD}}ignore_product_visibility" class="">Скрытые товары</label>                
+            </div> 
+        </div>
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">               
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox"  id="a{{MD}}crop" data-field="crop" data-fielddefault="1" data-monitor="crop"/>               
+                    <label for="a{{MD}}crop">Кроп</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox"  id="a{{MD}}crop_fill" data-field="crop_fill" data-fielddefault="0"/>               
+                    <label for="a{{MD}}crop_fill">Кроп с заполнением</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                    <label for="a{{MD}}background">Заполнение под кропом</label>
+                    <input type="color" id="a{{MD}}background" data-field="background" class="{{getCssClass}}ColorInput"/>
+                </div>
+            </div>    
+        </div>        
+    </div>
+</div>

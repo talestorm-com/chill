@@ -1,0 +1,171 @@
+.dummy{
+    background:yellow;
+}
+.ya-page_js_yes .ya-site-form_inited_no { display: none; }
+
+.EFOWindow.FrontSerach_formWindow {
+    width: 100%;
+    height: 100%;
+    position: static;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: rgba(255,255,255,0);
+}
+
+.EFOTitle.FrontSerach_formTitle {
+    display: none;
+}
+
+.EFOFooter.FrontSerach_formFooter {
+    display: none;
+}
+
+.EFOWindowContent.FrontSerach_formWindowContent {
+    width: auto;
+    height: auto;
+    min-width: 25em;
+    max-width: 100%;
+    min-height: 0;
+    max-height: 100%;
+}
+
+.FrontSerach_formLInnerOuter {
+    background: white;
+    box-sizing: border-box;
+    padding: .75em;
+}
+
+.FrontSerach_formLInnerOuter form {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FrontSerach_formLInnerOuter  input[type=text] {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing:border-box;
+    height:2em;
+}
+
+.FrontSerach_formLInnerOuter input[type=submit] {
+    width: 100%;
+    max-width: 8em;
+    font-size: inherit;
+    font-family: inherit;
+    height: 2em;
+}
+
+
+
+.FrontSerach_formSearchWRP form {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.FrontSerach_formSearchWrapper {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.FrontSerach_formsearchIcon {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    padding: .35em;
+}
+
+.FrontSerach_formsearchIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.FrontSerach_formSearchWRP input[type=submit] {
+    display: none;
+}
+
+.FrontSerach_formsubmit {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 5em;
+    border: 1px solid silver;
+    border-left: none;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.FrontSerach_formSearchWRP input[type=text] {
+    box-sizing: border-box;
+    padding: 0 .5em;
+    border: 1px solid silver;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+
+.EFOBackdrop.FrontSerach_formBackdrop.FrontSerach_formPositioned {
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 0;
+    max-width: none;
+    left: auto;
+}
+
+.FrontSerach_formPositioned .EFOWindow.FrontSerach_formWindow {
+    width: auto;
+    min-width: 0;
+    max-width: 25em;
+}
+
+.EFOBackdrop.FrontSerach_formBackdrop {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 3em;
+    right: 0;
+    left: auto;
+}
+
+
+@media only screen and (max-width:600px){
+   .DeviceModeDevice .EFOBackdrop.FrontSerach_formBackdrop {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+   .DeviceModeDevice  .EFOWindow.FrontSerach_formWindow {
+        width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+   .DeviceModeDevice  .EFOWindowContent.FrontSerach_formWindowContent {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+
+}

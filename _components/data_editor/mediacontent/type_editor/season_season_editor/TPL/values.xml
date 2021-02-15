@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="num" filters="IntMore0" />
+            <property in="season_id" filters="IntMore0" />
+            <property in="name" filters="Strip,Trim,NEString" />                                    
+            <property in="common_name" filters="Strip,Trim,NEString" />                                    
+            <property in="enabled" filters="Boolean,DefaultFalse" />
+            <property in="html_mode" filters="IntMore0,Default0" />         
+            <property in="intro" filters="Trim,NEString,DefaultEmptyString" />
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="default_poster" filters="Strip,Trim,NEString,DefaultNull" />            
+            <property in="content_type" filters="Strip,Trim,NEString" />        
+        </export>
+    </node>    
+</root>

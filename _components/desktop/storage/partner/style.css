@@ -1,0 +1,151 @@
+
+.DesktopStoragePartnerBackdrop {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index:1;
+}
+
+.EFOWindow.DesktopStoragePartnerWindow {
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.EFOTitle.DesktopStoragePartnerTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopStoragePartnerFooter {
+    display: none;
+}
+
+
+.ADVTableHeaderRowReplacer.DesktopStoragePartnerHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesktopStoragePartnerControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.DesktopStoragePartnerControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopStoragePartnerControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+
+
+.ADVTableHeaderRowReplacer.DesktopStoragePartnerHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.DesktopStoragePartnerControlButton {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    padding: .5em;
+    transition: all .3s;
+}
+
+.DesktopStoragePartnerControlButton:hover {
+    background: whitesmoke;
+}
+
+.DesktopStoragePartnerControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopStoragePartnerRemoveButton {
+    box-sizing: border-box;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 0;
+    padding: .2em;
+}
+
+.DesktopStoragePartnerRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopStoragePartnerLoginCellContent.DesktopStoragePartnerCommonDisplayWrap {
+    color: #00acc8;
+}
+
+.DesktopStoragePartnerCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.DesktopStoragePartnerCommonDisplay {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopStoragePartnerBooleanDisplay {
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    outline: 1px solid dimgray;
+    margin: 0 auto;
+}
+
+.DesktopStoragePartnerCreatedCellContent.DesktopStoragePartnerCommonDisplayWrap  {
+    text-align: center;    
+}
+.DesktopStoragePartnerCommonDisplayWrap.DesktopStoragePartnerCommonBooleanDisplayWrap .DesktopStoragePartnerCommonDisplay {
+    padding:.1em;
+}
+
+.DesktopStoragePartnerBooleanDisplay.DesktopStoragePartnerBooleanDisplayState1 {
+    outline: 1px solid #00acc8;
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+
+.DesktopStoragePartnerPhoneCellContent.DesktopStoragePartnerCommonDisplayWrap {
+    color: #00acc8;
+}

@@ -1,0 +1,13 @@
+.EFOWindow.Data_editorRequestStatusWindow input[type=color] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 2.5em;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+    border: 1px solid silver;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}

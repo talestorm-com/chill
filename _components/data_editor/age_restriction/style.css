@@ -1,0 +1,97 @@
+.dummy{
+    backgroung:yellow;
+}
+
+.CommonAdminLayoutForm.Data_editorAge_restrictionForm {
+    padding: 0;
+    padding-top: 4.5em;
+    position: relative;
+}
+
+.Data_editorAge_restrictionMainDataPanel {
+    box-sizing: border-box;
+    height: 4.5em;
+    padding: .1em .5em;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    position: absolute;
+    border-bottom: 1px solid dimgray;
+}
+
+.Data_editorAge_restriction_table_area {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorAge_restrictionMainDataPanelInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.Data_editorAge_restrictionMainDataPanelInner .CommonAdminLayoutFormRow {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.Data_editorAge_restrictionuIdCellContent.Data_editorAge_restrictionCommonDisplayWrap {
+    padding: 0 .5em;
+    color: #00acc8;
+}
+
+.Data_editorAge_restrictionuIdCellContent.Data_editorAge_restrictionCommonDisplayWrap .Data_editorAge_restrictionCommonDisplay {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.Data_editorAge_restrictionInputWrapper {
+    box-sizing: border-box;
+    padding: 0;
+    height: 2em;
+}
+
+.Data_editorAge_restrictionInputWrapper input[type=text] {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 .5em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: all .3s;
+}
+
+.Data_editorAge_restrictionInputWrapper input[type=text]:focus {
+    border: 1px solid #00acc8;
+    background: white;
+}
+
+.CommonAdminLayoutForm.Data_editorAge_restrictionForm {
+    padding: 0;
+}
+
+
+.EFOTabBody .CommonAdminLayoutForm.Data_editorAge_restrictionForm {
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 4.5em;
+}
+
+.Data_editorAge_restrictionTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorAge_restrictionGalleryWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+
+
+

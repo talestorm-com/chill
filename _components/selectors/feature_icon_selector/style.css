@@ -1,0 +1,58 @@
+.SelectorsFeature_icon_selectorMap {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.SelectorsFeature_icon_selectorFeatureListContent {
+    padding: .25em;
+    box-sizing: border-box;
+}
+
+.SelectorsFeature_icon_selectorFeatureListContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SelectorsFeature_icon_selector-one-feature-item {
+    border: 1px solid silver;
+    margin: .25em;
+    box-sizing: border-box;
+    padding: .25em;
+    width: 7.5em;
+    height: 7.5em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.SelectorsFeature_icon_selector-one-feature-item-inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SelectorsFeature_icon_selector-one-feature-item-inner img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.SelectorsFeature_icon_selector-one-feature-item.SelectorsFeature_icon_selectorselected {
+    background: #00acc8;
+}
+
+.SelectorsFeature_icon_selector-one-feature-item-inner {
+    background: white;
+}
+
+.SelectorsFeature_icon_selector-one-feature-item-inner {
+    padding: .25em;
+}

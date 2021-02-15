@@ -1,0 +1,336 @@
+.Data_editorVideo_tutorial_editor_image_holder {
+    width: 15em;
+    border: 2px solid silver;
+    height: 15em;
+    position: relative;
+    padding: 0.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorVideo_tutorial_editor_image_holder img {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.Data_editorVideo_tutorial_editorPresetUploadButton {
+    box-sizing: border-box;
+    border: 1px solid #00acc8;
+    line-height: 3.5em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #00acc8;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Data_editorVideo_tutorial_editorPresetUploadButton:hover {
+    background: white;
+    color: #00acc8;
+}
+
+.Data_editorVideo_tutorial_editorPresetUploadButton input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.Data_editorVideo_tutorial_editorPresetHolder textarea {
+    border: 1px solid silver;
+    border-radius: 0;
+    height: 12em;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    font-family: monospace;
+    font-size: inherit;
+    background: whitesmoke;
+    color: black;
+    box-sizing: border-box;
+    padding: .5em;
+}
+
+.Data_editorVideo_tutorial_editor_image_cp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3em;
+    border-left: 1px solid silver;
+    border-bottom: 1px solid silver;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all .3s;
+    margin-right: -100%;
+}
+
+.Data_editorVideo_tutorial_editorImageControlButton {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 .5em;
+    cursor: pointer;
+}
+
+.Data_editorVideo_tutorial_editorImageControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.Data_editorVideo_tutorial_editorImageControlButton.Data_editorVideo_tutorial_editorImageControlButtonRed svg {
+    fill: crimson;
+}
+
+.Data_editorVideo_tutorial_editor_image_holder input[type=file] {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Data_editorVideo_tutorial_editor_image_holder {
+    overflow: hidden;
+}
+
+.Data_editorVideo_tutorial_editor_image_holder:hover .Data_editorVideo_tutorial_editor_image_cp {
+    margin-right: 0;
+}
+
+.Data_editorVideo_tutorial_editorImageControlButton {
+    line-height: 0;
+    padding: .3em;
+}
+.Data_editorVideo_tutorial_editorTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorVideo_tutorial_editorCommonWrapper.Data_editorVideo_tutorial_editorCommonWrapperQuill {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorVideo_tutorial_editorEditorOutWrap {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorVideo_tutorial_editorEditorInnerRoot {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+.Data_editorVideo_tutorial_editorVideoHolderInner {
+    height: 16em;
+}
+
+
+.Data_editorVideo_tutorial_editorUploadPanelWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorVideo_tutorial_editorUploadPenelCheck {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorVideo_tutorial_editorUploadPenelCheck input[type=checkbox] {
+    display: none;
+}
+
+.Data_editorVideo_tutorial_editorUploadPenelCheck input[type=checkbox]+label {
+    display: flex;
+    margin: 0;
+    margin-right: 1.5em;
+    padding: .1em;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.Data_editorVideo_tutorial_editorUploadPenelCheck input[type=checkbox]+label:before {
+    display: block;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    width: 1.5em;
+    height: 1.5em;
+    content: '';
+    margin-right: .75em;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.Data_editorVideo_tutorial_editorUploadPenelCheck input[type=checkbox]:checked+label:before {
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+.Data_editorVideo_tutorial_editorPresetUploadButton {
+    width: 100%;
+}
+
+.Data_editorVideo_tutorial_editorVideoHolderInner {
+    box-sizing: border-box;
+    padding: .25em;
+    border: 2px solid silver;
+    margin-bottom: .25em;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderBig {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderBig input[type=file] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rosybrown;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    opacity: 0;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: dimgray;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploder_text {
+    padding: 1em;
+    color: dimgray;
+}
+
+
+.Data_editorVideo_tutorial_editor_video_display {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorVideo_tutorial_editor_video_display_inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorVideo_tutorial_editor_video_display_inner video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderBig.Data_editorVideo_tutorial_editorVideoUploaderBigPending .Data_editorVideo_tutorial_editorVideoUploaderIcon {
+    width: 7em;
+    height: 7em;
+    animation: Data_editorVideo_tutorial_editorxrotate 5s linear infinite;
+}
+
+@keyframes Data_editorVideo_tutorial_editorxrotate{
+    from{
+        transform:Rotate(0deg);
+    }
+    to{
+      transform:Rotate(180deg)  
+    }
+}
+.Data_editorVideo_tutorial_editorVideoUploaderBig.Data_editorVideo_tutorial_editorVideoUploaderBigPending .Data_editorVideo_tutorial_editorVideoUploaderIcon svg{
+    fill:#00acc8;
+}
+
+.Data_editorVideo_tutorial_editor-note {
+    display: none;
+}
+
+.Data_editorVideo_tutorial_editorUploadPanelWrapper {
+    position: relative;
+}
+
+.Data_editorVideo_tutorial_editorUploadPanelDisabler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: not-allowed;
+    background: rgba(255,255,255,.7);
+    display: none;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderBig.Data_editorVideo_tutorial_editorVideoUploaderBigError .Data_editorVideo_tutorial_editorVideoUploder_text {
+    color:crimson;
+}
+
+.Data_editorVideo_tutorial_editorVideoUploaderBig.Data_editorVideo_tutorial_editorVideoUploaderBigError .Data_editorVideo_tutorial_editorVideoUploaderIcon {
+    width: 15em;
+}
+.Data_editorVideo_tutorial_editorVideoUploaderBig.Data_editorVideo_tutorial_editorVideoUploaderBigError .Data_editorVideo_tutorial_editorVideoUploaderIcon svg{
+    fill:crimson;
+}
+
+
+
+
+
+
+
+
+
+

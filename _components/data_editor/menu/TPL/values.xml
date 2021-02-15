@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <user>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="alias" filters="Strip,Trim,NEString" />
+            <property in="description" filters="Strip,Trim,NEString" />
+            <property in="css_class" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="tree" filters="NEArray" />            
+        </export>
+    </user>    
+</root>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="common_name" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="enabled" filters="Boolean,DefaultFalse" />
+            <property in="tags" filters="NEArray,DefaultEmptyArray" />   
+            <property in="html_mode" filters="IntMore0,Default0" />         
+            <property in="intro" filters="Trim,NEString,DefaultEmptyString" />
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />
+            <property in="default_poster" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_title" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="og_title" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_keywords" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_description" filters="Strip,Trim,NEString,DefaultNull" />        
+            <property in="og_description" filters="Strip,Trim,NEString,DefaultNull" />                                               
+            <property in="properties" filters="NEArray,DefaultNull" />             
+            <property in="content_type" filters="Strip,Trim,NEString" />       
+            <property in="post" filters="DateTime,DateTimeToString,DefaultNull" />        
+        </export>
+    </node>    
+</root>

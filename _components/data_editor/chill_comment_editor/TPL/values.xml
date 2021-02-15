@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />                          
+            <property in="author" filters="Strip,Trim,NEString" />
+            <property in="enabled" filters="Boolean,DefaultFalse" />
+            <property in="content" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="r" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="sticker" filters="IntMore0,DefaultNull" />       
+            <property in="rating" filters="Int,Default0" />                            
+        </export>
+    </node>    
+</root>

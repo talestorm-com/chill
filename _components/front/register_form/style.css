@@ -1,0 +1,519 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.12.2017, 12:42:16
+    Author     : alexander
+*/
+
+.EFOBackdrop.FrontRegister_formBackdrop {
+    z-index: 22;
+    background: rgba(255,255,255,.7);
+}
+
+.EFOWindow.FrontRegister_formWindow {
+    width: 100%;
+    max-width: 640px;
+    height: 60%;
+    max-height: 250px;    
+}
+
+.FrontRegister_formLInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 .5em;
+}
+
+.FrontRegister_formLInner form {
+    margin: 0;
+    padding: 0 .5em;
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+}
+
+.FrontRegister_formRow {
+    width: 100%;
+    overflow: hidden;
+    padding: .1em .3em;
+    box-sizing: border-box;
+    margin-top: .3em;
+    margin-bottom: .5em;
+}
+
+.FrontRegister_formLInner input[type=text],
+.FrontRegister_formLInner input[type=password] {
+    box-sizing: border-box;
+    border: 1px solid silver;
+    background: white!important;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    height: 2.3em;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding:0 .5em;
+}
+.FrontRegister_formLInner input[type=text]:focus,
+.FrontRegister_formLInner input[type=password]:focus,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=text]:focus,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=password]:focus {
+    border:1px solid #00acc8;
+}
+.FrontRegister_formLInner input[type=text]:focus+.FrontRegister_formRowIcon,
+.FrontRegister_formLInner input[type=password]:focus+.FrontRegister_formRowIcon,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=text]:focus+.FrontRegister_formRowIcon,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=password]:focus+.FrontRegister_formRowIcon {
+    border:1px solid #00acc8;
+}
+.FrontRegister_formLInner input[type=text]:focus+.FrontRegister_formRowIcon svg,
+.FrontRegister_formLInner input[type=password]:focus+.FrontRegister_formRowIcon svg,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=text]:focus+.FrontRegister_formRowIcon svg,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=password]:focus+.FrontRegister_formRowIcon svg {
+    fill: #00acc8;
+}
+
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=text]+.FrontRegister_formRowIcon svg,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=password]+.FrontRegister_formRowIcon svg {
+    fill:crimson;
+}
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=text],
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=password],
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=text]+.FrontRegister_formRowIcon,
+.FrontRegister_formLInner .FrontRegister_formErrorField input[type=password]+.FrontRegister_formRowIcon {
+    border:1px solid crimson;
+}
+
+
+.FrontRegister_formLInner label {cursor: pointer;margin: 0;margin-bottom: .3em;font-size: .9em;}
+
+.FrontRegister_formRowSplit {
+    padding: 0.1em .2em;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.FrontRegister_formRowSplit100 {
+    width: 100%;
+}
+
+.FrontRegister_formInputWrapper {
+    box-sizing: border-box;
+    padding-right: 2.3em;
+    position: relative;
+}
+
+.FrontRegister_formRowIcon {
+    border: 1px solid silver;
+    width: 2.3em;
+    height: 2.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-left: none!important;
+    padding: .2em;
+}
+
+.FrontRegister_formRowIcon svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.EFOWindowResizer.FrontRegister_formWindowResizer {
+    display: none;
+}
+
+.FrontRegister_formLInner a, 
+.FrontRegister_formLInner a:hover, 
+.FrontRegister_formLInner a:visited, 
+.FrontRegister_formLInner a:active, 
+.FrontRegister_formLInner a:link {
+    color: #848282;
+}
+
+.FrontRegister_formRowSplit50 {
+    width: 50%;
+}
+.FrontRegister_formalignRight {
+    text-align: right;
+}
+
+body.FrontRegister_formBodyScrollLock {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.FrontRegister_formBackdrop {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.EFOBackdrop.FrontRegister_formBackdrop {
+    z-index: 5;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.EFOWindow.FrontRegister_formWindow {
+    position: static;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background: transparent;
+    background: rgba(255,255,255,0);
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EFOTitle.FrontRegister_formTitle {
+    display: none;
+}
+
+.EFOFooter.FrontRegister_formFooter {
+    display: none;
+}
+
+.EFOWindowContent.FrontRegister_formWindowContent {
+    height: auto;
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    background: white;
+    box-shadow: 3px 3px 10px #525151;
+}
+
+.EFOWindowContent.FrontRegister_formWindowContent {
+    padding-top: 0;
+}
+
+.FrontRegister_formLogoHeader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+}
+
+.FrontRegister_formLogoHeaderInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    padding: .75em;
+    border-bottom: 1px solid black;
+}
+
+.FrontRegister_formLogoHeaderInner svg {
+    width: 100%;
+    height: 100%;
+    fill: black;
+}
+
+.FrontRegister_formLogoHeader {
+    margin-bottom: 0.75em;
+}
+
+.FrontRegister_formLInner form {
+    padding: 0;
+}
+
+.FrontRegister_formLInner {
+    padding: 0;
+}
+
+.FrontRegister_formRow {
+    padding: 0;
+    margin-top: .5em;
+    margin-bottom: 1.25em;
+}
+
+.FrontRegister_formRow.FrontRegister_formLinkRow {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.FrontRegister_formRow.FrontRegister_formLinkRow .FrontRegister_formRowSplit.FrontRegister_formRowSplit50 {
+    width: auto;
+    float: none;
+}
+
+.FrontRegister_formRow.FrontRegister_formLinkRow a {
+}
+
+.FrontRegister_formRowSplit.FrontRegister_formRowSplit50.FrontRegister_formalignRight {
+    margin-left: 1.25em;
+}
+
+.FrontRegister_formButtonPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding: .25em 1em;
+}
+
+.FrontRegister_formButtonPanel {}
+
+.FrontRegister_formButtonPanelButton:nth-child(1) {
+    order: 2;
+}
+
+.FrontRegister_formButtonPanelButton {
+    cursor: pointer;
+    padding: 0 1.5em;
+    text-align: center;
+    line-height: 2em;
+    background: white;
+    box-sizing: border-box;
+    border: 1px solid dimgray;
+    transition: all .3s;
+    color: dimgray;
+}
+
+.FrontRegister_formButtonPanelButton:nth-child(1) {
+    background: #f15a24;
+    color: white;
+    border: 1px solid #f15a24;
+}
+
+.FrontRegister_formButtonPanelButton:nth-child(1):hover {
+    background: white;
+    color: #f15a24;
+}
+
+.FrontRegister_formButtonPanelButton:nth-child(2):hover {
+    border: 1px solid black;
+    background: whitesmoke;
+    color: black;
+}
+
+.FrontRegister_formNewLoader {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.3);
+    display: none;
+}
+
+.FrontRegister_formNewLoaderFlex {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.FrontRegister_formNewLoaderCell {
+    box-sizing: border-box;
+    width: 4em;
+    height: 4em;
+    line-height: 0;
+}
+
+.FrontRegister_formNewLoaderCell svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.FrontRegister_formLInner.FrontRegister_formfake {
+    visibility: hidden;
+    position: static;
+}
+
+.FrontRegister_formLInner.FrontRegister_formorg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 1em;
+    padding-top: 0;
+}
+
+.FrontRegister_formLInner.FrontRegister_formorg .FrontRegister_formRastop {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+
+
+.FrontRegister_formLInner.FrontRegister_formorg .FrontRegister_formRastop {
+    padding-top: 3em;
+}
+
+.FrontRegister_formLInner.FrontRegister_formorg .FrontRegister_formLogoHeader {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    margin: 0;
+}
+
+.FrontRegister_formLInner.FrontRegister_formorg .FrontRegister_formFormScroller {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.FrontRegister_formRow input[type=text],
+.FrontRegister_formRow input[type=password] {
+    box-sizing:border-box;
+    font-family:inherit;
+    font-size:inherit;
+    width:100%;
+}
+
+.FrontRegister_formInputWrapper {
+    padding: 0;
+}
+
+.FrontRegister_formButtonPanel {}
+
+.FrontRegister_formButtonPanelButton:nth-child(1) {
+    margin-left: 1.25em;
+}
+
+.FrontRegister_formRow.FrontRegister_formRowCheckRow input[type=checkbox] {
+    display:none;
+}
+
+.FrontRegister_formRow.FrontRegister_formRowCheckRow input[type=checkbox]+label{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    padding:.1em;
+    padding-left:.25em;
+}
+
+.FrontRegister_formRow.FrontRegister_formRowCheckRow input[type=checkbox]+label:before{
+    content:' ';
+    width:1em;
+    height:1em;
+    min-width:1em;
+    max-width:1em;
+    outline-offset:0;
+    box-sizing:border-box;
+    outline:1px solid dimgray;
+    margin-right:.75em;
+    transition:all .3s;
+}
+.FrontRegister_formRow.FrontRegister_formRowCheckRow input[type=checkbox]:checked+label:before{
+    border:1px solid white;
+    background:dimgray;
+}
+
+
+.FrontRegister_formErrorText {
+    font-size: .8em;
+    color: crimson;
+    white-space: nowrap;
+    line-height: 1.1em;
+    height: 1.1em;
+    overflow: hidden;
+    margin-bottom: .2em;
+}
+
+.FrontRegister_formRow {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.FrontRegister_formRowSplit.FrontRegister_formRowSplit100 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.FrontRegister_formFormScroller form {
+    padding-top: .75em;
+    margin-bottom: 1em;
+}
+
+.FrontRegister_formRow input::placeholder {
+    color: #dcdada;
+}
+
+.FrontRegister_formFormScroller form {
+    overflow: hidden;
+    height: auto;
+    max-height: none;
+}
+
+label.FrontRegister_formObligate:after {
+    content: '*';
+}
+
+.FrontRegister_formRow.FrontRegister_formRowCheckRow .FrontRegister_formErrorText {
+    margin-left: .3em;
+}
+
+
+@media only screen and (orientation:portrait) and (max-width:600px){
+
+    .DeviceModeDevice .FrontRegister_formButtonPanel {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .DeviceModeDevice .FrontRegister_formButtonPanelButton {}
+
+    .DeviceModeDevice .FrontRegister_formButtonPanel .FrontRegister_formButtonPanelButton {
+        margin: 0;
+        margin-bottom: 1em;
+    }
+
+    .DeviceModeDevice .FrontRegister_formButtonPanelButton:nth-child(1) {
+        order: 0;
+    }
+
+    .DeviceModeDevice .FrontRegister_formButtonPanelButton:nth-child(2) {
+        order: 1;
+    }
+
+}

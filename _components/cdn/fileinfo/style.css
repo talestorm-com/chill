@@ -1,0 +1,39 @@
+.CdnFileinfoOneFieldRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.CdnFileinfoField_name {
+    width: 10%;
+    max-width: 10%;
+    min-width: 10%;
+    /* display: flex; */
+    font-weight: bold;
+    color: #00acc8;
+    box-sizing: border-box;
+    padding: .3em;
+}
+
+.CdnFileinfoOneFieldRow:nth-child(even) {
+    background: whitesmoke;
+}
+
+.CdnFileinfoField_value {
+    width: 100%;
+}
+
+.CdnFileinfoField_value textarea {
+    height: 3em;
+    border: none!important;
+    background: transparent!important;
+    font-family: monospace;
+}
+
+.CdnFileinfo_files_area {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}

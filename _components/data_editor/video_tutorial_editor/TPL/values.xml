@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <preset>
+        <import> 
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="uid" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="image" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="sort" filters="Int,Default0" />
+            <property in="html_mode" filters="Boolean,DefaultTrue" />
+            <property in="info" filters="Trim,NEString,DefaultNull" />            
+            <property in="file" filters="FileObject,DefaultNull" />
+            <property in="image_removed" filters="Boolean,DefaultFalse" />
+            <property in="video_file" filters="FileObject,DefaultNull" />
+            <property in="convert" filters="Boolean,DefaultTrue" />
+            <property in="image_field" filters="JQHTMLNode,DefaultNull" />
+            <property in="video_field" filters="JQHTMLNode,DefaultNull" />
+            <property in="video" filters="Strip,Trim,NEString,DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="uid" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="image" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="sort" filters="Int,Default0" />
+            <property in="html_mode" filters="Boolean,DefaultTrue" />
+            <property in="info" filters="Trim,NEString,DefaultNull" />            
+            <property in="file" filters="FileObject,DefaultNull" />
+            <property in="image_removed" filters="Boolean,DefaultFalse" />
+            <property in="video_file" filters="FileObject,DefaultNull" />
+            <property in="convert" filters="Boolean,DefaultTrue" />
+            <property in="image_field" filters="JQHTMLNode,DefaultNull" />
+            <property in="video_field" filters="JQHTMLNode,DefaultNull" />
+            <property in="video" filters="Strip,Trim,NEString,DefaultNull" />
+        </export>
+    </preset>     
+</root>

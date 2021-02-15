@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+   
+    <common>  
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="alias" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="article" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="guid" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="enabled" filters="Boolean,DefaultTrue" />            
+            <property in="orderable" filters="Boolean,DefaultTrue" />            
+            <property in="description" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="consists" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="html_mode_c" filters="Boolean,DefaultTrue" />            
+            <property in="html_mode_d" filters="Boolean,DefaultTrue" />            
+            <property in="retail" filters="Float,DefaultNull" />            
+            <property in="gross" filters="Float,DefaultNull" />            
+            <property in="retail_old" filters="Float,DefaultNull" />            
+            <property in="gross_old" filters="Float,DefaultNull" />            
+            <property in="discount_retail" filters="Float,DefaultNull" />            
+            <property in="discount_gross" filters="Float,DefaultNull" />            
+            <property in="default_image" filters="Strip,Trim,NEString,DefaultNull" /> 
+            <property in="sort" filters="Int,Default0" />      
+            <property in="properties" filters="NEArray,DefaultNull" />   
+            <property in="cross" filters="NEArray,DefaultNull" />   
+        </export>
+    </common>
+    <meta>  
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="meta_title" out="title" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="meta_description" out="description" filters="Strip,Trim,NEString,DefaultEmptyString" />            
+            <property in="meta_keywords" out="keywords" filters="Strip,Trim,NEString,DefaultEmptyString" />                        
+            <property in="og_title" out="og_title" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="og_description" out="og_description" filters="Strip,Trim,NEString,DefaultEmptyString" />            
+        </export>
+    </meta>
+    
+    <catalog>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="group" filters="IntMore0" />
+            <property in="sort" filters="Int,Default0" />
+        </export>
+    </catalog>
+    <color>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="guid" filters="Strip,Trim,NEString" />
+            <property in="exchange_uid" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="html_color" filters="Strip,Trim,NEString" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="sort" filters="Int,Default0" />
+        </export>
+    </color>
+    <size>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0" />
+            <property in="enabled" filters="Boolean,DefaultTrue" />            
+        </export>
+    </size>
+</root>

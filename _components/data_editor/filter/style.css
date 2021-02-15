@@ -1,0 +1,143 @@
+
+
+
+
+.Data_editorFilterTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterTabWrapper.Data_editorFilterTabWrapperCommon {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+}
+
+.Data_editorFilterTabWrapper.Data_editorFilterTabWrapperInfo {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterEditorWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterEditorInputWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterEditorInput {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterTabWrapper.Data_editorFilterTabWrapperGallery {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterGalleryWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterImageListWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+.Data_editorFilterTabWrapper.Data_editorFilterTabWrapperPresets {
+    box-sizing: border-box;
+    height: 100%;
+}
+.ADVTableHeaderRowReplacer.Data_editorFilterHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorFilterControlButton {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Data_editorFilterControlButton:hover {
+    background: whitesmoke;
+}
+
+.Data_editorFilterControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.Data_editorFilterImageDisplay {
+    width: 7em;
+    max-width: 7em;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    max-height: 7em;
+    height: 7em;
+    padding: .5em;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.Data_editorFilterImageDisplay {}
+
+.Data_editorFilterImageDisplay img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Data_editorFilterCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.Data_editorFilterCommonDisplay {
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Data_editorFilterNameCellContent.Data_editorFilterCommonDisplayWrap .Data_editorFilterCommonDisplay {
+    font-weight: bold;
+}
+
+.Data_editorFilterRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 3em;
+    height: 3em;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+    padding: .75em;
+}
+
+.Data_editorFilterRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.Data_editorFilterRemoveButton:hover {
+    padding: .5em;
+}
+
+
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-100.Data_editorFilter-publisher-help {
+    color: dimgray;
+    font-size: .9em;
+}

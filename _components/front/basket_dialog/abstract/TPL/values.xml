@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="parent_id" filters="IntMore0,DefaultNull" />
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="alias" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="guid" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="sort_order" filters="Int,Default0" />
+            <property in="visible" filters="Boolean,DefaultTrue" />            
+            <property in="html_mode" filters="Boolean,DefaultTrue" />            
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="default_image" filters="Trim,NEString,DefaultNull" />       
+            <property in="import_processor" filters="Strip,Trim,NEString,DefaultNull" />     
+            <property in="properties" filters="NEArray,DefaultNull" />   
+            <property in="terminal" filters="Boolean,DefaultFalse" />    
+            <property in="meta_title"  filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="meta_description"  filters="Strip,Trim,NEString,DefaultEmptyString" />            
+            <property in="meta_keywords"  filters="Strip,Trim,NEString,DefaultEmptyString" />                        
+            <property in="og_title"  filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="og_description"  filters="Strip,Trim,NEString,DefaultEmptyString" />                               
+        </export>
+    </node>    
+</root>

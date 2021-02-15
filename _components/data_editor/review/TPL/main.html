@@ -1,0 +1,36 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="CommonAdminLayoutFormInner {{getCssClass}}Form">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}id">Пользак</label>
+                <input type="text" readonly="readonly" data-field="user_name" id="a{{MD}}id"/>
+                <input type="hidden" data-field="user_id" />
+                <input type="hidden" data-field="media_id" />
+            </div>   
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}user_login">Польз/email</label>
+                <input type="text" readonly="readonly" data-field="login" id="a{{MD}}user_login"/>                    
+            </div>   
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50">
+                <label for="a{{MD}}name">Наименование</label>
+                <input type="text" readonly="readonly" data-field="name" id="a{{MD}}name"/>                    
+            </div>   
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}rate">Оценка</label>
+                <input type="text"  data-field="rate" id="a{{MD}}rate"/>                    
+            </div>   
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 {{getCssClass}}checkrow">
+                <input type="checkbox" data-field="approved" id="a{{MD}}approved" />
+                <label for="a{{MD}}approved">Включено</label>                
+            </div>               
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}info">Коммент</label>
+                <textarea data-field="info" id="a{{MD}}info"></textarea>
+            </div>   
+        </div>
+    </div>
+</div>

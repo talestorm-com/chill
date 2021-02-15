@@ -1,0 +1,201 @@
+.dummy{
+    background: yellow;
+}
+
+.Data_editorMediacontentType_editorGif_editorEmojiDisplayFieldWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorGif_editoremoji_display_clear_button {
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid silver;
+    border-left: none;
+    height: 2.5em;
+    width: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    padding: .5em;
+}
+
+.Data_editorMediacontentType_editorGif_editoremoji_display_clear_button svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+.Data_editorMediacontentType_editorGif_editorEmojiDisplayFieldWrapper input[type=text] {
+    cursor: pointer;
+}
+
+
+.Data_editorMediacontentType_editorGif_editorTabInner {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorGif_editorCommonWrapper.Data_editorMediacontentType_editorGif_editorCommonWrapperQuill {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorGif_editorEditorOutWrap {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorGif_editorEditorInnerRoot {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorGif_editorGalleryWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorGif_editorPropertiesWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorMediacontentType_editorGif_editorPersonalListWrapper {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorMediacontentType_editorGif_editor_align_right {
+    text-align: right;
+}
+
+
+
+.Data_editorMediacontentType_editorGif_editorButtonedInputPanel {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.Data_editorMediacontentType_editorGif_editorButtonedInputButton {
+    box-sizing: border-box;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid silver;
+    border-left: none;
+    cursor: pointer;
+    padding: .25em;
+}
+
+.Data_editorMediacontentType_editorGif_editorButtonedInputButton svg {
+    width: 100%;
+    height: 100%;
+    fill: silver;
+}
+
+.aData_editorMediacontentType_editorGif_editoruploader-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4em;
+    border: 1px solid silver;
+    overflow: hidden;
+    position: relative;
+}
+
+.aData_editorMediacontentType_editorGif_editoruploader-wrapper input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.aData_editorMediacontentType_editorGif_editoruploader-wrapper-inner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: #00acc8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Data_editorMediacontentType_editorGif_editorCWrapPanel .CommonAdminLayoutFormRow {
+    margin-bottom: 0;
+}
+
+.Data_editorMediacontentType_editorGif_editorCWrapPanel {
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 2px solid dimgray;
+    height: 9.5em;
+    position: absolute;
+}
+
+.Data_editorMediacontentType_editorGif_editorCommonWrapper.Data_editorMediacontentType_editorGif_editorCommonWrapperPanelized {
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    padding-top: 9.5em;
+}
+
+.Data_editorMediacontentType_editorGif_editorCWRapTable {
+    box-sizing: border-box;
+    height: 100%;
+}
+.Data_editorMediacontentType_editorGif_editorCommonDisplayWrap {
+    padding:  0 .3em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Data_editorMediacontentType_editorGif_editorCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.Data_editorMediacontentType_editorGif_editoruIdCellContent.Data_editorMediacontentType_editorGif_editorCommonDisplayWrap .Data_editorMediacontentType_editorGif_editorCommonDisplay {
+    color: #00acc8;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.Data_editorMediacontentType_editorGif_editorNameCellContent.Data_editorMediacontentType_editorGif_editorCommonDisplayWrap {
+    padding: 0;
+}
+
+.Data_editorMediacontentType_editorGif_editorInputWrapper input[type=text] {
+    border: 1px solid transparent;
+    height: 2em;
+    cursor: pointer;
+    padding: 0 .5em;
+    background: transparent;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Data_editorMediacontentType_editorGif_editorInputWrapper input[type=text]:focus {
+    border: 1px solid #00acc8;
+    background: white;
+}

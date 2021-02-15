@@ -1,0 +1,20 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">    
+    <div class="CommonAdminLayoutFormInner {{getCssClass}}EFOTabbableContainer EFOTabbableContainer">
+        <div class="EFOTabheaderContainer">
+            <div class="EFOTabheader" data-tabheader="common" data-defaulttabheader="1" >Основное</div>
+            <div class="EFOTabheader" data-tabheader="intro" style="display: none">Интро</div>        
+            <div class="EFOTabheader" data-tabheader="content" style="display: none">Описание</div>
+            <!--div class="EFOTabheader" data-tabheader="meta">Мета</div -->
+            <div class="EFOTabheader" data-tabheader="gallery" style="display: none">Галерея</div>
+            <div class="EFOTabheader" data-tabheader="props" style="display: none">Свойства</div>
+        </div>
+        <div class="EFOTabsContainer">
+            <div class="EFOTabBody" data-tab="common">{{>Data_editorMedia_personTAB_common}}</div>
+            <div class="EFOTabBody" data-tab="intro">{{>Data_editorMedia_personTAB_intro}}</div>
+            <div class="EFOTabBody" data-tab="content">{{>Data_editorMedia_personTAB_content}}</div>
+            <!-- div class="EFOTabBody" data-tab="meta">{{>Data_editorMedia_personTAB_meta}}</div -->
+            <div class="EFOTabBody" data-tab="gallery">{{>Data_editorMedia_personTAB_gallery}}</div>
+            <div class="EFOTabBody" data-tab="props">{{>Data_editorMedia_personTAB_props}}</div>
+        </div>
+    </div>   
+</div>

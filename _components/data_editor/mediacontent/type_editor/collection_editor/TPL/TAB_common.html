@@ -1,0 +1,45 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow {{getCssClass}}TopPanel" >            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                <input type="hidden" data-field="content_type" value="ctCOLLECTION" data-fielddefault="ctCOLLECTION" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}common_name" >Внутреннее название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}common_name" data-field="common_name"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}name" >Название на русском</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>                
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                <label for="a{{MD}}enabled">Включено</label>
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-15 ">
+                <label for="a{{MD}}mcsort" >Сортировка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}mcsort" data-field="mcsort" data-monitor="mcsort " />
+            </div>           
+            
+            <div class="CommonAdminLayoutMetaRowsBlock">
+                <div class="CommonAdminLayoutMetaRow">
+                    <label for="a{{MD}}meta_title">title</label>
+                    <input type="text" data-field="meta_title" id="a{{MD}}meta_title" placeholder="title"/>
+                </div>
+                <div class="CommonAdminLayoutMetaRow">
+                    <label for="a{{MD}}meta_description">description</label>
+                    <input type="text" data-field="meta_description" id="a{{MD}}meta_description" placeholder="description"/>
+                </div>
+                <div class="CommonAdminLayoutMetaRow">
+                    <label for="a{{MD}}additional_content">content</label>
+                    <input type="text" data-field="additional_content" id="a{{MD}}additional_content" placeholder="content"/>
+                </div>
+            </div>
+            
+        </div>
+        <div class="{{getCssClass}}Table" data-role="table" data-field="items"></div>
+        
+    </div>
+</div>

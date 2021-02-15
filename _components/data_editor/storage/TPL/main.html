@@ -1,0 +1,30 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />                
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20">
+                <label for="a{{MD}}guid" class="CommonAdminLayoutLabelIsRequired">id 1C</label>
+                <input type="text" autocomplete="off" id="a{{MD}}guid" data-field="guid" readonly="readonly" />                
+            </div>                
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name" data-monitor="name,c" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                <label for="a{{MD}}display_name" >Наименование</label>
+                <input type="text" autocomplete="off" id="a{{MD}}display_name" data-field="display_name" data-monitor="name,c" />               
+            </div>    
+
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck">               
+                <input type="checkbox" id="a{{MD}}visible" data-field="visible" data-monitor="visible,c" />             
+                <label for="a{{MD}}visible" >Видимый</label>
+            </div> 
+        </div>                               
+    </div>   
+</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="name" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="name_en" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="intro" filters="Trim,NEString,DefaultEmptyString" />    
+            <!--property in="meta_title" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_keywors" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_description" filters="Strip,Trim,NEString,DefaultNull" / -->        
+            <!-- property in="title" filters="Strip,Trim,NEString" / -->
+            <property in="html_mode" filters="IntMore0,Default0" />                        
+            <property in="properties" filters="NEArray,DefaultNull" /> 
+            <property in="image" filters="Strip,Trim,NEString,DefaultNull" />         
+        </export>
+    </node>    
+</root>

@@ -1,0 +1,13 @@
+{{=<% %>=}}<div class="{{getMC}}PropValueCellContent {{getMC}}CommonDisplayWrap">
+    <div class="{{getMC}}CommonDisplay {{getMC}}CommonDisplaySelect">
+        {{set_selected_role}}
+        <select data-id="{{uid}}" data-monitor="role">
+            {{#available_roles}}
+            <option value="{{role_key}}" {{#is_rolekey_current}}selected="selected"{{/is_rolekey_current}} >{{role_name}}</option>
+            {{/available_roles}}
+            {{^selected_role_exists}}
+            <option value="{{selected_rolekey}}" selected="selected">{{selected_rolekey}}</option>
+            {{/selected_role_exists}}
+        </select>        
+    </div>    
+</div><%={{ }}=%>

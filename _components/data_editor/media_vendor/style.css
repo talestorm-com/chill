@@ -1,0 +1,202 @@
+.EFOTabbableContainer.Data_editorMedia_vendorMainWrap .EFOTabBody {
+    overflow: hidden;
+}
+
+.CommonAdminLayoutForm.Data_editorMedia_vendorForm {
+    padding: 0;
+}
+
+.CommonAdminLayoutFormInner.Data_editorMedia_vendorTabCatalogsFormInner {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    padding-top: 2em;
+}
+
+.Data_editorMedia_vendorTabCatalogFormHeader {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #ded9d9;
+    height: 2em;
+    line-height: 2em;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 1em;
+    border-bottom: 1px solid dimgray;
+    color: dimgray;
+}
+
+.Data_editorMedia_vendorTabCatalogTable {
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ADVTableHeaderRowReplacer.Data_editorMedia_vendorHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.Data_editorMedia_vendorControlButton {
+    box-sizing: border-box;
+    height: 100%;
+    padding: .1em;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s;
+    line-height: 0;
+}
+
+.Data_editorMedia_vendorControlButton:hover {
+    background: whitesmoke;
+}
+
+.Data_editorMedia_vendorControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+.Data_editorMedia_vendorTabProductInfoEditorWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 3em;
+}
+
+.Data_editorMedia_vendorTabProductInfoEditorWrapper .ql-toolbar.ql-snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3em;
+    overflow: hidden;
+}
+
+.Data_editorMedia_vendorImageListContainer {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.Data_editorMedia_vendorTabCatalogTable {
+    font-size: .9em;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorCommonDisplay {
+    box-sizing: border-box;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorRemoveButton {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .5em;
+    transition: all .3s;
+    margin: 0 auto;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorRemoveButton:hover {
+    padding: .3em;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap {
+    padding: 0;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap input[type=text] {
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    text-align: right;
+    color: #00acc8;
+    padding: 0 1em;
+    outline: none;
+    border: 1px solid transparent;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.Data_editorMedia_vendorTabCatalogTable .Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap input[type=text]:focus {
+    background: white;
+    border: 1px solid silver;
+}
+
+
+.Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap input[type=checkbox] {
+    display: none;
+}
+
+.Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap input[type=checkbox]+label{
+    display:block;cursor:pointer;box-sizing:border-box;outline-offset:0;outline:1px solid #00acc8;
+    width:1.1em;height:1.1em;margin:.1em;
+    transition:all .3s;
+}
+
+.Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap input[type=checkbox]:checked+label{
+    border:1px solid white;background:#00acc8;
+}
+
+.Data_editorMedia_vendorSortCellContent.Data_editorMedia_vendorCommonDisplayWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Data_editorMedia_vendorTabProductInfoEditorWrapper {
+    padding-top: 0;
+}
+
+.Data_editorMedia_vendorTabProductInfoEditorBody {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.Data_editorMedia_vendorTabInner {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorMedia_vendorPropertiesWrapper {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    font-size: .85em;
+}
+
+
+

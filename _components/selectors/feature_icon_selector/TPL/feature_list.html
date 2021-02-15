@@ -1,0 +1,9 @@
+<div class="{{getCssClass}}FeatureListContent">
+    {{#features}}
+    <div class="{{getCssClass}}-one-feature-item" data-file="{{.}}" data-command="select_me">
+        <div class="{{getCssClass}}-one-feature-item-inner">
+            <img src="{{get_feature_url}}"  />
+        </div>
+    </div>
+    {{/features}}
+</div>

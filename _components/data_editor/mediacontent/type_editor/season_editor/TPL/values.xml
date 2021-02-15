@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />
+            <property in="common_name" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="name" filters="Strip,Trim,NEString" />                                    
+            <property in="eng_name" filters="Strip,Trim,NEString,DefaultEmptyString" />                                    
+            <property in="enabled" filters="Boolean,DefaultFalse" />
+            <property in="free" filters="Boolean,DefaultFalse" />
+            <property in="genres" filters="NEArray,DefaultEmptyArray" />
+            <property in="tags" filters="NEArray,DefaultEmptyArray" />
+            <property in="countries" filters="NEArray,DefaultEmptyArray" />
+            <property in="studios" filters="NEArray,DefaultEmptyArray" />   
+            <property in="emoji" filters="IntMore0,DefaultNull" />
+            <property in="age_restriction" filters="IntMore0" />
+            <property in="html_mode" filters="IntMore0,Default0" />         
+            <property in="intro" filters="Trim,NEString,DefaultEmptyString" />
+            <property in="info" filters="Trim,NEString,DefaultEmptyString" />            
+            <property in="default_poster" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="default_preview" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_title" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="og_title" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_keywords" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="meta_description" filters="Strip,Trim,NEString,DefaultNull" />        
+            <property in="og_description" filters="Strip,Trim,NEString,DefaultNull" />                                               
+            <property in="properties" filters="NEArray,DefaultNull" /> 
+            <property in="personal" filters="NEArray,DefaultEmptyArray" />             
+            <property in="content_type" filters="Strip,Trim,NEString" />     
+            <property in="origin_language" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="released" filters="DateTime,DateTimeToString,DefaultNull" />  
+            <property in="series_count" filters="IntMore0,DefaultNull" />
+            <property in="seasons_count" filters="IntMore0,DefaultNull" />      
+            <property in="track_language" filters="IntMore0,DefaultNull" />
+            <property in="mcsort" filters="Int,Default0" />
+            <property in="preplay" filters="IntMore0,DefaultNull" />
+            <property in="video_cdn_id" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="video_cdn_url" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="gif_cdn_id" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="gif_cdn_url" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="lent_message" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="lent_mode" filters="Strip,Trim,NEString,DefaultNull" />
+            <property in="copyright_holder" filters="Strip,Trim,NEString,DefaultNull" />            
+        </export>
+    </node>    
+</root>

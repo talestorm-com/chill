@@ -1,0 +1,32 @@
+{{#files}}
+<div class="{{getCssClass}}OneItem  {{getCssClass}}OneItemType{{command}} {{#is_selected}}{{getCssClass}}selected{{/is_selected}} " data-id="{{id}}" data-command="{{command}}" data-name="{{name}}">
+    <div class="{{getCssClass}}ItemInner">
+        <div class="{{getCssClass}}ItemIcon">
+            {{#nav}}
+            <svg><use xlink:href="#{{getCssClass}}_icon_root_folder" /></svg>
+            {{/nav}}
+            {{^nav}}
+            {{#dir}}
+            <svg><use xlink:href="#{{getCssClass}}_icon_folder" /></svg>
+            {{/dir}}
+            {{^dir}}
+            <svg><use xlink:href="#{{getCssClass}}_icon_common_file" /></svg>
+            {{/dir}}
+            {{/nav}}
+        </div>
+        <div class="{{getCssClass}}_item_name_outer">
+            <div class="{{getCssClass}}_item_name_inner">{{name}}</div>
+        </div>
+    </div>
+    <div class="{{getCssClass}}_file_panel" data-id="{{id}}">
+        <div class="{{getCssClass}}_file_panel_inner">
+            <div class="{{getCssClass}}FilePanelButton {{getCssClass}}FilePanelButtonInfo" data-command="file_info" data-id="{{id}}">
+                <svg><use xlink:href="#{{getCssClass}}_icon_file_info" /></svg>
+            </div>
+            <div class="{{getCssClass}}FilePanelButton {{getCssClass}}FilePanelButtonRemove" data-command="file_remove" data-id="{{id}}">
+                <svg><use xlink:href="#{{getCssClass}}_icon_file_remove" /></svg>
+            </div>
+        </div>
+    </div>
+</div>
+{{/files}}

@@ -1,0 +1,30 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                <input type="hidden" data-field="content_type" value="ctSEASONSEASON" data-fielddefault="ctSEASONSEASON" />
+                <input type="hidden" data-field="season_id" value="" />
+            </div>            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}num" >Номер сезона</label>
+                <input type="text" autocomplete="off" id="a{{MD}}num" data-field="num" data-monitor="num"  />
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40" data-style='display:none' style='display: none'>
+                <label for="a{{MD}}common_name" >Оригинальное название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}common_name" data-field="common_name"  />
+            </div>                
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-40">
+                <label for="a{{MD}}name" >Название на русском</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name"  />
+            </div>                
+        </div>
+        <div class="CommonAdminLayoutFormRow">            
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">
+                <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                <label for="a{{MD}}enabled">Включено</label>
+            </div>            
+        </div>                        
+    </div>
+</div>

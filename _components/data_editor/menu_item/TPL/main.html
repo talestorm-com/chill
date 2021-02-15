@@ -1,0 +1,71 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="CommonAdminLayoutEditorPasswordStub">        
+        <div class="CommonAdminLayoutEditorPasswordStubinner">        
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfakelogin0">login</label>
+            <label for="{{MD}}commonfakelogin0">логин</label>
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfalepassword">password</label>
+            <label for="{{MD}}commonfalepassword">Пароль</label>        
+            <input type="text" autocomplete="off" name="login" data-fake="login" id="{{MD}}commonfakelogin0" />
+            <input type="password" autocomplete="off" name="password" id="{{MD}}commonfalepassword" />
+            <input type="text" name="login"  autocomplete="off" id="{{MD}}commonfakelogin" />
+            <input type="text" autocomplete="off" id="a{{MD}}00login" data-field="xxlogin" data-monitor="xxlogin" />
+        </div>
+    </div>
+    <div class="CommonAdminLayoutFormInner">
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                <input type="text" autocomplete="off" id="a{{MD}}login" data-field="id" readonly="readonly" />                
+            </div>
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}name" class="CommonAdminLayoutLabelIsRequired">Название</label>
+                <input type="text" autocomplete="off" id="a{{MD}}name" data-field="name" data-monitor="name,c" />               
+            </div>           
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-45">
+                <label for="a{{MD}}css_class" class="">css</label>
+                <input type="text" autocomplete="off" id="a{{MD}}css_class" data-field="css_class" data-monitor="css_class,c" />               
+            </div>           
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}path" >Размещение</label>
+                <input type="text" autocomplete="off" id="a{{MD}}path" data-field="path" readonly="readonly"  />
+            </div>                      
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-100">
+                <label for="a{{MD}}url" class="CommonAdminLayoutLabelIsRequired">url</label>
+                <div class="CommonAdminLayoutButtonedInputWrapper CommonAdminLayoutButtonedInputWrapper5">
+                    <input type="text" id="a{{MD}}url" data-field="url" data-monitor="url,c" data-fielddefault="" />
+                    <div class="CommonAdminLayoutButtonedInputButton" data-command="select_product" title="Выбрать товар для ссылки этого меню">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_select_product" /></svg>
+                    </div>
+                    <div class="CommonAdminLayoutButtonedInputButton" data-command="select_group" title="Выбрать раздел для ссылки этого меню">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_select_group" /></svg>
+                    </div>
+                    <div class="CommonAdminLayoutButtonedInputButton" data-command="select_infopage" title="Выбрать инфостраницу для ссылки этого меню">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_select_infopage" /></svg>
+                    </div>
+                    <div class="CommonAdminLayoutButtonedInputButton" data-command="select_group_alias" title="Динамичесое меню из дочерних разделов выбранного раздела">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_tree" /></svg>
+                    </div>
+                    <div class="CommonAdminLayoutButtonedInputButton" data-command="select_block" title="Заменить этот пункт блоком контента">
+                        <svg><use xlink:href="#{{getCssClass}}_icon_block" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="CommonAdminLayoutFormRow">
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25">
+                <label for="a{{MD}}sort_order">Сортировка</label>
+                <input type="text" autocomplete="off" id="a{{MD}}sort_order" data-field="sort_order" data-monitor="sort_order,c" />               
+            </div>    
+            <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-25 CommonAdminLayoutSplitCheck">               
+                <input type="checkbox" id="a{{MD}}visible" data-field="visible" data-monitor="visible,c" />             
+                <label for="a{{MD}}visible" >Видимый</label>
+            </div>                       
+        </div>        
+    </div>   
+</div>

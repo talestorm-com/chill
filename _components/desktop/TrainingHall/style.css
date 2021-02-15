@@ -1,0 +1,226 @@
+.EFOBackdrop.DesktopTraininghallBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopTraininghallWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopTraininghallTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopTraininghallFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopTraininghallWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopTraininghallHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopTraininghallHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopTraininghallControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopTraininghallControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopTraininghallRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopTraininghallRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopTraininghallRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopTraininghallCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopTraininghallCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopTraininghallTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em;
+}
+
+.DesktopTraininghallPublishedCellContent.DesktopTraininghallCommonDisplayWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesktopTraininghallTableBoolDisplay.DesktopTraininghallTableBoolDisplayState1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallOrderModeDisplay1 {
+    color: blueviolet;
+}
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallOrderModeDisplay2 {
+    color: dodgerblue;
+}
+
+.DesktopTraininghallUserPhoneCellContent.DesktopTraininghallCommonDisplayWrap a,
+.DesktopTraininghallUserEmailCellContent.DesktopTraininghallCommonDisplayWrap  a {
+    color: #00acc8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+
+.DesktopTraininghallTableBoolDisplay {
+    margin: .1em auto;
+}
+
+.DesktopTraininghallPositionCellContent.DesktopTraininghallCommonDisplayWrap {
+    text-align: center;
+}
+
+.DesktopTraininghallStatusCellContent.DesktopTraininghallCommonDisplayWrap {
+    padding: 0;
+}
+
+.DesktopTraininghallStatusCellContent.DesktopTraininghallCommonDisplayWrap select {
+    box-sizing: border-box;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    background: rgba(255,255,255,0);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.DesktopTraininghallStatusCellContent.DesktopTraininghallCommonDisplayWrap select {
+    font-family: inherit;
+    font-size: inherit;
+    padding-left:.5em;
+}
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallStatusDisplay0 select {
+    color: dodgerblue;
+}
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallStatusDisplay1 select {
+    color: navy;
+}
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallStatusDisplay2 select {
+    color: green;
+}
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallStatusDisplay3 select {
+    color: #00acc8;
+}
+
+.DesktopTraininghallCommonDisplay.DesktopTraininghallStatusDisplay4 select {
+    color: dimgray;
+    text-decoration: line-through;
+}
+
+.DesktopTraininghallMaountCellContent.DesktopTraininghallCommonDisplayWrap .DesktopTraininghallCommonDisplay {
+    text-align: right;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+
+.DesktopTraininghallMaountCellContent.DesktopTraininghallCommonDisplayWrap {
+    padding-right: 1em;
+}
+
+
+.DesktopTraininghallCostCellContent.DesktopTraininghallCommonDisplayWrap {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.DesktopTraininghallQtyCellContent.DesktopTraininghallCommonDisplayWrap {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.DesktopTraininghallPublishedCellContent.DesktopTraininghallCommonDisplayWrap {
+    text-align: right;
+    display: block;
+    padding-right: 1em;
+}
+
+.DesktopTraininghallCreatedCellContent.DesktopTraininghallCommonDisplayWrap {
+    padding-right: 1em;
+    text-align: right;
+}
+
+.DesktopTraininghallCommonDisplay {}
+
+.DesktopTraininghallUpdatedCellContent.DesktopTraininghallCommonDisplayWrap {
+    padding-right: 1em;
+    text-align: right;
+}
+
+
+
+.DesktopTraininghallUpdatedCellContent.DesktopTraininghallCommonDisplayWrap {
+    text-align: left;
+}

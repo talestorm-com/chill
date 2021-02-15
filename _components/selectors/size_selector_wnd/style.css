@@ -1,0 +1,91 @@
+.CommonAdminLayoutForm.SelectorsSize_selector_wndForm {
+    padding: 0;
+}
+
+.SelectorsSize_selector_wndCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.SelectorsSize_selector_wndCommonDisplayWrap {
+    box-sizing: border-box;
+    padding: 0 .3em;
+    overflow: hidden;
+}
+
+.SelectorsSize_selector_wndGuidCellContent {}
+
+.SelectorsSize_selector_wndGuidCellContent .SelectorsSize_selector_wndCommonDisplay {
+    font-family: monospace;
+    color: dimgray;
+}
+
+.SelectorsSize_selector_wndFIOCellContent {}
+
+.SelectorsSize_selector_wndFIOCellContent .SelectorsSize_selector_wndCommonDisplay {
+    text-align: right;
+    color: darkmagenta;
+}
+
+.SelectorsSize_selector_wndFIOCellContent {
+    padding-right: 1em;
+}
+
+.ADVTableCellWrapperPathlarro .SelectorsSize_selector_wndFIOCellContent .SelectorsSize_selector_wndCommonDisplay  {
+    color:#00acc8
+
+}
+
+.ADVTableHeaderRowReplacer.SelectorsSize_selector_wndHeaderReplacer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SelectorsSize_selector_wndSelectorAllItem {
+    margin: .1em auto;
+    width: .9em;
+    height: .9em;
+    outline: 1px solid #00acc8;
+    cursor: pointer;
+}
+
+.CommonAdminLayoutForm.SelectorsSize_selector_wndForm input[type=checkbox] {
+    display: none;
+}
+.CommonAdminLayoutForm.SelectorsSize_selector_wndForm input[type=checkbox]+label{
+    display:block;margin:0;padding:0;cursor:pointer;width:1.1em;height:1.1em;outline-offset:0;
+    outline:1px solid #00acc8;margin:.1em;transition:all .3s;box-sizing:border-box;
+}
+.CommonAdminLayoutForm.SelectorsSize_selector_wndForm input[type=checkbox]:checked+label{
+    border:1px solid white;background:#00acc8;   
+}
+
+.SelectorsSize_selector_wndSelectorCellContent.SelectorsSize_selector_wndCommonDisplayWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EFOFooterButton.SelectorsSize_selector_wndFooterButton.SelectorsSize_selector_wndpullLeft {
+    float: left;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.EFOFooterButton.SelectorsSize_selector_wndFooterButton.SelectorsSize_selector_wndpullLeft.SelectorsSize_selector_wndCrimsonBtn {
+    color: crimson;
+    border: 1px solid crimson;
+}
+
+.EFOFooterButton.SelectorsSize_selector_wndFooterButton.SelectorsSize_selector_wndpullLeft.SelectorsSize_selector_wndCrimsonBtn:hover {
+    background: crimson;
+    color: white;
+}
+

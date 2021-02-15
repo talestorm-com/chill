@@ -1,0 +1,122 @@
+.EFOBackdrop.DesktopRequestsProfileBackdrop {
+    position: static;
+}
+
+.EFOWindow.DesktopRequestsProfileWindow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.EFOTitle.DesktopRequestsProfileTitle {
+    display: none;
+}
+
+.EFOFooter.DesktopRequestsProfileFooter {
+    display: none;
+}
+
+.EFOWindowContent.DesktopRequestsProfileWindowContent {
+    position: static;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    /* padding-top: 3.5em; */
+}
+
+.ADVTableHeaderRowReplacer.DesktopRequestsProfileHeaderReplacer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.ADVTableHeaderRowReplacer.DesktopRequestsProfileHeaderReplacer svg {
+    width: 100%;
+    height: 100%;
+    fill: #00acc8;
+}
+
+.DesktopRequestsProfileControlButton {
+    box-sizing: border-box;
+    padding: .5em;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.DesktopRequestsProfileControlButton:hover {
+    background: whitesmoke;
+}
+
+
+.DesktopRequestsProfileRemoveButton {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 0;
+    padding: .3em;
+    transition: all .3s;
+}
+
+.DesktopRequestsProfileRemoveButton svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+}
+
+.DesktopRequestsProfileRemoveButton:hover {
+    padding: .2em;
+}
+
+.DesktopRequestsProfileCommonDisplay {
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.DesktopRequestsProfileCommonDisplayWrap {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 .3em;
+}
+
+
+.DesktopRequestsProfileTableBoolDisplay {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    outline-offset: 0;
+    outline: 1px solid #00acc8;
+    margin: .1em;
+}
+
+.DesktopRequestsProfilePublishedCellContent.DesktopRequestsProfileCommonDisplayWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DesktopRequestsProfileTableBoolDisplay.DesktopRequestsProfileTableBoolDisplayState1 {
+    border: 1px solid white;
+    background: #00acc8;
+}
+
+.DesktopRequestsProfileDisplayColor {
+    box-sizing: border-box;
+    margin: .1em auto;
+    width: 1em;
+    height: 1em;
+    outline: 1px solid silver;
+}
+
+.DesktopRequestsProfileSortCellContent.DesktopRequestsProfileCommonDisplayWrap {
+    text-align: right;
+    padding-right: 1em;
+}

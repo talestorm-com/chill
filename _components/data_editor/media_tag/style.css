@@ -1,0 +1,72 @@
+.dummy{
+    backgroung:yellow;
+}
+
+.CommonAdminLayoutForm.Data_editorMedia_tagForm {
+    padding: 0;
+    padding-top: 4.5em;
+    position: relative;
+}
+
+.Data_editorMedia_tagMainDataPanel {
+    box-sizing: border-box;
+    height: 4.5em;
+    padding: .1em .5em;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    position: absolute;
+    border-bottom: 1px solid dimgray;
+}
+
+.Data_editorMedia_tag_table_area {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorMedia_tagMainDataPanelInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.Data_editorMedia_tagMainDataPanelInner .CommonAdminLayoutFormRow {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100%;
+}
+
+.Data_editorMedia_taguIdCellContent.Data_editorMedia_tagCommonDisplayWrap {
+    padding: 0 .5em;
+    color: #00acc8;
+}
+
+.Data_editorMedia_taguIdCellContent.Data_editorMedia_tagCommonDisplayWrap .Data_editorMedia_tagCommonDisplay {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.Data_editorMedia_tagInputWrapper {
+    box-sizing: border-box;
+    padding: 0;
+    height: 2em;
+}
+
+.Data_editorMedia_tagInputWrapper input[type=text] {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 .5em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: all .3s;
+}
+
+.Data_editorMedia_tagInputWrapper input[type=text]:focus {
+    border: 1px solid #00acc8;
+    background: white;
+}
+

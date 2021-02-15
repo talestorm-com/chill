@@ -1,0 +1,34 @@
+<div class="{{getCssClass}}-list-item {{getCssClass}}-list-item-style-{{get_index}} {{getCssClass}}-list-type_{{content_type}} {{getCssClass}}data-item-enabled-value{{enabled}}" data-id="{{id}}" data-content-id="{{content_id}}">
+    <div class="{{getCssClass}}-list-item-inner">
+        {{#is_trailer}}
+        {{>ctTRAILER}}
+        {{/is_trailer}}
+        {{#is_video}}
+        {{>ctVIDEO}}
+        {{/is_video}}
+        {{#is_soap}}
+        {{>ctSOAP}}
+        {{/is_soap}}
+        {{#is_season}}
+        {{>ctSEASON}}
+        {{/is_season}}
+        {{#is_series}}
+        {{>ctSERIES}}
+        {{/is_series}}
+        {{#is_banner}}
+        {{>ctBANNER}}
+        {{/is_banner}}
+        {{#is_collection}}
+        {{>ctCOLLECTION}}
+        {{/is_collection}}
+        {{#is_gif}}
+        {{>ctGIF}}
+        {{/is_gif}}
+        {{#is_text}}
+        {{>ctTEXT}}
+        {{/is_text}}
+    </div>
+    <div class="{{getCssClass}}-lent-remove-command" data-id="{{id}}" data-command="remove">
+        <svg><use xlink:href="#{{getCssClass}}_icon_remove" /></svg>
+    </div>
+</div>

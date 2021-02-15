@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />                  
+            <property in="company_name" filters="Strip,Trim,NEString" />
+            <property in="company_address" filters="Strip,Trim,NEString" />                                                
+            <property in="requisites" filters="Strip,Trim,NEString" /> 
+            <property in="position_name" filters="Strip,Trim,NEString" />      
+            <property in="position_cost" filters="FloatMore0" />      
+            <property in="nds_pc" filters="FloatMore0,Default0" />      
+            <property in="nds_eur" filters="FloatMore0,Default0" />                                                                                                                                         
+            <property in="status" filters="IntMore0,DefaultNull" />                                      
+        </export>
+    </node>    
+</root>

@@ -1,0 +1,21 @@
+<form method="POST" enctype="multipart/form-data" action="/admin/Import/API" target="{{get_target_frame_name}}">
+    <input type="hidden" name="callback" value="{{getCommonCallbackName}}"/>
+    <div class="{{getCssClass}}Intro"><div class="{{getCssClass}}IntroInner">Выберите файл или перетащите его на кнопку.<br>            
+        </div></div>
+    <div class="{{getCssClass}}UploadWrapper">
+        <div class="{{getCssClass}}Uploadbutton">
+            <div class="{{getCssClass}}UploadText">Выберите файл</div>
+            <input type="file" name="{{getCssClass}}" />
+        </div>
+    </div>
+    <div class="{{getCssClass}}CheckboxRow">
+        <input type="hidden" name="action" value="storage" />        
+    </div>
+    <div class="{{getCssClass}}submitRow">
+        <div class="{{getCssClass}}Button" data-command="submit">Отправить</div>
+    </div>
+    <div class="{{getCssClass}}DataLogWrapper">
+        <textarea data-role="data-log" readonly="readonly" disabled="disabled"></textarea>
+    </div>
+
+</form>

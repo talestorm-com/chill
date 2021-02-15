@@ -1,0 +1,20 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="{{getCssClass}}NavigationPanel">
+        <div class="{{getCssClass}}NavigationPanelInner">
+            <input type="text" data-role="path" value="/" readonly="readonly" data-command="refresh" />
+            <div class="{{getCssClass}}panel_button" data-command="to_root">
+                <svg><use xlink:href="#{{getCssClass}}_icon_root" /></svg>
+            </div>
+            <div class="{{getCssClass}}panel_button" data-command="to_up">
+                <svg><use xlink:href="#{{getCssClass}}_icon_up" /></svg>
+            </div>
+            <div class="{{getCssClass}}panel_button" data-command="new_dir">
+                <svg><use xlink:href="#{{getCssClass}}_icon_new_dir" /></svg>
+            </div>
+            <div class="{{getCssClass}}panel_button" data-command="upload" data-role="upload_button">
+                <svg><use xlink:href="#{{getCssClass}}_icon_upload" /></svg>
+            </div>
+        </div>
+    </div>
+    <div class="{{getCssClass}}_files_area" data-role="list" ></div>
+</div>

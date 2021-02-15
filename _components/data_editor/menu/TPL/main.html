@@ -1,0 +1,38 @@
+<div class="CommonAdminLayoutFixedForm {{getCssClass}}Form">
+    <div class="CommonAdminLayoutEditorPasswordStub">        
+        <div class="CommonAdminLayoutEditorPasswordStubinner">        
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfakelogin0">login</label>
+            <label for="{{MD}}commonfakelogin0">логин</label>
+            <label for="{{MD}}commonfakelogin0">email</label>
+            <label for="{{MD}}commonfalepassword">password</label>
+            <label for="{{MD}}commonfalepassword">Пароль</label>        
+            <input type="text" autocomplete="off" name="login" data-fake="login" id="{{MD}}commonfakelogin0" />
+            <input type="password" autocomplete="off" name="password" id="{{MD}}commonfalepassword" />
+            <input type="text" name="login"  autocomplete="off" id="{{MD}}commonfakelogin" />
+            <input type="text" autocomplete="off" id="a{{MD}}00login" data-field="xxlogin" data-monitor="xxlogin" />
+        </div>
+    </div>
+    <div class="CommonAdminLayoutFixedPanel {{getCssClass}}FixedPanel">
+        <div class="CommonAdminLayoutFormInner">
+            <div class="CommonAdminLayoutFormRow">
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                    <label for="a{{MD}}alias" class="CommonAdminLayoutLabelIsRequired">Алиас</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}alias" data-field="alias" data-monitor="alias" />
+                    <input type="hidden" data-field="id" />
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-35">
+                    <label for="a{{MD}}description" class="CommonAdminLayoutLabelIsRequired">Название</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}description" data-field="description" data-monitor="description" />               
+                </div>           
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-35">
+                    <label for="a{{MD}}css_class" class="">css</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}css_class" data-field="css_class" data-monitor="css_class" />               
+                </div>           
+            </div>
+        </div>
+    </div>
+    <div class="CommonAdminLayoutFullHeightPanel" data-role="menu_container">        
+        <div class="CommonAdminLayoutFullHeightPanelInner {{getCssClass}}TreeZone" data-role="tree" data-field="tree"></div>        
+    </div>    
+</div>

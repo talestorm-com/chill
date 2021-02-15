@@ -1,0 +1,38 @@
+<div class="{{getCssClass}}LInner">
+    <form method="POST" action="/login/Dummy?pa=1" target="a{{MD}}f" data-onsubmit="return false;">
+        <div class="{{getCssClass}}Row">
+            <div class="{{getCssClass}}RowSplit {{getCssClass}}RowSplit100">
+                <label for="a{{MD}}login">Ваш email</label>
+                <div class="{{getCssClass}}InputWrapper" data-role="login_wrap">
+                    <input type="text" id="a{{MD}}login" data-field="login" name="login" data-monitor="login"  data-keep-monitor-propagation="1" data-prevent="0"/>
+                    <div class="{{getCssClass}}RowIcon">
+                        <svg ><use xlink:href="#{{getCssClass}}_icon_mail" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}Row">
+            <div class="{{getCssClass}}RowSplit {{getCssClass}}RowSplit100">
+                <label for="a{{MD}}password">Пароль</label>
+                <div class="{{getCssClass}}InputWrapper" data-role="password_wrap">
+                    <input type="password" id="a{{MD}}password" data-field="password" name="password" data-monitor="password"  data-keep-monitor-propagation="1" data-prevent="0" />
+                    <div class="{{getCssClass}}RowIcon">
+                        <svg ><use xlink:href="#{{getCssClass}}_icon_password" /></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="{{getCssClass}}Row">
+            <div class="{{getCssClass}}RowSplit {{getCssClass}}RowSplit50">
+                <a href="#" data-command="restore">Я забыл пароль</a>
+            </div>
+            <div class="{{getCssClass}}RowSplit {{getCssClass}}RowSplit50 {{getCssClass}}alignRight">
+                <a href="/Register" >Зарегистрироваться</a>
+            </div>
+        </div>
+        <div style="display:none">
+            <input type="submit" id="a{{MD}}submit" name="submit" data-role="submit" />
+            <iframe name="a{{MD}}f" id="a{{MD}}f"></iframe>
+        </div>
+    </form>
+</div>

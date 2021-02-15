@@ -1,0 +1,40 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    <div class="{{getCssClass}}MainDataPanel">
+        <div class="{{getCssClass}}MainDataPanelInner">
+            <div class="CommonAdminLayoutFormRow">
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                    <label for="a{{MD}}id">id</label>
+                    <input type="text" readonly="readonly" data-field="id" id="a{{MD}}id"/>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-60">
+                    <label for="a{{MD}}tag">Tag</label>
+                    <input type="text"  data-field="tag" id="a{{MD}}tag"/>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300">
+                    <div class="{{getCssClass}}ImagePreview" data-role="preview_outer">
+                        <div class="{{getCssClass}}ImagePreviewElement" data-role="preview_wrap">
+                            <div class="{{getCssClass}}ImagePreviewElementGraph" data-role="preview"><img data-role="image"  data-field="image_name"/></div>
+                            <input type="file" accept="image/*" data-role="file" />
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="CommonAdminLayoutMetaRowsBlock">
+                    <div class="CommonAdminLayoutMetaRow">
+                        <label for="a{{MD}}meta_title">title</label>
+                        <input type="text" data-field="meta_title" id="a{{MD}}meta_title" placeholder="title"/>
+                    </div>
+                    <div class="CommonAdminLayoutMetaRow">
+                        <label for="a{{MD}}meta_description">description</label>
+                        <input type="text" data-field="meta_description" id="a{{MD}}meta_description" placeholder="description"/>
+                    </div>
+                    <div class="CommonAdminLayoutMetaRow">
+                        <label for="a{{MD}}additional_content">content</label>
+                        <input type="text" data-field="additional_content" id="a{{MD}}additional_content" placeholder="content"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="{{getCssClass}}_table_area" data-role="table" data-field="name"></div>
+</div>

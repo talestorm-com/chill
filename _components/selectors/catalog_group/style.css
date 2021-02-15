@@ -1,0 +1,13 @@
+.dummy{
+    background:yellow;
+}
+
+
+.EFODataTreeNodeWrapper.SelectorsCatalog_groupselected>.EFODataTreeNodeHeader>.EFODataTreeNodeName {
+    background: #00acc8;
+    color: white;
+}
+
+.SelectorsCatalog_groupNodeDisabled .EFODataTreeNodeIcon svg {
+    fill: #b1b1b1;
+}

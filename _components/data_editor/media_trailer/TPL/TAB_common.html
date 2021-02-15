@@ -1,0 +1,58 @@
+<div class="{{getCssClass}}TabInner">
+    <div class="{{getCssClass}}CommonWrapper">  
+        <div class="{{getCssClass}}TopPanel">
+            <div class="CommonAdminLayoutFormRow">            
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-10">
+                    <label for="a{{MD}}id" class="CommonAdminLayoutLabelIsRequired">id</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}id" data-field="id" readonly="readonly" />       
+                    <input type="hidden" data-field="path" value="VIDEO/trailers" data-fielddefault="VIDEO/trailers" />
+                    <input type="hidden" data-field="content_id" data-fielddefault="" />
+                </div>            
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" style="display: none">
+                    <label for="a{{MD}}sort" >Порядок</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}sort" data-field="sort" data-monitor="sort"  data-fielddefault="0"/>
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox" id="a{{MD}}enabled" data-fielddefault="0" data-field="enabled" />
+                    <label for="a{{MD}}enabled">Включено</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck">
+                    <input type="checkbox" id="a{{MD}}vertical" data-fielddefault="0" data-field="vertical" />
+                    <label for="a{{MD}}vertical">Вертикальный</label>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20 CommonAdminLayoutSplitCheck" style="display: none">
+                    <input type="checkbox" id="a{{MD}}free" data-fielddefault="0" data-field="free" />
+                    <label for="a{{MD}}free">Бесплатно</label>
+                </div>
+            </div>
+            <div class="CommonAdminLayoutFormRow"> 
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" style="display: none">
+                    <label for="a{{MD}}series" >Серий</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}series" data-field="series_count" data-monitor="positive_int"  data-fielddefault="0"/>
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-20" style="display: none">
+                    <label for="a{{MD}}seasons" >Сезонов</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}seasons" data-field="seasons_count" data-monitor="positive_int"  data-fielddefault="0"/>
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300" style="display: none">
+                    <label for="a{{MD}}tracklang" data-command="select_tracklang">Аудиодорожка</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}tracklang" data-field="track_language_name" data-command="select_tracklang" readonly="readonly"  />
+                    <input type="hidden" data-field="track_language" />
+                </div>    
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-300" style="display: none">
+                    <label for="a{{MD}}target_url" >Цель / ссылка</label>
+                    <input type="text" autocomplete="off" id="a{{MD}}target_url" data-field="target_url"  />                    
+                </div>                    
+            </div>
+            <div class="CommonAdminLayoutFormRow"> 
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50" style="display: none">
+                    <div data-role="genres" data-field="genres"></div>
+                </div>
+                <div class="CommonAdminLayoutRowSplit CommonAdminLayoutRowSplit-50" style="display: none">
+                    <div data-role="countries" data-field="countries"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

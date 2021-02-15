@@ -1,0 +1,22 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner {{getCssClass}}EFOTabbableContainer EFOTabbableContainer">
+        <div class="EFOTabheaderContainer">
+            <div class="EFOTabheader" data-tabheader="common" data-defaulttabheader="1" >Основное</div>                     
+            <div class="EFOTabheader" data-tabheader="info">Описание</div>  
+            <div class="EFOTabheader" data-tabheader="gallery">Изображения</div>  
+            <div class="EFOTabheader" data-tabheader="meta">Meta</div>  
+            <div class="EFOTabheader" data-tabheader="properties" style="color:crimson;background:gray">Настройки</div>
+            <div class="EFOTabheader" data-tabheader="admin" style="color:crimson;background:gray">Настройки-2</div>
+                      
+        </div>
+        <div class="EFOTabsContainer">
+            <div class="EFOTabBody" data-tab="common">{{>Data_editorCatalog_groupTAB_common}}</div>            
+            <div class="EFOTabBody" data-tab="info">{{>Data_editorCatalog_groupTAB_info}}</div>                        
+            <div class="EFOTabBody" data-tab="gallery">{{>Data_editorCatalog_groupTAB_gallery}}</div>      
+            <div class="EFOTabBody" data-tab="properties">{{>Data_editorCatalog_groupTAB_properties}}</div>
+            <div class="EFOTabBody" data-tab="admin">{{>Data_editorCatalog_groupTAB_admin}}</div>
+            <div class="EFOTabBody" data-tab="meta">{{>Data_editorCatalog_groupTAB_meta}}</div>
+        </div>
+    </div>    
+</div>

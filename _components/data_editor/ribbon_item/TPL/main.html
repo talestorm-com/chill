@@ -1,0 +1,15 @@
+<div class="CommonAdminLayoutForm {{getCssClass}}Form">
+    {{#render_common_template}}chrome_password_stub{{/render_common_template}}    
+    <div class="CommonAdminLayoutFormInner {{getCssClass}}EFOTabbableContainer EFOTabbableContainer">
+        <div class="EFOTabheaderContainer">
+            <div class="EFOTabheader" data-tabheader="common" data-defaulttabheader="1" >Основное</div>               
+            <div class="EFOTabheader" data-tabheader="intro">Intro</div> 
+            <div class="EFOTabheader" data-tabheader="content">Контент</div>            
+        </div>
+        <div class="EFOTabsContainer">
+            <div class="EFOTabBody" data-tab="common">{{>Data_editorRibbon_itemTAB_common}}</div>            
+            <div class="EFOTabBody" data-tab="content">{{>Data_editorRibbon_itemTAB_content}}</div> 
+            <div class="EFOTabBody" data-tab="intro">{{>Data_editorRibbon_itemTAB_intro}}</div> 
+        </div>
+    </div>   
+</div>

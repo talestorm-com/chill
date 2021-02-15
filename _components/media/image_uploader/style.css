@@ -1,0 +1,295 @@
+.CommonAdminLayoutForm.MediaImage_uploaderForm {
+    padding: 0;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.MediaImage_uploaderContent {
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 3.2em;
+}
+
+.MediaImage_uploaderImageList {
+    box-sizing: border-box;
+    overflow: auto;
+    height: 100%;
+}
+
+.MediaImage_uploaderUploadFooter {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3.2em;
+    overflow: hidden;
+    border-top: 1px solid silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 .5em;
+}
+
+.MediaImage_uploaderUploadButton {
+    box-sizing: border-box;
+    background: #00acc8;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #00acc8;
+    height: 2.5em;
+    line-height: 2.5em;
+    transition: all .3s;
+    text-align: center;
+    position: relative;
+}
+
+.MediaImage_uploaderUploadButtonText {
+    font-size: 1.2em;
+}
+
+.MediaImage_uploaderUploadButton:hover {
+    background: white;
+    color: #00acc8;
+}
+
+.MediaImage_uploaderUploadButton input[type=file] {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background: orange;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.MediaImage_uploaderListContentError {
+    box-sizing: border-box;
+    padding: 2em;
+    text-align: center;
+    color: white;
+    background: crimson;
+}
+
+.MediaImage_uploaderUploadFooter.MediaImage_uploaderdisabled {}
+
+.MediaImage_uploaderUploadFooter.MediaImage_uploaderdisabled .MediaImage_uploaderUploadButton {
+    cursor: default;
+    background: silver;
+    border: none;
+    color: #868181;
+}
+
+.MediaImage_uploaderUploadFooter.MediaImage_uploaderdisabled .MediaImage_uploaderUploadButton input[type=file] {
+    display: none;
+}
+
+.EFOWindowContent.MediaImage_uploaderWindowContent,
+.EFOWindowContent.MediaImage_uploaderWindowContent * ,
+.MediaImage_uploaderUploadFooter {
+    user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-drag:none;
+    -webkit-user-drag: none;
+}
+
+.MediaImage_uploaderUploadFooter {
+    background: white;
+}
+
+.MediaImage_uploaderHiddenzone {
+    margin-top: 10em;
+}
+
+
+.MediaImage_uploaderOneImageOuter {
+    width: 20%;
+    max-width: 20em;
+    min-width: 14em;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 1.5em;
+    position: relative;    
+    padding-bottom: 2em;
+    padding-top: .25em;
+    padding-left: .25em;
+    padding-right: 1.5em;
+    padding: 0;
+    padding-right: 1.2em;
+    margin: .5em;
+}
+
+.MediaImage_uploaderOneImageInner {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: .5em;
+    padding-bottom: 2.5em;
+    border: 1px solid silver;
+}
+
+.MediaImage_uploaderOneImageImage {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.MediaImage_uploaderOneImageImage img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.MediaImage_uploaderImageControlPanel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: dimgray;
+    width: 100%;
+    height: 2.5em;
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 0 .25em;
+    box-sizing: border-box;
+}
+
+.MediaImage_uploaderImageContrlPanelInner {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0;
+}
+
+.MediaImage_uploaderImageControlButton {
+    box-sizing: border-box;
+    width: 2em;
+    height: 2em;
+    line-height: 0;
+    overflow: hidden;
+    padding: .25em;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.MediaImage_uploaderImageControlButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+    transition:all .3s;
+}
+
+.MediaImage_uploaderListInnerList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.MediaImage_uploaderImageControlButton:hover{
+    padding: .2em;
+}
+.MediaImage_uploaderImageControlButton:hover svg{
+    fill:#00acc8;
+}
+
+.MediaImage_uploaderWarningInfo {
+    box-sizing: border-box;
+}
+
+.MediaImage_uploaderWarningIntro {
+    color: crimson;
+    font-weight: bold;
+}
+
+ul.MediaImage_uploaderWarningList {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    list-style-position: inside;
+    white-space: nowrap;
+    color: dimgray;
+}
+
+
+.MediaImage_uploaderZoomButton {
+    width: 2.5em;
+    max-width: 2.5em;
+    min-width: 2.5em;
+    margin-left: .25em;
+    height: 2.5em;
+    background: #00acc8;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: .5em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.MediaImage_uploaderZoomButton svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+    transition: all .3s;
+}
+
+.MediaImage_uploaderZoomButton:hover {
+    border: 1px solid #00acc8;
+    background: white;
+}
+
+.MediaImage_uploaderZoomButton:hover svg{
+    fill:#00acc8;
+} 
+
+
+.MediaImage_uploaderDropTargetImage.EFODropTarget {
+    display: none;
+}
+
+.MediaImage_uploaderDRAGGING .MediaImage_uploaderDropTargetImage.EFODropTarget {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    width: 2.2em;
+    height: 100%;    
+    margin-right: -1em;
+}
+
+.MediaImage_uploaderDropTargetImage.EFODropTarget.EFODragOver {
+    transform: none;    
+}
+
+.MediaImage_uploaderDropTargetImage.EFODropTarget.EFODragOver:after{
+    content:' ';
+    position:absolute;
+    top:0;
+    left:50%;
+    box-sizing:border-box;
+    width:2px;
+    border-right:2px solid black;
+    height:100%;
+    margin-left:-1px;
+
+
+} 

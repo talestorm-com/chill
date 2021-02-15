@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="context" filters="Strip,Trim,NEString" />
+            <property in="owner_id" filters="Strip,Trim,NEString" />
+            <property in="image" filters="Strip,Trim,NEString" />
+            <property in="title" filters="Strip,Trim,NEString,DefaultNull" />   
+            <property in="url" filters="Strip,Trim,NEString,DefaultNull" />         
+            <property in="text" filters="Strip,Trim,NEString,DefaultNull" />         
+        </export>
+    </node>    
+</root>

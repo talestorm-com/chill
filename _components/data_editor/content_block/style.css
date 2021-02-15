@@ -1,0 +1,184 @@
+.Data_editorContent_blockEditorInputWrapper {
+    height: 20em;
+    box-sizing: border-box;
+    padding-top: 3.5em;
+    position: relative;
+    padding: 0;
+    padding-top: 3.5em;
+}
+
+.Data_editorContent_blockEditorInputWrapper .ql-toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5em;
+    box-sizing: border-box;
+    background: white;
+}
+
+.Data_editorContent_blockEditorInput.ql-container.ql-snow {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.Data_editorContent_blockImagelistInputWrapper {
+    height: 30em;
+}
+
+
+
+.CommonAdminLayoutForm.Data_editorContent_blockForm {
+    padding: 0;
+}
+
+.CommonAdminLayoutForm.Data_editorContent_blockForm .CommonAdminLayoutFormInner {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 4.5em;
+    padding-bottom: 2em;
+}
+
+.Data_editorContent_blockTopPanel {
+    box-sizing: border-box;
+    height: 4.5em;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Data_editorContent_blockContentPanel {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Data_editorContent_blockeditor_pane {
+    display: none;
+}
+
+.Data_editorContent_blockBottomPanel {
+    box-sizing: border-box;
+    padding: 0 .25em;
+    height: 2em;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.Data_editorContent_blockBottomPanelInner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 2em;
+}
+
+.Data_editorContent_blockBottomPanelInner input[type=checkbox] {
+    display: none;
+}
+
+.Data_editorContent_blockBottomPanelInner input[type=checkbox]+label {
+    box-sizing:border-box;
+    margin:0;
+    padding:.1em;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap:nowrap;
+    cursor:pointer;
+}
+
+.Data_editorContent_blockBottomPanelInner input[type=checkbox]+label:before{
+    display:block;
+    width:1.2em;
+    height:1.2em;
+    content:' ';
+    outline-offset:0;
+    outline:1px solid #00acc8;
+    box-sizing:border-box;
+    transition:all .3s;
+    margin-right:.5em;
+}
+.Data_editorContent_blockBottomPanelInner input[type=checkbox]:checked+label:before{
+    border:1px solid white;
+    background:#00acc8;
+}
+
+.Data_editorContent_blockContentPanel>.CommonAdminLayoutFormRow {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 1.5em;
+}
+
+.CommonAdmonLayoutDivLikeLabel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 .5em;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    height: 1.5em;
+    overflow: hidden;
+    margin: 0;
+}
+
+.Data_editorContent_blockeditor_pane {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-100.Data_editorContent_blockEditorInputWrapperMemo {
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-100.Data_editorContent_blockEditorInputWrapperMemo textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-100.Data_editorContent_blockEditorInputWrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-100.Data_editorContent_blockEditorInputWrapperMemo .CodeMirror.cm-s-default {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.CommonAdminLayoutRowSplit.CommonAdminLayoutRowSplit-100.Data_editorContent_blockEditorInputWrapper {
+    padding-top: 0;
+    position: relative;
+}
+.Data_editorContent_blockEditorPaneSW {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.CommonAdminLayoutForm.Data_editorContent_blockForm .CommonAdminLayoutFormInner {
+    padding-bottom: 0;
+}

@@ -1,0 +1,11 @@
+{{#items}}
+<div class="{{getCssClass}}TaglistTagWrapper EFODraggable" data-id="{{id}}" data-efodragtype="TAGLISTTAG_{{instance_id}}">
+    <div class="{{getCssClass}}TagListTagInner" data-id="{{id}}">
+        <div class="{{getCssClass}}TagListTagText">{{text}}</div>
+        <div class="{{getCssClass}}TagListTagRemove" data-command="taglist_remove_tag" data-id="{{id}}">
+            <svg><use xlink:href="#a{{getCssClass}}_icon_cross" /></svg>
+        </div>
+    </div>
+    <div class="{{getCssClass}}TaglistDropTarget EFODropTarget" data-efodroptypes="TAGLISTTAG_{{instance_id}}"></div>
+</div>
+{{/items}}

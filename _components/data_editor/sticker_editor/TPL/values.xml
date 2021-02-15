@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>    
+    <node>
+        <import>
+            <property in="dummy" filters="DefaultNull" />
+        </import>
+        <export>
+            <property in="id" filters="IntMore0,DefaultNull" />                          
+            <property in="name" filters="Strip,Trim,NEString" />
+            <property in="cdn_id" filters="Strip,Trim,NEString,DefaultEmptyString" />
+            <property in="cdn_url" filters="Strip,Trim,NEString,DefaultEmptyString" />            
+        </export>
+    </node>    
+</root>
