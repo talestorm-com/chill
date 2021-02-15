@@ -1,0 +1,1 @@
+<link rel="stylesheet" type="text/css" href="{$asset->url}" data-id="{$asset->asset_key}" />

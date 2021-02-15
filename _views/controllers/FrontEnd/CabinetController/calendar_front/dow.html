@@ -1,0 +1,37 @@
+{{#dows}}
+<div class="{{MC}}DayOfWeek {{MC}}DayOfWeek{{index}}">
+    <div class="{{MC}}DayOfWeekHeader">
+        <div class="{{MC}}DayOfWeekHeaderText">{{text}}</div>        
+        <div class="{{MC}}DayOfWeekHeaderButton">
+            <div class="{{MC}}DayOfWeekHeaderButtonCommand"  data-command="add_dow_record" data-index="{{index}}">
+                <svg><use xlink:href="#{{MC}}_icon_plus"/></svg>
+            </div>
+        </div>        
+    </div>
+    <div class="{{MC}}DayOfWeekBody">
+        <div class="{{MC}}DayOfWeekBodyInner" id="{{MC}}-dow-body-{{index}}">
+            <div class="{{MC}}_item_list_dow {{MC}}-no-items">
+                {{#dow_items}}
+                {{>one_dow_item}}
+                {{/dow_items}}
+                {{^dow_items}}                
+                <div class="{{MC}}-no-items-inner">
+                    Расписание на {{text_r}} отсутсвует.                    
+                </div>                
+                {{/dow_items}}
+            </div>
+
+            <div class="{{MC}}-add-inside">
+                <div class="{{MC}}-add-inner" data-command="add_dow_record" data-index="{{index}}">
+                    <div class="{{MC}}-add-inner-icon" >
+                        <div class="{{MC}}-add-inner-icon-w">                                
+                            <svg><use xlink:href="#{{MC}}_icon_plus"/></svg>
+                        </div>
+                    </div>
+                    <a href="#" >Добавить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/dows}}

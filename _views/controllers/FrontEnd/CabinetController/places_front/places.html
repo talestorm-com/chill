@@ -1,0 +1,31 @@
+{{#items}}
+<div class="{{MC}}_trainer_hole_wrapper">
+    <div class="{{MC}}_trainer_hole_inner">
+        <div class="{{MC}}_trainer_hole_image">
+            {{#has_default_image}}
+            <img src="/media/training_hall/{{id}}/{{default_image}}.SW_250H_250CF_1.jpg" />
+            {{/has_default_image}}
+            {{^has_default_image}}
+            <img src="/media/fallback/1/training_hall.SW_250H_250CF_1.jpg" />
+            {{/has_default_image}}
+        </div>
+        <div class="{{MC}}_trainer_hole_texts">
+            <div class="{{MC}}_trainer_hole_name">{{name}}</div>
+            <div class="{{MC}}_trainer_hole_address">{{address}}</div>
+        </div>
+        <div class="{{MC}}_trainer_hole_remover" data-id="{{id}}" data-command="remove_hole">
+            <svg><use xlink:href="#{{MC}}_icon_cross" /></svg>
+        </div>
+    </div>
+</div>
+{{/items}}
+{{^items}}
+<div class="{{MC}}_trainer_hole_empty">
+    <div class="{{MC}}_trainer_hole_empty_text">
+        Не выбрано ни одного зала, Вы не сможете принимать заявки на тренировки.
+    </div>
+</div>
+{{/items}}
+<div class="{{MC}}_trainer_hole_add_panel">
+    <div class="{{MC}}_trainer_add_button" data-command="add_place">Добавить</div>
+</div>

@@ -1,0 +1,1 @@
+<script data-id="{$asset->asset_key}">{$asset->text}</script>

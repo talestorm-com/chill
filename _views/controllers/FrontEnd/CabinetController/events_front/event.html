@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th>Пользователь</th>
+            <th>Зал</th>
+            <th>Тренер</th>
+            <th>Тренировка</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Статус</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#events}}
+        <tr>
+            <td><div>{{client}}</div><div>{{client_phone}}</div></td>
+            <td><div>{{hole}}</div><div>{{hole_address}}</div></td>
+            <td><div>{{trainer}}</div><div>{{trainer_phone}}</div></td>
+            <td>{{sport}}</td>
+            <td>{{date}}</td>
+            <td>{{time}}</td>
+            <td>{{state}}</td>
+        </tr>
+        {{/events}}
+    </tbody>
+</table>

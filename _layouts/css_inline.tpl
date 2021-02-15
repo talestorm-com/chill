@@ -1,0 +1,1 @@
+<style type="text/css" data-id="{$asset->asset_key}">{$asset->text}</style>

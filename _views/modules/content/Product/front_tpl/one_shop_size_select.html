@@ -1,0 +1,20 @@
+<div class="ProductAvailabilityBlockOneShopSizeSelect" data-shop-id="{{set_current_shop}}{{id}}">
+    <div class="ProductAvailabilityBlockOneShopSizeSelectSizeHeader">
+        <div class="ShopName">{{name}}</div>
+        <div class="ShopAddress">{{address}} <a href="/Map">На карте</a></div>
+    </div>
+    <div class="ProductAvailabilityBlockOneShopSizeSelectSizes">
+        <div class="ProductAvailabilityBlockOneShopSizeSelectSizesRow">
+        {{#sl}}        
+        <div class="ProductAvailabilityBlockOneShopSizeColumn {{#is_size_selected}}selected{{/is_size_selected}} {{^is_size_available}}ProductAvailabilityBlockOneShopSizeColumnDisabled{{/is_size_available}}" data-size="{{id}}">
+            {{#items}}
+            <div class="ProductAvailabilityBlockOneShopSizeColumnCell"><div class="SizeCellValue">{{.}}</div></div>
+            {{/items}}            
+        </div>
+        {{/sl}}
+        </div>
+    </div>
+    <div class="ProductAvailabilityBlockOneShopHoldButton">
+        <div class="ProductAvailabilityButton" data-command="hold_in_shop" data-shop-id="{{id}}">Забронировать</div>
+    </div>
+</div>

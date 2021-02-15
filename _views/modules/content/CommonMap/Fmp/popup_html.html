@@ -1,0 +1,22 @@
+<div class="main_page_map_popup">            
+    <div class="main_page_map_popup_inner">
+        <div class="main_page_map_popup_inner_flex">
+            <div class="main_page_map_popup_image">
+                {{#has_default_image}}
+                <img src="/media/training_hall/{{id}}/{{default_image}}.SW_250H_250CF_1.jpg" />
+                {{/has_default_image}}
+                {{^has_default_image}}
+                <img src="/media/fallback/1/training_hall.SW_250H_250CF_1.jpg" />
+                {{/has_default_image}}
+            </div>
+            <div class="main_page_map_popup_image_texts">
+                <div class="main_page_map_popup_texts_name">{{name}}</div>
+                <div class="main_page_map_popup_texts_address">{{address}}</div>
+            </div>
+        </div>
+        <div class="main_page_map_popup_panel">
+            <div class="main_page_map_popup_button" data-command="select" data-id="{{id}}">Выбрать</div>
+            <a href="/Place/{{id}}" class="main_page_map_popup_button">Подробнее</a>            
+        </div>
+    </div>   
+</div>

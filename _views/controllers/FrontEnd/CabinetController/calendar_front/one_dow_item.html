@@ -1,0 +1,15 @@
+<div class="{{MC}}-one-datum-item" data-time="{{uid}}">
+    <div class="{{MC}}-one-datum-inside">
+        <div class="{{MC}}time_start">
+            <input type="text" readonly="readonly" value="{{time_str}}" data-id="{{uid}}" data-index="{{index}}" placeholder="10:00" data-monitor="start" />
+        </div>
+        <div class="{{MC}}time_end">
+            <input type="text" readonly="readonly" value="{{end_time}}" data-id="{{uid}}" data-index="{{index}}" placeholder="11:00" data-monitor="end"/>
+        </div>
+        <div class="{{MC}}remove">
+            <div class="{{MC}}RemoveButton" data-id="{{uid}}" data-command="remove_time" data-index="{{index}}">
+                <svg><use xlink:href="#{{MC}}_icon_cross" /></svg>
+            </div>
+        </div>
+    </div>
+</div>

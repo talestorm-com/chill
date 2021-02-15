@@ -1,0 +1,1 @@
+<script src="{$asset->url}" {if $asset->async} async {/if} data-id="{$asset->asset_key}"></script>

@@ -1,0 +1,50 @@
+<tr id="BasketDriverBasketRowPartrow{{hash}}">
+    <td class="BasketMobileCell" colspan="7">
+        <div class="BasketMLineWrapper BasketMLineName">
+            <div class="BasketCellImageImageWrap">
+                {{#has_image}}
+                <img src="/media/product/{{id}}/{{default_image}}.SW_150H_225CF_1.jpg" />
+                {{/has_image}}
+                {{^has_image}}
+                <img src="/media/fallback/1/product.SW_150H_225CF_1.jpg" />
+                {{/has_image}}
+            </div>
+            <div class="BasketCellArticleName">
+                <div class="BasketCellNameNameWrapper">{{product_name}}</div>
+                <div class="BasketCellWrapperArticleWrapper">
+                    <span class="BasketCellWrapperArticleLabel">Арт.</span><span class="BasketCellWrapperArticleValue">{{product_article}}</span>
+                </div>
+            </div>
+            <div class="BasketCellRemoveWrapper">
+                <div class="BasketRowRemoveBtn" data-id="{{hash}}" data-command="remove_item">
+                    <svg><use xlink:href="#global_cross" /></svg>
+                </div>
+            </div>
+        </div>
+        <div class="BasketMLineWrapper BasketMlineColorCounter">
+            <div class="BasketCellColorWrapper">
+                {{#has_color}}
+                <div class="BasketCellColorValue" style="background:{{color_html}}" title="{{color_name}}"></div>
+                {{/has_color}}
+            </div>
+            <div class="BasketCellSizeWrapper">
+                {{#has_sizes}}
+                <div class="BasketCellSizeSizeLabel">Размер(ы)</div>
+                <div class="BasketCellSizeSizeValue">{{sizes}}</div>
+                {{/has_sizes}}
+            </div>
+            <div class="BasketCellCounterWrapper">
+                <div class="BasketCellCounteButton BasketCellCounteButtonMinus" data-command="decrement" data-id="{{hash}}">
+                    <svg><use xlink:href="#basket_icon_minus"/></svg>
+                </div>
+                <div class="BasketCellCounteButton BasketCellCounteButtonPlus" data-command="increment" data-id="{{hash}}">
+                    <svg><use xlink:href="#basket_icon_plus"/></svg>
+                </div>
+                <input type="text" data-id="{{hash}}" value="{{get_actual_qty}} шт" id="BasketDriverBasketRowPartcounter{{hash}}" data-monitor="qty"/>
+            </div>            
+        </div>
+        <div class="BasketMLineWrapper BasketMlineTotal">
+            <div class="BasketCellPriceWrapper"><span id="BasketDriverBasketRowPartprice{{hash}}">{{render_actual_price}}</span> р.</div>
+        </div>
+    </td>
+</tr>
