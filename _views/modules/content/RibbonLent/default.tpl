@@ -10,7 +10,7 @@
                             <img src="/assets/chill/images/banners/banner_chilltop.png" style="width:100%">
                         </a> -->
                         <a href="/collection/2881" style="display:block; margin-bottom:15px;">
-                            <img src="/assets/chill/images/banners/banner_newyear_chilltop.gif" style="width:100%">
+                            <img src="/assets/chill/images/banners/banner_newyear_chilltop.jpg" style="width:100%">
                         </a>
                     
             </div>

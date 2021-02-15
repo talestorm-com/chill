@@ -1,12 +1,12 @@
 <?php
-const SERVER   = 'mysql';
+const SERVER   = 'localhost';
 const DB       = 'chill';
-const USER     = 'root';
-const PASSWORD = '123';
+const USER     = 'chill';
+const PASSWORD = 'meeneF9shi9aid0pheis1Ootailongoojaequ6Eez6mei4eedo';
 const CHARSET  = 'utf8';
 
-const DSN             = 'mysql:host=' . SERVER . ';dbname=' . DB . ';charset=' . CHARSET;
-const OPT             = [
+const DSN                    = 'mysql:host=' . SERVER . ';dbname=' . DB . ';charset=' . CHARSET;
+const OPT                    = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES   => false,
@@ -44,14 +44,15 @@ function createSitemap()
         }
         $urlsetGoogle = createGoogleVideoMap($content, $domGoogle);
         $urlsetYandex = createYandexVideoMap($content, $domYandex);
-        $domYandex->appendChild($urlsetYandex);
     }
     $domGoogle = $domGoogle['dom'];
+    $domYandex = $domYandex['dom'];
 
     $domGoogle->appendChild($urlsetGoogle);
-    $domGoogle->save(__DIR__ . '/google-video-sitemap.xml');
+    $domYandex->appendChild($urlsetYandex);
 
-    $domYandex->save(__DIR__ . '/yandex-video-sitemap.xml');
+    $domGoogle->save(__DIR__ . '/../www/google-video-sitemap.xml');
+    $domYandex->save(__DIR__ . '/../www/yandex-video-sitemap.xml');
 }
 
 function getContent($pdo)
@@ -81,7 +82,14 @@ function createDomYandex()
 {
     $domYandex               = new DOMDocument('1.0', 'utf-8');
     $domYandex->formatOutput = true;
-    return $domYandex;
+    $ovsVideo                = $domYandex->createElement('ovs:video');
+    $ovsVideo->setAttribute('xmlns:ovs', 'http://webmaster.yandex.ru/schemas/video');
+    $ovsVideo->setAttribute('xmlns:xsi', 'http://www.google.com/schemas/sitemap-video/1.1');
+    $ovsVideo->setAttribute('xsi:schemaLocation', 'http://webmaster.yandex.ru/schemas/video');
+    return [
+        'dom'    => $domYandex,
+        'urlset' => $ovsVideo,
+    ];
 }
 
 function createGoogleVideoMap($content, $domGoogle)
@@ -132,21 +140,24 @@ function createGoogleVideoMap($content, $domGoogle)
     return $urlset;
 }
 
-function createYandexVideoMap($content, $dom)
+function createYandexVideoMap($content, $domYandex)
 {
-    $ovsVideo = $dom->createElement('ovs:video');
-    $ovsVideo->setAttribute('xmlns:ovs', 'http://webmaster.yandex.ru/schemas/video');
-    $ovsVideo->setAttribute('xmlns:xsi:video', 'http://www.google.com/schemas/sitemap-video/1.1');
-    $ovsVideo->setAttribute('xsi:schemaLocation', 'http://webmaster.yandex.ru/schemas/video');
+//    $ovsVideo = $dom->createElement('ovs:video');
+//    $ovsVideo->setAttribute('xmlns:ovs', 'http://webmaster.yandex.ru/schemas/video');
+//    $ovsVideo->setAttribute('xmlns:xsi', 'http://www.google.com/schemas/sitemap-video/1.1');
+//    $ovsVideo->setAttribute('xsi:schemaLocation', 'http://webmaster.yandex.ru/schemas/video');
 
-    $url          = $dom->createTextNode(
+    $dom    = $domYandex['dom'];
+    $urlset = $domYandex['urlset'];
+
+    $url            = $dom->createTextNode(
         htmlentities('https://' . 'chillvision.ru' . '/Soap/' . $content['id'] . '.html', ENT_QUOTES)
     );
-    $thumbnailLoc = $dom->createTextNode(
+    $thumbnailLoc   = $dom->createTextNode(
         htmlentities('https://' . 'chillvision.ru' . '/media/lent_poster/' . $content['id'] . '/' .
             $content['lent_image_name'] . '.SW_400H_520CF_1' . '.jpg', ENT_QUOTES)
     );
-
+    $ovsVideo       = $dom->createElement('ovs:video');
     $ovsId          = $dom->createElement('ovs:content_id');
     $ovsUrl         = $dom->createElement('ovs:url');
     $ovsThumbnail   = $dom->createElement('ovs:thumbnail');
@@ -155,13 +166,13 @@ function createYandexVideoMap($content, $dom)
     $ovsUploadDate  = $dom->createElement('ovs:upload_date');
     $ovsAdult       = $dom->createElement('ovs:adult');
     $ovsEmbedUrl    = $dom->createElement('ovs:embed_url');
-
+    $data = date('c',strtotime($content['released']));
     $ovsId->appendChild($dom->createTextNode($content['id']));
     $ovsUrl->appendChild($url);
     $ovsThumbnail->appendChild($thumbnailLoc);
     $ovsTitle->appendChild($dom->createTextNode($content['common_name']));
     $ovsDescription->appendChild($dom->createTextNode(trim(strip_tags($content['info']))));
-    $ovsUploadDate->appendChild($dom->createTextNode($content['released']));
+    $ovsUploadDate->appendChild($dom->createTextNode($data));
     $ovsAdult->appendChild($dom->createTextNode(AGE_RESTRICTION_YANDEX[$content['age_restriction']]));
     $ovsEmbedUrl->appendChild($dom->createTextNode(htmlentities('https://' . $content['cdn_url'])));
 
@@ -174,7 +185,8 @@ function createYandexVideoMap($content, $dom)
     $ovsVideo->appendChild($ovsAdult);
     $ovsVideo->appendChild($ovsEmbedUrl);
 
-    return $ovsVideo;
+    $urlset->appendChild($ovsVideo);
+    return $urlset;
 }
 
 createSitemap();
