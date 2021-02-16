@@ -5,7 +5,11 @@
 *.log
 *.logs
 _logs
+_keys
 _media
+_mutex
+_sql
+_utils
 logs
 npm-debug.log*asse
 node_modules
@@ -18,7 +22,9 @@ www/media
 /www/media/
 /www/media/*
 /www/media/**
-www/assets/vendor/*
 www/123
 _cache/
+develop
+log/
+logs/
 _smarty/templates_c/
