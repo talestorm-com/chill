@@ -12,7 +12,7 @@ npm-debug.log*asse
 node_modules
 /mongodb/*
 /redis/*
-config/**
+config/
 www/media/**
 www/media/*
 www/media/
