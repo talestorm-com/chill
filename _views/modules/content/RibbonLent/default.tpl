@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col s12 m10 offset-m1"> 
                 
-                        <!-- <a href="/collection/2847" style="display:block; margin-bottom:15px;">
+                        <!-- <a href="/Soap/3021" style="display:block; margin-bottom:15px;">
                             <img src="/assets/chill/images/banners/banner_chilltop.png" style="width:100%">
                         </a> -->
-                        <a href="/collection/2881" style="display:block; margin-bottom:15px;">
+                        <a href="/Soap/3021" style="display:block; margin-bottom:15px;">
                             <img src="/assets/chill/images/banners/banner_newyear_chilltop.jpg" style="width:100%">
                         </a>
                     

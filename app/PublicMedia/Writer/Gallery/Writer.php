@@ -24,10 +24,10 @@ namespace PublicMedia\Writer\Gallery;
  * @property string $temp_var
  * @property integer $result_id
  * @property string[] $messages
- * @property \DataMap\IDataMap $runtime
+ * @property \DataMap\IDataMap $runtime 
  * @property int $user_id
  * @property \PublicMedia\PublicMediaGallery $medial_object
- *
+ * 
  */
 class Writer {
 
@@ -41,7 +41,7 @@ class Writer {
     protected static $post_writers = [
         TagWriter::class,
         GalleryPreviewWriter::class,
-        QtyWriter::class,
+        QtyWriter::class,        
         ReTagger::class,
         CacheReset::class,
     ];

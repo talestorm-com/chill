@@ -208,7 +208,7 @@
                         <div class="col l4  s11 offset-s1">
                             <div class="one_footer_colomn">
                                 <ul>
-
+									
                                     <li>
                                         <a href="/page/for_authors">{TT t='how_become_aut'}</a>
                                     </li>

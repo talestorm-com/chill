@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 return[
-    'enabled' => false, // ip фильтр включен
+    'enabled' => true, // ip фильтр включен
     'blacklist' => false, //whitelist  режим блэк или вайтлиста. true - страны из списка под запретом, false - страны из списка разрешены
     'codes' => [//коды стран по ISO 3166-1  (https://ru.wikipedia.org/wiki/ISO_3166-1)
         'RUS' => 1, //  значение не имеет значения - только присутствие в списке ключа

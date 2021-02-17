@@ -1230,7 +1230,7 @@
     <video:video>
       <video:thumbnail_loc>https://chillvision.ru/media/lent_poster/2595/49e20b8766c85b92858bdf473be281af.SW_400H_520CF_1.jpg</video:thumbnail_loc>
       <video:title>Неожиданные герои</video:title>
-      <video:description>Три подростка получают шанс на здоровую и счастливую жизнь после операции по пересадке донорских органов. Но неожиданно, каждый из них обнаруживает у себя&amp;nbsp; супер способности, которые не дают им спокойно жить.</video:description>
+      <video:description>Три подростка получают шанс на здоровую и счастливую жизнь после операции по пересадке донорских органов. Но неожиданно, каждый из них обнаруживает у себя супер способности, которые не дают им спокойно жить.</video:description>
       <video:content_loc>https://kino-cache.cdnvideo.ru/kinoteatr/soap/2595/lent/unexpected%20heroes_trailer%20%281920x1080%29.mp4</video:content_loc>
       <video:publication_date>2017-01-01 00:00:00</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
@@ -1326,7 +1326,7 @@
     <video:video>
       <video:thumbnail_loc>https://chillvision.ru/media/lent_poster/2882/49e20b8766c85b92858bdf473be281af.SW_400H_520CF_1.jpg</video:thumbnail_loc>
       <video:title>Спасайся кто может!</video:title>
-      <video:description>Увлекательные истории свиданий, в которых что-то пошло не так! Селин и Ричард не знакомы друг с другом! Но их жизненное кредо полностью совпадает: отправляешься на свидание- надень удобную обувь!&amp;nbsp;А виной всему их &amp;nbsp;бурная фантазия о возможном будущем с новым избранником!&amp;nbsp;</video:description>
+      <video:description>Увлекательные истории свиданий, в которых что-то пошло не так! Селин и Ричард не знакомы друг с другом! Но их жизненное кредо полностью совпадает: отправляешься на свидание- надень удобную обувь! А виной всему их &amp;nbsp;бурная фантазия о возможном будущем с новым избранником! Может быть им уже пора встретиться друг с другом?</video:description>
       <video:content_loc>https://kino-cache.cdnvideo.ru/kinoteatr/soap/2882/lent/cv_martha_trailer_final_sequence%20color_02_04_18%20copy%2001%20%281920x1080%29.mp4</video:content_loc>
       <video:publication_date>2018-01-01 00:00:00</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
@@ -1338,9 +1338,21 @@
     <video:video>
       <video:thumbnail_loc>https://chillvision.ru/media/lent_poster/2935/49e20b8766c85b92858bdf473be281af.SW_400H_520CF_1.jpg</video:thumbnail_loc>
       <video:title>Водитель 7410</video:title>
-      <video:description>Внезапно оказавшись на заднем сидении такси, за рулем которого харизматичный и загадочный водитель, пассажиры понимают, что&amp;hellip; умерли. И этот мистический водитель сейчас единственный кому можно рассказать самое сокровенное и важное о себе по пути в мир иной! Но что может быть легче, чем разговориться со случайным попутчиком, не правда ли?</video:description>
+      <video:description>Внезапно оказавшись на заднем сидении такси, за рулем которого харизматичный &amp;nbsp;загадочный водитель, пассажиры понимают, что&amp;hellip; умерли. И этот мистический водитель сейчас &amp;nbsp;единственный кому можно доверить самое сокровенное и важное о себе по пути в мир иной! Но что может быть легче, чем разговориться со случайным попутчиком, не правда ли?</video:description>
       <video:content_loc>https://kino-cache.cdnvideo.ru/kinoteatr/soap/2935/lent/soul%20driver_trailer%20%281920x1080%29.mp4</video:content_loc>
       <video:publication_date>2018-01-01 00:00:00</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://chillvision.ru/Soap/2965.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://chillvision.ru/media/lent_poster/2965/49e20b8766c85b92858bdf473be281af.SW_400H_520CF_1.jpg</video:thumbnail_loc>
+      <video:title>Проект работа</video:title>
+      <video:description>Проект лабуро - это правдивые&amp;nbsp; документальные истории&amp;nbsp; о&amp;nbsp; простых людях, через призму их работы. Порой их занятия, возможно, выглядят &amp;nbsp;банальными или слишком экстравагатными, но они честно рассказывают&amp;nbsp; когда и почему сделали такой выбор.</video:description>
+      <video:content_loc>https://kino-cache.cdnvideo.ru/kinoteatr/soap/2965/lent/s01%20trailer%20%281920x1080%29.mp4</video:content_loc>
+      <video:publication_date>2015-01-01 00:00:00</video:publication_date>
       <video:family_friendly>no</video:family_friendly>
       <video:live>no</video:live>
     </video:video>

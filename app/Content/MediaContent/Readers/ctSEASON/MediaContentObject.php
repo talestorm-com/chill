@@ -414,6 +414,7 @@ class MediaContentObject implements \common_accessors\IMarshall {
     protected function __get__copyright_holder() {
         return $this->copyright_holder;
     }
+
     //</editor-fold>
 
     protected function __construct(int $id) {

@@ -32,7 +32,7 @@ return [
           //  ['/assets/js/efo.js', true],
           //  ['/assets/js/basket/basket.min.js', true],
           //  ['/assets/js/ProductManager/src/ProductManager.js', true],
-//            ['https://www.google.com/recaptcha/api.js?render=<!PARAM RECAPTCHA_SITE_KEY!>',false],
+            ['https://www.google.com/recaptcha/api.js?render=<!PARAM RECAPTCHA_SITE_KEY!>',false],
             ['/assets/js/hls.js',false],
         ],
         'inline_styles' => [

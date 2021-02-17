@@ -4,6 +4,8 @@
 {foreach from=$this->genres item='genre' name=foo}
 {if $genre->name == 'Дорама'}
 {$OUT->meta->set_title("Дорама `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
+{elseif  $genre->name == 'Драма'}
+{$OUT->meta->set_title("Драма `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
 {elseif $this->series_count === NULL}
 {$OUT->meta->set_title("Фильм `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
 {else}
