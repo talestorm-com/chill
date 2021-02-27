@@ -81,7 +81,7 @@
     {assign var='image_url_sq' value="/media/{$item->get_image_url()}.SW_400H_400CF_1.jpg"}
     {if $item->content_type==='ctSEASON'}
     <div class="col s12 l3">
-    <a href='/Soap/{$item->id}' title="{$item->name}">
+    <a href='/Soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
         <div class="one_film_in_list chill-lenta-item-new-{$item->content_type}">
             <div class="film_left">
             

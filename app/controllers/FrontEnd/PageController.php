@@ -14,18 +14,6 @@ namespace controllers\FrontEnd;
  *
  */
 class PageController extends AbstractFrontendController {
-    const RUS = [
-        'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я',
-    ];
-    const LAT = [
-        'A', 'B', 'V', 'G', 'D', 'E', 'E', 'Gh', 'Z', 'I', 'Y', 'K', 'L', 'M', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'F', 'H', 'C', 'Ch', 'Sh', 'Sch', 'Y', 'Y', 'Y', 'E', 'Yu', 'Ya', 'a', 'b', 'v', 'g', 'd', 'e', 'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', 'y', 'y', 'y', 'e', 'yu', 'ya'
-    ];
-    const SIMBL = [
-        ' ',',','.','\'','"','#','«','»',';',':','_','=','+','(','^','%','$','@',')','{','}','[',']','<','>'
-    ];
-    const SIMBL2 = [
-        '!','?'
-    ];
     protected $error_message = null;
 
     protected function __get__error_message() {
@@ -80,6 +68,14 @@ class PageController extends AbstractFrontendController {
     public function seoRedirect($alias) {
         $translitName = $this->route_params->get_filtered('translit_name', ['Strip', 'Trim', 'NEString', 'DefaultNull']);
         if ($translitName){
+            if ('soap_page'=== $alias)
+            {
+                if ('soap'!==stristr(substr(\Router\Request::F()->request_path,1),'/',true)){
+                    $urlRedirect = implode("", [\Router\Request::F()->https ? "https://" : "http://", \Router\Request::F()->host,
+                                                mb_strtolower(\Router\Request::F()->request_path)]);
+                    header("Location: $urlRedirect");
+                }
+            }
             return;
         }
         if ('soap_page'=== $alias){
@@ -91,22 +87,11 @@ class PageController extends AbstractFrontendController {
             if(empty($content)){
                 return;
             }
-            $translName = createTranslitName($content['common_name']);
+            $translName = $content['translit_name'];
             $urlRedirect = implode("", [\Router\Request::F()->https ? "https://" : "http://", \Router\Request::F()->host,
                                         mb_strtolower(\Router\Request::F()->request_path),'-'.$translName]);
             header("Location: $urlRedirect");
             die();
         }
-    }
-
-
-    protected function createTranslitName($name)
-    {
-        $translName = mb_strtolower(str_replace(self::RUS, self::LAT, $name));
-        $translName = (str_replace(self::SIMBL, '-', $translName));
-        $translName = (str_replace(self::SIMBL2, '', $translName));
-        $translName = trim($translName, '-');
-        $translName = preg_replace('/(\-){2,}/', '$1', $translName);
-        return $translName;
     }
 }

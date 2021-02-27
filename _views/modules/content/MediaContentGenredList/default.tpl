@@ -25,7 +25,7 @@
                                     
                                         <div class="one_film_in_list">
                                         <div class="film_left">
-                                        <a href='/Soap/{$soap->id}' title="{$soap->name}">
+                                        <a href='/Soap/{$soap->id}-{$soap->translit_name}' title="{$soap->name}">
                                             {if $soap->image}
                                                 <img src="/media/media_content_poster/{$soap->id}/{$soap->image}.SW_400H_400CF_1PR_sq.jpg">
                                             {else}

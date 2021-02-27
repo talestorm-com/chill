@@ -1,8 +1,8 @@
 <?php
-const SERVER   = 'mysql';
+const SERVER   = 'localhost';
 const DB       = 'chill';
-const USER     = 'root';
-const PASSWORD = '123';
+const USER     = 'chill';
+const PASSWORD = 'meeneF9shi9aid0pheis1Ootailongoojaequ6Eez6mei4eedo';
 const CHARSET  = 'utf8';
 
 const DSN                    = 'mysql:host=' . SERVER . ';dbname=' . DB . ';charset=' . CHARSET;
@@ -30,10 +30,28 @@ function createTranslitName()
     } catch (PDOException $e) {
         return;
     }
+    try {
+    seasonGetTranslit($pdo);
+    collectionGetTranslit($pdo);
+    } catch (\Throwable $e) {
+        $pdo->rollback();
+        throw $e; // but the error must be handled anyway
+    }
+}
+
+function getTranslitName($name){
+    $translName = mb_strtolower(str_replace(RUS, LAT, $name));
+    $translName = (str_replace(SIMBL, '-', $translName));
+    $translName = (str_replace(SIMBL2, '', $translName));
+    $translName = trim($translName,'-');
+    $translName = preg_replace('/(\-){2,}/', '$1', $translName);
+    return $translName;
+}
+
+function seasonGetTranslit($pdo){
     $stmt = $pdo->prepare('SELECT * FROM media__content__season');
     $stmt->execute();
     $seasonList = $stmt->fetchAll();
-    try {
         $pdo->beginTransaction();
         foreach ($seasonList as $season){
             $name =  $season['common_name'];
@@ -43,19 +61,22 @@ function createTranslitName()
             $stmt->execute();
         }
         $pdo->commit();
-    } catch (\Throwable $e) {
-        $pdo->rollback();
-        throw $e; // but the error must be handled anyway
+}
+
+function collectionGetTranslit($pdo){
+    $stmt = $pdo->prepare('SELECT * FROM media__content__collection');
+    $stmt->execute();
+    $seasonList = $stmt->fetchAll();
+        $pdo->beginTransaction();
+        foreach ($seasonList as $season){
+            $name =  $season['common_name'];
+            $id =  $season['id'];
+            $translName = getTranslitName($name);
+            $stmt = $pdo->prepare("UPDATE `media__content__collection` SET `translit_name_collection` = '$translName' WHERE `media__content__collection`.`id` = $id;");
+            $stmt->execute();
+        }
+        $pdo->commit();
     }
 
-}
-function getTranslitName($name){
-    $translName = mb_strtolower(str_replace(RUS, LAT, $name));
-    $translName = (str_replace(SIMBL, '-', $translName));
-    $translName = (str_replace(SIMBL2, '', $translName));
-    $translName = trim($translName,'-');
-    $translName = preg_replace('/(\-){2,}/', '$1', $translName);
-    return $translName;
-}
 createTranslitName();
 ?>

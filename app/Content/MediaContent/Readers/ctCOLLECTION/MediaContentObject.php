@@ -38,6 +38,7 @@ namespace Content\MediaContent\Readers\ctCOLLECTION;
  * @property string $gif_cdn_id2
  * @property string $gif_cdn_url2
  * @property string $lent_message2
+ * @property string $translit_name
  */
 class MediaContentObject implements \common_accessors\IMarshall, \Countable, \Iterator {
 
@@ -55,7 +56,8 @@ class MediaContentObject implements \common_accessors\IMarshall, \Countable, \It
 
     /** @var string */
     protected $common_name;
-
+    /** @var string */
+    protected $translit_name;
     /** @var string */
     protected $default_poster;
 
@@ -147,7 +149,10 @@ class MediaContentObject implements \common_accessors\IMarshall, \Countable, \It
     protected function __get__common_name() {
         return $this->common_name;
     }
-
+    /** @return string */
+    protected function __get__translit_name() {
+        return $this->translit_name;
+    }
     /** @return string */
     protected function __get__default_poster() {
         return $this->default_poster;
@@ -367,6 +372,8 @@ class MediaContentObject implements \common_accessors\IMarshall, \Countable, \It
             'meta_title' => ['Strip', 'Trim', 'NEString', 'DefaultEmptyString'],
             'meta_description' => ['Strip', 'Trim', 'NEString', 'DefaultEmptyString'],
             'additional_content' => ['Strip', 'Trim', 'NEString', 'DefaultEmptyString'],
+            'translit_name' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
+
         ];
     }
 

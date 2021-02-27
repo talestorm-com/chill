@@ -135,6 +135,7 @@ class RibbonLent extends \Content\Content {
         $this->items = $result;
     }
 
+
     protected function load_collection(\Language\LanguageItem $language, \Language\LanguageItem $default_language, int $page) {
         $offset = static::COLLECTIONS_PER_PAGE * $page;
         $common_media_context = \Content\MediaContent\Readers\ctCOLLECTION\MediaContentObject::MEDIA_CONTEXT;
@@ -145,7 +146,7 @@ class RibbonLent extends \Content\Content {
             COALESCE(COLLECTIONSTRINGS1.name,COLLECTIONSTRINGS2.name) name,
             '{$common_media_context}' image_context,
             A.id image_owner,
-            COLLECTIONLINK.default_poster image,
+            COLLECTIONLINK.default_poster image,COLLECTIONLINK.translit_name_collection,
             CASE WHEN RTT.qty = 0 OR RTT.qty IS NULL THEN 0 ELSE ROUND(COALESCE(RTT.average,0) / COALESCE(RTT.qty,1)) END  ratestars,
             MLM.mode lent_mode, MLM.message lent_message,MLM.lent_image_name,
             MLV.cdn_id video_cdn_id, MLV.cdn_url video_cdn_url,MLG.cdn_url gif_cdn_url,            
@@ -371,7 +372,7 @@ class RibbonLent extends \Content\Content {
             A.series_count,A.seasons_count,
             MLM.mode lent_mode, MLM.message lent_message,MLM.lent_image_name,
             MLV.cdn_id video_cdn_id, MLV.cdn_url video_cdn_url,MLG.cdn_url gif_cdn_url,
-            SOAPLINK.origin_language,
+            SOAPLINK.origin_language, SOAPLINK.translit_name,
             AR.id age_restriction,AR.international_name age_restriction_tag,
             COALESCE(ARS1.name,ARS2.name) age_restriction_name,
             AR.default_image age_restriction_image,

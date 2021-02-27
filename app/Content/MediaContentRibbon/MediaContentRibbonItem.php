@@ -71,7 +71,9 @@ namespace Content\MediaContentRibbon;
  * @property string $age_restriction_tag
  * @property string $age_restriction_name
  * @property string $age_restriction_image
- * 
+ * @property string $translit_name
+ * @property string $translit_name_collection
+ *
 
  */
 class MediaContentRibbonItem implements \common_accessors\IMarshall {
@@ -246,7 +248,10 @@ class MediaContentRibbonItem implements \common_accessors\IMarshall {
 
     /** @var string */
     protected $video_cdn_id;
-
+    /** @var string */
+    protected $translit_name;
+    /** @var string */
+    protected $translit_name_collection;
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="getters">
 
@@ -509,6 +514,14 @@ class MediaContentRibbonItem implements \common_accessors\IMarshall {
         return $this->age_restriction_image;
     }
 
+    /** @return string */
+    protected function __get__translit_name() {
+        return $this->translit_name;
+    }
+    protected function __get__translit_name_collection() {
+        return $this->translit_name_collection;
+    }
+
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="virtual getters">
     protected function __get__display_type() {
@@ -626,6 +639,8 @@ class MediaContentRibbonItem implements \common_accessors\IMarshall {
             'age_restriction_tag' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //
             'age_restriction_name' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //
             'age_restriction_image' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
+            'translit_name' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
+            'translit_name_collection' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
         ];
     }
 

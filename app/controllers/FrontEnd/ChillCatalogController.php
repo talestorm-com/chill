@@ -103,7 +103,6 @@ class ChillCatalogController extends AbstractFrontendController {
             $meta_manager->set_title($collection->get__meta_title());
         }
         if ($collection->get__meta_description()) $meta_manager->set_description($collection->get__meta_description());
-
         $this->render_view($this->get_requested_layout('front/layout'), $this->get_requested_template('collection'));
     }
 
@@ -112,7 +111,10 @@ class ChillCatalogController extends AbstractFrontendController {
     }
 
     public function seoRedirect(MediaContentObject $content) {
-
+        $translitName = $this->route_params->get_filtered('translit_name', ['Strip', 'Trim', 'NEString', 'DefaultNull']);
+        if ($translitName){
+            return;
+        }
         $translName = $this->createTranslitName($content->common_name);
         $urlRedirect = implode("", [\Router\Request::F()->https ? "https://" : "http://", \Router\Request::F()->host,
                                     mb_strtolower(\Router\Request::F()->request_path),'-'.$translName]);

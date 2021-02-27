@@ -27,6 +27,173 @@ const AGE_RESTRICTION_YANDEX = [
     5 => 'yes',
     6 => 'no',
 ];
+const RUS                    = [
+    'А',
+    'Б',
+    'В',
+    'Г',
+    'Д',
+    'Е',
+    'Ё',
+    'Ж',
+    'З',
+    'И',
+    'Й',
+    'К',
+    'Л',
+    'М',
+    'Н',
+    'О',
+    'П',
+    'Р',
+    'С',
+    'Т',
+    'У',
+    'Ф',
+    'Х',
+    'Ц',
+    'Ч',
+    'Ш',
+    'Щ',
+    'Ъ',
+    'Ы',
+    'Ь',
+    'Э',
+    'Ю',
+    'Я',
+    'а',
+    'б',
+    'в',
+    'г',
+    'д',
+    'е',
+    'ё',
+    'ж',
+    'з',
+    'и',
+    'й',
+    'к',
+    'л',
+    'м',
+    'н',
+    'о',
+    'п',
+    'р',
+    'с',
+    'т',
+    'у',
+    'ф',
+    'х',
+    'ц',
+    'ч',
+    'ш',
+    'щ',
+    'ъ',
+    'ы',
+    'ь',
+    'э',
+    'ю',
+    'я',
+];
+const LAT                    = [
+    'A',
+    'B',
+    'V',
+    'G',
+    'D',
+    'E',
+    'E',
+    'Gh',
+    'Z',
+    'I',
+    'Y',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'R',
+    'S',
+    'T',
+    'U',
+    'F',
+    'H',
+    'C',
+    'Ch',
+    'Sh',
+    'Sch',
+    'Y',
+    'Y',
+    'Y',
+    'E',
+    'Yu',
+    'Ya',
+    'a',
+    'b',
+    'v',
+    'g',
+    'd',
+    'e',
+    'e',
+    'gh',
+    'z',
+    'i',
+    'y',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'r',
+    's',
+    't',
+    'u',
+    'f',
+    'h',
+    'c',
+    'ch',
+    'sh',
+    'sch',
+    'y',
+    'y',
+    'y',
+    'e',
+    'yu',
+    'ya',
+];
+const SIMBL                  = [
+    ' ',
+    ',',
+    '.',
+    '\'',
+    '"',
+    '#',
+    '«',
+    '»',
+    ';',
+    ':',
+    '_',
+    '=',
+    '+',
+    '(',
+    '^',
+    '%',
+    '$',
+    '@',
+    ')',
+    '{',
+    '}',
+    '[',
+    ']',
+    '<',
+    '>',
+];
+const SIMBL2                 = [
+    '!',
+    '?',
+];
 function createSitemap()
 {
     try {
@@ -94,12 +261,13 @@ function createDomYandex()
 
 function createGoogleVideoMap($content, $domGoogle)
 {
-    $dom    = $domGoogle['dom'];
-    $urlset = $domGoogle['urlset'];
-    $url    = $dom->createElement('url');
-    $loc    = $dom->createElement('loc');
-    $text   = $dom->createTextNode(
-        htmlentities('https://' . 'chillvision.ru' . '/Soap/' . $content['id'] . '.html', ENT_QUOTES)
+    $dom        = $domGoogle['dom'];
+    $urlset     = $domGoogle['urlset'];
+    $translName = createTranslitName($content['common_name']);
+    $url        = $dom->createElement('url');
+    $loc        = $dom->createElement('loc');
+    $text       = $dom->createTextNode(
+        htmlentities('https://' . 'chillvision.ru' . '/Soap/' . $content['id'] . '-' . $translName . '.html', ENT_QUOTES)
     );
     $loc->appendChild($text);
 
@@ -142,16 +310,11 @@ function createGoogleVideoMap($content, $domGoogle)
 
 function createYandexVideoMap($content, $domYandex)
 {
-//    $ovsVideo = $dom->createElement('ovs:video');
-//    $ovsVideo->setAttribute('xmlns:ovs', 'http://webmaster.yandex.ru/schemas/video');
-//    $ovsVideo->setAttribute('xmlns:xsi', 'http://www.google.com/schemas/sitemap-video/1.1');
-//    $ovsVideo->setAttribute('xsi:schemaLocation', 'http://webmaster.yandex.ru/schemas/video');
-
-    $dom    = $domYandex['dom'];
-    $urlset = $domYandex['urlset'];
-
+    $dom            = $domYandex['dom'];
+    $urlset         = $domYandex['urlset'];
+    $translName     = createTranslitName($content['common_name']);
     $url            = $dom->createTextNode(
-        htmlentities('https://' . 'chillvision.ru' . '/Soap/' . $content['id'] . '.html', ENT_QUOTES)
+        htmlentities('https://' . 'chillvision.ru' . '/Soap/' . $content['id'] . '-' . $translName . '.html', ENT_QUOTES)
     );
     $thumbnailLoc   = $dom->createTextNode(
         htmlentities('https://' . 'chillvision.ru' . '/media/lent_poster/' . $content['id'] . '/' .
@@ -166,7 +329,7 @@ function createYandexVideoMap($content, $domYandex)
     $ovsUploadDate  = $dom->createElement('ovs:upload_date');
     $ovsAdult       = $dom->createElement('ovs:adult');
     $ovsEmbedUrl    = $dom->createElement('ovs:embed_url');
-    $data = date('c',strtotime($content['released']));
+    $data           = date('c', strtotime($content['released']));
     $ovsId->appendChild($dom->createTextNode($content['id']));
     $ovsUrl->appendChild($url);
     $ovsThumbnail->appendChild($thumbnailLoc);
@@ -187,6 +350,16 @@ function createYandexVideoMap($content, $domYandex)
 
     $urlset->appendChild($ovsVideo);
     return $urlset;
+}
+
+function createTranslitName($name)
+{
+    $translName = mb_strtolower(str_replace(RUS, LAT, $name));
+    $translName = (str_replace(SIMBL, '-', $translName));
+    $translName = (str_replace(SIMBL2, '', $translName));
+    $translName = trim($translName, '-');
+    $translName = preg_replace('/(\-){2,}/', '$1', $translName);
+    return $translName;
 }
 
 createSitemap();
