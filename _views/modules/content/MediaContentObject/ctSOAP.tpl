@@ -25,17 +25,8 @@
                             <img src="/assets/chill/images/logo.png">
                         </div>
                     </div>
-
                     <div id="a_film_head_block">
-{*                        <div class="a-film-cover">*}
-{*                                <div class="a-film-cover-preloader">*}
-{*                                    <div class="CommonTemplatePreloader">*}
-{*                                        <div class="CommonTemplatePreloaderPreloader">*}
-                                             <img src="/assets/chill/images/content.svg">
-{*                                        </div>*}
-{*                                    </div>*}
-                                </div>
-                        </div>
+                        <img src="/assets/chill/images/content.svg">
                     </div>
                 </div>
             </div>
