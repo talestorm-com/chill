@@ -15,11 +15,10 @@
 {$OUT->add_css('/assets/chill/player/plyr/plyr.css',100)|void}
 {if !GEOList\GEOList::F()->has_access_client()}
 {
-<div id="a_film_head" style="display:none">
     <div class="container">
         <div class="row">
             <div class="col s12 m10 offset-m1" id="uiaa">
-                <div id="cluii" style="display:none">
+            
                     <div id="logo_in_top">
                         <div class="preloader__image">
                             <img src="/assets/chill/images/logo.png">
@@ -29,10 +28,10 @@
                         <img src="/assets/chill/images/content.svg">
                     </div>
                 </div>
-            </div>
+          
         </div>
     </div>
-</div>
+
 }
 {else}
     {
