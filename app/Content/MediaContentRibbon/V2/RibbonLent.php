@@ -371,7 +371,7 @@ class RibbonLent extends \Content\Content {
             A.series_count,A.seasons_count,
             MLM.mode lent_mode, MLM.message lent_message,MLM.lent_image_name,
             MLV.cdn_id video_cdn_id, MLV.cdn_url video_cdn_url,MLG.cdn_url gif_cdn_url,
-            SOAPLINK.origin_language,
+            SOAPLINK.origin_language, SOAPLINK.translit_name,
             AR.id age_restriction,AR.international_name age_restriction_tag,
             COALESCE(ARS1.name,ARS2.name) age_restriction_name,
             AR.default_image age_restriction_image,

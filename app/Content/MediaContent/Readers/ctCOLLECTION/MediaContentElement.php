@@ -36,6 +36,7 @@ namespace Content\MediaContent\Readers\ctCOLLECTION;
  * @property string $age_restriction_name
  * @property string $age_restriction_tag
  * @property string $age_restriction_image
+ * @property string $translit_name
  */
 class MediaContentElement implements \common_accessors\IMarshall {
 
@@ -111,6 +112,8 @@ class MediaContentElement implements \common_accessors\IMarshall {
     /** @var string */
     protected $age_restriction_image;
 
+    /** @var string */
+    protected $translit_name;
     //</editor-fold>
     //<editor-fold defaultstate="collapsed" desc="getters">
 
@@ -234,6 +237,11 @@ class MediaContentElement implements \common_accessors\IMarshall {
         return $this->age_restriction_image;
     }
 
+    /** @return string */
+    protected function __get__translit_name() {
+        return $this->translit_name;
+    }
+
     //</editor-fold>
 
     public function __construct(array $data) {
@@ -273,6 +281,7 @@ class MediaContentElement implements \common_accessors\IMarshall {
             'age_restriction_name' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
             'age_restriction_tag' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
             'age_restriction_image' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
+            'translit_name' => ['Strip', 'Trim', 'NEString', 'DefaultNull'], //string
         ];
     }
 
@@ -289,6 +298,7 @@ class MediaContentElement implements \common_accessors\IMarshall {
             A.ctype content_type,
             COALESCE( CVS1.name,CVS2.name,CSS1.name,CSS2.name ) name,
             COALESCE( CV.default_poster,CS.default_poster) default_poster,
+            CS.translit_name,
             A0.sort,
             CASE A.ctype
               WHEN 'ctVIDEO' THEN CV.common_name
@@ -336,7 +346,6 @@ class MediaContentElement implements \common_accessors\IMarshall {
         $def_lang = \Language\LanguageList::F()->get_default_language();
         $rq = sprintf($query, $language, $def_lang, $language, $def_lang, $language, $def_lang, $language, $def_lang, $language, $def_lang,$language, $def_lang);
         $rows = \DB\DB::F()->queryAll($rq, [":P" => $collection_id]);
-
         foreach ($rows as $row) {
             try {
                 $item = static::F($row);

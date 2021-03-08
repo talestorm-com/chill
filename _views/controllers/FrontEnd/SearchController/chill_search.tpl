@@ -30,7 +30,7 @@
     
         <div class="one_film_in_list chill-lenta-soap-new-{$soap->content_type}">
         
-<a href='/Soap/{$soap->id}' title="{$soap->name}">
+<a href='/Soap/{$soap->id}-{$soap->translit_name}' title="{$soap->name}">
 <div class="film_left">
                 
                     {if $soap->image}
@@ -42,7 +42,7 @@
             </div>
             </a>
         
-            <a href='/Soap/{$soap->id}' title="{$soap->name}">
+            <a href='/Soap/{$soap->id}-{$soap->translit_name}' title="{$soap->name}">
             <div class="film_right">
             <div class="film_right_in">
             <div class="in_film_right">

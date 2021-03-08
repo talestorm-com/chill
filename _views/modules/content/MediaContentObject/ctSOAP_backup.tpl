@@ -1,4 +1,15 @@
-{$OUT->meta->set_title($this->name)->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
+{if empty($this->genres) && $this->series_count === NULL}
+    {$OUT->meta->set_title("Фильм `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
+{/if}
+{foreach from=$this->genres item='genre' name=foo}
+{if $genre->name == 'Дорама'}
+{$OUT->meta->set_title("Дорама `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
+{elseif $this->series_count === NULL}
+{$OUT->meta->set_title("Фильм `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
+{else}
+{$OUT->meta->set_title("Сериал `$this->name` смотреть онлайн в хорошем качестве - Веб-кинотеатр Chill")->set_description($this->info|truncate:100|strip_tags)->set_og_title($this->name)->set_og_image_support(true)->set_og_image_data($this->images->get_image_by_index(0)->context, $this->images->get_image_by_index(0)->owner_id,$this->images->get_image_by_index(0)->image)|void}
+{/if}
+{/foreach}
 {$OUT->add_css('/assets/css/chill/soap_page.css',100)|void}
 {$OUT->add_script('/assets/chill/player/plyr/plyr.min.js',100,false)|void}
 {$OUT->add_css('/assets/chill/player/plyr/plyr.css',100)|void}
@@ -8,15 +19,20 @@
         <div class="row">
             <div class="col s12 m10 offset-m1" id="uiaa">
                 <div id="cluii" style="display:none">
-
+                    <div id="logo_in_top">
+                        <div class="preloader__image">
+                            <img src="/assets/chill/images/logo.png">
+                        </div>
+                        <!--<img src="/assets/chill/images/logo_grad.png">-->
+                    </div>
                     <div id="a_film_head_block">
                         <video id="player_element"></video>
                         <div class="a-film-cover">
                             <div id="film_pay_start" data-pricecur="">
 
                             </div>
-                            <img src="/media/media_content_poster/{$this->id}/{$this->images->get_image_by_index(0)->image}.SW_1000H_600CF_1.jpg">
-
+                            <!--<img src="/media/media_content_poster/{$this->id}/{$this->images->get_image_by_index(0)->image}.SW_1000H_600CF_1.jpg">-->
+                            <img src="">
 
                                 <div class="a-film-cover-preloader">
                                     <div class="CommonTemplatePreloader">
@@ -73,6 +89,7 @@
         </div>
     </div>
 </div>
+
 <div id="select_series">
     <div class="container">
         <div class="row">
@@ -103,7 +120,7 @@
                                                     <a class="go_top_aa" data-serie-id="{$serie->id}">
                                                         <div class="one_seria_select">
 
-                                                            <img src="/media/media_content_poster/{$serie->id}/{$serie->default_poster}.SW_300H_300CF_1PR_sq.jpg" />
+                                                            <img src="/media/media_content_poster/{$serie->id}/{$serie->default_poster}.SW_200H_200CF_1PR_sq.jpg" />
                                                             <div class="one_seria_select_name">
                                                                 {$serie->name}
                                                             </div>
@@ -152,7 +169,7 @@
                             {if $this->age_restriction_tag != ''}
                                 <div class="one_features">Возрастные ограничения: <b>{$this->age_restriction_tag}</b></div>
                             {/if}
-                            {if $this->countries|@count > 0}<div class="one_features">{TT t='country'}: {foreach from=$this->countries item='country'}<b>{$country->name}</b> {/foreach}</div>{/if}
+                            {if $this->countries|@count > 0}<div class="one_features">{TT t='country'}: {foreach from=$this->countries item='country' name=foo}<b>{$country->name}{if $smarty.foreach.foo.last}{else}, {/if}</b> {/foreach}</div>{/if}
                         {if $this->countries|@count > 0}<div class="one_features">{TT t='genre'}: <b>{foreach from=$this->genres item='genre' name=foo}{$genre->name}{if $smarty.foreach.foo.last}{else}, {/if}{/foreach}</b></div>{/if}
                         {if (count($this->persons->filter('ROLE_DIRECTOR')))}
                             <div class="one_features">{TT t='rejisser'}: {foreach from=$this->persons->filter('ROLE_DIRECTOR') item='person' name='per'}<b>{$person->name}{if $smarty.foreach.per.last}{else},{/if}</b> {/foreach}</div>
@@ -193,7 +210,7 @@
                         {foreach from=$this->frames item='frame'}
                             <div class="one_photo_frame" data-merge="2">
                                 <a href="/media/media_content_frame/{$this->id}/{$frame->name}.S.jpg" class="gooo" rel="gal">
-                                    <img src="/media/media_content_frame/{$this->id}/{$frame->name}.SW_300H_300CF_1PR_sq.jpg">
+                                    <img src="/media/media_content_frame/{$this->id}/{$frame->name}.SW_200H_200CF_1PR_sq.jpg">
                                 </a>
                             </div>
                         {/foreach}
@@ -267,9 +284,18 @@
                 jQuery('#bg_bg_vert').hide(); // скрыть стаб
             }
             player.on('playing', check_need_show_fuck);
+            player.on('play', showLoad);
+            player.on('playing', hideLoad);
             player.on('pause', check_need_show_fuck);
             window.addEventListener('resize', check_need_show_fuck);
             window.addEventListener('orientationchanged', check_need_show_fuck);
+
+            function showLoad() {
+                $('#logo_in_top').fadeIn(0);
+            }
+            function hideLoad() {
+                $('#logo_in_top').fadeOut(0);
+            }
 
             function select_season(season_marker) {
                 tabheaders.find('.tabheader-active').removeClass('tabheader-active');
@@ -386,18 +412,18 @@
 
             function get_poster_url() {
                 if (U.NEString(current_serie_data.default_preview, null)) {
-                    return "/media/media_content_preview/" + current_serie_data.id + "/" + current_serie_data.default_preview + '.SW_1280H_720CF_1.jpg';
+                    return "/media/media_content_preview/" + current_serie_data.id + "/" + current_serie_data.default_preview + '.SW_996H_560CF_1.jpg';
                 }
                 if (U.NEString(current_serie_data.default_poster, null)) {
-                    return "/media/media_content_poster/" + current_serie_data.id + "/" + current_serie_data.default_poster + '.SW_1280H_720CF_1.jpg';
+                    return "/media/media_content_poster/" + current_serie_data.id + "/" + current_serie_data.default_poster + '.SW_996H_560CF_1.jpg';
                 }
                 if (U.NEString(current_season_data.default_poster, null)) {
-                    return "/media/media_content_poster/" + current_season_data.id + "/" + current_season_data.default_poster + '.SW_1280H_720CF_1.jpg';
+                    return "/media/media_content_poster/" + current_season_data.id + "/" + current_season_data.default_poster + '.SW_996H_560CF_1.jpg';
                 }
                 if (U.NEString(soap_data.default_poster, null)) {
-                    return "/media/media_content_poster/" + soap_data.id + "/" + soap_data.default_poster + '.SW_1280H_720CF_1.jpg';
+                    return "/media/media_content_poster/" + soap_data.id + "/" + soap_data.default_poster + '.SW_996H_560CF_1.jpg';
                 }
-                return '/media/fallback/1/media_content_poster.SW_1280H_720CF_1.jpg';
+                return '/media/fallback/1/media_content_poster.SW_996H_560CF_1.jpg';
             }
 
 
@@ -441,10 +467,13 @@
                         if (langsi[selector] !== selector) {
                             langs.push(selector);
                             langsi[selector] = selector;
-                            langsii[selector] = fils[i].cdn_id;
                         }
+
+                        langsii[selector] = U.safeArray(langsii[selector]);
+                        langsii[selector].push(fils[i].cdn_id);
                     }
                 }
+
                 language_map = langs.length ? langsii : null;
                 select_season(['a', season.id].join(''));
                 setup_image(get_poster_url());
@@ -452,7 +481,7 @@
                 jQuery('#film_pay_start_trail')[trailer_data ? 'show' : 'hide']();
                 var cost = EFO.Checks.formatPriceNSD(U.FloatMoreOr(serie.price, 0, 0), 0);
                 jQuery('#film_pay_start').html(
-                        ['<i class="mdi-play mdi"></i> 1Открыть доступ на 24 часа (', cost, " {/literal}{TT t='rub_point'}{literal})"].join('')
+                        ['<i class="mdi-play mdi"></i> Открыть доступ на 24 часа (', cost, " {/literal}{TT t='rub_point'}{literal})"].join('')
                         );
                 jQuery('#film_pay_start').hide();
                 if (langs.length > 1) {
@@ -505,10 +534,11 @@
             }
 
             function on_lang_change_sw(e) {
+                debugger;
                 var t = jQuery(this).val();
                 var sources = [];
                 if (language_map && link_map) {
-                    var video_id = language_map[t];
+                    var video_id = language_map[t][0];
                     if (video_id) {
                         for (var i = 0; i < link_map.length; i++) {
                             if (link_map[i].id === video_id) {
@@ -543,6 +573,9 @@
 
             function prepare_hls_source(mp_url) {
                 mp_url = U.NEString(mp_url, '');
+                if(/.*\.m3u8$/i.test(mp_url)){
+                    return mp_url;
+                }
                 //kino-cache.cdnvideo.ru/temp/
                 var m = /kino-cache\.cdnvideo\.ru\/temp\/(.{1,})$/i.exec(mp_url);
                 if (m) {
@@ -606,68 +639,136 @@
                 }
             }
 
+            function parse_link_temp(link_info){
+                var m = /^.*temp\/(.{1,})$/.exec(link_info.url);
+                if(m){
+                    return link_info.id;//[link_info.id,m[1]].join(':');
+                }
+                return link_info.id;//null;
+            }
+
             function on_serie_access_success(ci) {
 
                 jQuery('#Da0phohche').on('change', on_lang_change_sw);
                 var links = JSON.parse(ci.links);
                 link_map = links;
-                var sources = [];
-                if (language_map) { // если лангмап определен
-                    var current_language = jQuery('#Da0phohche').val();
-                    var video_id = language_map[current_language];
-                    if (video_id) {
-                        for (var i = 0; i < links.length; i++) {
-                            if (links[i].id === video_id) {
-                                sources.push({
-                                    src: "//" + links[i].url,
-                                    type: links[i].content_type,
-                                    size: U.IntMoreOr(links[i].size, 0, null)
-                                });
+                var uplay = false;//use hls player
+                debugger;
+                if (uplay) {
+                    var ids_to_player = [];
+                    if (language_map) {
+                        var current_language = jQuery('#Da0phohche').val();
+                        var video_ids = U.safeArray(language_map[current_language]);
+                        if (video_ids && video_ids.length) {
+                            for (var i = 0; i < links.length; i++) {
+                                var ix = video_ids.indexOf(links[i].id);
+                                if (ix >= 0) {
+                                    ids_to_player.push(parse_link_temp(links[i]));
+                                }
                             }
                         }
                     }
-                }
-                if (!sources.length) {
-                    for (var i = 0; i < links.length; i++) {
-                        sources.push({
-                            src: "//" + links[i].url,
-                            type: links[i].content_type,
-                            size: U.IntMoreOr(links[i].size, 0, null)
-                        });
+                    if (!ids_to_player.length) {
+                        for (var i = 0; i < links.length; i++) {
+                            ids_to_player.push(parse_link_temp(links[i]));
+                        }
                     }
-                }
-                if (!soap_data.preplay_video_url) {
 
-                    uni_set_player_source({//sas
-                        type: 'video',
-                        title: current_serie_data.name,
-                        sources: sources,
-                        poster: get_poster_url()
-                    });
-                    player.film_source = null;
+                    jQuery.getJSON('/Info/API', {action: 'player_id', vil: ids_to_player})
+                            .done(function (d) {
+                                if (d.status === 'ok') {
+                                    var player_id = U.NEString(d.player_id, '');
+                                    var sources = [{src: ['//video.platformcraft.ru/vod/', player_id, '/playlist.m3u8'].join(''), size: null, type: null}];
+                                    if (!soap_data.preplay_video_url) {
+                                        uni_set_player_source({//sas
+                                            type: 'video',
+                                            title: current_serie_data.name,
+                                            sources: sources,
+                                            poster: get_poster_url()
+                                        });
+                                        player.film_source = null;
+                                    } else {
+                                        player.film_source = {//sas
+                                            type: 'video',
+                                            title: current_serie_data.name,
+                                            sources: sources,
+                                            poster: "/assets/chill/images/black.jpg"
+                                        };
+                                        player.on('ended', player_play_end);
+                                        uni_set_player_source({//sas
+                                            type: 'video',
+                                            title: current_serie_data.name,
+                                            sources: [{src: "//" + soap_data.preplay_video_url}],
+                                            poster: get_poster_url()
+                                        });
+                                        player.on('playing', lock_player_controls);
+                                        lock_player_controls();
 
+                                    }
+                                    jQuery('.a-film-cover').hide();
+                                }
+                            });
                 } else {
+                    var sources = [];
+                    if (language_map) { // если лангмап определен
+                        var current_language = jQuery('#Da0phohche').val();
+                        var video_id = U.safeArray(language_map[current_language])[0];
+                        if (video_id) {
+                            for (var i = 0; i < links.length; i++) {
+                                if (links[i].id === video_id) {
+                                    sources.push({
+                                        src: "//" + links[i].url,
+                                        type: links[i].content_type,
+                                        size: U.IntMoreOr(links[i].size, 0, null)
+                                    });
+                                }
+                            }
+                        }
+                    }
+                    if (!sources.length) {
+                        for (var i = 0; i < links.length; i++) {
+                            sources.push({
+                                src: "//" + links[i].url,
+                                type: links[i].content_type,
+                                size: U.IntMoreOr(links[i].size, 0, null)
+                            });
+                        }
+                    }
 
-                    player.film_source = {//sas
+                    if (!soap_data.preplay_video_url) {
 
-                        type: 'video',
-                        title: current_serie_data.name,
-                        sources: sources,
-                        poster: "/assets/chill/images/black.jpg"
-                    };
-                    player.on('ended', player_play_end);
-                    uni_set_player_source({//sas
-                        type: 'video',
-                        title: current_serie_data.name,
-                        sources: [{src: "//" + soap_data.preplay_video_url}],
-                        poster: get_poster_url()
-                    });
-                    player.on('playing', lock_player_controls);
-                    lock_player_controls();
+                        uni_set_player_source({//sas
+                            type: 'video',
+                            title: current_serie_data.name,
+                            sources: sources,
+                            poster: get_poster_url()
+                        });
+                        player.film_source = null;
 
+                    } else {
+
+                        player.film_source = {//sas
+
+                            type: 'video',
+                            title: current_serie_data.name,
+                            sources: sources,
+                            poster: "/assets/chill/images/black.jpg"
+                        };
+                        player.on('ended', player_play_end);
+                        uni_set_player_source({//sas
+                            type: 'video',
+                            title: current_serie_data.name,
+                            sources: [{src: "//" + soap_data.preplay_video_url}],
+                            poster: get_poster_url()
+                        });
+                        player.on('playing', lock_player_controls);
+                        lock_player_controls();
+
+                    }
+                    jQuery('.a-film-cover').hide();
                 }
-                jQuery('.a-film-cover').hide();
             }
+
 
             function player_play_end() {
                 if (player.film_source) {
@@ -798,7 +899,7 @@
                                                     'price': current_serie_data.price, // стоимость
                                                     'brand': join_objects_to_string(soap_data.countries),
                                                     'category': join_objects_to_string(soap_data.genres),
-                                                    'variant': current_serie_data.num,
+                                                    'variant': current_serie_data.season_id+"_"+current_serie_data.num,
                                                     'quantity': 1
                                                 }
                                             ]
@@ -893,7 +994,11 @@
         var urla = window.location.pathname;
         localStorage.setItem("soap", urla);
         $(".one_seria_select_dur").each(function () {
+        if($(this).data("dur") !=''){
             var a = $(this).data("dur");
+            }else{
+            var a = 0;
+            }
             var b = a.toFixed();
             var c = b / 60;
             var d = c.toFixed();
@@ -905,7 +1010,7 @@
     });
 </script>{/literal}
 </div>
-{get_media_reviews q=5 id=$this->id assign='reviews'}
+{get_media_reviews q=10 id=$this->id assign='reviews'}
 {if count($reviews)}
     <div id="list_reviews">
         <div class="container">
@@ -913,7 +1018,7 @@
                 <div class="col s12 m10 offset-m1">
                     <div class="row">
                         <div class="col s10 offset-s1">
-                            <h3>{TT t='Otyvs'}</h3>
+                            <div class="head3">{TT t='Otyvs'}</div>
                             {foreach from=$reviews item='r'}
                                 <div class="row">
                                     <div class="col s12">

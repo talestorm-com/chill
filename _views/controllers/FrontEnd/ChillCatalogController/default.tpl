@@ -21,7 +21,7 @@
                         {foreach from=$last_x_items item='item' name=foo}
                         {if $smarty.foreach.foo.index % 2 == 0}
                         <div>
-                            <a href='/Soap/{$item->id}' title="{$item->name}">
+                            <a href='/Soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                                 <div class="one_film_janr">
                                     {if $item->image}
                                     <img src="/media/media_content_poster/{$item->id}/{$item->image}.SW_1200H_400CF_1PR_hposter.jpg" alt="{$item->name}">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="owl-carousel owl-carousela" id="{$row->genre_id}">
                             {foreach from=$row->soap item='soap'}
-                            <a href='/Soap/{$soap->id}' title="{$soap->name}">
+                            <a href='/Soap/{$soap->id}-{$soap->translit_name}' title="{$soap->name}">
                                 <div class="one_film_in_list">
                                     {if $soap->image}
                                     <img src="/media/media_content_poster/{$soap->id}/{$soap->image}.SW_400CF_1PR_vposter.jpg" alt="{$soap->name}">

@@ -4,6 +4,7 @@
 .htpasswd
 *.log
 *.logs
+log/*
 _logs
 _keys
 _media

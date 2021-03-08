@@ -46,10 +46,10 @@ abstract class AbstractFrontendController extends \controllers\abstract_controll
         $this->basket = \Basket\Basket::F();
         $this->visit_counter = \VisitCounter\VisitCounter::F();
         $this->referal_link = \Referal\ReferalLink::F();
-        if (!\GEOList\GEOList::F()->has_access_client() && $this->route_params->get('alias') === 'soap_page') {
-            \GEOList\GEOList::F()->disable();
-            \Router\RenderableCodeError::HR("access denied", 403000);
-        }
+//        if (!\GEOList\GEOList::F()->has_access_client() && $this->route_params->get('alias') === 'soap_page') {
+//            \GEOList\GEOList::F()->disable();
+//            \Router\RenderableCodeError::HR("access denied", 403000);
+//        }
         try {
             if ($this->auth->is_authentificated()) {
                 setcookie('gauid', $this->auth->get_id(), 0, "/", null, true, false);

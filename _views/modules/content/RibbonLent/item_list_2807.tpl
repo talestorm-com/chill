@@ -67,7 +67,7 @@
 
                 <div class="one_film_in_list chill-lenta-item-new-{$item->content_type}">
                     {if $item->lent_mode==='poster'}
-                        <a href='/Soap/{$item->id}' title="{$item->name}">
+                        <a href='/Soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                             <div class="film_left">
                                 {if $item->lent_image_name}
                                     <img src="/media/lent_poster/{$item->id}/{$item->lent_image_name}.SW_400H_520CF_1.jpg" alt="{$item->name}">
@@ -78,7 +78,7 @@
                             </div>
                         </a>
                     {else if $item->lent_mode==='gif'}
-                        <a href='/Soap/{$item->id}' title="{$item->name}">
+                        <a href='/Soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                             <div class="film_left one_gih">
                                 <div class="gif_load">
                                     <img src="/assets/chill/images/gif_sign.png" class="gif_sign" alt="Загрузка">
@@ -91,7 +91,7 @@
                     {else if $item->lent_mode==='video'}
                         <div class="film_left">
 
-                            <div class="run_trailer" data-id='{$item->id}' data-srca='/Soap/{$item->id}' data-video_url="{$item->video_cdn_url}">
+                            <div class="run_trailer" data-id='{$item->id}' data-srca='/Soap/{$item->id}-{$item->translit_name}' data-video_url="{$item->video_cdn_url}">
                                 <div class="film_left_text_box">
                                     <a class="film_left_text_box_box">
                                         <i class="mdi mdi-play"></i> {$item->lent_message}
@@ -104,7 +104,7 @@
                             </div>
                         </div>
                     {else}
-                        <a href='/Soap/{$item->id}' title="{$item->name}">
+                        <a href='/Soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                             <div class="film_left">
 
                                 {if $item->image}
@@ -116,7 +116,7 @@
                             </div>
                         </a>
                     {/if}
-                    <a href='/Soap/{$item->id}' title="{$item->name}">
+                    <a href='/Soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                         <div class="film_right">
                             <div class="film_right_in">
                                 <div class="in_film_right">
