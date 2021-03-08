@@ -89,7 +89,7 @@ class PageController extends AbstractFrontendController {
             }
             $translName = $content['translit_name'];
             $urlRedirect = implode("", [\Router\Request::F()->https ? "https://" : "http://", \Router\Request::F()->host,
-                                        mb_strtolower(\Router\Request::F()->request_path),'-test'.$translName."test"]);
+                                        mb_strtolower(\Router\Request::F()->request_path),'-'.$translName]);
             header("Location: $urlRedirect");
             die();
         }
