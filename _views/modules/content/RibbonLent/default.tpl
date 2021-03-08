@@ -1,6 +1,5 @@
 {$OUT->add_script('/assets/chill/player/plyr/plyr.min.js',100,false)|void}
 {$OUT->add_css('/assets/chill/player/plyr/plyr.css',100)|void}
-{file_put_contents('123', var_export($OUT, true), 8)}
 {include './prez.tpl'}
 <div id="lenta2" style="color:white!important">
     <div class="container">

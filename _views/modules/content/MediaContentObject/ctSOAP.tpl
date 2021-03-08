@@ -13,6 +13,38 @@
 {$OUT->add_css('/assets/css/chill/soap_page.css',100)|void}
 {$OUT->add_script('/assets/chill/player/plyr/plyr.min.js',100,false)|void}
 {$OUT->add_css('/assets/chill/player/plyr/plyr.css',100)|void}
+{if !GEOList\GEOList::F()->has_access_client()}
+{
+<div id="a_film_head" style="display:none">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m10 offset-m1" id="uiaa">
+                <div id="cluii" style="display:none">
+                    <div id="logo_in_top">
+                        <div class="preloader__image">
+                            <img src="/assets/chill/images/logo.png">
+                        </div>
+                    </div>
+
+                    <div id="a_film_head_block">
+{*                        <div class="a-film-cover">*}
+{*                                <div class="a-film-cover-preloader">*}
+{*                                    <div class="CommonTemplatePreloader">*}
+{*                                        <div class="CommonTemplatePreloaderPreloader">*}
+                                             <img src="/assets/chill/images/content.svg">
+{*                                        </div>*}
+{*                                    </div>*}
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+{else}
+    {
 <div id="a_film_head" style="display:none">
 
     <div class="container">
@@ -25,6 +57,7 @@
                         </div>
                         <!--<img src="/assets/chill/images/logo_grad.png">-->
                     </div>
+
                     <div id="a_film_head_block">
                         <video id="player_element"></video>
                         <div class="a-film-cover">
@@ -69,6 +102,8 @@
         </div>
     </div>
 </div>
+}
+{/if}
 <div id="podel_block">
     <div class="container">
         <div class="row">
