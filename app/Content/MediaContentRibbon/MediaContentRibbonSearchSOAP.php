@@ -70,7 +70,7 @@ class MediaContentRibbonSearchSOAP implements \common_accessors\IMarshall, \Coun
             COALESCE(SOAPSTRINGS1.name,SOAPSTRINGS2.name) name,
             'media_content_poster' image_context,
             A.id image_owner,
-            SOAPLINK.default_poster image,   
+            SOAPLINK.default_poster image, SOAPLINK.translit_name translit_name,  
              CASE WHEN RTT.qty = 0 OR RTT.qty IS NULL THEN 0 ELSE ROUND(COALESCE(RTT.average,0) / COALESCE(RTT.qty,1)) END  ratestars,
              A.track_language, COALESCE(TL1.name,TL2.name)track_language_name,
             MCGL.genre_id genre_id, COALESCE(MCGS1.name,MCGS2.name) genre_name,
