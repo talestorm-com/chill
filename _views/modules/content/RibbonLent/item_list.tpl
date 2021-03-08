@@ -18,7 +18,7 @@
         {/if}
 
 
-
+        
         {if $item===null }
             <div class="col s12 l3 hide-on-med-and-down">
                 <div id="empty_block"></div>
@@ -38,7 +38,7 @@
                                 {if $item->age_restriction_name ==='0+'}
                                     <div class="age_age">{$item->age_restriction_name}</div>
                                 {/if}
-                                <a href='/Soap/{$item->id}' title="{$item->name}">
+                                <a href='/soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                                     <div class="lent_omg_in">
                                         {if $item->lent_image_name}
                                             <img loading="lazy" src="/media/lent_poster/{$item->id}/{$item->lent_image_name}.SW_400H_520CF_1.jpg" alt="{$item->name}" class="lazyload">
@@ -55,7 +55,7 @@
                                 {if $item->age_restriction_name ==='0+'}
                                     <div class="age_age">{$item->age_restriction_name}</div>
                                 {/if}
-                                <a href='/Soap/{$item->id}' title="{$item->name}">
+                                <a href='/soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                                     <div class="gif_load">
                                         <div class="lent_omg_in">
                                             <!-- <img src="/assets/chill/images/gif_sign.png" class="gif_sign" alt="Загрузка">-->
@@ -71,7 +71,7 @@
                                 {if $item->age_restriction_name ==='0+'}
                                     <div class="age_age">{$item->age_restriction_name}</div>
                                 {/if}
-                                <div class="run_trailer" data-id='{$item->id}' data-srca='/Soap/{$item->id}' data-video_url="{$item->video_cdn_url}" data-video-id="{$item->video_cdn_id}">
+                                <div class="run_trailer" data-id='{$item->id}' data-srca='/Soap/{$item->id}-{$item->translit_name}' data-video_url="{$item->video_cdn_url}" data-video-id="{$item->video_cdn_id}">
                                     <div class="film_left_text_box">
                                         <a class="film_left_text_box_box">
 
@@ -92,7 +92,7 @@
                                 {if $item->age_restriction_name ==='0+'}
                                     <div class="age_age">{$item->age_restriction_name}</div>
                                 {/if}
-                                <a href='/Soap/{$item->id}' title="{$item->name}">
+                                <a href='/soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                                     <div class="lent_omg_in">
                                         {if $item->image}
                                             <img loading="lazy" src="/media/fallback/1/media_content_poster.SW_400H_520CF_1.jpg">
@@ -106,7 +106,7 @@
                         {/if}
 
                         <div class="film_right">
-                            <a href='/Soap/{$item->id}' title="{$item->name}">
+                            <a href='/soap/{$item->id}-{$item->translit_name}' title="{$item->name}">
                                 <div class="film_right_in">
                                     <div class="in_film_right">
                                         {if $item->free}

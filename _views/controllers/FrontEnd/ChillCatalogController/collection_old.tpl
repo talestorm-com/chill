@@ -15,7 +15,7 @@
                     <div class="row">
                         {foreach from=$collection item='item'}
                         <div class="col s6 m4 l3">
-                            <a href="/Soap/{$item->id}">
+                            <a href="/Soap/{$item->id}-{$item->translit_name}">
                                 <div class="one_film_in_list">
                                     {if $item->default_poster}
                                     <img src="/media/media_content_poster/{$item->id}/{$item->default_poster}.SW_400CF_1PR_vposter.jpg" />

@@ -452,7 +452,7 @@
                 jQuery('#film_pay_start_trail')[trailer_data ? 'show' : 'hide']();
                 var cost = EFO.Checks.formatPriceNSD(U.FloatMoreOr(serie.price, 0, 0), 0);
                 jQuery('#film_pay_start').html(
-                        ['<i class="mdi-play mdi"></i> 1Открыть доступ на 24 часа (', cost, " {/literal}{TT t='rub_point'}{literal})"].join('')
+                        ['<i class="mdi-play mdi"></i> Открыть доступ на 24 часа (', cost, " {/literal}{TT t='rub_point'}{literal})"].join('')
                         );
                 jQuery('#film_pay_start').hide();
                 if (langs.length > 1) {

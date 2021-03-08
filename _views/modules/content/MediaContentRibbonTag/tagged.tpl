@@ -52,7 +52,7 @@
                     <h2>Сериалы</h2>
                     <div class="owl-carousel" id="owl-tag-soap">
                         {foreach from=$this->soap item='soap'}
-                        <a href='/Soap/{$soap->id}' title="{$soap->name}">
+                        <a href='/Soap/{$soap->id}-{$soap->translit_name}' title="{$soap->name}">
                             <div class="one_film_in_list">
                                 {if $soap->image}
                                 <img src="/media/media_content_poster/{$soap->id}/{$soap->image}.SW_400CF_1PR_vposter.jpg"  alt="{$soap->name}">
