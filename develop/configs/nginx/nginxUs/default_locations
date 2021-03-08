@@ -1,0 +1,16 @@
+#location = /favicon.ico {
+#        log_not_found off;
+#        access_log off;
+#}
+location = /robots.txt {
+    add_header Content-Type text/plain;
+    return 200 "User-agent: *\nDisallow: /\n";
+}
+location ~ /\.ht {
+        deny all;
+}
+error_page 404 /404.html;
+error_page 500 502 503 504 /50x.html;
+#location = /50x.html {
+#        root /var/lib/nginx/html;
+#}

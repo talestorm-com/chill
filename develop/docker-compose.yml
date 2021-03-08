@@ -1,0 +1,82 @@
+
+version: '3.0'
+
+services:
+  web:
+    container_name: chill-backend-web
+    build:
+      context: ./configs/nginx/nginxUs
+    volumes:
+      - "./../:/data:rw"
+      - "./../_logs/nginx:/data/logs:rw"
+      - "./configs/nginx/nginx.conf:/etc/nginx/nginx.conf:rw"
+#      - "./configs/nginx/conf.d/chill.conf:/etc/nginx/conf.d/chill.conf:rw"
+      - "./configs/nginx/nginxUs/chill.conf:/etc/nginx/conf.d/chill.conf:rw"
+      - "./configs/nginx/nginxUs/default_locations:/etc/nginx/default_locations:rw"
+      - "./configs/nginx/nginxUs/key:/etc/nginx/ssl/key:rw"
+      - "./configs/nginx/nginxUs/crt:/etc/nginx/ssl/crt:rw"
+      - "./configs/nginx/nginxUs/dhparam.pem:/etc/nginx/ssl/dhparam.pem:rw"
+    ports:
+      - "10.227.64.1:80:80"
+      - "10.227.64.1:443:443"
+    networks:
+      chill-backend:
+        ipv4_address: 10.227.64.2
+    depends_on:
+      - apache
+  apache:
+    container_name: chill-backend-fpm
+    build:
+      context: ./configs/php/phpUs
+    volumes:
+      - "./../:/data:rw"
+      - "./configs/php/phpUs/php.ini:/etc/php/7.2/apache2/php.ini:rw"
+      - "./configs/php/phpUs/php.ini:/etc/php/7.2/cli/php.ini:rw"
+      - "./configs/php/phpUs/xdebug.ini:/etc/php/7.2/mods-available/xdebug.ini:rw"
+      - "./configs/apache/apache2.conf:/etc/apache2/apache2.conf:rw"
+      - "./configs/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf:rw"
+    environment:
+      - "DB_HOST=mysql"
+      - "DB_DATABASE=chill"
+      - "DB_USERNAME=root"
+      - "DB_PASSWORD=root"
+      - "REDIS_HOST=redis"
+      - "REDIS_PORT=6379"
+      - "XDEBUG_CONFIG=remote_host=10.227.64.1 remote_enable=1 remote_autostart=0 remote_port=9008"
+      - "PHP_IDE_CONFIG=serverName=chill-backend-fpm"
+    networks:
+      chill-backend:
+        ipv4_address: 10.227.64.3
+    depends_on:
+      - mysql
+  mysql:
+    container_name: chill-backend-mysql
+    image: mysql:5.7
+    volumes:
+      - './../_logs/mysql:/var/lib/mysql:rw'
+      - './configs/mysql5.7/my.cnf:/etc/mysql/my.cnf:rw'
+      - './dump/chill.sql:/dump/chill.sql'
+    environment:
+      - MYSQL_ROOT_PASSWORD=123
+    networks:
+      chill-backend:
+        ipv4_address: 10.227.64.4
+  pma:
+    container_name: chill-backend-phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      - VIRTUAL_HOST=pma.chill.local
+      - PMA_HOST=mysql
+    networks:
+      chill-backend:
+        ipv4_address: 10.227.64.6
+    depends_on:
+      - mysql
+networks:
+  chill-backend:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.227.64.0/24
+    driver_opts:
+      com.docker.network.bridge.name: chill-10
